@@ -222,12 +222,21 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
 document.getElementById('play-go').addEventListener('click', function () {
   var box = document.getElementById('play');
   var f = document.createElement('iframe');
-  f.src = 'https://scbrown.github.io/quipu/explore/';
+  f.src = 'https://scbrown.github.io/quipu/explore/?embed=1&theme=intigraph';
   f.title = 'Quipu playground';
   f.loading = 'eager';
   f.allow = 'clipboard-write';
   box.innerHTML = '';
   box.appendChild(f);
+  window.addEventListener('message', function (event) {
+    if (event.origin !== 'https://scbrown.github.io'
+        || event.source !== f.contentWindow
+        || event.data?.type !== 'quipu:resize') return;
+    var height = event.data.height;
+    if (Number.isInteger(height) && height > 0 && height < 20000) {
+      f.style.height = height + 'px';
+    }
+  });
 });
 </script>
 </body>
