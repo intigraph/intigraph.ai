@@ -64,6 +64,8 @@ ul.proof{list-style:none;padding:0;margin:0;display:grid;gap:14px}
 ul.proof li{padding-left:22px;position:relative;color:var(--muted)}
 ul.proof li::before{content:"";position:absolute;left:0;top:.6em;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
 ul.proof b{color:var(--fg)}
+.diagram{margin:0 0 20px}
+.diagram img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--line)}
 .play{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:radial-gradient(circle at 20% 30%,rgba(255,194,77,.12),transparent 50%),radial-gradient(circle at 80% 70%,rgba(255,79,160,.12),transparent 50%),var(--bg2);min-height:220px}
 .play-cover{display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px;padding:36px 28px}
 .play-cover img{width:64px;height:64px}
@@ -131,6 +133,13 @@ quipu read <span class="s">"PREFIX svc: &lt;https://example.com/svc/&gt;
 
 <span class="c"># same question, as the store recorded it at a given transaction</span>
 quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre>
+</div></section>
+
+<section id="anywhere"><div class="wrap">
+  <h2>Runs anywhere. Shares safely.</h2>
+  <p class="lead">The same store and the same rules from Claude Code, the command line, an HTTP server, inside your app, fully offline, or in a browser tab. Knowledge moves between stores as plain files you can review in git, and nothing lands in your graph until someone promotes it.</p>
+  <figure class="diagram"><img src="run-anywhere.svg" width="960" height="540" alt="Quipu runs anywhere: one store, six ways in. Claude Code and any MCP client through quipu mcp; the quipu command line; quipu-server over HTTP with REST, MCP and a web UI; the quipu-ai Rust library; offline as a single SQLite file; and in the browser through WebAssembly." loading="lazy"></figure>
+  <figure class="diagram"><img src="sharing-flow.svg" width="960" height="470" alt="Sharing between Quipu stores: quipu share writes a git-diffable bundle with stable hashes; quipu import verifies it and checks shapes into quarantine; quipu import promote is an explicit step into your graph; diverged copies merge three ways by your shapes, and a conflict exits instead of guessing." loading="lazy"></figure>
 </div></section>
 
 <section id="try"><div class="wrap">
