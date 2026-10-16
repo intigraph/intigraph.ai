@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intigraph</title>
+<meta name="description" content="Intigraph builds agent platforms that remember, follow rules and can show their work, on the open Quipu stack.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#12121f; --bg2:#1a1a2e; --card:#20203a; --line:#2e2e4d;
+  --fg:#ecebf5; --muted:#a7a6c2; --gold:#ffc24d; --coral:#ff5a4e; --pink:#ff4fa0;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#fbfaf6; --bg2:#f2efe6; --card:#ffffff; --line:#e3ded0;
+    --fg:#1a1a2e; --muted:#5b5a73; --gold:#b97a00; --coral:#d23c30; --pink:#c42e7a;
+  }
+}
+:root[data-theme="light"]{
+  --bg:#fbfaf6; --bg2:#f2efe6; --card:#ffffff; --line:#e3ded0;
+  --fg:#1a1a2e; --muted:#5b5a73; --gold:#b97a00; --coral:#d23c30; --pink:#c42e7a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,sans-serif}
+a{color:var(--gold);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--fg)}
+.brand img{width:34px;height:34px}
+.navlinks{display:flex;gap:22px;font-size:15px}
+.navlinks a{color:var(--muted)} .navlinks a:hover{color:var(--fg);text-decoration:none}
+header.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:56px 0 72px}
+.hero h1{font-size:clamp(34px,5vw,54px);line-height:1.08;margin:0 0 18px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--gold),var(--coral) 55%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{font-size:20px;color:var(--muted);margin:0 0 30px}
+.hero .logo{width:100%;max-width:400px;justify-self:center;filter:drop-shadow(0 0 40px rgba(255,79,160,.25))}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--fg)}
+.btn.primary{background:linear-gradient(90deg,var(--gold),var(--coral));color:#1a1a2e;border:0}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section h2{font-size:30px;margin:0 0 10px;letter-spacing:-.01em}
+section p.lead{color:var(--muted);font-size:18px;max-width:720px;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card .k{font:500 12px var(--mono);color:var(--pink);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+pre{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:18px 20px;overflow-x:auto;font:14px/1.6 var(--mono);color:var(--fg);margin:0}
+pre .c{color:var(--muted)} pre .kw{color:var(--gold)} pre .s{color:var(--pink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.stack div{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--card)}
+.stack b{display:block;font-size:15px} .stack span{color:var(--muted);font-size:14px}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.steps .card{position:relative}
+.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:18px;right:20px;font:700 28px var(--mono);color:var(--line)}
+ul.proof{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+ul.proof li{padding-left:22px;position:relative;color:var(--muted)}
+ul.proof li::before{content:"";position:absolute;left:0;top:.6em;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+ul.proof b{color:var(--fg)}
+.play{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:radial-gradient(circle at 20% 30%,rgba(255,194,77,.12),transparent 50%),radial-gradient(circle at 80% 70%,rgba(255,79,160,.12),transparent 50%),var(--bg2);min-height:220px}
+.play-cover{display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px;padding:36px 28px}
+.play-cover img{width:64px;height:64px}
+.play-cover div{flex:1 1 240px}
+.play-cover b{display:block;font-size:18px}
+.play-cover span{color:var(--muted);font-size:14px}
+.play iframe{display:block;width:100%;height:min(82vh,860px);border:0;background:var(--bg)}
+.about{display:grid;grid-template-columns:280px 1fr;gap:40px;align-items:start}
+.about img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);box-shadow:0 0 0 4px var(--bg),0 0 36px rgba(255,79,160,.22)}
+.about p{color:var(--muted);max-width:640px}
+.about p.lead{color:var(--fg)}
+.about .links a{white-space:nowrap}
+@media (max-width:820px){.about{grid-template-columns:1fr}.about picture{max-width:240px}}
+footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media (max-width:820px){
+  header.hero{grid-template-columns:1fr;padding:28px 0 48px}
+  .hero .logo{max-width:240px;order:-1}
+  .two{grid-template-columns:1fr}
+  .navlinks{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#"><img src="icon.svg" alt="">Intigraph</a>
+    <div class="navlinks"><a href="#how">How it works</a><a href="#try">Try it</a><a href="#work">Work with us</a><a href="#about">About</a><a href="https://github.com/intigraph">GitHub</a></div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Give your agents a memory that <em>keeps receipts.</em></h1>
+      <p class="sub">Every fact has a source. Every answer has a date. Intigraph builds agent platforms that remember, follow your rules and can show their work.</p>
+      <div class="cta">
+        <a class="btn primary" href="#work">Work with us</a>
+        <a class="btn" href="https://arxiv.org/abs/2608.16813">Read the paper</a>
+        <a class="btn" href="https://github.com/scbrown/quipu">Get the code</a>
+      </div>
+    </div>
+    <img class="logo" src="logo.svg" alt="Intigraph logo: a quipu turned into a sun, its knotted cords radiating as rays that end in linked graph nodes.">
+  </header>
+</div>
+
+<section id="how"><div class="wrap">
+  <h2>Agents guess. Your record shouldn't.</h2>
+  <p class="lead">Coding agents are fast and confident, and they forget. Intigraph puts a governed knowledge store underneath them: rules on every write, history on every read.</p>
+  <div class="grid">
+    <div class="card"><div class="k">Provenance</div><h3>Every fact keeps its source</h3><p>Who asserted it, from what evidence, in which change. Facts are retracted, never erased.</p></div>
+    <div class="card"><div class="k">Two clocks</div><h3>What was true, and when you knew it</h3><p>Bitemporal by design: ask what an agent believed before a migration, or what was true last quarter.</p></div>
+    <div class="card"><div class="k">Policy</div><h3>Rules checked on every write</h3><p>Shapes live in the store. A write that breaks a rule is refused with a reason, not quietly accepted.</p></div>
+    <div class="card"><div class="k">Local sync</div><h3>Work offline, merge under the rules</h3><p>Agents and apps work on their own replica and merge back through the same checks.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap two">
+  <div>
+    <h2>Ask what the agent knew.</h2>
+    <p class="lead">Real queries are the pitch. This one asks what an agent believed about a service before a migration, and where each belief came from.</p>
+  </div>
+<pre><span class="c"># what did we believe about billing-api before the Sept 30 cutover?</span>
+quipu read <span class="s">"PREFIX svc: &lt;https://example.com/svc/&gt;
+<span class="kw">SELECT</span> ?property ?value <span class="kw">WHERE</span> {
+  svc:billing-api ?property ?value .
+}"</span> <span class="kw">--valid-at</span> 2026-09-29
+
+<span class="c"># same question, as the store recorded it at a given transaction</span>
+quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre>
+</div></section>
+
+<section id="try"><div class="wrap">
+  <h2>Try it in your browser</h2>
+  <p class="lead">A real Quipu store, compiled to WebAssembly and loaded with Quipu's own repository: code, docs and decisions. Ask it questions, walk the graph, and try a write that breaks a rule. Nothing leaves your tab.</p>
+  <div class="play" id="play">
+    <div class="play-cover">
+      <img src="icon.svg" alt="">
+      <div>
+        <b>Quipu playground</b>
+        <span>Downloads the engine and a verified pack, about 6&nbsp;MB, the first time.</span>
+      </div>
+      <button class="btn primary" id="play-go" type="button">Launch the playground</button>
+      <a class="btn" href="https://scbrown.github.io/quipu/explore/">Open full screen</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="stack"><div class="wrap">
+  <h2>The open stack</h2>
+  <p class="lead">Everything a team needs to run it is open source under Apache-2.0, and it already runs a crew of coding agents in production every day.</p>
+  <div class="stack">
+    <div><b>Quipu</b><span>Governed, bitemporal knowledge store</span></div>
+    <div><b>Yupana</b><span>Live code structure, policy and change impact</span></div>
+    <div><b>Bobbin</b><span>Semantic code search and context for agents</span></div>
+    <div><b>Seeds</b><span>Work tracking stored in Quipu</span></div>
+    <div><b>Shuttle</b><span>Workflows with signed state transitions</span></div>
+    <div><b>Chaski</b><span>Event and dependency verdicts</span></div>
+    <div><b>Desire Path</b><span>Turns agent mistakes into feature requests</span></div>
+    <div><b>Shantytown</b><span>Harness for running crews of coding agents</span></div>
+    <div><b>Quechua</b><span>The shared vocabulary every tool speaks</span></div>
+    <div><b>Tambo</b><span>Installs, proves and monitors the stack</span></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Work with us</h2>
+  <p class="lead">Intigraph designs, builds and runs agent platforms on this stack. Engagements are fixed-scope, and you own the code.</p>
+  <div class="steps">
+    <div class="card"><div class="k">1–2 days</div><h3>Agent platform assessment</h3><p>How your teams use coding agents today across repos, CI, review and cost. A written roadmap and a live demo on your own code.</p></div>
+    <div class="card"><div class="k">1 week</div><h3>Pilot build</h3><p>One working agent workflow on one repo, with memory, rules and review gates, handed over with docs.</p></div>
+    <div class="card"><div class="k">1–3 months</div><h3>Embedded engineer</h3><p>Part of each week inside your team, building and running the platform, then handing it off.</p></div>
+  </div>
+  <p style="margin-top:28px"><a class="btn primary" href="mailto:steve@intigraph.ai?subject=Agent%20platform">steve@intigraph.ai</a></p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Proof, not promises</h2>
+  <ul class="proof">
+    <li><b>Research.</b> The Quipu paper is on arXiv as <a href="https://arxiv.org/abs/2608.16813">2608.16813</a>.</li>
+    <li><b>Production use.</b> A crew of coding agents across several hosts runs on the stack daily: tracking work, merging pull requests, triaging CI and keeping its own records.</li>
+    <li><b>Standards.</b> Quipu's CI re-derives its query conformance from the pinned W3C test suite on every change and publishes the results.</li>
+    <li><b>Open code.</b> Every component is public on GitHub.</li>
+  </ul>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <picture>
+    <source srcset="steve.webp" type="image/webp">
+    <img src="steve.jpg" width="640" height="800" alt="Steve Brown, founder of Intigraph" loading="lazy">
+  </picture>
+  <div>
+    <h2>About</h2>
+    <p class="lead">Intigraph is Steve Brown. He builds agent platforms for engineering teams.</p>
+    <p>Steve has 20+ years in production systems, including 15 at Amazon and AWS, where he drove generative AI adoption in Amazon Security and AWS Applied AI Solutions. At Sema4.ai he was the AI Staff Engineer for the agent platform.</p>
+    <p>He wrote the Quipu paper on governed knowledge for AI agents, and he runs his own crew of coding agents on the stack every day. Most of what Intigraph sells, he learned by breaking it first.</p>
+    <p class="links"><a href="https://www.linkedin.com/in/scbrown3">LinkedIn</a> · <a href="https://github.com/scbrown">GitHub</a> · <a href="https://orcid.org/0009-0009-1720-1785">ORCID</a> · <a href="mailto:steve@intigraph.ai">steve@intigraph.ai</a></p>
+  </div>
+</div></section>
+
+<div class="wrap">
+  <footer>
+    <span>© 2026 Intigraph · <a href="mailto:steve@intigraph.ai">steve@intigraph.ai</a></span>
+    <span><a href="https://github.com/intigraph">github.com/intigraph</a></span>
+  </footer>
+</div>
+<script>
+document.getElementById('play-go').addEventListener('click', function () {
+  var box = document.getElementById('play');
+  var f = document.createElement('iframe');
+  f.src = 'https://scbrown.github.io/quipu/explore/';
+  f.title = 'Quipu playground';
+  f.loading = 'eager';
+  f.allow = 'clipboard-write';
+  box.innerHTML = '';
+  box.appendChild(f);
+});
+</script>
+</body>
+</html>
