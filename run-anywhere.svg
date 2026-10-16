@@ -36,8 +36,8 @@
     <g transform="translate(360,92)">
       <rect width="240" height="88" rx="12" fill="#20203a" stroke="#2e2e4d"/>
       <text x="16" y="30" fill="#ecebf5" font-size="16" font-weight="600">Command line</text>
-      <text x="16" y="52" fill="#a7a6c2" font-size="13">Load, query, share, merge</text>
-      <text x="16" y="74" fill="#ff4fa0" font-family="JetBrains Mono,Menlo,Consolas,monospace" font-size="12">quipu query "SELECT …"</text>
+      <text x="16" y="52" fill="#a7a6c2" font-size="13">Write, query, share, merge</text>
+      <text x="16" y="74" fill="#ff4fa0" font-family="JetBrains Mono,Menlo,Consolas,monospace" font-size="12">quipu read "SELECT …"</text>
     </g>
     <g transform="translate(650,120)">
       <rect width="240" height="88" rx="12" fill="#20203a" stroke="#2e2e4d"/>
