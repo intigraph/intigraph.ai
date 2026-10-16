@@ -1,0 +1,21 @@
+Before (56b8207):
+{
+  "childControl": "Sent {\"type\":\"quipu:resize\",\"height\":640}",
+  "embedURL": false,
+  "grows": false,
+  "shrinks": false,
+  "rejectsInvalidMessages": true,
+  "mobileFits": true,
+  "errors": []
+}
+
+After:
+{
+  "childControl": "Sent {\"type\":\"quipu:resize\",\"height\":640}",
+  "embedURL": true,
+  "grows": true,
+  "shrinks": true,
+  "rejectsInvalidMessages": true,
+  "mobileFits": true,
+  "errors": []
+}
