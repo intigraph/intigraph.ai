@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Intigraph</title>
-<meta name="description" content="Intigraph builds agent platforms that remember, follow rules and can show their work, on the open Quipu stack.">
+<meta name="description" content="Intigraph helps companies build agentic software factories, from their first AI assistants to governed coding agents with shared knowledge and human approval gates.">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,8 +94,8 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);f
 
   <header class="hero">
     <div>
-      <h1>Give your agents a memory that <em>keeps receipts.</em></h1>
-      <p class="sub">Every fact has a source. Every answer has a date. Intigraph builds knowledge graphs and agent platforms that remember, follow your rules and can show their work.</p>
+      <h1>Build your <em>agentic software factory.</em></h1>
+      <p class="sub">Meet your team where it is in its AI journey. Build toward coding agents that turn specs into tested software, work inside CI and review gates, and bring decisions to humans for approval.</p>
       <div class="cta">
         <a class="btn primary" href="#work">Work with us</a>
         <a class="btn" href="https://arxiv.org/abs/2608.16813">Read the paper</a>
@@ -107,13 +107,23 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);f
 </div>
 
 <section id="how"><div class="wrap">
-  <h2>Agents guess. Your record shouldn't.</h2>
-  <p class="lead">Coding agents are fast and confident, and they forget. Intigraph puts a governed knowledge store underneath them: rules on every write, history on every read.</p>
+  <h2>Start where you are. Build toward the factory.</h2>
+  <p class="lead">Your next useful step depends on your team, your systems and what already works. Assistants, production agents and shared knowledge form a path toward a software factory you can govern.</p>
   <div class="grid">
-    <div class="card"><div class="k">Provenance</div><h3>Every fact keeps its source</h3><p>Who asserted it, from what evidence, in which change. Facts are retracted, never erased.</p></div>
-    <div class="card"><div class="k">Two clocks</div><h3>What was true, and when you knew it</h3><p>Bitemporal by design: ask what an agent believed before a migration, or what was true last quarter.</p></div>
-    <div class="card"><div class="k">Policy</div><h3>Rules checked on every write</h3><p>Shapes live in the store. A write that breaks a rule is refused with a reason, not quietly accepted.</p></div>
-    <div class="card"><div class="k">Local sync</div><h3>Work offline, merge under the rules</h3><p>Agents and apps work on their own replica and merge back through the same checks.</p></div>
+    <div class="card"><div class="k">Stage 1</div><h3>AI assistants</h3><p>Help people write, search and code in the tools they already use. Establish useful workflows and measure the results.</p></div>
+    <div class="card"><div class="k">Stage 2</div><h3>First production agents</h3><p>Put one bounded workflow into production, with tool access, evaluations, monitoring and clear human handoffs.</p></div>
+    <div class="card"><div class="k">Stage 3</div><h3>Governed agent platform</h3><p>Connect agents through an ontology of your business, built with Quipu. Shared memory, sourced facts and policy give them a common operating context.</p></div>
+    <div class="card"><div class="k">Stage 4</div><h3>Agentic software factory</h3><p>Run coding agents inside CI and review gates. Specs and evals define the contract; humans approve at the gates before changes move forward.</p></div>
+  </div>
+</div></section>
+
+<section id="foundation"><div class="wrap">
+  <h2>A platform that understands your business</h2>
+  <p class="lead">An ontology makes your business concepts, relationships and rules explicit. Quipu gives agents that shared foundation: knowledge graphs and memory with sources, history and governed writes.</p>
+  <div class="grid">
+    <div class="card"><div class="k">Shared context</div><h3>One business vocabulary</h3><p>Connect systems, code, decisions and work through the concepts your team uses, so agents can act with context across workflows.</p></div>
+    <div class="card"><div class="k">Provenance</div><h3>Keep the evidence</h3><p>Trace facts to their sources and ask what was known at a point in time. Review the record behind an agent's recommendation.</p></div>
+    <div class="card"><div class="k">Governance</div><h3>Make the gates explicit</h3><p>Define the rules for agent-written knowledge, evaluate software against its specification, and retain human approval for consequential changes.</p></div>
   </div>
 </div></section>
 
@@ -173,8 +183,8 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
 </div></section>
 
 <section id="any"><div class="wrap">
-  <h2>Your stack, not just ours</h2>
-  <p class="lead">Quipu is our reference implementation, not a requirement. Most teams already run a graph, a cloud and an agent framework. We work inside what you have.</p>
+  <h2>Build from the stack you have</h2>
+  <p class="lead">Keep the tools and workflows that serve your team. We connect your cloud, repositories and agent frameworks, then build the shared business context and controls needed for the next stage.</p>
   <div class="grid">
     <div class="card"><div class="k">Ontology</div><h3>Knowledge graph and ontology design</h3><p>Domain models in RDF, OWL and SHACL, SPARQL query design, and the rules that keep agent-written data consistent.</p></div>
     <div class="card"><div class="k">Retrieval</div><h3>Graph RAG and agent memory</h3><p>Graph plus vector retrieval, entity resolution and provenance, so agents answer from sourced facts instead of guesses.</p></div>
@@ -185,13 +195,13 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
 
 <section id="work"><div class="wrap">
   <h2>Work with us</h2>
-  <p class="lead">Intigraph designs, builds and runs agent platforms, on this stack or the one you already run. Engagements are fixed-scope, and you own the code.</p>
+  <p class="lead">Tell us where your team is today and what you want to deliver. We build the next useful capability with you, from an assistant workflow to an agentic software factory. You own the code.</p>
   <div class="steps">
-    <div class="card"><div class="k">1–2 days</div><h3>Agent platform assessment</h3><p>How your teams use coding agents today across repos, CI, review and cost. A written roadmap and a live demo on your own code.</p></div>
-    <div class="card"><div class="k">1 week</div><h3>Pilot build</h3><p>One working agent workflow on one repo, with memory, rules and review gates, handed over with docs.</p></div>
-    <div class="card"><div class="k">1–3 months</div><h3>Embedded engineer</h3><p>Part of each week inside your team, building and running the platform, then handing it off.</p></div>
+    <div class="card"><div class="k">Understand</div><h3>Choose the next step</h3><p>Review your workflows, constraints and existing AI tools. Agree on a concrete outcome and the evidence that will show it works.</p></div>
+    <div class="card"><div class="k">Build</div><h3>Deliver a working capability</h3><p>Implement it in your environment, with specs, evals and human approval gates matched to the work.</p></div>
+    <div class="card"><div class="k">Grow</div><h3>Connect the platform</h3><p>Carry proven workflows forward. Build shared knowledge and governance as more agents take on production work.</p></div>
   </div>
-  <p style="margin-top:28px"><a class="btn primary" href="mailto:steve@intigraph.ai?subject=Agent%20platform">steve@intigraph.ai</a></p>
+  <p style="margin-top:28px"><a class="btn primary" href="mailto:steve@intigraph.ai?subject=Software%20factory">steve@intigraph.ai</a></p>
 </div></section>
 
 <section><div class="wrap">
@@ -207,9 +217,9 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
 <section id="about"><div class="wrap about">
   <div>
     <h2>About</h2>
-    <p class="lead">Intigraph is Steve Brown. He builds agent platforms for engineering teams.</p>
+    <p class="lead">Intigraph is Steve Brown. He helps engineering teams build toward agentic software factories.</p>
     <p>Steve has 20+ years in production systems, including 15 at Amazon and AWS, where he drove generative AI adoption in Amazon Security and AWS Applied AI Solutions. At Sema4.ai he was the AI Staff Engineer for the agent platform.</p>
-    <p>He wrote the Quipu paper on governed knowledge for AI agents, and he runs his own crew of coding agents on the stack every day. Most of what Intigraph sells, he learned by breaking it first.</p>
+    <p>He wrote the Quipu paper on governed knowledge for AI agents, and he runs his own crew of coding agents on the stack every day. His work connects production engineering, governed knowledge and practical agent workflows.</p>
     <p class="links"><a href="https://www.linkedin.com/in/scbrown3">LinkedIn</a> · <a href="https://github.com/scbrown">GitHub</a> · <a href="https://orcid.org/0009-0009-1720-1785">ORCID</a> · <a href="mailto:steve@intigraph.ai">steve@intigraph.ai</a></p>
   </div>
 </div></section>
