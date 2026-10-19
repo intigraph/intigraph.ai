@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
     const page = await context.newPage();
     const errors = []; page.on('pageerror', error => errors.push(error.message));
     await page.goto(`http://127.0.0.1:${server.address().port}/`);
-    await page.click('#play-go');
+    assert.equal(await page.locator('#play-go').count(), 0, 'playground must open without a launch screen');
     const iframe = page.locator('#play iframe');
     const child = await (await iframe.elementHandle()).contentFrame();
     await child.waitForSelector('#control');
