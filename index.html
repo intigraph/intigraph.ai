@@ -152,28 +152,20 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
 
 <section id="yourself"><div class="wrap">
   <h2>No FDEs needed. Try it yourself.</h2>
-  <p class="lead">Explore the core stack with your own team. In our October 7 clean-room test, a fresh Linux machine had the core Quipu stack installed and verified in under 5 minutes.</p>
+  <p class="lead">Explore the core stack with your own team. Get the Intigraph agent platform with a centralized knowledge graph running on your own machine. In a measured Linux test, installation and verification took under 5 minutes.</p>
   <p>Tambo guides installation from a reviewable plan and checks that the tools work. Start with the prerequisites and install steps, then explore the playground below.</p>
   <div class="cta">
     <a class="btn primary" href="https://github.com/scbrown/tambo#install">Install with Tambo</a>
     <a class="btn" href="#try">Try the playground</a>
   </div>
-  <p class="install-note">One Ubuntu 24.04 test on October 7, 2026: 4 minutes 56 seconds for Quipu, Camayoc and Bobbin. Machine preparation, credential setup and the separate MCP check were outside that timing. Current installs have their own server and issued-token prerequisites; see the Tambo guide.</p>
+  <p class="install-note">One historical Ubuntu 24.04 Linux test: 4 minutes 56 seconds to install and verify Quipu, Camayoc and Bobbin. Machine preparation, credential setup and the separate MCP check were outside that timing. Current installs have their own server and issued-token prerequisites; see the Tambo guide.</p>
 </div></section>
 
 <section id="try"><div class="wrap">
   <h2>Try it in your browser</h2>
   <p class="lead">A real Quipu store, compiled to WebAssembly and loaded with Quipu's own repository: code, docs and decisions. Ask it questions, walk the graph, and try a write that breaks a rule. Nothing leaves your tab.</p>
   <div class="play" id="play">
-    <div class="play-cover">
-      <img src="icon.svg" alt="">
-      <div>
-        <b>Quipu playground</b>
-        <span>Downloads the engine and a verified pack, about 6&nbsp;MB, the first time.</span>
-      </div>
-      <button class="btn primary" id="play-go" type="button">Launch the playground</button>
-      <a class="btn" href="https://scbrown.github.io/quipu/explore/">Open full screen</a>
-    </div>
+    <iframe src="https://scbrown.github.io/quipu/explore/?embed=1&amp;theme=intigraph" title="Intigraph agent platform playground" loading="eager" allow="clipboard-write"></iframe>
   </div>
 </div></section>
 
@@ -243,15 +235,8 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
   </footer>
 </div>
 <script>
-document.getElementById('play-go').addEventListener('click', function () {
-  var box = document.getElementById('play');
-  var f = document.createElement('iframe');
-  f.src = 'https://scbrown.github.io/quipu/explore/?embed=1&theme=intigraph';
-  f.title = 'Quipu playground';
-  f.loading = 'eager';
-  f.allow = 'clipboard-write';
-  box.innerHTML = '';
-  box.appendChild(f);
+(function () {
+  var f = document.querySelector('#play iframe');
   window.addEventListener('message', function (event) {
     if (event.origin !== 'https://scbrown.github.io'
         || event.source !== f.contentWindow
@@ -261,7 +246,7 @@ document.getElementById('play-go').addEventListener('click', function () {
       f.style.height = height + 'px';
     }
   });
-});
+})();
 </script>
 </body>
 </html>
