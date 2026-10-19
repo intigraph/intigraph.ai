@@ -4,7 +4,7 @@ The Intigraph website: one static page served by GitHub Pages at https://intigra
 
 - `index.html` — the page (no build step)
 - `logo.svg`, `icon.svg` — the Intigraph mark
-- `steve.jpg`, `steve.webp` — About photo
+- `steve.jpg`, `steve.webp` — retained portrait assets (not displayed on the page)
 - `CNAME` — custom domain for GitHub Pages
 
 The "Try it" section embeds https://scbrown.github.io/quipu/explore/?embed=1&theme=intigraph.
