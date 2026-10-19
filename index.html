@@ -73,6 +73,7 @@ ul.proof b{color:var(--fg)}
 .play-cover b{display:block;font-size:18px}
 .play-cover span{color:var(--muted);font-size:14px}
 .play iframe{display:block;width:100%;height:min(82vh,860px);border:0;background:var(--bg)}
+.install-note{max-width:720px;color:var(--muted);font-size:14px}
 .about p{color:var(--muted);max-width:640px}
 .about p.lead{color:var(--fg)}
 .about .links a{white-space:nowrap}
@@ -147,6 +148,17 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
   <p class="lead">The same store and the same rules from Claude Code, the command line, an HTTP server, inside your app, fully offline, or in a browser tab. Knowledge moves between stores as plain files you can review in git, and nothing lands in your graph until someone promotes it.</p>
   <figure class="diagram"><img src="run-anywhere.svg" width="960" height="540" alt="Quipu runs anywhere: one store, six ways in. Claude Code and any MCP client through quipu mcp; the quipu command line; quipu-server over HTTP with REST, MCP and a web UI; the quipu-ai Rust library; offline as a single SQLite file; and in the browser through WebAssembly." loading="lazy"></figure>
   <figure class="diagram"><img src="sharing-flow.svg" width="960" height="470" alt="Sharing between Quipu stores: quipu share writes a git-diffable bundle with stable hashes; quipu import verifies it and checks shapes into quarantine; quipu import promote is an explicit step into your graph; diverged copies merge three ways by your shapes, and a conflict exits instead of guessing." loading="lazy"></figure>
+</div></section>
+
+<section id="yourself"><div class="wrap">
+  <h2>No FDEs needed. Try it yourself.</h2>
+  <p class="lead">Explore the core stack with your own team. In our October 7 clean-room test, a fresh Linux machine had the core Quipu stack installed and verified in under 5 minutes.</p>
+  <p>Tambo guides installation from a reviewable plan and checks that the tools work. Start with the prerequisites and install steps, then explore the playground below.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/scbrown/tambo#install">Install with Tambo</a>
+    <a class="btn" href="#try">Try the playground</a>
+  </div>
+  <p class="install-note">One Ubuntu 24.04 test on October 7, 2026: 4 minutes 56 seconds for Quipu, Camayoc and Bobbin. Machine preparation, credential setup and the separate MCP check were outside that timing. Current installs have their own server and issued-token prerequisites; see the Tambo guide.</p>
 </div></section>
 
 <section id="try"><div class="wrap">
