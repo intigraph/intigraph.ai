@@ -4,6 +4,9 @@ const path = require('node:path');
 const http = require('node:http');
 const assert = require('node:assert/strict');
 const root = path.resolve(process.env.SITE_DIR || path.join(__dirname, '..'));
+const { execFileSync } = require('node:child_process');
+execFileSync('python3', [path.join(__dirname, 'test-stack-section.py')], { stdio: 'inherit' });
+const stackRows = JSON.parse(execFileSync('python3', [path.join(__dirname, 'stack-section.py'), '--root', root, '--json'], { encoding: 'utf8' }));
 const origin = 'https://scbrown.github.io';
 const fixture = '<!doctype html><title>Controlled playground frame</title><p id="control">Ready: cross-origin resize fixture, not the Quipu engine</p><script>window.emit = data => { document.querySelector("#control").textContent = "Sent " + JSON.stringify(data); parent.postMessage(data, "*"); };</script>';
 const server = http.createServer((req, res) => {
@@ -41,6 +44,23 @@ const server = http.createServer((req, res) => {
     await page.evaluate(() => window.dispatchEvent(new MessageEvent('message', { origin: 'https://scbrown.github.io', source: window, data: { type: 'quipu:resize', height: 990 } })));
     await page.waitForTimeout(60); assert.equal(await height(), shrunk, 'wrong source changed iframe');
     results.rejectsInvalidMessages = true;
+    for (const [width, viewportHeight] of [[1280, 900], [390, 860]]) {
+      await page.setViewportSize({ width, height: viewportHeight });
+      const cards = page.locator('#stack .stack > div');
+      assert.equal(await cards.count(), stackRows.length, 'component omitted from rendered stack');
+      for (let index = 0; index < stackRows.length; index++) {
+        const [name, href, description] = stackRows[index];
+        const card = cards.nth(index);
+        await card.scrollIntoViewIfNeeded();
+        assert(await card.isVisible(), name + ' hidden');
+        assert.equal(await card.getAttribute('data-stack-component'), name);
+        assert.equal(await card.locator('b a').innerText(), name);
+        assert.equal(await card.locator('b a').getAttribute('href'), href);
+        assert.equal(await card.locator('span').innerText(), description);
+      }
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'stack overflows viewport');
+    }
+    results.canonicalStack = { components: stackRows.length, desktopAndMobile: true, exactLinksAndDescriptions: true };
     await page.setViewportSize({ width: 390, height: 860 });
     results.mobileFits = await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth);
     results.errors = errors;
