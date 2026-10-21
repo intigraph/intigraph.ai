@@ -1,0 +1,101 @@
+[
+  {
+    "path": "camayoc/code-entities/ns",
+    "triples": 259,
+    "terms": 23,
+    "sha256": {
+      ".ttl": "225a0aee80ac80a3cb9c11af9a196e7257dfed2404244e35b3b3dc146858ec61",
+      ".jsonld": "3c7605ef597dd816d4ecb28efb8483c3196c8c04c014e0a4b7bae3cb0fb5870f"
+    }
+  },
+  {
+    "path": "camayoc/core/ns",
+    "triples": 1972,
+    "terms": 341,
+    "sha256": {
+      ".ttl": "fd1259cec040608c7275f5afa8d4db2ef52642a44f3c2868ab94a7dd85b7fbbc",
+      ".jsonld": "d9a5c517ed57798dc53ee8e35e245f928cfeaee6d68613050e158597c1cbb5f2"
+    }
+  },
+  {
+    "path": "camayoc/delivery/ns",
+    "triples": 147,
+    "terms": 11,
+    "sha256": {
+      ".ttl": "bfea169f175ca99ff0bfd146b2d363bfbd8606f4128b7b19927a92b4967bf461",
+      ".jsonld": "cba6ce17e74eec638d175b40bae8d2fde4e3d6d483ae4238278133641d62f1bb"
+    }
+  },
+  {
+    "path": "camayoc/homelab-infra/ns",
+    "triples": 509,
+    "terms": 82,
+    "sha256": {
+      ".ttl": "4960fddca3976417b9961c27f77e0aa6b2d6760869db2239c6c1f64f27611580",
+      ".jsonld": "64c6ab01f06d7da73e3789b96163380033ca79d2724788445943401b35cb26c2"
+    }
+  },
+  {
+    "path": "camayoc/personal-media/ns",
+    "triples": 77,
+    "terms": 15,
+    "sha256": {
+      ".ttl": "839a164a7b3d4f66cdd4fb66f15b250c6eaaa426f6209fc1d4516ee06cdffded",
+      ".jsonld": "c10a6d35986f6de30aac94711c40d19f44fdc80dfe55054136bd2954f3b44b2e"
+    }
+  },
+  {
+    "path": "camayoc/session-transcript/ns",
+    "triples": 54,
+    "terms": 8,
+    "sha256": {
+      ".ttl": "7f4b9e79bf4d86e864e90ce15b40d230fafc349ae102ef375165576cc0c32b4d",
+      ".jsonld": "f50ae4ac62c105135967f3e3a761f7023c900cbaa531419628780d35bed2dd72"
+    }
+  },
+  {
+    "path": "camayoc/software-factory/ns",
+    "triples": 662,
+    "terms": 104,
+    "sha256": {
+      ".ttl": "5eaff9852996cedf316c178d68147f098e35bc039369f095ca6ef2406286b8b9",
+      ".jsonld": "efe548bf9ec8ad5e1c420272d82b8b85d1c6e7a94a0f9d5660402533d3f7deeb"
+    }
+  },
+  {
+    "path": "camayoc/usage-breakdown/ns",
+    "triples": 38,
+    "terms": 8,
+    "sha256": {
+      ".ttl": "62b4864663712b7d23dcdc396c08b204da80ffb32261f5358a6ab85f8cde5dba",
+      ".jsonld": "1650eb8747309eae53f6c4d3364aee070ea3c69fd54712aae312d1dd34a608c3"
+    }
+  },
+  {
+    "path": "quechua/ns",
+    "triples": 1869,
+    "terms": 451,
+    "sha256": {
+      ".ttl": "eed23be23fdc2ecd8a7619b34f08cfd793622a4b1abdf8773a905310a5e3e894",
+      ".jsonld": "53b16a7a73a489953035301d4e45a0901026d46e632eaf6064213b5dac417208"
+    }
+  },
+  {
+    "path": "quipu/ns",
+    "triples": 1971,
+    "terms": 186,
+    "sha256": {
+      ".ttl": "d699ecfb3a5fa1978c5a38e1e10c3b2c79eacad64ea3f4d83f2bf7de7d97b2eb",
+      ".jsonld": "71bc710deca372a0e982afbde6588c583dcb504a61ecbef90be477b4b1a91ecb"
+    }
+  },
+  {
+    "path": "seeds/ns",
+    "triples": 429,
+    "terms": 25,
+    "sha256": {
+      ".ttl": "6dd0cf1b0d7e63bf88d6d3a4f958fbc4f2e3db45b83d3bd03663023d04ba89c5",
+      ".jsonld": "e756daee0ca0daeca75c88763688e2b274d32e912274054241d773d2a03cfd27"
+    }
+  }
+]

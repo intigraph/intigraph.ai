@@ -7,6 +7,7 @@ const root = path.resolve(process.env.SITE_DIR || path.join(__dirname, '..'));
 const { execFileSync } = require('node:child_process');
 execFileSync('python3', [path.join(__dirname, 'test-stack-section.py')], { stdio: 'inherit' });
 const stackRows = JSON.parse(execFileSync('python3', [path.join(__dirname, 'stack-section.py'), '--root', root, '--json'], { encoding: 'utf8' }));
+require('./test-ids.cjs')(root);
 const origin = 'https://scbrown.github.io';
 const fixture = '<!doctype html><title>Controlled playground frame</title><p id="control">Ready: cross-origin resize fixture, not the Quipu engine</p><script>window.emit = data => { document.querySelector("#control").textContent = "Sent " + JSON.stringify(data); parent.postMessage(data, "*"); };</script>';
 const server = http.createServer((req, res) => {
@@ -19,6 +20,7 @@ const server = http.createServer((req, res) => {
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const browser = await chromium.launch({ headless: false, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) });
   try {
+    await require('./test-ids-browser.cjs')(browser, root);
     const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     await context.route('https://**/*', route => route.request().url().startsWith(origin + '/quipu/explore/')
       ? route.fulfill({ contentType: 'text/html', body: fixture }) : route.abort());

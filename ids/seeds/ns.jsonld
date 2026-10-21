@@ -1,0 +1,2541 @@
+[
+  {
+    "@id": "_:cb1013ce81fccc612f54cb8259651bc634f86e0deaab869c94109c3cec724be9cbb",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "blocked"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1c536e51c1729114c715bf30a4fdd6c7a9fb189bcff84c8ce51156138bbb904e0"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb11ca47235c688beaf61611cdb6e3f6f258b8dfb508e4cec5ad9d638ad9d790ff0",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "superseded"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb26ef321d5cbee2c32c7e9c9d16e9835aa5c0e6a655ef7377b63b6f2ae30ab4d05"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb11ee5d4c64b3f1b6929eec48c0bac4ca442ec16d9ac657a39f11bd785b35cb125",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb128fe2825ba72699b83539571dc9d03f1a9eacef30c41546f70cc36a793bacde9",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb2228dd35a09a4496090e5aa268d59759a2e73a8ebcd605fbeee9fe005aacb33d9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb22d7224cf5c7d88e4855fe6f6c0f57190110377c135de5f82512d1d8fa4da31f2"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb13a04e42367ccb0f6dd0da2513ce107bdcdd1575a60d332feb11ed5d86d0d4b15",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "hooked"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1b1ca4b1599e0efc16c3fe34a2df96c0ba6d0c3c7a5d23fb0a6646c3af6d60968"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb13c3ae045ea08701107d7a80e5e85987028f1d3cfa03d26ca93bed977630af29e",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb232eb3501e40f91035d12bcfd47b2d8f70568471bce641c54144278cd569dc65b"
+      },
+      {
+        "@id": "_:cbabf31eaa1c38399ab2ed11a68613ba0548612249439dd72791f8b19eef8d3c5c"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb154ef9798e42c70aa8e368fa65a4086b9bc0a799a0b697db8e525c0b32f4baa74",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1eb2e5b55dec89c64b848b9145ada2527240cd7c66b1e0d4d2f19b5a83573186f"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1582ca24f6a51a7ce7272e18d01050d1f3302545943153deb5c97d9f68fd9456f",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@value": "tombstone"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#status"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb16054ddeb8d91a8b1e6f4f6553c725b132d5b5e8a323e90369ac8565badd0a31f",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb164d7aeb98d56a01bf111c4a28a59c77307b0159f0763ab711792eebb739a0eee",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb13a04e42367ccb0f6dd0da2513ce107bdcdd1575a60d332feb11ed5d86d0d4b15"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb17bc5739b866a23248a725c71441e37c26a8dfda7a1adc1dfc48b54e264d4c49b",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specPreviousVersion"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1825a97c47484bf3c731f67effd40bad9bd84b1dcd41a37f291dc44220c5a5e83",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cbf6aff4190c96ddc036a8bcd471e504b4538e23c6ffd6c1e0d14b4fb870b9d5c2"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb2100a43be7df27a0621ea1f4c3ff52a11bcf0f19dcc281101cb5629db0d574463"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb18398c8b8a028120f3fc6fb2afa72546457cc9da7f2cfc4ad54b3e5acfef2c562",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartActor"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb18fc5d5d258f450964f3bf95d7c3d2beba7bf22767f9a00ba11720acf2253239f",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "https://schema.org/FailedActionStatus"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb197787886cd40a8d10abdbf9c7d0209153a5f217ee684e68c69e043e555384c0e",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specRequester"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb19847183e062de699834f92a52e267089a131266bdc905c8aa2db6e8ee72898b8",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/actionStatus"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb19df08f55a134667badeff5d2e28f239b4d3b564108fcd09868a76b69be03e802",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "failed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1a22d7db668394865024406ecd41e5401d43fe2eeb70498908058ee90397f6d74",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedSession"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1a24239644eab0f93882bdb699729d044225254093497a692d17ffa1392c0a1b1",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@value": "closed"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#status"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1aa83f6f125094d141deaf3c61c2aa909786baf3533a2d5c9699ef2027dcad85b",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb1b9772c397585177fe825491edda49039c0e25a1e34264dd1997c240743869ebd"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1aad205dd3fc0c2422b3dd641525634262d64164219ee1f10b83ddb5d55fab6a6",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "9"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2002/12/cal/ical#priority"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1adf05399426c4825b2cb63ed67996cf7179283bb72fc14481d551cf425d4b24f",
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a parent is an item IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/isPartOf"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b1c84c9e4210bb8dbdf2f5cf1a60d16297c8b607242088ae63d32e4bc242d08f",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartSession"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b1ca4b1599e0efc16c3fe34a2df96c0ba6d0c3c7a5d23fb0a6646c3af6d60968",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "in_progress"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1013ce81fccc612f54cb8259651bc634f86e0deaab869c94109c3cec724be9cbb"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b5dccb8e5c9b947e0b8438fc3a228d95b08df1f8cc37468cd934952402e043e0",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@value": "done"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quechua/ns#outcome"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b6ed6ffaa23eedd62342f654afdbc2d78e842d8eb728e14cdd6b2b8f014093eb",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cbc7fae3981df0aee30a1adb298212853b2ad177238df44b74e0f62f1c4c3dadb1"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cbcb826362edf8ed721f5ce78adbf1e57244b75f551bd038aa58c160a0e7d555d1"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b9772c397585177fe825491edda49039c0e25a1e34264dd1997c240743869ebd",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1582ca24f6a51a7ce7272e18d01050d1f3302545943153deb5c97d9f68fd9456f"
+      },
+      {
+        "@id": "_:cb19847183e062de699834f92a52e267089a131266bdc905c8aa2db6e8ee72898b8"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1c536e51c1729114c715bf30a4fdd6c7a9fb189bcff84c8ce51156138bbb904e0",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "deferred"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1d5aa109f2d0cff35f37c8f9f169e8f8c98a96b312a2e9eec2872bccd2b7fc155"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1c72b15e211021e0a4745c7e742920d93fff142a21dddae2dd34cb0b5f6c160dd",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "COMPLETED"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1fbb8314f6c6841eda186a396e230bfff0737afa90b0e61c4e016a682e03327c7"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1c8ae83ec5527934003a72dc7354185983ba43484cd7e869fc9d5cdc7a2fcd53d",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartAt"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1ccf5a4f32625eec3844d4c6548e75a9babdbe161740dec80044bba2b2a173df5",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specSummary"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1d5aa109f2d0cff35f37c8f9f169e8f8c98a96b312a2e9eec2872bccd2b7fc155",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "closed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb21b9213710de820d05dc0d67e4b4c0b3b057f0584c8c346c7aeb0ec4356d277a9"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1dcaf24d60f3a2a656a79381772e8e43e79f6f3e6278ac4be6ed00d9583525086",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "superseded"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb19df08f55a134667badeff5d2e28f239b4d3b564108fcd09868a76b69be03e802"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1e6368cf1f88a227ec6b32c68e7433bbe12cef5455cc29355b04612fb632af14c",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#duration"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: timeRequired is at most one xsd:duration"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/timeRequired"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1e7f067c65e35814e0dc914b8ac66e113eae3cc4b55a230e8878c6f1e88640880",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "abandoned"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb11ca47235c688beaf61611cdb6e3f6f258b8dfb508e4cec5ad9d638ad9d790ff0"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1eb2e5b55dec89c64b848b9145ada2527240cd7c66b1e0d4d2f19b5a83573186f",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "hooked"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1f4ad2e01e1927b13460ce1150b605f1cdfa2cf54b2098d669ded434058a67915"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1f250aedae3a6e74a8aaf6163fec293860080109d6a67644509bd41cefb8c21e7",
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a discovered-from seed is an item IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasDerivedFrom"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1f4ad2e01e1927b13460ce1150b605f1cdfa2cf54b2098d669ded434058a67915",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "blocked"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb28b25281885c6bf708cc959571ed854ce40efc75064e076f07d9e1c181d8d053b"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1f5e23c7c1e539802699ca736e32c21c4a1797eb60f19d649af403db750a20613",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://schema.org/Action"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#exactMatch"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1fbb8314f6c6841eda186a396e230bfff0737afa90b0e61c4e016a682e03327c7",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "CANCELLED"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1fd0635be0f05c8645471cc81a7fb359ed3040439a7e44ad6bbe40f40123eb3d8",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb154ef9798e42c70aa8e368fa65a4086b9bc0a799a0b697db8e525c0b32f4baa74"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#status"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2082dcf5b8e71a2214372da6e042aad59c30d5150ad4374e0e96c1076566b18bf",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@value": "closed"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#status"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb20d58241b5d66232d5526f06bd1b01ce1f8c9bc5cb48f107a54f28f1dd0a38df1",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has at most one close reason"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/result"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb20d80a23527ad0bf6476f1bb92d3508eb1dc595e5a78da004ef5f6fd40d23ee0b",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: due is at most one xsd:date or xsd:dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:cb1825a97c47484bf3c731f67effd40bad9bd84b1dcd41a37f291dc44220c5a5e83"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2002/12/cal/ical#due"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2100a43be7df27a0621ea1f4c3ff52a11bcf0f19dcc281101cb5629db0d574463",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb16054ddeb8d91a8b1e6f4f6553c725b132d5b5e8a323e90369ac8565badd0a31f"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb214dff9397dcacb7ac4d711736af4e1239ed3a4d07530b4b900468602a17697d6",
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a related seed is an item IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://purl.org/dc/terms/relation"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21598a8971e44c970f8af8fe9fc9c4c827b317c79a1a85ceb3d45c29a53351e46",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://schema.org/CompletedActionStatus"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/actionStatus"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2176d95e9ddacbf040979cc9ee0f09d2385969ff1c99edbdc64e920128c2a5d0b",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#rank"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^-?[0-9]+(\\.[0-9]{1,9})?$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb219335be5d96da6c87080b5c4ab3887634c3a1059afb7af41885ea929cf361979",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specVersion"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21ae3ad8ac40443ad7d18e81880edefb01914c851b8df55c26b275adbc582154e",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckAt"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21b83d17a8e057b6ae2fd6699088af157dfeca7f4410745ff1445417b5b1e3fd1",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "IN-PROCESS"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1c72b15e211021e0a4745c7e742920d93fff142a21dddae2dd34cb0b5f6c160dd"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21b9213710de820d05dc0d67e4b4c0b3b057f0584c8c346c7aeb0ec4356d277a9",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "tombstone"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21dc19a55cce0ea5d2c18563a75768affb003faedebcb01343cad737d4a03fef6",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://schema.org/PotentialActionStatus"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/actionStatus"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21eb392e249141943abc6c23e75289a1379da44439094dfed4d535509eb5b06ce",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "https://schema.org/PotentialActionStatus"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb2726ae32715b849be6c418b1d3cd1ebe595d77ba1850d514ad03c9f61b434a36c"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22246bbe6177dd99812063bae6508e2ea3af1ddf29cae18fb7c9a20935f7915c3",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckActor"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2228dd35a09a4496090e5aa268d59759a2e73a8ebcd605fbeee9fe005aacb33d9",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1a24239644eab0f93882bdb699729d044225254093497a692d17ffa1392c0a1b1"
+      },
+      {
+        "@id": "_:cb1b5dccb8e5c9b947e0b8438fc3a228d95b08df1f8cc37468cd934952402e043e0"
+      },
+      {
+        "@id": "_:cb21598a8971e44c970f8af8fe9fc9c4c827b317c79a1a85ceb3d45c29a53351e46"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2239402dad0696538c1e4bc4b3e06a501c50f52fa0d9986b9d5095ec49e5b8e6f",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "inferred"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb225fc78ef6844f779d2d10ec254a89de2a2bce5c88d75975d33edaeeba8b5ff7a",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has at most one description"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/description"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb228d5e6297dcb3fb80a3bb99be90134491761005bb406735319e5bacedfd2f5a0",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "observed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb71486852b4c742af0a7e942067c07ed47bfbcaa03dba78ea6ddddb34b4a76ebd"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22966ab7ac2886fb302169a455788397f6669193af697081d4d89eeaca9b6327a",
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: an assignee is a principal IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/agent"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22a85a6b813518f60bc6e354b083747f4756474d5a890b36cc9a6af2a88726afe",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has exactly one dateCreated, an xsd:dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/dateCreated"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22d7224cf5c7d88e4855fe6f6c0f57190110377c135de5f82512d1d8fa4da31f2",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb39aff95eaa2150c15f84cfb0108ae44b905e6c37cf5e22169015455e10c05db04"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1aa83f6f125094d141deaf3c61c2aa909786baf3533a2d5c9699ef2027dcad85b"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22e2bfdc395f33fcfac6152a440fafbd03d84e6a3570d0959eed42bc7a305992f",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22e640950fa825e58637501303e6f97539e9a99c106058ee06373f3d0a2516693",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb27b44a39b85f064f85013bd9a2a789afb93f07d268ea15a7eb6b5cd0274f85027"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quechua/ns#outcome"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22ead77c0887acf82187978756d35687f35872e1594e1fe4bd1a75e1c425aa672",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckSession"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb232eb3501e40f91035d12bcfd47b2d8f70568471bce641c54144278cd569dc65b",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://schema.org/ActiveActionStatus"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/actionStatus"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2371282420d9c8e199ad48440d3cb43abff5460c377555028aaedb5c0a315f46f",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: endTime is at most one xsd:dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/endTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb23abec7b2f02f267ff4482d3461d00dc4eea726cd9f369f32e2de0ef20346abef",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb23b03a9688c160ebbb2c1ed0882d3c2008cc79d7e6312b9fe3d1b7ca0ac2533c8",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed is driven by at most one workflow run, named by its IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#workflowRun"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb24158dcbf53e22417abd28acc62d6186f3e9fab7068c4487af90ef1e904d96eaa",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckVersion"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb24525124ad876ff60c773d15ea804d2a22a2dfff848f37647301ece2cbb6cb413",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedAt"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb24a3470eafb2ca2c916e033076e5075e72fcb5b125c643c257357df81da1aca02",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a comment's dateCreated is at most one xsd:dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/dateCreated"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb24aab699eec4a4385e285f7343973ad3e5d6b3aece85ada4e0f25a47dde8e6574",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2002/12/cal/ical#summary"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb24bb790403560bcaa079b6594c828b79e00718e4bba01d0ff6f5c6061a03dadbc",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "done"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1e7f067c65e35814e0dc914b8ac66e113eae3cc4b55a230e8878c6f1e88640880"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb24d577fd9862f442203e8f65a322bd0da131930fc5b7adf1c4be13a36b95e4388",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: scheduledTime (defer) is at most one xsd:date or xsd:dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:cb2a72dd4b3ebcad6ab2bfff99f4af10fb6259bc8234e7399473c84d0ba484b5c0b"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/scheduledTime"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb25028e4f4800213bcdc55d1d28afa58a2568dc40e6fa855646550dbc960828121",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@id": "https://schema.org/FailedActionStatus"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/actionStatus"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2574e02cdda28c878e8a2aa2b2e2b78b1532533044b58fec56cd26a81e39c553c",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "4"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: priority is exactly one integer from 0 to 4"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#priority"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb26846a130f5da5b22160309d6bac9730dbc9771775cd68ca67649eabe2ada8644",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb22e2bfdc395f33fcfac6152a440fafbd03d84e6a3570d0959eed42bc7a305992f"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb26a18cee8ebf03f6b0b68a511b6195218d8c37b5e875b5c63b9be40fb1025be54",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "NEEDS-ACTION"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb21b83d17a8e057b6ae2fd6699088af157dfeca7f4410745ff1445417b5b1e3fd1"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb26ae9b0e3d7ea25eb6ad48b7bf71c464b67280a800769734d13b4434896872edb",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb24bb790403560bcaa079b6594c828b79e00718e4bba01d0ff6f5c6061a03dadbc"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "governance: outcome, when set, is one of done|abandoned|superseded|failed"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quechua/ns#outcome"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb26ef321d5cbee2c32c7e9c9d16e9835aa5c0e6a655ef7377b63b6f2ae30ab4d05",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "failed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb26f8b678c6efb95c5fe174ed4d795e8dd140848361d6277987259429b419efe50",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specNotificationReceipt"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb27027345aa1dbde30b1698a4b0c8feed3f3ae9624638a5f87dc71f58c76241844",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: dateModified is at most one xsd:dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/dateModified"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2726ae32715b849be6c418b1d3cd1ebe595d77ba1850d514ad03c9f61b434a36c",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "https://schema.org/ActiveActionStatus"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb92fcae3c7c085755478b8c8b2fcd42dcc180894df9304fffaf6ab445f15f7392"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb27a86814c522a17a26fdaa669e5f8e0ea64d6ff0bbb4deef867a07412927771d4",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has at most one creator, a principal IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/creator"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb27adfb22153680b59246596f283ee46fe13032b69f0e1a5cd874d01946a7398fe",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartVersion"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb27b44a39b85f064f85013bd9a2a789afb93f07d268ea15a7eb6b5cd0274f85027",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "abandoned"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1dcaf24d60f3a2a656a79381772e8e43e79f6f3e6278ac4be6ed00d9583525086"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb289269e5b9e4cab0948c104afcbaf854da3872ec921da45add8933df97104c641",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://schema.org/Action"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a comment belongs to exactly one seed the graph holds"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/parentItem"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb28b25281885c6bf708cc959571ed854ce40efc75064e076f07d9e1c181d8d053b",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "deferred"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb28b60d4429f5df6124b017831123160e41c6112b2653bcc9d0d3e0e189ac4322c",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed carries exactly one schema:version, the compare-and-set token"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/version"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2900b2c4b8324bb715171357a60168785c820e83d2f2d3147792857db2dd5d7da",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a label is a string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/keywords"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb293deb353c8c6848f45be4ec4e93d660f6a1c1fb9d6ee801bfa66a9fe5899e4d8",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specUrgent"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb29646fe318a2e07498428d63686db29a35e0a8ddf042e809815704cd4aba5c726",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://schema.org/Action"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "governance: blockedOn must point at an Action the graph actually holds"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quechua/ns#blockedOn"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb29dbc7ffcf29b6fd61bb31fff424da008790f744b00eee149c8d6b4c8d71c3386",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb26a18cee8ebf03f6b0b68a511b6195218d8c37b5e875b5c63b9be40fb1025be54"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2002/12/cal/ical#status"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2a4ae749d19f01bb74119169144311c19764a4cf5da286ee5a44a90cfc18796e5",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb21eb392e249141943abc6c23e75289a1379da44439094dfed4d535509eb5b06ce"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: actionStatus, when set, is one of the four schema.org ActionStatusType values"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/actionStatus"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2a72dd4b3ebcad6ab2bfff99f4af10fb6259bc8234e7399473c84d0ba484b5c0b",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb11ee5d4c64b3f1b6929eec48c0bac4ca442ec16d9ac657a39f11bd785b35cb125"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb26846a130f5da5b22160309d6bac9730dbc9771775cd68ca67649eabe2ada8644"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2c4632f5ee8fd278f2939d065c497bf563e338037f417d0a0f296d949f4d3c471",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#equals": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has exactly one schema:name, equal to its rdfs:label"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/name"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2d7b6f60b0680590cecee61b53de768da74a09cc5ed0ae9d01c9d29ba4d430c3e",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2002/12/cal/ical#uid"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2e69df55e47d7a71cd25b43336a02876e90e34f22b979cf475e7d38ec5256ae6e",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a comment has exactly one position, an integer from 1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/position"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2f1ac3de8cd064e8caed24776049c46a2f58b23df3443a84c46e3e7a0eac3dd41",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has exactly one identifier"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/identifier"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2f8d498df038762cbd3dea7615424ac9e8e5492224e3623c292c88bffa57e0375",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb228d5e6297dcb3fb80a3bb99be90134491761005bb406735319e5bacedfd2f5a0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "governance: every Action carries exactly one sourceKind of observed|declared|inferred"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quechua/ns#sourceKind"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb304df8d2218d61ca1d99092d63dbfd4ca9e143ea7b563ecb70d2f8bf3de6b7a23",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb164d7aeb98d56a01bf111c4a28a59c77307b0159f0763ab711792eebb739a0eee"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: status is exactly one of open|hooked|in_progress|blocked|deferred|closed|tombstone"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#status"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb3053c2b099fffb3f9b52c5d90ad5211631ab9a1e80b15f738b499b47ef4e30a14",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has at most one owner, a principal IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/accountablePerson"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb32371858a2aa13dff4b2e68c787bcd96fa258b1280fdb3897769bae6ea3ee7600",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a comment has exactly one author, a principal IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/author"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb336ccc081bd96c8b840055cedbfe8923c4f0506c23c6b137f082fa739da5a0551",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a comment has exactly one text"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://schema.org/text"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb3965d6b5aaf2ecc33b65ff86af72080a0a762c3457256564041a99d1ca48c831f",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has exactly one type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#issueType"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb39aff95eaa2150c15f84cfb0108ae44b905e6c37cf5e22169015455e10c05db04",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb2082dcf5b8e71a2214372da6e042aad59c30d5150ad4374e0e96c1076566b18bf"
+      },
+      {
+        "@id": "_:cb22e640950fa825e58637501303e6f97539e9a99c106058ee06373f3d0a2516693"
+      },
+      {
+        "@id": "_:cb25028e4f4800213bcdc55d1d28afa58a2568dc40e6fa855646550dbc960828121"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb3c0e9a71b63546a9f624eaf0d6abbe60eb64944c90d2305e65edf56cf78bc98e2",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: a seed has exactly one rdfs:label"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb71486852b4c742af0a7e942067c07ed47bfbcaa03dba78ea6ddddb34b4a76ebd",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "declared"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb2239402dad0696538c1e4bc4b3e06a501c50f52fa0d9986b9d5095ec49e5b8e6f"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb92fcae3c7c085755478b8c8b2fcd42dcc180894df9304fffaf6ab445f15f7392",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "https://schema.org/CompletedActionStatus"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb18fc5d5d258f450964f3bf95d7c3d2beba7bf22767f9a00ba11720acf2253239f"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbabf31eaa1c38399ab2ed11a68613ba0548612249439dd72791f8b19eef8d3c5c",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@value": "in_progress"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#status"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbc7fae3981df0aee30a1adb298212853b2ad177238df44b74e0f62f1c4c3dadb1",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1fd0635be0f05c8645471cc81a7fb359ed3040439a7e44ad6bbe40f40123eb3d8"
+      },
+      {
+        "@id": "_:cb21dc19a55cce0ea5d2c18563a75768affb003faedebcb01343cad737d4a03fef6"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbcb826362edf8ed721f5ce78adbf1e57244b75f551bd038aa58c160a0e7d555d1",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb13c3ae045ea08701107d7a80e5e85987028f1d3cfa03d26ca93bed977630af29e"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb128fe2825ba72699b83539571dc9d03f1a9eacef30c41546f70cc36a793bacde9"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbf6aff4190c96ddc036a8bcd471e504b4538e23c6ffd6c1e0d14b4fb870b9d5c2",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/CalendarAkaShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#CalendarAkaShape"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/CommentShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#CommentShape"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/SeedShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#SeedShape"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/issueType",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#issueType"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/priority",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#priority"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/rank",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#rank"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specAckActor",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckActor"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specAckAt",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckAt"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specAckSession",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckSession"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specAckVersion",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckVersion"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specChangedAt",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedAt"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specChangedBy",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedBy"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specChangedSession",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedSession"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specNotificationReceipt",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specNotificationReceipt"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specPreviousVersion",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specPreviousVersion"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specRequester",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specRequester"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specStartActor",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartActor"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specStartAt",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartAt"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specStartSession",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartSession"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specStartVersion",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartVersion"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specSummary",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specSummary"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specUrgent",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specUrgent"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/specVersion",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specVersion"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/status",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#status"
+      }
+    ]
+  },
+  {
+    "@id": "https://seeds.local/ontology/workflowRun",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#workflowRun"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/quechua/ns#ActionGovernanceShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb26ae9b0e3d7ea25eb6ad48b7bf71c464b67280a800769734d13b4434896872edb"
+      },
+      {
+        "@id": "_:cb29646fe318a2e07498428d63686db29a35e0a8ddf042e809815704cd4aba5c726"
+      },
+      {
+        "@id": "_:cb2f8d498df038762cbd3dea7615424ac9e8e5492224e3623c292c88bffa57e0375"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://schema.org/Action"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/seeds/ns#CalendarAkaShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1aad205dd3fc0c2422b3dd641525634262d64164219ee1f10b83ddb5d55fab6a6"
+      },
+      {
+        "@id": "_:cb1f5e23c7c1e539802699ca736e32c21c4a1797eb60f19d649af403db750a20613"
+      },
+      {
+        "@id": "_:cb24aab699eec4a4385e285f7343973ad3e5d6b3aece85ada4e0f25a47dde8e6574"
+      },
+      {
+        "@id": "_:cb29dbc7ffcf29b6fd61bb31fff424da008790f744b00eee149c8d6b4c8d71c3386"
+      },
+      {
+        "@id": "_:cb2d7b6f60b0680590cecee61b53de768da74a09cc5ed0ae9d01c9d29ba4d430c3e"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/seeds/ns#CommentShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb24a3470eafb2ca2c916e033076e5075e72fcb5b125c643c257357df81da1aca02"
+      },
+      {
+        "@id": "_:cb289269e5b9e4cab0948c104afcbaf854da3872ec921da45add8933df97104c641"
+      },
+      {
+        "@id": "_:cb2e69df55e47d7a71cd25b43336a02876e90e34f22b979cf475e7d38ec5256ae6e"
+      },
+      {
+        "@id": "_:cb32371858a2aa13dff4b2e68c787bcd96fa258b1280fdb3897769bae6ea3ee7600"
+      },
+      {
+        "@id": "_:cb336ccc081bd96c8b840055cedbfe8923c4f0506c23c6b137f082fa739da5a0551"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://schema.org/Comment"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/seeds/ns#SeedShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#message": [
+      {
+        "@value": "seeds: status, outcome and schema:actionStatus disagree"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb17bc5739b866a23248a725c71441e37c26a8dfda7a1adc1dfc48b54e264d4c49b"
+      },
+      {
+        "@id": "_:cb18398c8b8a028120f3fc6fb2afa72546457cc9da7f2cfc4ad54b3e5acfef2c562"
+      },
+      {
+        "@id": "_:cb197787886cd40a8d10abdbf9c7d0209153a5f217ee684e68c69e043e555384c0e"
+      },
+      {
+        "@id": "_:cb1a22d7db668394865024406ecd41e5401d43fe2eeb70498908058ee90397f6d74"
+      },
+      {
+        "@id": "_:cb1adf05399426c4825b2cb63ed67996cf7179283bb72fc14481d551cf425d4b24f"
+      },
+      {
+        "@id": "_:cb1b1c84c9e4210bb8dbdf2f5cf1a60d16297c8b607242088ae63d32e4bc242d08f"
+      },
+      {
+        "@id": "_:cb1c8ae83ec5527934003a72dc7354185983ba43484cd7e869fc9d5cdc7a2fcd53d"
+      },
+      {
+        "@id": "_:cb1ccf5a4f32625eec3844d4c6548e75a9babdbe161740dec80044bba2b2a173df5"
+      },
+      {
+        "@id": "_:cb1e6368cf1f88a227ec6b32c68e7433bbe12cef5455cc29355b04612fb632af14c"
+      },
+      {
+        "@id": "_:cb1f250aedae3a6e74a8aaf6163fec293860080109d6a67644509bd41cefb8c21e7"
+      },
+      {
+        "@id": "_:cb20d58241b5d66232d5526f06bd1b01ce1f8c9bc5cb48f107a54f28f1dd0a38df1"
+      },
+      {
+        "@id": "_:cb20d80a23527ad0bf6476f1bb92d3508eb1dc595e5a78da004ef5f6fd40d23ee0b"
+      },
+      {
+        "@id": "_:cb214dff9397dcacb7ac4d711736af4e1239ed3a4d07530b4b900468602a17697d6"
+      },
+      {
+        "@id": "_:cb2176d95e9ddacbf040979cc9ee0f09d2385969ff1c99edbdc64e920128c2a5d0b"
+      },
+      {
+        "@id": "_:cb219335be5d96da6c87080b5c4ab3887634c3a1059afb7af41885ea929cf361979"
+      },
+      {
+        "@id": "_:cb21ae3ad8ac40443ad7d18e81880edefb01914c851b8df55c26b275adbc582154e"
+      },
+      {
+        "@id": "_:cb22246bbe6177dd99812063bae6508e2ea3af1ddf29cae18fb7c9a20935f7915c3"
+      },
+      {
+        "@id": "_:cb225fc78ef6844f779d2d10ec254a89de2a2bce5c88d75975d33edaeeba8b5ff7a"
+      },
+      {
+        "@id": "_:cb22966ab7ac2886fb302169a455788397f6669193af697081d4d89eeaca9b6327a"
+      },
+      {
+        "@id": "_:cb22a85a6b813518f60bc6e354b083747f4756474d5a890b36cc9a6af2a88726afe"
+      },
+      {
+        "@id": "_:cb22ead77c0887acf82187978756d35687f35872e1594e1fe4bd1a75e1c425aa672"
+      },
+      {
+        "@id": "_:cb2371282420d9c8e199ad48440d3cb43abff5460c377555028aaedb5c0a315f46f"
+      },
+      {
+        "@id": "_:cb23abec7b2f02f267ff4482d3461d00dc4eea726cd9f369f32e2de0ef20346abef"
+      },
+      {
+        "@id": "_:cb23b03a9688c160ebbb2c1ed0882d3c2008cc79d7e6312b9fe3d1b7ca0ac2533c8"
+      },
+      {
+        "@id": "_:cb24158dcbf53e22417abd28acc62d6186f3e9fab7068c4487af90ef1e904d96eaa"
+      },
+      {
+        "@id": "_:cb24525124ad876ff60c773d15ea804d2a22a2dfff848f37647301ece2cbb6cb413"
+      },
+      {
+        "@id": "_:cb24d577fd9862f442203e8f65a322bd0da131930fc5b7adf1c4be13a36b95e4388"
+      },
+      {
+        "@id": "_:cb2574e02cdda28c878e8a2aa2b2e2b78b1532533044b58fec56cd26a81e39c553c"
+      },
+      {
+        "@id": "_:cb26f8b678c6efb95c5fe174ed4d795e8dd140848361d6277987259429b419efe50"
+      },
+      {
+        "@id": "_:cb27027345aa1dbde30b1698a4b0c8feed3f3ae9624638a5f87dc71f58c76241844"
+      },
+      {
+        "@id": "_:cb27a86814c522a17a26fdaa669e5f8e0ea64d6ff0bbb4deef867a07412927771d4"
+      },
+      {
+        "@id": "_:cb27adfb22153680b59246596f283ee46fe13032b69f0e1a5cd874d01946a7398fe"
+      },
+      {
+        "@id": "_:cb28b60d4429f5df6124b017831123160e41c6112b2653bcc9d0d3e0e189ac4322c"
+      },
+      {
+        "@id": "_:cb2900b2c4b8324bb715171357a60168785c820e83d2f2d3147792857db2dd5d7da"
+      },
+      {
+        "@id": "_:cb293deb353c8c6848f45be4ec4e93d660f6a1c1fb9d6ee801bfa66a9fe5899e4d8"
+      },
+      {
+        "@id": "_:cb2a4ae749d19f01bb74119169144311c19764a4cf5da286ee5a44a90cfc18796e5"
+      },
+      {
+        "@id": "_:cb2c4632f5ee8fd278f2939d065c497bf563e338037f417d0a0f296d949f4d3c471"
+      },
+      {
+        "@id": "_:cb2f1ac3de8cd064e8caed24776049c46a2f58b23df3443a84c46e3e7a0eac3dd41"
+      },
+      {
+        "@id": "_:cb304df8d2218d61ca1d99092d63dbfd4ca9e143ea7b563ecb70d2f8bf3de6b7a23"
+      },
+      {
+        "@id": "_:cb3053c2b099fffb3f9b52c5d90ad5211631ab9a1e80b15f738b499b47ef4e30a14"
+      },
+      {
+        "@id": "_:cb3965d6b5aaf2ecc33b65ff86af72080a0a762c3457256564041a99d1ca48c831f"
+      },
+      {
+        "@id": "_:cb3c0e9a71b63546a9f624eaf0d6abbe60eb64944c90d2305e65edf56cf78bc98e2"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://schema.org/Action"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#xone": [
+      {
+        "@id": "_:cb1b6ed6ffaa23eedd62342f654afdbc2d78e842d8eb728e14cdd6b2b8f014093eb"
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+# Public identifier documents
+
+`/ids/` is a static, pinned publication of eleven vocabulary namespaces. The
+catalogue, ownership ledger and source manifest ship beside the documents.
+Turtle and JSON-LD describe the same graph; HTML lists owned identities and
+links to their exact source provenance.
+
+Regenerate with `uv run --no-project scripts/build-ids.py --write`; omit
+`--write` to verify committed bytes. The generator validates every pinned
+source digest before writing and refuses missing namespaces, missing identities,
+unpinned inputs and non-bijective mappings. The normal playground CI target
+runs format equivalence, omission, corruption and resolver controls. No workflow
+permission or new publisher is required.
+
+The ledger freezes one destination for each full source IRI. Shared terms have
+one owner across packs. Four HTTP/HTTPS derivation-property pairs are distinct
+in the source; each gets a source-digest suffix rather than an unsupported
+identity merge. Public standards identifiers and replacement predicates remain
+unchanged. Old-to-new `owl:sameAs` statements represent only the declared
+one-to-one namespace aliases, not replacement targets or calendar identities.
+Existing literal text, including embedded queries, keeps its source spelling.
+This publication is not a runnable replacement for the original SHACL packs.
+No loaded shapes, graph data, rule execution or consumer defaults change.
+
+The fixed entity redirect accepts known `/ids/<namespace>/id/<identifier>`
+paths and opens the existing Quipu explorer with the full w3id IRI in `entity`.
+Encoded path separators, traversal, unknown namespaces and entity `.ttl` or
+`.jsonld` requests stay not-found. Entity RDF responses are not implemented.
+The source host serves static explicit-format resources; Accept negotiation
+belongs to the separately reviewed upstream w3id Apache redirect rules.
+An unpublished upstream rule is not claimed live by this site change.
+
+Roll back the site source by reverting this publication commit through the
+normal Pages path. That restores the previous site; it does not delete or
+reassign an established public identifier. Verify exact Pages completion and
+curl each catalogue HTML, Turtle and JSON-LD target before claiming availability.
+The upstream w3id proposal remains a separate authorized publication step.

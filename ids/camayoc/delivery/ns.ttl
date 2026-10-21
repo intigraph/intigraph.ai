@@ -1,0 +1,147 @@
+<http://aegis.gastown.local/ontology/DeploymentEvent> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> .
+<http://aegis.gastown.local/ontology/DeploymentEventShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> .
+<http://aegis.gastown.local/ontology/artifactId> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> .
+<http://aegis.gastown.local/ontology/attemptedArtifactId> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> .
+<http://aegis.gastown.local/ontology/cdeventsType> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> .
+<http://aegis.gastown.local/ontology/cloudEventId> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> .
+<http://aegis.gastown.local/ontology/cloudEventSource> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> .
+<http://aegis.gastown.local/ontology/deployedService> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> .
+<http://aegis.gastown.local/ontology/deploymentOutcome> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
+<http://aegis.gastown.local/ontology/environment> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#environment> .
+<http://aegis.gastown.local/ontology/occurredAt> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "One deployment outcome of a service on an environment, from a CDEvents service event. succeeded, rolledback or failed; never coerced from service.removed. On rollback, artifactId is what serves AFTER the rollback and attemptedArtifactId is what did not stick." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Deployment event" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#or> _:cb1419c512ce554acceeb0d51ec275c0280103b85fe4d29f167580b5d252b2e990a .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#or> _:cbf9fcc813e98add9378838e28083d7ccca5eaef2e7c62dc444b7f2712a2317435 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb2c3d2d2f205fe61838f1fa62d6bf9ae07cb5915c102dc1eee4ce5ab7d6a7de501 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#property> _:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> <http://www.w3.org/2000/01/rdf-schema#comment> "Package URL (purl) of the artifact serving after this outcome. Required for succeeded and rolledback; on failed, present only when independently observed." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> <http://www.w3.org/2000/01/rdf-schema#label> "artifact id" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> <http://www.w3.org/2000/01/rdf-schema#comment> "Package URL of the artifact a rolled-back or failed deployment attempted. Required for failed." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> <http://www.w3.org/2000/01/rdf-schema#label> "attempted artifact id" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> <http://www.w3.org/2000/01/rdf-schema#comment> "The versioned CDEvents type the record was mapped from." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> <http://www.w3.org/2000/01/rdf-schema#label> "CDEvents type" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> <http://www.w3.org/2000/01/rdf-schema#comment> "CloudEvents id attribute; unique within its source." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> <http://www.w3.org/2000/01/rdf-schema#label> "CloudEvent id" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> <http://www.w3.org/2000/01/rdf-schema#comment> "CloudEvents source attribute; with cloudEventId, the event's identity." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> <http://www.w3.org/2000/01/rdf-schema#label> "CloudEvent source" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> <http://www.w3.org/2000/01/rdf-schema#comment> "The service entity the deployment changed." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> <http://www.w3.org/2000/01/rdf-schema#label> "deployed service" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Closed set: succeeded, rolledback, failed. Change failure rate counts rolledback and failed." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "deployment outcome" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#environment> <http://www.w3.org/2000/01/rdf-schema#comment> "The environment the deployment targeted, as the producer names it." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#environment> <http://www.w3.org/2000/01/rdf-schema#label> "environment" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#environment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> <http://www.w3.org/2000/01/rdf-schema#comment> "RFC 3339 instant the outcome happened (the CloudEvent time), kept in the producer's exact lexical form. Calendar validity is enforced at ingest; the shape checks lexical form and field ranges." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> <http://www.w3.org/2000/01/rdf-schema#label> "occurred at" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb1028b65c2d64455ae0fac5b4ad95bd90b5db2f907707345c63e8ad8d6c6e23e06 <http://www.w3.org/ns/shacl#property> _:cb156da871570a9f556b9e279c1a0e6589eb449773de7cbf151bfa96962d7a76738 .
+_:cb10418193d66bd8d8ed3457a1bce2937495447d62a487353a6991d8a188f2b1ba2 <http://www.w3.org/ns/shacl#not> _:cb7ed402cd7cecdbc5934bd9413ba1cd16aefe6680d36542bea6a6c863c5a01e31 .
+_:cb109d9700fe4ce67400141cb92c45ac4b5654c681e6a0ea8956ac7b04104a85329 <http://www.w3.org/ns/shacl#property> _:cbfc66ed7c713dffe1bc6dfab6d18941a219d9348902e8c4fdcaaf710124ef25ec .
+_:cb11ab85a988a8ea2b29ed44ec0ad337e2f8c5379360438a743418edd68651cb372 <http://www.w3.org/ns/shacl#property> _:cb165e9cff7bf82b305cc96113b338369686d0b2e2154c9b95faa66a5382ad52492 .
+_:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb11ab85a988a8ea2b29ed44ec0ad337e2f8c5379360438a743418edd68651cb372 .
+_:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb2a2848782eceefce14d3bcba8d99f37857a04b22b3f7813787cbd74f694bd65c6 .
+_:cb1419c512ce554acceeb0d51ec275c0280103b85fe4d29f167580b5d252b2e990a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb10418193d66bd8d8ed3457a1bce2937495447d62a487353a6991d8a188f2b1ba2 .
+_:cb1419c512ce554acceeb0d51ec275c0280103b85fe4d29f167580b5d252b2e990a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097 .
+_:cb156da871570a9f556b9e279c1a0e6589eb449773de7cbf151bfa96962d7a76738 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb156da871570a9f556b9e279c1a0e6589eb449773de7cbf151bfa96962d7a76738 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> .
+_:cb165e9cff7bf82b305cc96113b338369686d0b2e2154c9b95faa66a5382ad52492 <http://www.w3.org/ns/shacl#minCount> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb165e9cff7bf82b305cc96113b338369686d0b2e2154c9b95faa66a5382ad52492 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
+_:cb1a144154d6eef657b2fef6e1518c7a9d79c904eaeaf5901d65a13a094e797416d <http://www.w3.org/ns/shacl#hasValue> "failed" .
+_:cb1a144154d6eef657b2fef6e1518c7a9d79c904eaeaf5901d65a13a094e797416d <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
+_:cb1ac750cd60e7a5501eac0008c7194ac9746b932574a75525aef8b7659dd8a98e3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "rolledback" .
+_:cb1ac750cd60e7a5501eac0008c7194ac9746b932574a75525aef8b7659dd8a98e3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:cb1b8d1103eea4da1bb20242505f2b77ceeb55348cc0172190249886c405aabb773 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "observed" .
+_:cb1b8d1103eea4da1bb20242505f2b77ceeb55348cc0172190249886c405aabb773 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:cb1d17a17b4d6a7639f00573db0fb280de14be353c4ad14c87843523b018af17b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "failed" .
+_:cb1d17a17b4d6a7639f00573db0fb280de14be353c4ad14c87843523b018af17b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1ac750cd60e7a5501eac0008c7194ac9746b932574a75525aef8b7659dd8a98e3 .
+_:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> .
+_:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#pattern> "^dev\\.cdevents\\." .
+_:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b <http://www.w3.org/ns/shacl#in> _:cb1b8d1103eea4da1bb20242505f2b77ceeb55348cc0172190249886c405aabb773 .
+_:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> .
+_:cb222875bb1c740551034a58fa0f1277568bde16a33ca25da2380b4a6cef2ce9634 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "succeeded" .
+_:cb222875bb1c740551034a58fa0f1277568bde16a33ca25da2380b4a6cef2ce9634 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1d17a17b4d6a7639f00573db0fb280de14be353c4ad14c87843523b018af17b71 .
+_:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> .
+_:cb23da7ed45642ce41a2a10cb145e010e4e84fffee9a934fb90e7a10e88c19494e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb109d9700fe4ce67400141cb92c45ac4b5654c681e6a0ea8956ac7b04104a85329 .
+_:cb23da7ed45642ce41a2a10cb145e010e4e84fffee9a934fb90e7a10e88c19494e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:cb23e2f6f4eb84a2913655d1abf25db3c76007871bdda72677543b5a0674790096c <http://www.w3.org/ns/shacl#hasValue> "failed" .
+_:cb23e2f6f4eb84a2913655d1abf25db3c76007871bdda72677543b5a0674790096c <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
+_:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> .
+_:cb2a2848782eceefce14d3bcba8d99f37857a04b22b3f7813787cbd74f694bd65c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb1028b65c2d64455ae0fac5b4ad95bd90b5db2f907707345c63e8ad8d6c6e23e06 .
+_:cb2a2848782eceefce14d3bcba8d99f37857a04b22b3f7813787cbd74f694bd65c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:cb2c3d2d2f205fe61838f1fa62d6bf9ae07cb5915c102dc1eee4ce5ab7d6a7de501 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb2c3d2d2f205fe61838f1fa62d6bf9ae07cb5915c102dc1eee4ce5ab7d6a7de501 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2c3d2d2f205fe61838f1fa62d6bf9ae07cb5915c102dc1eee4ce5ab7d6a7de501 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> .
+_:cb2c3d2d2f205fe61838f1fa62d6bf9ae07cb5915c102dc1eee4ce5ab7d6a7de501 <http://www.w3.org/ns/shacl#pattern> "^pkg:[a-z]+/" .
+_:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 <http://www.w3.org/ns/shacl#in> _:cb222875bb1c740551034a58fa0f1277568bde16a33ca25da2380b4a6cef2ce9634 .
+_:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
+_:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> .
+_:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338 <http://www.w3.org/ns/shacl#pattern> "^pkg:[a-z]+/" .
+_:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> .
+_:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?(Z|[+-]([01][0-9]|2[0-3]):[0-5][0-9])$" .
+_:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#environment> .
+_:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> .
+_:cb7ed402cd7cecdbc5934bd9413ba1cd16aefe6680d36542bea6a6c863c5a01e31 <http://www.w3.org/ns/shacl#property> _:cb23e2f6f4eb84a2913655d1abf25db3c76007871bdda72677543b5a0674790096c .
+_:cbbf715db9a7cd3a185f0f12fb4527b681d0ae8e8f809d266946e101fbe3daad66 <http://www.w3.org/ns/shacl#property> _:cb1a144154d6eef657b2fef6e1518c7a9d79c904eaeaf5901d65a13a094e797416d .
+_:cbf9fcc813e98add9378838e28083d7ccca5eaef2e7c62dc444b7f2712a2317435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cbbf715db9a7cd3a185f0f12fb4527b681d0ae8e8f809d266946e101fbe3daad66 .
+_:cbf9fcc813e98add9378838e28083d7ccca5eaef2e7c62dc444b7f2712a2317435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb23da7ed45642ce41a2a10cb145e010e4e84fffee9a934fb90e7a10e88c19494e2 .
+_:cbfc66ed7c713dffe1bc6dfab6d18941a219d9348902e8c4fdcaaf710124ef25ec <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cbfc66ed7c713dffe1bc6dfab6d18941a219d9348902e8c4fdcaaf710124ef25ec <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> .
