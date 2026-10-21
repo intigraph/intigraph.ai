@@ -10720,7 +10720,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Pairs a review/design LEAD with the KEEPER whose domain it reviews, 1:1 from both ends. Not reports_to: it routes design and review work, not the stop-event tree (aegis-vj3uet). No rdfs:domain or rdfs:range on purpose: the roles are asserted with aegis:hasRole and checked by LeadForShape, so inference must not type anyone as a lead."
+        "@value": "Pairs a review/design LEAD with the KEEPER whose domain it reviews, 1:1 from both ends. Not reports_to: it routes design and review work, not the stop-event tree (internal source reference). No rdfs:domain or rdfs:range on purpose: the roles are asserted with aegis:hasRole and checked by LeadForShape, so inference must not type anyone as a lead."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

@@ -270,7 +270,7 @@
 <https://w3id.org/intigraph/quipu/ns#DirectiveShape> <http://www.w3.org/ns/shacl#property> _:cb216e31907d869aa38c51b3a96874d6152e608ebdb4a47dd3784a01f6b4e92c60d .
 <https://w3id.org/intigraph/quipu/ns#DirectiveShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/intigraph/camayoc/core/ns#Directive> .
 <https://w3id.org/intigraph/quipu/ns#DirectiveTraceabilityShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<https://w3id.org/intigraph/quipu/ns#DirectiveTraceabilityShape> <http://www.w3.org/ns/shacl#message> "Untraced directive: it needs aegis:trackedBy a WorkItem and aegis:governedBy a Policy (aegis-q9m5mp)" .
+<https://w3id.org/intigraph/quipu/ns#DirectiveTraceabilityShape> <http://www.w3.org/ns/shacl#message> "Untraced directive: it needs aegis:trackedBy a WorkItem and aegis:governedBy a Policy (internal source reference)" .
 <https://w3id.org/intigraph/quipu/ns#DirectiveTraceabilityShape> <http://www.w3.org/ns/shacl#or> _:cb165e4a96693849618a5bde0461b95ccbd6192779b7fb46aa740592258183c0fd8 .
 <https://w3id.org/intigraph/quipu/ns#DirectiveTraceabilityShape> <http://www.w3.org/ns/shacl#property> _:cb25c533d39a13c97082a8157c31d0c8f2cb795577b27e46147825af96cae0babf6 .
 <https://w3id.org/intigraph/quipu/ns#DirectiveTraceabilityShape> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .

@@ -10,7 +10,8 @@ Regenerate with `uv run --no-project scripts/build-ids.py --write`; omit
 source digest before writing and refuses missing namespaces, missing identities,
 unpinned inputs and non-bijective mappings. The normal playground CI target
 runs format equivalence, omission, corruption and resolver controls. No workflow
-permission or new publisher is required.
+permission or new publisher is required. GitHub Pages uses its existing Jekyll
+build with explicit data/ and scripts/ exclusions; raw pinned inputs are not served.
 
 The ledger freezes one destination for each full source IRI. Shared terms have
 one owner across packs. Four HTTP/HTTPS derivation-property pairs are distinct
@@ -18,7 +19,7 @@ in the source; each gets a source-digest suffix rather than an unsupported
 identity merge. Public standards identifiers and replacement predicates remain
 unchanged. Old-to-new `owl:sameAs` statements represent only the declared
 one-to-one namespace aliases, not replacement targets or calendar identities.
-Existing literal text, including embedded queries, keeps its source spelling.
+Internal item references in literal text are replaced by neutral source-reference wording at generation time; other literal text retains its source spelling.
 This publication is not a runnable replacement for the original SHACL packs.
 No loaded shapes, graph data, rule execution or consumer defaults change.
 

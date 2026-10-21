@@ -10141,7 +10141,7 @@
     ],
     "http://www.w3.org/ns/shacl#message": [
       {
-        "@value": "Untraced directive: it needs aegis:trackedBy a WorkItem and aegis:governedBy a Policy (aegis-q9m5mp)"
+        "@value": "Untraced directive: it needs aegis:trackedBy a WorkItem and aegis:governedBy a Policy (internal source reference)"
       }
     ],
     "http://www.w3.org/ns/shacl#or": [

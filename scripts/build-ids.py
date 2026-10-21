@@ -8,6 +8,7 @@ import argparse
 import hashlib
 import html
 import json
+import re
 from pathlib import Path
 
 import rdflib
@@ -17,6 +18,12 @@ from rdflib.compare import to_canonical_graph
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://w3id.org/intigraph/'
+ITEM_REFERENCE = re.compile(r'\baegis-[a-z0-9]+(?:[.-][a-z0-9]+)*\b')
+
+def public_literal(node):
+    if not isinstance(node, Literal):return node
+    return Literal(ITEM_REFERENCE.sub('internal source reference',str(node)),lang=node.language,datatype=node.datatype,normalize=False)
+
 OWL_SAME = URIRef('http://www.w3.org/2002/07/owl#sameAs')
 
 
@@ -71,7 +78,7 @@ def build(root=ROOT):
             graph += Graph().parse(data/'sources'/source,format='turtle')
         renamed = Graph()
         for triple in graph:
-            renamed.add(tuple(URIRef(mapping[str(n)]) if isinstance(n,URIRef) and str(n) in mapping else n for n in triple))
+            renamed.add(tuple(URIRef(mapping[str(n)]) if isinstance(n,URIRef) and str(n) in mapping else public_literal(n) for n in triple))
         own = [r for r in rows if r['owner'] == name]
         for row in own:
             renamed.add((URIRef(row['old']),OWL_SAME,URIRef(row['new'])))

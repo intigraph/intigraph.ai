@@ -36,6 +36,30 @@ class PublicationTests(unittest.TestCase):
             change(root/'data/ids')
             with self.assertRaises((ValueError,FileNotFoundError)):builder.build(root)
 
+    def test_public_literal_scrubs_internal_item_references(self):
+        from rdflib import Literal
+        for value in ('internal case aegis-vj3uet', 'constraint (aegis-q9m5mp)', 'nested aegis-kzt0ql.9.3'):
+            self.assertNotIn('aegis-',str(builder.public_literal(Literal(value,lang='en'))))
+            self.assertEqual(builder.public_literal(Literal(value,lang='en')).language,'en')
+        control = Literal('ordinary vocabulary text')
+        self.assertEqual(builder.public_literal(control),control)
+
+    def test_served_tree_rejects_item_and_raw_sources(self):
+        spec = importlib.util.spec_from_file_location('public_check',Path(__file__).with_name('check-public-tree.py'))
+        check = importlib.util.module_from_spec(spec);spec.loader.exec_module(check)
+        with tempfile.TemporaryDirectory(prefix='public-tree-') as temporary:
+            root = Path(temporary)
+            (root/'index.html').write_text('safe vocabulary')
+            self.assertTrue(check.check(root,actual=True))
+            (root/'index.html').write_text('private case aegis-vj3uet')
+            with self.assertRaises(ValueError):check.check(root,actual=True)
+            (root/'index.html').write_text('https://unsafe.'+'svc/private')
+            with self.assertRaises(ValueError):check.check(root,actual=True)
+            (root/'index.html').write_text('safe vocabulary');(root/'data').mkdir()
+            with self.assertRaises(ValueError):check.check(root,actual=True)
+            (root/'data').rmdir();(root/'_config.yml').write_text('exclude: []\n')
+            with self.assertRaises(ValueError):check.check(root,actual=False)
+
     def test_source_corruption(self):
         self.changed(lambda d:(d/'sources/quechua/ns.ttl').write_text('corrupt'))
 

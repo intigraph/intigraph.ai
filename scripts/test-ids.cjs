@@ -11,6 +11,7 @@ module.exports = function testIds(root) {
   assert.equal(target.pathname,'/quipu/explore/');
   assert.equal(target.searchParams.get('entity'),'https://w3id.org/intigraph/seeds/id/aegis-test');
   for (const bad of ['/elsewhere','/ids/unknown/id/a','/ids/seeds/id/a.ttl','/ids/seeds/id/a.jsonld','/ids/seeds/id/..','/ids/seeds/id/%2e%2e','/ids/seeds/id/a?url=evil','/ids/seeds/id/a\\x','//evil/id/a']) assert.equal(resolve(bad),null,bad);
+  execFileSync('python3',[path.join(root,'scripts/check-public-tree.py')],{stdio:'inherit'});
   const dir = fs.mkdtempSync(path.join(os.tmpdir(),'ids-ci-'));
   try {
     execFileSync('python3',['-m','venv',dir],{stdio:'inherit'});
