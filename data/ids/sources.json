@@ -180,5 +180,40 @@
     "path": "tests/fixtures/aegis-upstream/kept-governance-compatibility.shapes.ttl",
     "sha256": "8c2b36da7366e3a15143b215f8429404d4e65136753c9494665e81b911870596",
     "bytes": 6828
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "bytes": 11358
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "NOTICE",
+    "sha256": "5a032046ca96a9c2522c55bec4ff41b48b9800c47ddc3f9a5ccf0e6b63ce1efc",
+    "bytes": 211
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "bytes": 11358
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "NOTICE",
+    "sha256": "d1a1c2053ca2ba890c32a8ca8ba294ae362bfee692c23a567850beba79317571",
+    "bytes": 203
+  },
+  {
+    "repository": "scbrown/seeds",
+    "commit": "5090d08b6f8f01a2f53c57d91b340cad5b04326d",
+    "path": "LICENSE",
+    "sha256": "e5e7ec9e4b7337f30077aa6918d814e3f4896421cd44c04827560a59a13fab11",
+    "bytes": 1068
   }
 ]

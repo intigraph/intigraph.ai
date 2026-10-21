@@ -35,3 +35,7 @@ normal Pages path. That restores the previous site; it does not delete or
 reassign an established public identifier. Verify exact Pages completion and
 curl each catalogue HTML, Turtle and JSON-LD target before claiming availability.
 The upstream w3id proposal remains a separate authorized publication step.
+
+Pinned upstream LICENSE/NOTICE files accompany the copied sources. The pinned
+Quechua root has no LICENSE/NOTICE file; no substitute license is invented.
+Publication is under the repository owner’s explicit vocabulary-publication direction.
