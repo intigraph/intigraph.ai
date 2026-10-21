@@ -1,0 +1,3176 @@
+[
+  {
+    "@id": "_:cb11638de1c8e00dc51a3237450be67f119f217b7dd71eb43d4ed1411ce670765db",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cbbe28f44afde60b8fb66a7fca9bf1bcf689e7976369a54ee7dc781a85ddb980f0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#status"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1192b22adf62d58ef48930a076d2f9aede2c94c1583f5fe000adbee813ce4cc01",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#connects_to"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb12dadfdac5e5665ef678507ec7b6b4381c7aa34693ed82d07c1fd9a201634adad",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1463c1b26c94ed43c913fe2d181b51f487a7718a0978d7c341c673530f2941b28",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#hostname"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb157dba485202cc02eeaad3ef309ce6ae46512adf305ddbfc2b43ef73e8968c858",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#severity"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb16221e49495283295d404e702b8fbf6a8170d5694a6ad814d4323cde66065c77e",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#expiresAt"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^(none|unknown|[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(Z|[+-][0-9]{2}:[0-9]{2}))$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb162cea31dcd7593cba45f3df9b26f0d590897107441eb94daea7303c48a4e6e8e",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#hostname"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb16414f24bea13c1eac3a476fa7fec2580307eb9a89107f3ab93d4e21fb5614410",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb17104d82fbb7040a49d087889cd40b913b135c50547060dc09494a7a49bee294b",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#monitors"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb17131b87183343b561fa24589253f56abdb8db789e80ecbf2035cee64ec69897b",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#subnet"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1734201fb6da9398f9d376e6c0b6cfc861fb6aca50813c50a0245209e773fee80",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#storageBackend"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1743eaa11af01cc12408a0bbd3f616995cc5b2656d93ec9a451826fc6aeaf56f5",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#purpose"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1758560e3b9a14e62a05a0329c338dabeb39e2114b0f1336789e4d36931dc0938",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ipAddress"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1792ee0d809fa3347e0f210effd3929bea7881c1877619e0a8414577ff32002e1",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb17bd5ce2f0481fc5097e951f37d3bfc518e4b7c2ea9d928cae8ad0e7820de0547",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#tag"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb17daab0aa150c5933251b15d56e6ca652bf88c6feac0c2f303b46bfd424d08ee5",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#hostname"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb17e57c3c9c3bc1b6e47ade2fc2f0bf2956ac0eb169373e7a1b261814c9c12c3ad",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#depends_on"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1803c447fce16938a298cc9bdbeefa7e93bdf8c9976a8b3cf5bcbf6f08b8fe5ba",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#externalUrl"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1872822de68e3fae18a15510047783b6cf9126877f5bc8adba0137fd1f18f07ea",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#src"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb187c263b043b4a2a9f6e1532670a07b51b19941810f3cf926a6db1262e27bd142",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb187ca092698562d068530a88e6cc2d9921e76147333f3e8034c1802dc66a41d02",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ctId"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb190616e70013813ca2115db057f3673b86a8fd79f1b11cdbcdab88f78cc5e298f",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ipAddress"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb19092cdc36ee97bf2a72a2a95f9eec4446c330b5253450a4b64e89a61d0968d12",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#schedule"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb194d9ad69131823e0715f780f9ec41dea21511627b8d491e34c0f6042c7febed5",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#Host"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#heldOn"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb195c168cf0e20f2d6f4116c182df317cf35a813ec21bfb6b1522026138ada5647",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1966432a459a77f31eb4c6cee9e57fdf59e5e74feb8fce4aa01fbf6f28389cd7f",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#deployed_on"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb19be5b9cb369ea7830bf85340e81f2daa524d52c8d4461e6f670d60236d0f184f",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1a4f1016f5d445feee565387d50e60b596839e1c085b25dfa0d6c53897ada0d4c",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#date"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1a525722946cdec1d9eb76886213a634ef122691359458b89036fad40470e7965",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "retired"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1ace7849ac7dc62a6ba827eef17b5eeb14d714803b2b100217a637ef4bddd58c4",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#owns"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1aee8a03a62156985c895dc2333ab9e26df6caa04dbcb62d6c8b0b0063b063d97",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backs_up"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1af108c3c65dc1fa2ea1d33e3e130038824dc60481f3370e2241db9ebede0cdcc",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#guardsProducer"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b09d765b55b7b83e74cd43f3e9f0b0c8ec99ca768be05106a2f3e223255c769e",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b3022c8e6632b840eedd3464a32e743ffd609d7a32daa4a10ec9b32867940f7a",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#alertExpr"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b37dd3e71487a6f3821ad704370bb5cc90ee061bf3d3cb2ce3cf7ab3a324e486",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b53bcdb799a622aa40ed59d703901971c8c85c5fb6772a9eb62b5749d00fd972",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1b74c1741841b20e3be8282b9e9bdbf4c0cf1517ad67c23b6b51389835ae63e77",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1be595022efdea0390a6ef42d88a15703b26054e483c2669a5eda68482992deea",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#src"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1bf0059ca19bf83030cfe18301fdd8eb467896ed21908287bc7088a4284f46a85",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#script"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1bfdfe3751af3e3a4b93466415b8cbf177b862104784187779b7b775d0484553e",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1c07e2e95eb1deeb1cf8c7e66247548d7a16210101e85715986f2be909067800a",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1c2b32dfd03413ec97fe765ec541ec3d19c9a4f5b0ebe4fa95b25ca0cf5693c0d",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#resourceType"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1c6702fa1c3dc6584487f76762d8220a76e2d6da1c438896cb19cf97765f5479f",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1c745ffaab4c474b30d4c24c7b90728fe48702e3d86425577782dfc7ee3663ef1",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#service"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1c7cbcc04e66abc22fd599199f80221595b9e6471877ef2e25b954b5c8be57358",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#diskDeltaBytes"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1cb3238247f55e235ab60654e25c8fe32e64d0d4dc424e98852e1e8b6d53557e1",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1d49ce309855b6346c8753ee3d83f870a596db02821ad68f817b70346b43cdd09",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1d4ca0589607fbb003e19e2a5de85627d9e83e49883362724a57f0fd1b5643d62",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1d9a234353ff42505717eb678c9849e9c5e951787dc5b0317b5fe30accf4698e9",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1e92c64e2f3690b96da2a6c8487a23685c381119b65cf52be2db213ff785ff4b8",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1f22e155d8efe51c02428008e1b8ddaa3ee16c5a99ea8421654c8f7475545d177",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1f4c4797230456f060adf5c36fdd28f679075b8fb65228e8a6437313f5bcec00e",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1f9bfd3c74fe74006d36d6a8d774f9aa581fdb3f53305d19f34a7e5af332e533a",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#healthEndpoint"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1fc2ac42ba858fd26ca42fc51f62ebd528c4f9b3c2e16f6469e865ed1acae3c11",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#registry"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2009dc433d1e8e8f062b4f40f61150711584f72ca9855a46e0d9e1d605bf4ff37",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backend"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^https?://[^{]+$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2026365690650878d2bba087b66f219c99f9af9ba522ac54711a8d12d0d392ee1",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2075add051bae0b9afc11d476143f776a7e157734cc86fe986cd465c5e1c91a25",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2084a90882d09d64bfadb30220383e0451f095420a9b6608912065eee0d92c854",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#port"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb20b5014f0cb365c072e9739159757ebc435aad31354aab4242afc6563c70c8ee8",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb20caef67fe230fdd5217e900b3340e10fbcd6f3819c038fbb2c0a3df2f319dbb5",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#target"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb20e23ab1e969b07cb4c4f2f422059365c8b36dd93cbed3b352c3921d6e4ea1238",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#mountpoint"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb213a43546d746e843bc94d68adf9ea57252dc9e72e33b575c67a941e1b633b174",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb214d77fde7575d059055c7e06250ee3a5bb37a62908e9d6d7ce81d74e5e391c49",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#gateway"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21b5eec7c2a2e86fb949d774bad3147765b25e4ea11c9ac2972c4e02f41744576",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21cbcb2a09f3f3d70199590e917093a861ea2bb93cfd6c47977d424f25d9e2ccf",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#pool"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21ecf62420bfbd0b01993b2ca20a67e7fd21892d7980376671864d595abc8a1df",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#dataPath"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2201da5dfbb305fb7d653ded918e9b746e696ea9cfe7858882bf485cd1cdb6f19",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22423343fbd33aba072d15234ee5cb7a47dcf673314a9b089b04b29da0e3c93b1",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb224b27daa37258284dc625e33b154900237b41c53f714ac54f52eff07badd50e2",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#nodeId"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22788dd47096d85b60a971fbad15905790f10021d3723b8f0dca2f3345f28c893",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22b2991efd5b43b077f2153d1ece95f218d31d75d1e7b5ac6395ee8e08cd8aeaf",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "100"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#healthScore"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2317c1d7f938e4ee3a8921a04f7c9177631bf7026942358f0f5a80d1250627a81",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#observedAt"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb232322e1ff397ea9f9a09f51ce3b86393b26d4e8fbf0f337e0d097f008f61e8b5",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2335f84935e5f56fa67abec7ee4f9ba79628caf09cd2e78d69e50d166c669764c",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2336a3ef38523c6849c220287503a74a170e2a7f8ad8339abe0698cf78ab2069b",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#host"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb237b5e2ee348e390d62753f8af8b87d2afd6e2264a76f0a9238b814b52ec2131b",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#domain"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb240ac3dd8c200b24ed54866f210cf2b376e18c1f33a82a499cb34cf6605a759fc",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb24f592e448af0dd1957f108e210e9c97973e099196c06173118750e4c1bf8e863",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#role"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb24f75d719a27dceb3fab3f9c72850e79062ed6e3e306c4cec2ba6a722f6414fc0",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb250b90bc5f8a2e52942c9a4591191a3d5aa1198576a6bee67ded8a6d7d6c02bac",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb26a1a4005508cc5575b7b6e9f8e3d741672a2bf0c4e89cfcdc0d200543837a858",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#title"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2743524f3be4e2f05d1c12d71eccf530e5cb8973a29512a9e206e82e3e027b062",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#groupName"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb276b42dafbc074081adfedabac5ca39aa4d8a1a302ad5aa2c5de6afa621d48e22",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#resourceName"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb279f0a6e4b9dd884f04cfe051a56a21b7cafab415f1f51ab1c438ee117556afcf",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#indexes"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb28fb4ed3b9d6fbd6d1fcb2ca2fff3d260ad0eb73d5c357b6e5233eda00ce592bb",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#roleName"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2beddb088deba055fe0c50cf252da6787b54316fa4710e0323783c84f0caf7ea7",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#contentSha256"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^[0-9a-f]{64}$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2bf9eecd1be941c1ed6eca27587b6b772f670a65c6248eeea784b12942d0201cf",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#path"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2c643815f2eb8eae9291ab55f372b79e7e40c88cc44de7d45b31ff207d614bc7d",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#configPath"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2f5f3e6b08bf406e994806a15ddfabef8cae100ce3f55599885f0b52610e58be4",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#filesystemIdentity"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^(root|tmpfs|mount):[a-z0-9._-]+$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb301a9a0c89cde0380beffaf5c24e5d8680b1fc4a9b3d94f9d4d17b66d8b0c215c",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#commandSignature"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^[^\\s/]+:[^\\s/]+\\|repo:[a-z0-9._-]+\\|cwd:[a-z0-9._-]+$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb7b758d7398a6ac46580fbc2ddaf378e43a81ae6219142fd86badf5a109fefb6f",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#keeper"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb8f98e38e8b90b11f6d26bc4852722b3cdb35bfa9de1d55212be043619492427c",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#keeper"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb91bb644f5f74d1ceded8b9501d3fe178467b303b7b12e3af9188dd7640e92a0f",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#probe"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbbe28f44afde60b8fb66a7fca9bf1bcf689e7976369a54ee7dc781a85ddb980f0",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "active"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1a525722946cdec1d9eb76886213a634ef122691359458b89036fad40470e7965"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbc3d20bbfb843dc2515a8dd5a37ff1d56e17a8eb72565302751f30869b7ae638a",
+    "http://www.w3.org/ns/shacl#nodeKind": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#IRI"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#routes_to"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/AlertRuleShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#AlertRuleShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/AnsibleGroupShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#AnsibleGroupShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/AnsibleRoleShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#AnsibleRoleShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/BacksUpShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#BacksUpShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/BareMetalHostShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#BareMetalHostShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/CommandDiskImpactObservationShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#CommandDiskImpactObservationShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ConfigFileShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConfigFileShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ConfigSetting",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConfigSetting"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ConfigSettingShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConfigSettingShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ConnectsToShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConnectsToShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/CredentialShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#CredentialShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/CronJobShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#CronJobShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/DatabaseServiceShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DatabaseServiceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/DependsOnShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DependsOnShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/DeployedOnShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DeployedOnShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/DockerContainerShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DockerContainerShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/DockerImage",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DockerImage"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/DockerImageShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DockerImageShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ExternalServiceShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ExternalServiceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/HostShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#HostShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/LXCContainerShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#LXCContainerShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/MonitoringProbe",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#MonitoringProbe"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/MonitoringProbeShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#MonitoringProbeShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/MonitorsShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#MonitorsShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/NFSExportShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#NFSExportShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/NetworkSegment",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#NetworkSegment"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/NetworkSegmentShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#NetworkSegmentShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/OwnsShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#OwnsShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/Probe",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#Probe"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ProbeShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ProbeShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ProxmoxNodeShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ProxmoxNodeShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/PushgatewayJob",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#PushgatewayJob"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/PushgatewayJobShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#PushgatewayJobShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/RemoteHostShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#RemoteHostShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ReverseProxyRoute",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ReverseProxyRoute"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ReverseProxyRouteShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ReverseProxyRouteShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/RoutesToShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#RoutesToShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/SSHKeyShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#SSHKeyShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/SearchServiceShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#SearchServiceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ServiceShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ServiceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/StoragePool",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#StoragePool"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/StoragePoolShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#StoragePoolShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/SystemdServiceShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#SystemdServiceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/SystemdTimerShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#SystemdTimerShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/TerraformResource",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TerraformResource"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/TerraformResourceShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TerraformResourceShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/TraefikRoute",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TraefikRoute"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/TraefikRouteShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TraefikRouteShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ZFSDataset",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ZFSDataset"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ZFSDatasetShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ZFSDatasetShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/alertExpr",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#alertExpr"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/backend",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backend"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/backs_up",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backs_up"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/commandSignature",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#commandSignature"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/configPath",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#configPath"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ctId",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ctId"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/dataPath",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#dataPath"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/diskDeltaBytes",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#diskDeltaBytes"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/filesystemIdentity",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#filesystemIdentity"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/gateway",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#gateway"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/groupName",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#groupName"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/guardsProducer",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#guardsProducer"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/healthEndpoint",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#healthEndpoint"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/healthScore",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#healthScore"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/heldOn",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#heldOn"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/hostname",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#hostname"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/indexes",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#indexes"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ipAddress",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ipAddress"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/mountpoint",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#mountpoint"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/nodeId",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#nodeId"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/pool",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#pool"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/registry",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#registry"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/resourceName",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#resourceName"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/resourceType",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#resourceType"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/roleName",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#roleName"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/script",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#script"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/service",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#service"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/src",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#src"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/storageBackend",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#storageBackend"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/subnet",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#subnet"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/tag",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#tag"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/target",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#target"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#AlertRuleShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb157dba485202cc02eeaad3ef309ce6ae46512adf305ddbfc2b43ef73e8968c858"
+      },
+      {
+        "@id": "_:cb19be5b9cb369ea7830bf85340e81f2daa524d52c8d4461e6f670d60236d0f184f"
+      },
+      {
+        "@id": "_:cb1af108c3c65dc1fa2ea1d33e3e130038824dc60481f3370e2241db9ebede0cdcc"
+      },
+      {
+        "@id": "_:cb1b3022c8e6632b840eedd3464a32e743ffd609d7a32daa4a10ec9b32867940f7a"
+      },
+      {
+        "@id": "_:cb8f98e38e8b90b11f6d26bc4852722b3cdb35bfa9de1d55212be043619492427c"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#AlertRule"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#AnsibleGroupShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1872822de68e3fae18a15510047783b6cf9126877f5bc8adba0137fd1f18f07ea"
+      },
+      {
+        "@id": "_:cb1cb3238247f55e235ab60654e25c8fe32e64d0d4dc424e98852e1e8b6d53557e1"
+      },
+      {
+        "@id": "_:cb2743524f3be4e2f05d1c12d71eccf530e5cb8973a29512a9e206e82e3e027b062"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#AnsibleGroup"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#AnsibleRoleShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb20caef67fe230fdd5217e900b3340e10fbcd6f3819c038fbb2c0a3df2f319dbb5"
+      },
+      {
+        "@id": "_:cb250b90bc5f8a2e52942c9a4591191a3d5aa1198576a6bee67ded8a6d7d6c02bac"
+      },
+      {
+        "@id": "_:cb28fb4ed3b9d6fbd6d1fcb2ca2fff3d260ad0eb73d5c357b6e5233eda00ce592bb"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#AnsibleRole"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#BacksUpShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1aee8a03a62156985c895dc2333ab9e26df6caa04dbcb62d6c8b0b0063b063d97"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetSubjectsOf": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backs_up"
+      }
+    ],
+    "https://w3id.org/intigraph/quipu/ns#onViolation": [
+      {
+        "@value": "emit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#BareMetalHostShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb17daab0aa150c5933251b15d56e6ca652bf88c6feac0c2f303b46bfd424d08ee5"
+      },
+      {
+        "@id": "_:cb190616e70013813ca2115db057f3673b86a8fd79f1b11cdbcdab88f78cc5e298f"
+      },
+      {
+        "@id": "_:cb1b09d765b55b7b83e74cd43f3e9f0b0c8ec99ca768be05106a2f3e223255c769e"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#BareMetalHost"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#CommandDiskImpactObservationShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1c7cbcc04e66abc22fd599199f80221595b9e6471877ef2e25b954b5c8be57358"
+      },
+      {
+        "@id": "_:cb2075add051bae0b9afc11d476143f776a7e157734cc86fe986cd465c5e1c91a25"
+      },
+      {
+        "@id": "_:cb2317c1d7f938e4ee3a8921a04f7c9177631bf7026942358f0f5a80d1250627a81"
+      },
+      {
+        "@id": "_:cb2f5f3e6b08bf406e994806a15ddfabef8cae100ce3f55599885f0b52610e58be4"
+      },
+      {
+        "@id": "_:cb301a9a0c89cde0380beffaf5c24e5d8680b1fc4a9b3d94f9d4d17b66d8b0c215c"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#CommandDiskImpactObservation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConfigFileShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1c745ffaab4c474b30d4c24c7b90728fe48702e3d86425577782dfc7ee3663ef1"
+      },
+      {
+        "@id": "_:cb20b5014f0cb365c072e9739159757ebc435aad31354aab4242afc6563c70c8ee8"
+      },
+      {
+        "@id": "_:cb2beddb088deba055fe0c50cf252da6787b54316fa4710e0323783c84f0caf7ea7"
+      },
+      {
+        "@id": "_:cb2bf9eecd1be941c1ed6eca27587b6b772f670a65c6248eeea784b12942d0201cf"
+      },
+      {
+        "@id": "_:cb2c643815f2eb8eae9291ab55f372b79e7e40c88cc44de7d45b31ff207d614bc7d"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#ConfigFile"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConfigSettingShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb16414f24bea13c1eac3a476fa7fec2580307eb9a89107f3ab93d4e21fb5614410"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConfigSetting"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConnectsToShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1192b22adf62d58ef48930a076d2f9aede2c94c1583f5fe000adbee813ce4cc01"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetSubjectsOf": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#connects_to"
+      }
+    ],
+    "https://w3id.org/intigraph/quipu/ns#onViolation": [
+      {
+        "@value": "emit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#CredentialShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb11638de1c8e00dc51a3237450be67f119f217b7dd71eb43d4ed1411ce670765db"
+      },
+      {
+        "@id": "_:cb16221e49495283295d404e702b8fbf6a8170d5694a6ad814d4323cde66065c77e"
+      },
+      {
+        "@id": "_:cb187c263b043b4a2a9f6e1532670a07b51b19941810f3cf926a6db1262e27bd142"
+      },
+      {
+        "@id": "_:cb194d9ad69131823e0715f780f9ec41dea21511627b8d491e34c0f6042c7febed5"
+      },
+      {
+        "@id": "_:cb7b758d7398a6ac46580fbc2ddaf378e43a81ae6219142fd86badf5a109fefb6f"
+      },
+      {
+        "@id": "_:cb91bb644f5f74d1ceded8b9501d3fe178467b303b7b12e3af9188dd7640e92a0f"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#Credential"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#CronJobShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb19092cdc36ee97bf2a72a2a95f9eec4446c330b5253450a4b64e89a61d0968d12"
+      },
+      {
+        "@id": "_:cb1bf0059ca19bf83030cfe18301fdd8eb467896ed21908287bc7088a4284f46a85"
+      },
+      {
+        "@id": "_:cb1d49ce309855b6346c8753ee3d83f870a596db02821ad68f817b70346b43cdd09"
+      },
+      {
+        "@id": "_:cb2336a3ef38523c6849c220287503a74a170e2a7f8ad8339abe0698cf78ab2069b"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#CronJob"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DatabaseServiceShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1734201fb6da9398f9d376e6c0b6cfc861fb6aca50813c50a0245209e773fee80"
+      },
+      {
+        "@id": "_:cb1b74c1741841b20e3be8282b9e9bdbf4c0cf1517ad67c23b6b51389835ae63e77"
+      },
+      {
+        "@id": "_:cb21ecf62420bfbd0b01993b2ca20a67e7fd21892d7980376671864d595abc8a1df"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#DatabaseService"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DependsOnShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb17e57c3c9c3bc1b6e47ade2fc2f0bf2956ac0eb169373e7a1b261814c9c12c3ad"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetSubjectsOf": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#depends_on"
+      }
+    ],
+    "https://w3id.org/intigraph/quipu/ns#onViolation": [
+      {
+        "@value": "emit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DeployedOnShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1966432a459a77f31eb4c6cee9e57fdf59e5e74feb8fce4aa01fbf6f28389cd7f"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetSubjectsOf": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#deployed_on"
+      }
+    ],
+    "https://w3id.org/intigraph/quipu/ns#onViolation": [
+      {
+        "@value": "emit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DockerContainerShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1d9a234353ff42505717eb678c9849e9c5e951787dc5b0317b5fe30accf4698e9"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#DockerContainer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DockerImageShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb17bd5ce2f0481fc5097e951f37d3bfc518e4b7c2ea9d928cae8ad0e7820de0547"
+      },
+      {
+        "@id": "_:cb1bfdfe3751af3e3a4b93466415b8cbf177b862104784187779b7b775d0484553e"
+      },
+      {
+        "@id": "_:cb1fc2ac42ba858fd26ca42fc51f62ebd528c4f9b3c2e16f6469e865ed1acae3c11"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DockerImage"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ExternalServiceShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb12dadfdac5e5665ef678507ec7b6b4381c7aa34693ed82d07c1fd9a201634adad"
+      },
+      {
+        "@id": "_:cb1803c447fce16938a298cc9bdbeefa7e93bdf8c9976a8b3cf5bcbf6f08b8fe5ba"
+      },
+      {
+        "@id": "_:cb240ac3dd8c200b24ed54866f210cf2b376e18c1f33a82a499cb34cf6605a759fc"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#ExternalService"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#HostShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb22788dd47096d85b60a971fbad15905790f10021d3723b8f0dca2f3345f28c893"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#Host"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#LXCContainerShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb162cea31dcd7593cba45f3df9b26f0d590897107441eb94daea7303c48a4e6e8e"
+      },
+      {
+        "@id": "_:cb1758560e3b9a14e62a05a0329c338dabeb39e2114b0f1336789e4d36931dc0938"
+      },
+      {
+        "@id": "_:cb187ca092698562d068530a88e6cc2d9921e76147333f3e8034c1802dc66a41d02"
+      },
+      {
+        "@id": "_:cb195c168cf0e20f2d6f4116c182df317cf35a813ec21bfb6b1522026138ada5647"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#LXCContainer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#MonitoringProbeShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb213a43546d746e843bc94d68adf9ea57252dc9e72e33b575c67a941e1b633b174"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#MonitoringProbe"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#MonitorsShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb17104d82fbb7040a49d087889cd40b913b135c50547060dc09494a7a49bee294b"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetSubjectsOf": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#monitors"
+      }
+    ],
+    "https://w3id.org/intigraph/quipu/ns#onViolation": [
+      {
+        "@value": "emit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#NFSExportShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1d4ca0589607fbb003e19e2a5de85627d9e83e49883362724a57f0fd1b5643d62"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#NFSExport"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#NetworkSegmentShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb17131b87183343b561fa24589253f56abdb8db789e80ecbf2035cee64ec69897b"
+      },
+      {
+        "@id": "_:cb1743eaa11af01cc12408a0bbd3f616995cc5b2656d93ec9a451826fc6aeaf56f5"
+      },
+      {
+        "@id": "_:cb1b53bcdb799a622aa40ed59d703901971c8c85c5fb6772a9eb62b5749d00fd972"
+      },
+      {
+        "@id": "_:cb214d77fde7575d059055c7e06250ee3a5bb37a62908e9d6d7ce81d74e5e391c49"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#NetworkSegment"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#OwnsShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1ace7849ac7dc62a6ba827eef17b5eeb14d714803b2b100217a637ef4bddd58c4"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetSubjectsOf": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#owns"
+      }
+    ],
+    "https://w3id.org/intigraph/quipu/ns#onViolation": [
+      {
+        "@value": "emit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ProbeShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1a4f1016f5d445feee565387d50e60b596839e1c085b25dfa0d6c53897ada0d4c"
+      },
+      {
+        "@id": "_:cb1e92c64e2f3690b96da2a6c8487a23685c381119b65cf52be2db213ff785ff4b8"
+      },
+      {
+        "@id": "_:cb237b5e2ee348e390d62753f8af8b87d2afd6e2264a76f0a9238b814b52ec2131b"
+      },
+      {
+        "@id": "_:cb26a1a4005508cc5575b7b6e9f8e3d741672a2bf0c4e89cfcdc0d200543837a858"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#Probe"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ProxmoxNodeShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb224b27daa37258284dc625e33b154900237b41c53f714ac54f52eff07badd50e2"
+      },
+      {
+        "@id": "_:cb232322e1ff397ea9f9a09f51ce3b86393b26d4e8fbf0f337e0d097f008f61e8b5"
+      },
+      {
+        "@id": "_:cb24f592e448af0dd1957f108e210e9c97973e099196c06173118750e4c1bf8e863"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#ProxmoxNode"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#PushgatewayJobShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb2201da5dfbb305fb7d653ded918e9b746e696ea9cfe7858882bf485cd1cdb6f19"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#PushgatewayJob"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#RemoteHostShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb22423343fbd33aba072d15234ee5cb7a47dcf673314a9b089b04b29da0e3c93b1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#RemoteHost"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ReverseProxyRouteShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1463c1b26c94ed43c913fe2d181b51f487a7718a0978d7c341c673530f2941b28"
+      },
+      {
+        "@id": "_:cb1792ee0d809fa3347e0f210effd3929bea7881c1877619e0a8414577ff32002e1"
+      },
+      {
+        "@id": "_:cb2009dc433d1e8e8f062b4f40f61150711584f72ca9855a46e0d9e1d605bf4ff37"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ReverseProxyRoute"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#RoutesToShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cbc3d20bbfb843dc2515a8dd5a37ff1d56e17a8eb72565302751f30869b7ae638a"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetSubjectsOf": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#routes_to"
+      }
+    ],
+    "https://w3id.org/intigraph/quipu/ns#onViolation": [
+      {
+        "@value": "emit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#SSHKeyShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb2335f84935e5f56fa67abec7ee4f9ba79628caf09cd2e78d69e50d166c669764c"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#SSHKey"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#SearchServiceShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb24f75d719a27dceb3fab3f9c72850e79062ed6e3e306c4cec2ba6a722f6414fc0"
+      },
+      {
+        "@id": "_:cb279f0a6e4b9dd884f04cfe051a56a21b7cafab415f1f51ab1c438ee117556afcf"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#SearchService"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ServiceShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1f4c4797230456f060adf5c36fdd28f679075b8fb65228e8a6437313f5bcec00e"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#Service"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#StoragePoolShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1c6702fa1c3dc6584487f76762d8220a76e2d6da1c438896cb19cf97765f5479f"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#StoragePool"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#SystemdServiceShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1f9bfd3c74fe74006d36d6a8d774f9aa581fdb3f53305d19f34a7e5af332e533a"
+      },
+      {
+        "@id": "_:cb2084a90882d09d64bfadb30220383e0451f095420a9b6608912065eee0d92c854"
+      },
+      {
+        "@id": "_:cb21b5eec7c2a2e86fb949d774bad3147765b25e4ea11c9ac2972c4e02f41744576"
+      },
+      {
+        "@id": "_:cb22b2991efd5b43b077f2153d1ece95f218d31d75d1e7b5ac6395ee8e08cd8aeaf"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#SystemdService"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#SystemdTimerShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1b37dd3e71487a6f3821ad704370bb5cc90ee061bf3d3cb2ce3cf7ab3a324e486"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#SystemdTimer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TerraformResourceShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1be595022efdea0390a6ef42d88a15703b26054e483c2669a5eda68482992deea"
+      },
+      {
+        "@id": "_:cb1c2b32dfd03413ec97fe765ec541ec3d19c9a4f5b0ebe4fa95b25ca0cf5693c0d"
+      },
+      {
+        "@id": "_:cb2026365690650878d2bba087b66f219c99f9af9ba522ac54711a8d12d0d392ee1"
+      },
+      {
+        "@id": "_:cb276b42dafbc074081adfedabac5ca39aa4d8a1a302ad5aa2c5de6afa621d48e22"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TerraformResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TraefikRouteShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1f22e155d8efe51c02428008e1b8ddaa3ee16c5a99ea8421654c8f7475545d177"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TraefikRoute"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ZFSDatasetShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1c07e2e95eb1deeb1cf8c7e66247548d7a16210101e85715986f2be909067800a"
+      },
+      {
+        "@id": "_:cb20e23ab1e969b07cb4c4f2f422059365c8b36dd93cbed3b352c3921d6e4ea1238"
+      },
+      {
+        "@id": "_:cb21cbcb2a09f3f3d70199590e917093a861ea2bb93cfd6c47977d424f25d9e2ccf"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ZFSDataset"
+      }
+    ]
+  }
+]

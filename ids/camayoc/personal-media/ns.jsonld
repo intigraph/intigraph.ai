@@ -1,0 +1,490 @@
+[
+  {
+    "@id": "_:cb15ce0403c856a809b9253e54e150fd2047c4da188136992a860d791285839925b",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1692d947f34b4dbe3f3f6454fc2e6cd24bca242c4696963398a598e478d4ccd39",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#email"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb178ca9ddfa9985774237a170794325da0209858357cbc03f52c6bec7e0fe59de7",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemePark"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#park"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1ad37a9c54b26c3381541599da1378feaa9dce79a37d1c1e63d27f72c70f31d30",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1bfe2cf6dc8e074e738af3ce2c4f57ff35434153ad29c8b4ab43ec1abf8f938bc",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1ca074e4c8ea73990156cdd71ecb740c3b5e510413e1c8ec8522065d9bd0caa3b",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemePark"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#park"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1cce41c6717caab5b35dccf45e6be37ea8e399d6bb3e02159b9ad7a91a89a5da4",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#visitDate"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1ebbfcecef9618fa993c885517658817099db2286a892652be25d00e6d19bd8d0",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2111f7fdaadef57032aa2034d1d7a6316e980cd4693fd161dd9f33b07a6204510",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2162f834262bee54831d11774e151927768fc978270b279d5938b6969f9959186",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#platform"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb25a3998887930cc9c531c2bc2bfa2553d56373c583f1ad8824659d24edd3be17d",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb27a2ae7804d3db73feeb2632da5a496b3a135f7bbf7bdf980c10b2c3d6531db02",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#name"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2a607e6e17dbed20249cbab9c57079830e6dd0507cdb3d361ef296b783dd47b16",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#name"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb469155d2e487fe6a4b176e7f2e5f5298ded1ca8c41e11a15efac219f1b876aea",
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#owner"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/Attraction",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#Attraction"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/AttractionShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#AttractionShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/GoogleAccount",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#GoogleAccount"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/GoogleAccountShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#GoogleAccountShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/MediaLibraryShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#MediaLibraryShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ThemePark",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemePark"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ThemeParkShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemeParkShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ThemeParkVisit",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemeParkVisit"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ThemeParkVisitShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemeParkVisitShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/Watchlist",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#Watchlist"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/WatchlistShape",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#WatchlistShape"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/email",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#email"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/park",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#park"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/platform",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#platform"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/visitDate",
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#visitDate"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#AttractionShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb178ca9ddfa9985774237a170794325da0209858357cbc03f52c6bec7e0fe59de7"
+      },
+      {
+        "@id": "_:cb1bfe2cf6dc8e074e738af3ce2c4f57ff35434153ad29c8b4ab43ec1abf8f938bc"
+      },
+      {
+        "@id": "_:cb27a2ae7804d3db73feeb2632da5a496b3a135f7bbf7bdf980c10b2c3d6531db02"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#Attraction"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#GoogleAccountShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1692d947f34b4dbe3f3f6454fc2e6cd24bca242c4696963398a598e478d4ccd39"
+      },
+      {
+        "@id": "_:cb1ad37a9c54b26c3381541599da1378feaa9dce79a37d1c1e63d27f72c70f31d30"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#GoogleAccount"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#MediaLibraryShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#node": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#FileCollectionShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb2162f834262bee54831d11774e151927768fc978270b279d5938b6969f9959186"
+      },
+      {
+        "@id": "_:cb25a3998887930cc9c531c2bc2bfa2553d56373c583f1ad8824659d24edd3be17d"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#MediaLibrary"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemeParkShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1ebbfcecef9618fa993c885517658817099db2286a892652be25d00e6d19bd8d0"
+      },
+      {
+        "@id": "_:cb2a607e6e17dbed20249cbab9c57079830e6dd0507cdb3d361ef296b783dd47b16"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemePark"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemeParkVisitShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1ca074e4c8ea73990156cdd71ecb740c3b5e510413e1c8ec8522065d9bd0caa3b"
+      },
+      {
+        "@id": "_:cb1cce41c6717caab5b35dccf45e6be37ea8e399d6bb3e02159b9ad7a91a89a5da4"
+      },
+      {
+        "@id": "_:cb2111f7fdaadef57032aa2034d1d7a6316e980cd4693fd161dd9f33b07a6204510"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemeParkVisit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#WatchlistShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb15ce0403c856a809b9253e54e150fd2047c4da188136992a860d791285839925b"
+      },
+      {
+        "@id": "_:cb469155d2e487fe6a4b176e7f2e5f5298ded1ca8c41e11a15efac219f1b876aea"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#Watchlist"
+      }
+    ]
+  }
+]

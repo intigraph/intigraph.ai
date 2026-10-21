@@ -1,0 +1,13 @@
+Script started on 2026-10-21 10:19:39-04:00 [COMMAND="python3 scripts/demo-ids.py" <not executed on terminal>]
+BASE 9c55a60d7487b43f98ef327d678e9917d7fbf90f
+ GET / -> 200 20015 bytes
+ GET /ids/quechua/ns.ttl -> 404
+ GET /ids/quechua/ns.jsonld -> 404
+ GET /ids/quechua/ns/ -> 404
+CANDIDATE working source
+ GET / -> 200 20061 bytes
+ GET /ids/quechua/ns.ttl -> 200 275431 bytes
+ GET /ids/quechua/ns.jsonld -> 200 331711 bytes
+ GET /ids/quechua/ns/ -> 200 94696 bytes
+
+Script done on 2026-10-21 10:19:40-04:00 [COMMAND_EXIT_CODE="0"]

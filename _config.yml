@@ -1,0 +1,5 @@
+# GitHub Pages uses its normal Jekyll build. Raw pinned inputs are for the
+# offline compiler and source review, not part of the published website.
+exclude:
+  - data
+  - scripts

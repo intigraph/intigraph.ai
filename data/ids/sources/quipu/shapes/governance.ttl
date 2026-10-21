@@ -1,0 +1,1253 @@
+# SHACL shapes for the Governance Plane ("the loom") — policy, workflows &
+# verification, layered on the Hank x Quipu x Bobbin stack.
+#
+# Implements the "Entities in Quipu" contract from the governance-plane design
+# (hank docs/book/src/design/governance-plane.md, Phase 1). The primitives are
+# RDF classes in Quipu's governed ontology, so **definition-time verification is
+# just SHACL over them** — a workflow/policy/step definition that violates its
+# shape is rejected at write. The governance classes EXTEND the code-entities
+# ontology (CodeModule, CodeSymbol, Document, Section, Bundle) in the SAME
+# namespace, so governance facts and code facts live in one graph and answer a
+# single SPARQL query.
+#
+# Reuse over invention (per the design's table): Policy extends Directive;
+# Verdict is an Observation; Decision is a DecisionRecord. These already exist in
+# aegis-ontology.shapes.ttl — here we subclass them (RDFS) and add the
+# governance-specific constraints.
+#
+# Load via POST /shapes:
+#   curl -s localhost:3030/shapes -X POST -H "Content-Type: application/json" \
+#     -d '{"action":"load","name":"governance","turtle":"<contents>"}'
+
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aegis:  <http://aegis.gastown.local/ontology/> .
+@prefix camayoc: <https://camayoc.dev/ontology#> .
+@prefix ql:     <http://semweb.mmlab.be/ns/ql#> .
+@prefix rml:    <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr:     <http://www.w3.org/ns/r2rml#> .
+
+# Schema declarations are resources in their own right. Sanction their standard
+# RDF types without sanctioning instances of every class declared in the data.
+# The write vocabulary continues to come exclusively from loaded shape sets.
+<urn:quipu:shape:OntologyClass> a sh:NodeShape ;
+    sh:targetClass rdfs:Class ;
+    sh:nodeKind sh:IRI .
+
+<urn:quipu:shape:OntologyProperty> a sh:NodeShape ;
+    sh:targetClass rdf:Property ;
+    sh:nodeKind sh:IRI .
+
+# ═══════════════════════════════════════════════════════════════════
+# Class hierarchy — reuse the existing governance types (RDFS subclass,
+# so the parent's shape ALSO applies to the child via inference).
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:Policy   rdfs:subClassOf aegis:Directive .       # governed rule / intent
+aegis:Verdict  rdfs:subClassOf aegis:Observation .     # signed, content-bound result
+aegis:Decision rdfs:subClassOf aegis:DecisionRecord .  # human approve / reject / changes
+
+# ═══════════════════════════════════════════════════════════════════
+# Composition types — the workflow graph.
+# ═══════════════════════════════════════════════════════════════════
+
+# ── Workflow ───────────────────────────────────────────────────────
+# A directed graph of Steps + guarded Transitions. Must be named and hold
+# at least one Step (the entry). Acyclicity/coverage are checked by the
+# creation-is-verified pass, not expressible in core SHACL.
+
+aegis:WorkflowShape a sh:NodeShape ;
+    sh:targetClass aegis:Workflow ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:hasStep ;
+        sh:class aegis:Step ;
+        sh:minCount 1 ;
+    ] .
+
+# ── Step ───────────────────────────────────────────────────────────
+# One unit of work: { produces: [Artifact], requires: [Artifact],
+# gatedBy: [Policy], actor: Role }. produces/requires reference Artifacts;
+# gatedBy references Policies; actor names a Role.
+
+aegis:StepShape a sh:NodeShape ;
+    sh:targetClass aegis:Step ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:produces ;
+        sh:class aegis:Artifact ;
+    ] ;
+    sh:property [
+        sh:path aegis:requires ;
+        sh:class aegis:Artifact ;
+    ] ;
+    sh:property [
+        sh:path aegis:gatedBy ;
+        sh:class aegis:Policy ;
+    ] ;
+    sh:property [
+        sh:path aegis:actor ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+# ── Transition ─────────────────────────────────────────────────────
+# A guarded edge from a Step: { on: <outcome>, to: <Step> }. Branches and
+# loops are just multiple Transitions; the guard predicate is evaluated by
+# the same machinery. `on` is the triggering outcome, `to` the target Step.
+
+aegis:TransitionShape a sh:NodeShape ;
+    sh:targetClass aegis:Transition ;
+    sh:property [
+        sh:path aegis:on ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:to ;
+        sh:class aegis:Step ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# Shuttle workflow history — Camayoc's workflow-and-archive slice.
+#
+# Camayoc owns these terms in the shared aegis namespace.  Keeping their
+# write-time shapes here makes the vocabulary available wherever Quipu's
+# governance set is loaded; the constraints mirror shuttle's actual export
+# contract and leave the TransitionEvent as the append-only source of truth.
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:WorkflowDefinitionShape a sh:NodeShape ;
+    sh:targetClass aegis:WorkflowDefinition ;
+    sh:property [ sh:path aegis:initialState ; sh:datatype xsd:string ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:terminalState ; sh:datatype xsd:string ] ;
+    sh:property [
+        sh:path aegis:hasStep ;
+        sh:class aegis:WorkflowStep ;
+        sh:minCount 1 ;
+    ] .
+
+aegis:WorkflowStepShape a sh:NodeShape ;
+    sh:targetClass aegis:WorkflowStep ;
+    sh:property [ sh:path aegis:fromState ; sh:datatype xsd:string ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:toState ; sh:datatype xsd:string ; sh:maxCount 1 ] .
+
+aegis:WorkflowRunShape a sh:NodeShape ;
+    sh:targetClass aegis:WorkflowRun ;
+    sh:property [ sh:path aegis:currentRevision ; sh:datatype xsd:integer ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:runOf ; sh:class aegis:WorkflowDefinition ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:currentState ; sh:datatype xsd:string ; sh:minCount 1 ] ;
+    sh:property [ sh:path aegis:createdAt ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:sourceKind ; sh:hasValue "observed" ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+aegis:TransitionEventShape a sh:NodeShape ;
+    sh:targetClass aegis:TransitionEvent ;
+    sh:property [ sh:path aegis:fromRevision ; sh:datatype xsd:integer ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:transitionVersion ; sh:datatype xsd:integer ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:inRun ; sh:class aegis:WorkflowRun ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:atStep ; sh:class aegis:WorkflowStep ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:fromState ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:toState ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path <http://www.w3.org/ns/prov#endedAtTime> ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:performedBy ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:signature ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:sourceKind ; sh:hasValue "observed" ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+# ── Artifact ───────────────────────────────────────────────────────
+# An entity standing for a thing produced or required (design doc, test
+# result, ADR, commit, review). Carries a Reference to a concrete target
+# and a Claim it must satisfy. Verified at the leaf.
+
+aegis:ArtifactShape a sh:NodeShape ;
+    sh:targetClass aegis:Artifact ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:reference ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:claim ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+# ── PlanStep ───────────────────────────────────────────────────────
+# The intent map's atom: references a CodeSymbol (the edit target) and
+# belongs to the running Step. Only Hank binds intent→structure live.
+
+aegis:PlanStepShape a sh:NodeShape ;
+    sh:targetClass aegis:PlanStep ;
+    sh:property [
+        sh:path aegis:references ;
+        sh:class aegis:CodeSymbol ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:inStep ;
+        sh:class aegis:Step ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# Policy — the verifier. targets an entity TYPE (as a SHACL shape targets
+# a class); carries the composed claim. External: one policy governs all
+# entities of its target type. (Also an aegis:Directive by subclass, so the
+# Directive shape's authority/issuedBy/label apply.)
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:PolicyShape a sh:NodeShape ;
+    sh:targetClass aegis:Policy ;
+    sh:property [
+        sh:path aegis:targets ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:claim ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Where the gate binds: an action boundary (pre-edit) or a step
+        # transition. The effect may be computed from risk x confidence.
+        sh:path aegis:boundary ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "action" "transition" ) ;
+    ] ;
+    sh:property [
+        # The RESPONSE when the claim is unsatisfied — distinct from
+        # `constraintClass`, which says what kind of bound this is. `throttle`
+        # is the soft-class response SARC §4.2 places at the PAA: it cannot
+        # prevent the action that just completed, but it backs off the ones
+        # after it (see `aegis:backoffFormula`).
+        sh:path aegis:effect ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "allow" "warn" "require-approval" "deny" "escalate" "record" "throttle" ) ;
+    ] ;
+    sh:property [
+        # WHERE this policy binds, as repo-relative path globs — the boundary a
+        # tripwire spans, and the scope any action-boundary policy may narrow
+        # itself to. Deliberately multi-valued (no maxCount): a wire spanning
+        # three globs is three values, and yupana's projection accumulates the
+        # rows rather than collapsing to whichever arrived first. Absent means
+        # unscoped — the policy applies wherever its selector's language does.
+        # A policy carrying appliesTo and NO selector/predicate is a TRIPWIRE:
+        # touching the path IS the crossing (see shapes/policies/tripwire.ttl).
+        sh:path aegis:appliesTo ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        # The workflow to instantiate when the effect requires one
+        # (require-approval / escalate) — points at an aegis:Workflow. This is the
+        # seam a consumer (a Hank edit-guard, or a Shantytown event subscriber)
+        # reads to learn WHICH workflow a governed change assigns.
+        sh:path aegis:assignsWorkflow ;
+        sh:class aegis:Workflow ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # A structural (tree-sitter-tier) policy names the two atoms it composes:
+        # the Selector that picks nodes and the Predicate that tests them. Both
+        # OPTIONAL — a committed-tier policy carries only its SPARQL-ASK `claim`.
+        # Hank projects these atoms to evaluate the policy where the evidence is
+        # hot, at the pre-edit seam (hank docs/book/src/design/policy-edit-hooks.md).
+        sh:path aegis:selector ;
+        sh:class aegis:Selector ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:predicate ;
+        sh:class aegis:Predicate ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Policy-by-example provenance (docs/design/policy-by-example.md): the
+        # concrete record that motivated this rule — a Verdict, a DecisionRequest,
+        # a verdict-spool entry, an edit record. An IRI-as-string like
+        # aegis:targets / aegis:forPolicy, NOT sh:class-typed, deliberately: the
+        # exemplar may live outside this graph (yupana's spool), and a policy
+        # must not become unwritable because its motivating case is not a local
+        # entity. OPTIONAL: a hand-authored policy has no exemplar, and demanding
+        # one would forge provenance for every policy that predates the gesture.
+        # A refusal under an exemplar-carrying policy cites it, so the refusal
+        # arrives explained by example.
+        sh:path aegis:exemplar ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+
+    # ── SARC constraint metadata ────────────────────────────────────
+    # SARC (arXiv:2605.07728) §3.1 models a constraint as
+    # ⟨src, class, pred, verif, resp⟩ plus a declared operating point θ, and
+    # §4.2 (Table 3) fixes which class may be enforced at which point. The
+    # fields below supply the parts `boundary` + `effect` alone cannot:
+    # `effect` was carrying BOTH the class and the response, which is why
+    # "is this a hard constraint?" was not a question this graph could answer.
+    #
+    # Every field is sh:maxCount-only here, NOT minCount. Conditional
+    # requirement ("an action-boundary policy must declare a class", "an
+    # escalation must declare a reversibility window") is a cross-field rule
+    # that SHACL core cannot state, and encoding it as an unconditional
+    # minCount would reject every committed-tier policy that legitimately has
+    # no structural placement. Those rules live in src/governance/placement.rs
+    # and run at definition time alongside this shape — see
+    # docs/design/policy-edit-hooks.md.
+
+    sh:property [
+        # SARC §3.1: C = Ch ∪ Cs ∪ Ce. The class is WHAT KIND of bound this is,
+        # independent of what happens when it fires — hard constraints are never
+        # admissible, soft ones are admissible at a declared cost, escalation
+        # ones transfer control to a human.
+        sh:path aegis:constraintClass ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "hard" "soft" "escalation" ) ;
+    ] ;
+    sh:property [
+        # SARC §4.1: the enforcement point this constraint is evaluated at.
+        # Finer than `boundary`, which stays as the coarse action/transition
+        # split — an action-boundary constraint may be a Pre-Action Gate check,
+        # an Action-Time Monitor, or a Post-Action Auditor, and the difference
+        # decides whether it can prevent anything.
+        sh:path aegis:verificationPoint ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "PAG" "ATM" "PAA" "tool_layer" "policy_layer" ) ;
+    ] ;
+    sh:property [
+        # SARC §4.3: which architectural layer HOSTS the check. There is
+        # deliberately no "prompt" value: a hard constraint hosted only at the
+        # prompt layer is what SARC I6 exists to forbid, and a value the
+        # vocabulary cannot express is one no deployment can accidentally
+        # configure. Rejecting it here would be a check that could be turned
+        # off; omitting it is a check that cannot fail to hold.
+        sh:path aegis:hostedAtLayer ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "orchestration" "tool" "policy" ) ;
+    ] ;
+    sh:property [
+        # SARC §3.1: src. Where the obligation comes from. `aegis:authority` on
+        # the parent Directive says WHO issued it; this says what KIND of
+        # instrument it is, which is what decides precedence when two
+        # constraints conflict (§9.8: regulatory > contractual > operational).
+        sh:path aegis:sourceType ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "regulatory" "contractual" "ethical" "operational" ) ;
+    ] ;
+    sh:property [
+        # SARC §5.2/I2: a predicate without a declared operating point is
+        # incomplete — the FP/FN trade-off is a decision the deploying
+        # organization owns, not a default chosen by whoever wrote the regex.
+        sh:path aegis:operatingPoint ;
+        sh:class aegis:OperatingPoint ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # SARC §5.1: constraint evaluation must be O(tool latency), never
+        # O(model latency). A declared budget is what makes that checkable
+        # rather than aspirational; Hank already enforces a whole-guard deadline
+        # (`policy.deadline_ms`) and this is its per-constraint refinement.
+        sh:path aegis:latencyBudgetMs ;
+        sh:datatype xsd:integer ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # SARC §5.3/I4: the window within which the contemplated action can
+        # still be undone without compounding cost. An escalation whose queue
+        # wait exceeds it is structurally too slow, whatever the operator does.
+        sh:path aegis:reversibilityWindowSeconds ;
+        sh:datatype xsd:integer ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # ONE permitted value, by design. SARC §5.3 requires a declared
+        # default-DENY when no operator can service an escalation inside the
+        # reversibility window: default-allow under load turns an escalation
+        # constraint into a no-op exactly when it matters, which is the
+        # opposite of oversight. Modelling it as a one-value enum rather than a
+        # boolean means the unsafe setting is unrepresentable rather than
+        # merely discouraged.
+        sh:path aegis:onTimeout ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "deny" ) ;
+    ] ;
+    sh:property [
+        # The backoff a `throttle` effect applies to SUBSEQUENT actions once a
+        # soft window is crossed. Free-form (the consumer compiles it); present
+        # so a throttling policy declares its response rather than leaving the
+        # amount to the implementer.
+        sh:path aegis:backoffFormula ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# OperatingPoint — the declared FP/FN posture of a predicate (SARC §5.2).
+# Split out as its own node rather than flattened onto Policy so it can be
+# shared by predicates that legitimately have the same calibration, and so
+# the tolerances travel together with the basis they were measured against.
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:OperatingPointShape a sh:NodeShape ;
+    sh:targetClass aegis:OperatingPoint ;
+    sh:property [
+        # "exact_predicate" (no classifier error — an exact string/regex/typed
+        # comparison), "threshold" (a numeric cut), or
+        # "deterministic_threshold" (a threshold over an exact quantity).
+        sh:path aegis:kind ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ( "exact_predicate" "threshold" "deterministic_threshold" ) ;
+    ] ;
+    sh:property [
+        # Blocked-a-valid-action rate this deployment accepts. For a hard
+        # constraint SARC §5.2 expects this to be the tolerant one: a missed
+        # violation is by definition unacceptable, a false block falls back to
+        # escalation.
+        sh:path aegis:falsePositiveTolerance ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:falseNegativeTolerance ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:threshold ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # What the threshold is measured over — the quantity, so a reader can
+        # tell a spend cap from a symbol count without reading the claim.
+        sh:path aegis:calibrationBasis ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# Catalog leaves — the composable atoms policies are built from. A
+# Selector yields a set (evidence → set); a Predicate tests an element.
+# Both are evidence-grounded and tier-tagged.
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:SelectorShape a sh:NodeShape ;
+    sh:targetClass aegis:Selector ;
+    sh:property [
+        sh:path aegis:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:evidenceSource ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # For a tree-sitter-tier selector, the grammar the `.scm` evidenceSource is
+        # written against (`rust`, `python`, …) — mirrors Hank's Rule.language.
+        # Optional: a non-structural selector has no grammar.
+        sh:path aegis:language ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:tier ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "live" "lsp" "tree-sitter" "committed" "attested" ) ;
+    ] .
+
+aegis:PredicateShape a sh:NodeShape ;
+    sh:targetClass aegis:Predicate ;
+    sh:property [
+        sh:path aegis:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:evidenceSource ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Three values beyond the Selector's set, forming the predicate ladder
+        # of docs/design/semantic-grounded-edit-policies.md — weakest authority
+        # to strongest claim:
+        #   "tree-sitter+graph"  exact membership of parsed text in a projected
+        #                        id set — deterministic, hard-capable;
+        #   "embedding"          similarity against a pinned model + corpus
+        #                        snapshot — REPRODUCIBLE but approximate, so
+        #                        advisory/escalate only, never a hard PAG deny;
+        #   "model"              generative judgment — last resort, advisory
+        #                        only, its recorded facts quarantined.
+        # A closed enum as ever: a semantic verdict can never masquerade as an
+        # exact one, because the tier that would let it is not a value the
+        # vocabulary can express for it.
+        sh:path aegis:tier ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "live" "lsp" "tree-sitter" "tree-sitter+graph" "embedding" "model" "committed" "attested" ) ;
+    ] ;
+    sh:property [
+        # The predicate direction. The lexical trio mirrors Hank's
+        # rules::MatchType so a projected policy round-trips; a SPARQL-ASK
+        # predicate encodes its own direction and carries none. The GROUNDED
+        # pair tests candidates for MEMBERSHIP in the id set named by
+        # aegis:groundingQuery rather than against a pattern, with three
+        # outcomes, not two: grounded (resolves to a real entity), unresolvable
+        # (a fabricated reference — its own violation class, never folded into
+        # a neighbour), and no-candidate. A grounded match type without a
+        # groundingQuery cannot be evaluated and is refused at definition time
+        # (src/governance/placement.rs).
+        sh:path aegis:matchType ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "must-match" "must-not-match" "must-exist" "must-ground" "must-not-ground" ) ;
+    ] ;
+    sh:property [
+        # Where a grounded predicate's CANDIDATES come from. "token" is the
+        # shipped value: candidates are simply the tokens of the introduced
+        # text — the parser has already produced them, and tokenization assumes
+        # no lexical shape. A pattern value remains expressible purely as a
+        # NARROWING OPTIMIZATION (fewer membership probes), never as authority:
+        # whatever picked the candidates, a candidate grounds if and only if
+        # the graph holds it. The id set alone defines ticket-shape.
+        sh:path aegis:candidateSource ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Truth for a grounded predicate: a SPARQL SELECT naming the
+        # authoritative id set (e.g. every aegis:WorkItem's identifier).
+        # Evaluators do not run it per candidate — it is projected into the hot
+        # plane as a membership set under the existing freshness/cache-age
+        # machinery, and a missing or failed projection renders the rule
+        # UNEVALUATED (loud), never "empty set, nothing grounds, allow".
+        sh:path aegis:groundingQuery ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # An optional pre-filter regex: only captures whose text matches the gate
+        # are tested by the predicate (e.g. only comments containing TODO).
+        sh:path aegis:gate ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# Verdict — a stored, signed, content-bound attestation (NOT a bare claim).
+# An aegis:Observation by subclass. `outcome` distinguishes unknown (no
+# evidence) from unsatisfied (evidence says no). Binding to the evidence
+# content hash makes tamper/replay self-staling; predicateId lets any
+# independent verifier re-derive it (checked, not trusted).
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:VerdictShape a sh:NodeShape ;
+    sh:targetClass aegis:Verdict ;
+    sh:property [
+        # Optional link to the COMMITTED transaction whose delta was judged,
+        # never the verdict's own persistence transaction. Refused/rolled-back
+        # attempts and historical verdicts omit it; never predict or backfill
+        # a transaction id from timestamps. The producer must bind this value
+        # into signed evidence and verdict identity; SHACL checks only its kind.
+        sh:path aegis:gatedTx ;
+        sh:datatype xsd:integer ;
+        sh:maxCount 1 ;
+        sh:minInclusive 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:predicateId ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:targetRef ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:outcome ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ( "satisfied" "unsatisfied" "unknown" ) ;
+    ] ;
+    sh:property [
+        sh:path aegis:evidenceHash ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:verifier ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:signature ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # The verdict's tier mirrors the Predicate ladder, INCLUDING the
+        # grounded and inexact values: "the tier rides the verdict into the
+        # graph" is the design's rule, and a similarity verdict that could
+        # only be recorded as "committed" would be an approximation wearing
+        # an exact tier's label — the misrepresentation the closed enum
+        # exists to prevent, committed by the vocabulary itself.
+        sh:path aegis:tier ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "live" "lsp" "tree-sitter" "tree-sitter+graph" "embedding" "model" "committed" "attested" ) ;
+    ] ;
+    sh:property [
+        sh:path aegis:freshness ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "fresh" "stale" ) ;
+    ] ;
+    sh:property [
+        sh:path aegis:confidence ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+
+    # ── The similarity seal (semantic-grounded design, application #1) ──
+    # A verdict produced by a similarity comparison carries the four fields
+    # that make its score falsifiable: the score, the threshold it was cut
+    # at, the model identity, and the corpus watermark — a score means
+    # nothing outside the model and corpus state that produced it. All
+    # optional here (an exact-tier verdict has no score to seal); requiring
+    # them CONDITIONALLY on tier "embedding"/"model" is a cross-field rule
+    # in the placement-check style, not core SHACL's.
+    sh:property [
+        sh:path aegis:similarityScore ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:similarityThreshold ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:embeddingModel ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:corpusWatermark ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # The claimed-linkage three-outcome set, CLOSED. Deliberately a
+        # separate property rather than new aegis:outcome values: outcome
+        # keeps its satisfied/unsatisfied/unknown contract (unknown = the
+        # check could not run — the Unevaluated linkage state maps there),
+        # while this says WHAT KIND of grounding answer the linkage check
+        # gave. "cited-but-dissimilar" is the fabricated-linkage class,
+        # never folded into either neighbour.
+        sh:path aegis:linkageOutcome ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "grounded" "cited-but-dissimilar" "no-citation" ) ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# VerifierRegistration — the root of trust (Phase 0). A governed, human-
+# authored record of WHICH verifier identity may attest WHICH predicate. Quipu
+# accepts a verdict only if its verifier is registered for that predicate — this
+# concentrates trust into a small, human-owned surface. `publicKey` is optional
+# until signing lands; the registration is meaningful as an authority record
+# even before verdicts are cryptographically signed.
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:VerifierRegistrationShape a sh:NodeShape ;
+    sh:targetClass aegis:VerifierRegistration ;
+    sh:property [
+        # Human trust-root tier (aegis-kzt0ql.9.4). Absent = agent tier.
+        sh:path aegis:trustTier ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "human" ) ;
+    ] ;
+    sh:property [
+        sh:path aegis:verifier ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # The predicate-id(s) this identity is authorized to attest. Repeatable.
+        sh:path aegis:attests ;
+        # Policy registrations use compact string ids; shuttle registrations
+        # attest a workflow IRI. Both are identifiers and both remain governed.
+        sh:or ( [ sh:datatype xsd:string ] [ sh:nodeKind sh:IRI ] ) ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:publicKey ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# Decision — a human approve / reject / request-changes, a signed
+# attested-evidence source (an aegis:DecisionRecord by subclass). Content-
+# bound to what it approved, so an edit after signing goes stale.
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:DecisionShape a sh:NodeShape ;
+    sh:targetClass aegis:Decision ;
+    sh:property [
+        sh:path aegis:outcome ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ( "approve" "reject" "changes" ) ;
+    ] ;
+    sh:property [
+        sh:path aegis:by ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:gate ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:evidenceHash ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# Sealed decisions (aegis-kzt0ql.9.3). A presentation freezes a decision's
+# content (an RDFC-1.0 digest) with a single-use nonce; a verdict answers it
+# with a signature over the whole decision. Neither class is a Verdict or a
+# DecisionRequest, and neither shares a domain-bearing predicate with them.
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:DecisionPresentationShape a sh:NodeShape ;
+    sh:targetClass aegis:DecisionPresentation ;
+    sh:property [ sh:path aegis:forDecision ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:sealedDigest ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^sha256:[0-9a-f]{64}$" ] ;
+    sh:property [ sh:path aegis:nonce ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:purpose ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "quipu-verdict" ) ] ;
+    sh:property [ sh:path aegis:presentationExpiresAt ; sh:datatype xsd:integer ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+aegis:DecisionVerdictShape a sh:NodeShape ;
+    sh:targetClass aegis:DecisionVerdict ;
+    sh:property [ sh:path aegis:forPresentation ; sh:class aegis:DecisionPresentation ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:outcome ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:verifier ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:sealSignature ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# The human trust root (aegis-kzt0ql.9.4). A registration carrying
+# aegis:trustTier "human" in ROOT is a human trust-root key; changing the set
+# of them takes an aegis:RegistryAmendment signed by an already-enrolled human
+# key (enforced by the write gate, not by these shapes). The first key is
+# enrolled once, at the console, and leaves an aegis:TrustRootBootstrap record.
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:RegistryAmendmentShape a sh:NodeShape ;
+    sh:targetClass aegis:RegistryAmendment ;
+    sh:property [ sh:path aegis:amends ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:amendedDigest ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^(sha256:[0-9a-f]{64}|revoked)$" ] ;
+    sh:property [ sh:path aegis:amendmentSigner ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:amendmentNonce ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[0-9a-fA-F]{32,}$" ] ;
+    sh:property [ sh:path aegis:amendmentSignature ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+aegis:TrustRootBootstrapShape a sh:NodeShape ;
+    sh:targetClass aegis:TrustRootBootstrap ;
+    sh:property [ sh:path aegis:enrolled ; sh:class aegis:VerifierRegistration ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:keyFingerprint ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^SHA256:[A-Za-z0-9+/]{43}$" ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# Escalation Router (Q-SARC-ER) — bounded human oversight.
+#
+# SARC I4: "escalation without a bound is not human oversight; it is deferred
+# autonomy." Before this, `require-approval` and `escalate` failed closed at the
+# write gate with NO CHANNEL to grant approval — a refusal an operator could not
+# act on, which is a worse control than an honest advisory.
+#
+# The router is ASYNCHRONOUS by design. A write gate is synchronous and cannot
+# hold a transaction open while a human decides; nothing here blocks a process.
+# What it does is make the refusal actionable: the attempt mints a
+# DecisionRequest naming what was refused and who can rule on it, a human signs
+# an aegis:Decision, and the next attempt succeeds. The "hold" is the agent
+# retrying, not the engine waiting.
+# ═══════════════════════════════════════════════════════════════════
+
+# ── OperatorGroup ──────────────────────────────────────────────────
+# WHO can rule, and what their capacity is. The capacity model is part of the
+# SPECIFICATION rather than an unstated operational assumption: SARC §5.3 makes
+# `W_q < τ_rev` a measurable property of an M/M/c queue, and a queue whose
+# parameters are undeclared cannot be measured against a window.
+
+aegis:OperatorGroupShape a sh:NodeShape ;
+    sh:targetClass aegis:OperatorGroup ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Servers in the M/M/c sense — how many operators can rule in parallel.
+        sh:path aegis:operatorCount ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Mean service time per decision, seconds. With operatorCount this is
+        # enough to compute the expected wait and compare it to a constraint's
+        # reversibility window.
+        sh:path aegis:meanServiceSeconds ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # What happens outside declared hours. Only "deny" and
+        # "defer_within_window" are expressible: an after-hours mode that
+        # ALLOWED would be the default-allow-under-load SARC §5.3 names as the
+        # opposite of oversight, and it is left unrepresentable for the same
+        # reason `onTimeout` is.
+        sh:path aegis:afterHours ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "deny" "defer_within_window" ) ;
+    ] .
+
+# ── DecisionRequest ────────────────────────────────────────────────
+# One suspended action awaiting a ruling. Minted by the router when an
+# escalation fires, and the thing that turns "denied" into "denied, and here is
+# how to un-deny it".
+#
+# `expiresAt` is derived from the constraint's reversibility window, so a
+# request that nobody services becomes a DENIAL at a declared time rather than
+# sitting open forever. That is the whole of I4.
+
+aegis:DecisionRequestShape a sh:NodeShape ;
+    sh:targetClass aegis:DecisionRequest ;
+    sh:property [
+        # The policy that escalated.
+        sh:path aegis:forPolicy ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # The entity whose write was suspended.
+        sh:path aegis:forTarget ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:routedTo ;
+        sh:class aegis:OperatorGroup ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Unix seconds after which an unserviced request is DENIED. Required:
+        # a request with no expiry is the unbounded escalation I4 forbids.
+        sh:path aegis:expiresAt ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Content binding, so an approval cannot survive a change to what it
+        # approved. Same discipline as a Verdict's.
+        sh:path aegis:evidenceHash ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Advisory precedent (semantic-grounded design, application #4): the
+        # nearest prior DECIDED requests, attached at mint time so the human
+        # rules with "you rejected something similar, here is why" in view.
+        # Zero-or-more, deliberately: absence means no similarity method ran
+        # or nothing was near — never "precedent was checked and cleared",
+        # which is a claim minting is not entitled to make. The ruling itself
+        # stays the human's; this property only informs it.
+        sh:path aegis:precedent ;
+        sh:class aegis:PrecedentLink ;
+    ] .
+
+# ── PrecedentLink ──────────────────────────────────────────────────
+# One scored nearest-neighbour claim: "this prior decided request is near the
+# minted one, by THIS method, at THIS score". Reified as its own node rather
+# than flattened onto the request because a request carries several
+# precedents, and three bare scores beside three bare request refs would
+# leave nothing pairing each score with the prior it scores. All three fields
+# are required together: a precedent without its score is an insinuation, a
+# score without its method is unfalsifiable, and the design's rule is that
+# every similarity verdict carries what it takes to re-run and disprove it.
+
+aegis:PrecedentLinkShape a sh:NodeShape ;
+    sh:targetClass aegis:PrecedentLink ;
+    sh:property [
+        sh:path aegis:precedentRequest ;
+        sh:class aegis:DecisionRequest ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:similarityScore ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path aegis:similarityMethod ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══════════════════════════════════════════════════════════════════
+# Principal — WHO acts, and over which graphs (SARC I5, §9.3).
+#
+# Quipu's named graphs were already an isolation substrate: a registry with an
+# enforced committed|overlay class, bind-once parent branches, and graph-scoped
+# writes, retractions and idempotency in SQL. What was missing was never
+# partitioning — it was AUTHORIZATION. Nothing said which principal may write to
+# which graph, so the isolation was real and ungoverned.
+#
+# `authorityOver` is that grant. The effective authority of a call chain is the
+# INTERSECTION of every link's, so a delegate can only narrow it; the wildcard
+# "*" declines to narrow rather than widening, which is what lets a
+# single-tenant deployment carry on unchanged. An empty intersection permits
+# nothing and is a refusal, never a fallback to the principal's own authority —
+# that fallback would be the authority escalation the rule exists to prevent.
+# ═══════════════════════════════════════════════════════════════════
+
+aegis:PrincipalShape a sh:NodeShape ;
+    sh:targetClass aegis:Principal ;
+    sh:property [
+        # The stable id a call chain names. Distinct from the IRI so a chain can
+        # be carried as short strings across a process boundary.
+        sh:path aegis:principalId ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Graph IRIs this principal may write, or "*" for every graph.
+        # Repeatable. A principal with NO authorityOver holds nothing, not
+        # everything: reading an absent grant as permission is how an
+        # access-control layer becomes decorative.
+        sh:path aegis:authorityOver ;
+        sh:datatype xsd:string ;
+    ] .
+
+# ── ToolClass ──────────────────────────────────────────────────────
+# One class of dispatchable action, and whether it traverses an enforcement
+# point. This is SARC I7 made into DATA.
+#
+# I7 is a property of the *dispatch graph*, not of any one constraint: an agent
+# harness exposes N classes of tool call, and enforcement completeness is the
+# question of whether every class that can change state passes through a point
+# where a constraint could stop it. Prose cannot answer that — a list in a design
+# doc goes stale the first time a harness adds a tool, and nothing notices.
+#
+# `ungovernedReason` is the important field. An executable class with no
+# `governedAt` and no reason is an unknown hole; the same class with a stated
+# reason is an ACKNOWLEDGED bypass surface, which is a different thing an
+# operator can weigh. Neither is "governed", and the checker never reports one as
+# the other.
+
+aegis:ToolClassShape a sh:NodeShape ;
+    sh:targetClass aegis:ToolClass ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Who dispatches it — the harness, the daemon, a CI runner. Two classes
+        # with the same name under different dispatchers are different classes,
+        # because only one of them may traverse a hook.
+        sh:path aegis:dispatchedBy ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Whether invoking it can change state. A read-only class needs no
+        # enforcement point, and demanding one would bury the real gaps.
+        sh:path aegis:executable ;
+        sh:datatype xsd:boolean ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Enforcement points this class actually traverses. Repeatable — a tool
+        # call can pass a pre-action gate and a post-action auditor both. Same
+        # vocabulary as aegis:verificationPoint, deliberately: a constraint
+        # placed at a point no class traverses can never fire, and that is only
+        # checkable if the two enums are one enum.
+        sh:path aegis:governedAt ;
+        sh:datatype xsd:string ;
+        sh:in ( "PAG" "ATM" "PAA" "tool_layer" "policy_layer" ) ;
+    ] ;
+    sh:property [
+        # Why an executable class traverses nothing. Required in practice by the
+        # inventory check rather than by minCount here, because the requirement
+        # is conditional on `executable true` and `governedAt` being absent —
+        # which SHACL can express only with sh:not/sh:or gymnastics that would
+        # obscure what the rule is.
+        sh:path aegis:ungovernedReason ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Where enforcement must happen instead, when it cannot happen here.
+        # An acknowledged bypass surface with no stated alternative is a note
+        # that something is unhandled; with one, it is a design.
+        sh:path aegis:enforcedInsteadAt ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+# ── Inheritance under delegation ───────────────────────────────────
+# SARC §9.5's constraint LAUNDERING: an orchestrator bound by a constraint
+# dispatches a sub-agent, the constraint is not re-applied at the deeper layer,
+# and the action happens anyway. Nobody decided to drop it; it simply was not
+# carried.
+#
+# `inheritedByDelegates` declares that a constraint binds the whole subtree
+# under a dispatch, not only the agent it was written for. `onUndecidable`
+# declares what happens when the deeper layer cannot evaluate it — and the only
+# permitted value is "escalate", for the same reason `onTimeout` admits only
+# "deny": a constraint that silently stops applying where it cannot be checked
+# is one an agent can escape by dispatching into a context where the evidence
+# is absent.
+
+aegis:InheritanceShape a sh:NodeShape ;
+    sh:targetClass aegis:Policy ;
+    sh:property [
+        sh:path aegis:inheritedByDelegates ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # No "drop" value. Not expressible, deliberately.
+        sh:path aegis:onUndecidable ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:in ( "escalate" ) ;
+    ] .
+
+# ── Trust boundaries on imported state ─────────────────────────────
+# The zero-trust agent gateway of SARC §9.5: state crossing INTO the agent's
+# context — a sub-agent's response, a retrieval result, an MCP tool's output —
+# has not been through this deployment's constraints and must not be treated as
+# if it had.
+#
+# Declared on the ToolClass because that is the thing that actually imports.
+# An importing class that traverses no enforcement point is a strictly worse
+# finding than an ungoverned class that only acts locally: it is a channel by
+# which unchecked content enters and then gets acted on.
+
+aegis:TrustBoundaryShape a sh:NodeShape ;
+    sh:targetClass aegis:ToolClass ;
+    sh:property [
+        sh:path aegis:importsUntrustedState ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        # Where the imported state comes from, for a reader deciding how much to
+        # worry. Free text: an enum here would go stale the first time a new
+        # integration lands, and a wrong enum value is worse than a sentence.
+        sh:path aegis:untrustedOrigin ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+# ═══ External-truth mappings and certified share bundles (aegis-z9pn9) ═══
+# Camayoc knowledge packs and Quipu share bundles use one envelope:
+# CertifiedShareBundle. A mapping is carried directly by the entity whose
+# external truth it locates, not by a second shadow entity that can drift.
+
+aegis:ExternalTruthMappingShape a sh:NodeShape ;
+    sh:targetSubjectsOf aegis:source_uri ;
+    sh:property [ sh:path aegis:source_uri ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [
+        sh:path aegis:access_via ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( "mcp" "rest" "sparql-federated" "file" "promql" )
+    ] ;
+    sh:property [
+        sh:path aegis:freshness ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ;
+        sh:pattern "^(live|snapshot\\([^()]+\\)|frozen\\([^()]+\\))$"
+    ] ;
+    sh:property [ sh:path aegis:verified_by ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+# A .pendant.db is Quipu's SQLite archive encoding of this bundle, not a second
+# semantic format. canonicalGraphHash is the pack_manifest content_hash:
+# sha256 over lexically sorted N-Triples for graph + shapes + queries + labels.
+aegis:CertifiedShareBundleShape a sh:NodeShape ;
+    sh:targetClass aegis:CertifiedShareBundle ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:canonicalGraphHash ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:shapesBundleVersion ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:provenanceManifest ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:publisherAttestation ; sh:class aegis:PublisherAttestation ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:certificationSeal ; sh:class aegis:KnowledgeCertificationSeal ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+# Two signatures are two claims, hence two nodes. Both keys resolve to the
+# existing human-gated VerifierRegistration vocabulary used by shuttle.
+aegis:PublisherAttestationShape a sh:NodeShape ;
+    sh:targetClass aegis:PublisherAttestation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:attestsBundle ; sh:class aegis:CertifiedShareBundle ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:signingKey ; sh:class aegis:VerifierRegistration ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:attestationSignature ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+aegis:KnowledgeCertificationSealShape a sh:NodeShape ;
+    sh:targetClass aegis:KnowledgeCertificationSeal ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:certifiesBundle ; sh:class aegis:CertifiedShareBundle ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:canonicalGraphHash ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:shapesBundleVersion ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:shaclReportHash ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:scrubCheckPass ; sh:datatype xsd:boolean ; sh:hasValue true ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:provenanceManifest ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:signingKey ; sh:class aegis:VerifierRegistration ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aegis:attestationSignature ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    # A Camayoc bundle cut from an operational shuttle window names it here.
+    # Static packs such as core.pendant.db have no window, so this is optional
+    # on the generic certified-bundle envelope.
+    sh:property [ sh:path aegis:frozenWindow ; sh:nodeKind sh:IRI ; sh:maxCount 1 ] .
+
+# ═══ Camayoc governed RML/R2RML executor subset (aegis-9r8bp) ═══
+# These are standard RML/R2RML classes, not Camayoc aliases. The constraints
+# mirror Camayoc's implemented executor subset; functions and dynamic
+# predicates/graphs remain executor-preflight exclusions because this set does
+# not use closed-world SHACL checking.
+#
+# Referencing object maps (rr:parentTriplesMap + rr:joinCondition, and only
+# those two terms) are admitted structurally as of quipu-8c0 — Spanner Graph's
+# SOURCE KEY / DESTINATION KEY edge model is exactly this construct, and the
+# stack's foreign-key-shaped edges need it. The executor's own v2 support
+# (camayoc-5bf) gates actual execution; a mapping can be well-formed here and
+# still be refused by an executor that predates joins.
+
+camayoc:RmlTriplesMapShape a sh:NodeShape ;
+    sh:targetClass rr:TriplesMap ;
+    sh:property [ sh:path rml:logicalSource ; sh:class rml:LogicalSource ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path rr:subjectMap ; sh:class rr:SubjectMap ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path rr:predicateObjectMap ; sh:class rr:PredicateObjectMap ] ;
+    sh:property [ sh:path rr:graph ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+camayoc:RmlLogicalSourceShape a sh:NodeShape ;
+    sh:targetClass rml:LogicalSource ;
+    sh:property [ sh:path rml:source ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [
+        sh:path rml:referenceFormulation ;
+        sh:in ( ql:CSV ql:JSONPath rr:SQL2008 ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [ sh:path rml:iterator ; sh:datatype xsd:string ; sh:maxCount 1 ] ;
+    sh:property [ sh:path rml:query ; sh:datatype xsd:string ; sh:maxCount 1 ] .
+
+camayoc:RmlSubjectMapShape a sh:NodeShape ;
+    sh:targetClass rr:SubjectMap ;
+    sh:xone (
+        [ sh:property [ sh:path rr:constant ; sh:minCount 1 ; sh:maxCount 1 ] ]
+        [ sh:property [ sh:path rml:reference ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ]
+        [ sh:property [ sh:path rr:template ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ]
+    ) ;
+    sh:property [ sh:path rr:class ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path rr:termType ; sh:in ( rr:IRI rr:Literal ) ; sh:maxCount 1 ] .
+
+camayoc:RmlPredicateObjectMapShape a sh:NodeShape ;
+    sh:targetClass rr:PredicateObjectMap ;
+    sh:property [ sh:path rr:predicate ; sh:nodeKind sh:IRI ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    # The object may be a value map or a referencing object map (an edge to
+    # another triples map's subjects); each value must be one or the other.
+    sh:property [
+        sh:path rr:objectMap ;
+        sh:or ( [ sh:class rr:ObjectMap ] [ sh:class rr:RefObjectMap ] ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .
+
+# A referencing object map is the R2RML spelling of "this foreign-key-shaped
+# column pair is an edge": the generated object is the parent triples map's
+# subject for the row(s) the join conditions select. The join is required even
+# same-source — an implicit identity join would make edge semantics depend on
+# which logical source two maps happen to share, and explicit is what a
+# governed subset can preflight.
+camayoc:RmlRefObjectMapShape a sh:NodeShape ;
+    sh:targetClass rr:RefObjectMap ;
+    sh:property [ sh:path rr:parentTriplesMap ; sh:class rr:TriplesMap ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path rr:joinCondition ; sh:class rr:Join ; sh:minCount 1 ] .
+
+camayoc:RmlJoinConditionShape a sh:NodeShape ;
+    sh:targetClass rr:Join ;
+    sh:property [ sh:path rr:child ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path rr:parent ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+camayoc:RmlObjectMapShape a sh:NodeShape ;
+    sh:targetClass rr:ObjectMap ;
+    sh:xone (
+        [ sh:property [ sh:path rr:constant ; sh:minCount 1 ; sh:maxCount 1 ] ]
+        [ sh:property [ sh:path rml:reference ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ]
+        [ sh:property [ sh:path rr:template ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ] ]
+    ) ;
+    sh:property [ sh:path rr:termType ; sh:in ( rr:IRI rr:Literal ) ; sh:maxCount 1 ] ;
+    sh:property [ sh:path rr:datatype ; sh:nodeKind sh:IRI ; sh:maxCount 1 ] ;
+    sh:property [ sh:path rr:language ; sh:datatype xsd:string ; sh:maxCount 1 ] .

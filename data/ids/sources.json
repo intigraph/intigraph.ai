@@ -1,0 +1,219 @@
+[
+  {
+    "repository": "scbrown/quechua",
+    "commit": "99d813ce5038a7f2070955e30e57095a7651edf1",
+    "path": "ns.ttl",
+    "sha256": "7b65e13e6ac5e1c9b6fed3891ae583d5492c5a95191783f17cd49baf15ad7e56",
+    "bytes": 80691
+  },
+  {
+    "repository": "scbrown/quechua",
+    "commit": "99d813ce5038a7f2070955e30e57095a7651edf1",
+    "path": "trim/classes.tsv",
+    "sha256": "a47144ad0298ac9bf87072aaf15ab0546c6a7dfe9b55ae87bb73537126e8c9bf",
+    "bytes": 7550
+  },
+  {
+    "repository": "scbrown/quechua",
+    "commit": "99d813ce5038a7f2070955e30e57095a7651edf1",
+    "path": "trim/properties.tsv",
+    "sha256": "d1cba6e84c3cfde4ab1a0b66a318447e226dfb756f2d50ae5a509bb59c7c6dda",
+    "bytes": 10604
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "shapes/governance.ttl",
+    "sha256": "a4003d5125c9ca35e55b8e989e57c22c0d91d56f11dfd00b0bc37c7f231e661b",
+    "bytes": 62582
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "shapes/provenance.ttl",
+    "sha256": "7bc887ff9ec2fe2e0aeb68985f45a0d0050f5e735595413a675fed9677e29151",
+    "bytes": 3095
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "shapes/graph-labels.ttl",
+    "sha256": "db171f7f8f9f8eb196b4206866098d55f9340744902e0641b29f3fa871253fb5",
+    "bytes": 13318
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "shapes/stored-queries.ttl",
+    "sha256": "41c622f30d6c5f60ab5e378ad8b3708d73ca2811d47380a99ac198f319b4842e",
+    "bytes": 3331
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "shapes/rule-answers.ttl",
+    "sha256": "7cef525f0ebbd6f34a1c56361de106a9490b52e16a51288cdcd53036e4aa146a",
+    "bytes": 1230
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "shapes/rule-editions.ttl",
+    "sha256": "3b99d15e6759a3c70f9b28fd93cd127ec9774773a36e93079a2e029eaf1c5a58",
+    "bytes": 3798
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "shapes/demoted-derivation.ttl",
+    "sha256": "8186b3b37d2b64c5139e7d533f1893aac539af8a8754bd52277dc73ace08b0bb",
+    "bytes": 2120
+  },
+  {
+    "repository": "scbrown/seeds",
+    "commit": "5090d08b6f8f01a2f53c57d91b340cad5b04326d",
+    "path": "shapes/seeds.shapes.ttl",
+    "sha256": "41f6a57991e75db097a111bd44aee25a0f27eadcca112d02edea4b51a1b2adcd",
+    "bytes": 13178
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/core.shapes.ttl",
+    "sha256": "d0bc395ca40b9f4cbc80c26fa2edabe985c69da54aa2dca546c032dff75a059f",
+    "bytes": 23475
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/delivery.shapes.ttl",
+    "sha256": "8ad84d3d60717fe449d980c8077a6bb94df2b69665e26f98d9dd3cf97d757702",
+    "bytes": 6328
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/code-entities.ttl",
+    "sha256": "51dd4b81741e1d8b2d75dfd1190179b3a29695a4f95112452a65e722436d73a2",
+    "bytes": 23281
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/session-transcript.shapes.ttl",
+    "sha256": "fea0579c33714a75c3f0423940ac6ae27239d41cc8b3e0b6a9a5ecfd82b4b7d2",
+    "bytes": 1530
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/usage-breakdown.shapes.ttl",
+    "sha256": "47953d51fefc8eb33fdca2999031131d857049525855630b7ef57f9b852e869b",
+    "bytes": 849
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/homelab-infra.shapes.ttl",
+    "sha256": "100a92bb1d90d00cbb001ebc320e9152b7f2a2588e805b65f8d5870d80f07e6d",
+    "bytes": 12327
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/personal-media.shapes.ttl",
+    "sha256": "4bda212335be7734535bc80f6a34c860e6ae26eefa580354d5ec88f8d7a46093",
+    "bytes": 1964
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/software-factory.shapes.ttl",
+    "sha256": "43a3d7ca3925076f59d5d60ab3e9be13a7387d4fa55058c790831c65c7258033",
+    "bytes": 13876
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/public-term-profiles.shapes.ttl",
+    "sha256": "2e759f53db4dc6d5983e75a3d413dc5ec1b3e1eecfaf903fdc300adc46eaa307",
+    "bytes": 7331
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/shared-vocabulary.ttl",
+    "sha256": "9b041d64b1e43c49cf25a747605632442494366176bb7e3d1c1567b8fc34784a",
+    "bytes": 5121
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/aegis-properties.ttl",
+    "sha256": "17e1350e6d521fd8ee0d1ef66adcd40aa55a244944c0d560777d56dc249c9beb",
+    "bytes": 65174
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/aegis-rules.ttl",
+    "sha256": "997d639e69ddaa229b2b56d545bd05ddcc6153a68c69bd1a0657ef08ad0d575c",
+    "bytes": 2220
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/aegis-class-subsumption.rules.ttl",
+    "sha256": "783e854a21170f133ba43260d4f8a7b860d8d1118369623cc8096608d47c1935",
+    "bytes": 3202
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "shapes/aegis/placement.json",
+    "sha256": "1e460e1569bf0767a2f2c4c431532346e50c85cefc912f9bb4bba4e50b12a644",
+    "bytes": 56660
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "tests/fixtures/aegis-upstream/kept-governance-compatibility.shapes.ttl",
+    "sha256": "8c2b36da7366e3a15143b215f8429404d4e65136753c9494665e81b911870596",
+    "bytes": 6828
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "bytes": 11358
+  },
+  {
+    "repository": "scbrown/quipu",
+    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "path": "NOTICE",
+    "sha256": "5a032046ca96a9c2522c55bec4ff41b48b9800c47ddc3f9a5ccf0e6b63ce1efc",
+    "bytes": 211
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "bytes": 11358
+  },
+  {
+    "repository": "scbrown/camayoc",
+    "commit": "cf99beb4fa00e7e6fdd29dae4df867a5ad89f73b",
+    "path": "NOTICE",
+    "sha256": "d1a1c2053ca2ba890c32a8ca8ba294ae362bfee692c23a567850beba79317571",
+    "bytes": 203
+  },
+  {
+    "repository": "scbrown/seeds",
+    "commit": "5090d08b6f8f01a2f53c57d91b340cad5b04326d",
+    "path": "LICENSE",
+    "sha256": "e5e7ec9e4b7337f30077aa6918d814e3f4896421cd44c04827560a59a13fab11",
+    "bytes": 1068
+  }
+]

@@ -1,0 +1,59 @@
+# SHACL shapes for provenance-based work-item co-occurrence (quipu#37).
+#
+# The substrate for auditable, DETERMINISTIC work-item co-occurrence — "what work
+# touched this entity, and what else did that work touch" — as a graph query over
+# typed provenance edges, NOT a statistical mine (that stays in Bobbin). Hank
+# promotes the raw provenance at commit time (hank #18 / FR-19); Quipu aggregates.
+#
+# The provenance chain (predicates already in aegis-ontology.shapes.ttl):
+#
+# WorkItem <--aegis:implements-- GitCommit --aegis:modifies--> CodeModule|CodeSymbol
+#            (commit implements bead)         (commit touched entity, = #18's edge)
+#
+# Two work-items CO-OCCUR iff they share a touched entity:
+#
+#     ?cA aegis:implements ?beadA ; aegis:modifies ?e .
+#     ?cB aegis:modifies ?e ; aegis:implements ?beadB .   ->  beadA co-occurs with beadB
+#
+# Run it via the /cooccurrence endpoint (quipu::tool_cooccurrence), or directly in
+# SPARQL. Bitemporal by construction: a valid_at scopes it to "as of <date>".
+#
+# This file adds only the ONE edge the chain was missing — epic membership — so
+# an epic touches the union of its beads' entities. `aegis:modifies` and
+# `aegis:implements` are confirmed (not redefined) here; their PropertyShapes live
+# in aegis-ontology.shapes.ttl and stay permissive per hank-spec §9.2
+# ("start permissive, tighten deliberately").
+#
+# Load via POST /shapes:
+#   curl -s localhost:3030/shapes -X POST -H "Content-Type: application/json" \
+#     -d '{"action":"load","name":"provenance","turtle":"<contents>"}'
+
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix aegis:  <http://aegis.gastown.local/ontology/> .
+
+# ── contains: parent WorkItem → child WorkItem ──────────────────────
+# Tracker-agnostic hierarchy: an epic or parent item contains child work.
+
+# TARGETED so the shape can actually fire: without a target an
+# unreferenced PropertyShape validates nothing — this file's only shape was
+# "valid" by construction, vacuously, from the day it loaded. targetSubjectsOf
+# binds every node that ASSERTS a contains edge, and nothing else: measured 0
+# such subjects live on 2026-07-23, so this arms the rule without adding a
+# single violation. The first contains edge with a non-WorkItem object now fails
+# instead of passing silently.
+aegis:ContainsShape a sh:PropertyShape ;
+    sh:targetSubjectsOf aegis:contains ;
+    sh:path aegis:contains ;
+    sh:class aegis:WorkItem .
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix a: <http://aegis.gastown.local/ontology/> .
+# Standard /episode provenance entity; no new entity kind.
+# Label is always emitted. Other provenance/body fields remain optional.
+# No maxCount on comments: description revision history may retain several.
+a:EpisodeActivityShape a sh:NodeShape ;
+ sh:targetClass prov:Activity ;
+ sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:datatype xsd:string ] .
