@@ -30,12 +30,17 @@ carry `owl:equivalentClass` where the source ledger declares that role.
 Core ontology and observation-debt source facts are included for documentation;
 this does not combine their separate runtime loading policies.
 
-The 39 unresolved vocabulary identities and eight additional shape identities
-remain explicit legacy exceptions. Their proposed new destinations are not
-published by this refresh. A later accepted source revision must version the
-mapping and its publication together before pins or releases reference new terms.
+The separate stage-two refresh pins merged Camayoc
+`3e553637271a61ee01bd7e6428dfc63cb595cd01` and its additional ledger. It adds
+45 destinations (36 properties, one class and eight named shapes), bringing
+the total to 1,299. Every original stage-one destination stays fixed. Shape
+identities carry identity aliases without being declared equivalent classes.
+The two lifecycle identities `closedAt` and `assignedTo` remain legacy.
+The upstream stage-two ledger's conservative publication marker is retained
+as source provenance; actual availability requires verification of the deployed
+site bytes. Pins and releases must wait for that verification, not this commit.
 The generator resolves RDF identifiers, not source prefix spellings, and refuses
-an unexplained identity or changed stage-one destination.
+an unexplained identity, unpinned ledger or changed stage-one destination.
 
 The fixed entity redirect accepts known `/ids/<namespace>/id/<identifier>`
 paths and opens the existing Quipu explorer with the full w3id IRI in `entity`.

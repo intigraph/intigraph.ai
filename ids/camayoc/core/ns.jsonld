@@ -55,6 +55,25 @@
     ]
   },
   {
+    "@id": "_:cb1161456adb235afb656ae0bd938bf23f8bfd4030fdf575d8a5b2bc5612a82cf7f",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#observedValue"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#severity": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#Warning"
+      }
+    ]
+  },
+  {
     "@id": "_:cb1180d8244171046467117029e2da2fde9f712cbeef1be4b8354d4c7df74ba1fc0",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
@@ -85,25 +104,6 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "_:cb271b88e5eafe48879985e07a2c9e14c47e59b35dd927895d72da593dee0c9d3a1"
-      }
-    ]
-  },
-  {
-    "@id": "_:cb11b68159b9ec80d2908296e88fc2634d84a188b2312faf89c4cc2fcc4e6e71e8f",
-    "http://www.w3.org/ns/shacl#minCount": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#path": [
-      {
-        "@id": "https://w3id.org/intigraph/camayoc/core/ns#observedAt"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#severity": [
-      {
-        "@id": "http://www.w3.org/ns/shacl#Warning"
       }
     ]
   },
@@ -151,25 +151,6 @@
     "http://www.w3.org/ns/shacl#and": [
       {
         "@id": "_:cbde58ab9b0700c35e878dd2524ad71cdf38877cd7a4e338482e3646e0b23a72da"
-      }
-    ]
-  },
-  {
-    "@id": "_:cb12688429c73cfac1b18bb788536dd1f374334d2acd81c3e3b064a6bf8f37f240d",
-    "http://www.w3.org/ns/shacl#minCount": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#path": [
-      {
-        "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceKind"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#severity": [
-      {
-        "@id": "http://www.w3.org/ns/shacl#Warning"
       }
     ]
   },
@@ -251,25 +232,6 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-      }
-    ]
-  },
-  {
-    "@id": "_:cb13fbe0fa6b359683acd91dbb80dad5ffe732daf987ee3c95f7cd58198ba85381b",
-    "http://www.w3.org/ns/shacl#minCount": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": "1"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#path": [
-      {
-        "@id": "https://w3id.org/intigraph/camayoc/core/ns#observedValue"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#severity": [
-      {
-        "@id": "http://www.w3.org/ns/shacl#Warning"
       }
     ]
   },
@@ -4364,6 +4326,25 @@
     ]
   },
   {
+    "@id": "_:cbc7b48bb68ffc64f9a55a830be746a5331ab4621de6cf93f22695b6268e79246b",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#about"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#severity": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#Warning"
+      }
+    ]
+  },
+  {
     "@id": "_:cbd0427bbbd529f8d1fecf652cc11bc3ca16ba1a760ad1b7fc4f22900fa06e3a25",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
@@ -4464,7 +4445,7 @@
     ]
   },
   {
-    "@id": "_:cbf15e44af91201d7e1c3e52eabc34e138ce0e0ea6865bffc7483f725e1e7b8d07",
+    "@id": "_:cbf1be5ca29da454a491459eaa2737f8d296bede9a736e8cc72b19408d56e4b5f3",
     "http://www.w3.org/ns/shacl#minCount": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -4473,7 +4454,7 @@
     ],
     "http://www.w3.org/ns/shacl#path": [
       {
-        "@id": "https://w3id.org/intigraph/camayoc/core/ns#about"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#observedAt"
       }
     ],
     "http://www.w3.org/ns/shacl#severity": [
@@ -4504,6 +4485,25 @@
     "http://www.w3.org/ns/shacl#pattern": [
       {
         "@value": "^[0-9]+(\\.[0-9]+)*$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbfcde89a372abf396a1d7a8a661eee3318fdb2624388fd265e4a0afc1637cbb71",
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceKind"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#severity": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#Warning"
       }
     ]
   },
@@ -4717,38 +4717,9 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@id": "http://www.w3.org/ns/shacl#NodeShape"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#property": [
-      {
-        "@id": "_:cb11b68159b9ec80d2908296e88fc2634d84a188b2312faf89c4cc2fcc4e6e71e8f"
-      },
-      {
-        "@id": "_:cb12688429c73cfac1b18bb788536dd1f374334d2acd81c3e3b064a6bf8f37f240d"
-      },
-      {
-        "@id": "_:cb13fbe0fa6b359683acd91dbb80dad5ffe732daf987ee3c95f7cd58198ba85381b"
-      },
-      {
-        "@id": "_:cbf15e44af91201d7e1c3e52eabc34e138ce0e0ea6865bffc7483f725e1e7b8d07"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#severity": [
-      {
-        "@id": "http://www.w3.org/ns/shacl#Warning"
-      }
-    ],
-    "http://www.w3.org/ns/shacl#targetClass": [
-      {
-        "@id": "https://w3id.org/intigraph/quipu/ns#Observation"
-      }
-    ],
-    "https://w3id.org/intigraph/quipu/ns#onViolation": [
-      {
-        "@value": "emit"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape"
       }
     ]
   },
@@ -5675,42 +5646,27 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/actionKind",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#actionKind"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "What kind of action the step is (edit, run, mail, decide, verify, ...). One half of the conformance grammar's v1 step signature."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "action kind"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#actionKind"
       }
     ]
   },
   {
     "@id": "http://aegis.gastown.local/ontology/actionTarget",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#actionTarget"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "What the step acted on. The other half of the v1 step signature; an IRI when the target is in the graph, a string when it is not."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "action target"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#actionTarget"
       }
     ]
   },
@@ -5846,24 +5802,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/artifactDigest",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#artifactDigest"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "A deterministic digest of the installed artifact an ExecutionPath actually executes. Owed to Q12, which compares the two sides of a path in the store. Not aegis:contentHash reused: Q12 needs the two sides distinguishable on one node, and contentHash is a single reconciler identity (one value, Metric shape)."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "artifact digest"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#artifactDigest"
       }
     ]
   },
@@ -6347,50 +6293,40 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/deadEnd",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#deadEnd"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The entry Step of an abandoned branch the exemplars explored, preserved as a hazard: a follower of this path should know what was tried that did not help. Negative knowledge, kept queryable."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "dead end"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#deadEnd"
       }
     ]
   },
   {
     "@id": "http://aegis.gastown.local/ontology/decidedBy",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#decidedBy"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "decided by"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#decidedBy"
       }
     ]
   },
   {
     "@id": "http://aegis.gastown.local/ontology/decidedIn",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#decidedIn"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The work item (or session) a decision was made under."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "decided in"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#decidedIn"
       }
     ]
   },
@@ -6422,24 +6358,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/dependsOnVariable",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "A variable the mechanism under test depends on, named by the check that established the dependence. Owed to Q5: a test in an adjacent setting is valid exactly when the mechanism does not depend on what differs — this edge is what lets that be asked instead of assumed, protecting good evidence from being discarded (incident forms A2, A6)."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "depends on variable"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable"
       }
     ]
   },
@@ -6471,37 +6397,27 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/derivedConstraint",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#derivedConstraint"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The aegis:Policy this GoldenPath backs, closing the audit chain constraint <- path <- exemplars. Far-horizon: gated on verdict signing; until then the ladder honestly stops at blessed."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "derived constraint"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#derivedConstraint"
       }
     ]
   },
   {
     "@id": "http://aegis.gastown.local/ontology/deviatesAt",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#deviatesAt"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The Step at which an evaluated trajectory departed from the path it declared. Deviation is input to the record, not a judgment that the agent was wrong — demotion evidence only exists if deviations are recorded faithfully."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "deviates at"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#deviatesAt"
       }
     ]
   },
@@ -6572,19 +6488,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/enacts",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#enacts"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The Decision this step enacts, when one was recorded."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "enacts"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#enacts"
       }
     ]
   },
@@ -6863,19 +6774,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/followsPath",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#followsPath"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "A trajectory's (or work item's) declared claim to be an instance of a GoldenPath. A claim, not a verdict — conformance is evaluated at read time and by the guard, never asserted by the follower."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "follows path"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#followsPath"
       }
     ]
   },
@@ -7024,19 +6930,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/gates",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#gates"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The alert, release, or decision surface gated by this metric."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "gates"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#gates"
       }
     ]
   },
@@ -7315,24 +7216,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/lastRefreshedAt",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The observed time the execution path was last refreshed. It is evidence for a read-time currency query, never a stored current/correct verdict."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "last refreshed at"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt"
       }
     ]
   },
@@ -7468,24 +7359,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/metricName",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#metricName"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The measurement-system series or expression identity parsed from the source rule."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "metric name"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#metricName"
       }
     ]
   },
@@ -7634,37 +7515,27 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/omissionRuling",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#omissionRuling"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The human Decision behind a human-decision omission, with its rationale."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "omission ruling"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#omissionRuling"
       }
     ]
   },
   {
     "@id": "http://aegis.gastown.local/ontology/omitsStep",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#omitsStep"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "A PathOmission node recording one pruning ruling this GoldenPath made."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "omits step"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#omitsStep"
       }
     ]
   },
@@ -7774,24 +7645,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/over",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#over"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The alternatives visible at the time. Absence means none were articulated — which is itself a fact worth knowing."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "over"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#over"
       }
     ]
   },
@@ -8005,19 +7866,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/probeValidatedBy",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#probeValidatedBy"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "A falsifier-gated Verification that demonstrated the probe changes when the requirement is violated."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "probe validated by"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#probeValidatedBy"
       }
     ]
   },
@@ -8075,19 +7931,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/promotionEvidence",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotionEvidence"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "What the promoter looked at: a backtest report, a Verification, an advisory-period conformance record. A promotion citing nothing is answerable to competency Q8 as exactly that."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "promotion evidence"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotionEvidence"
       }
     ]
   },
@@ -8197,19 +8048,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/rationale",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#rationale"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "rationale"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#rationale"
       }
     ]
   },
@@ -8618,24 +8464,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/sourceDigest",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceDigest"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "A deterministic digest of an ExecutionPath's repository source, computed the same way as artifactDigest so the two compare. Owed to Q12: equal digests are observed agreement, differing digests are observed drift, and absence is UNKNOWN — never a verdict either way."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "source digest"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceDigest"
       }
     ]
   },
@@ -8732,42 +8568,27 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/stepOrder",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#stepOrder"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The step's position in the total order of the thing that declares it — a Trajectory's observed walk (golden-paths Q1) or a WorkflowDefinition's declared steps (workflow-and-archive Q5). Reused across both rather than minted twice, which is what rdfs:range-only and no rdfs:domain is for."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "step order"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#stepOrder"
       }
     ]
   },
   {
     "@id": "http://aegis.gastown.local/ontology/supersededBy",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#supersededBy"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "A later decision that replaces this one. The old decision is never deleted — bitemporality keeps it; this edge says who won."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "superseded by"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#supersededBy"
       }
     ]
   },
@@ -8955,19 +8776,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/trajectoryOf",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#trajectoryOf"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The WorkItem this trajectory is the execution record of. Mandatory in spirit (Q1/Q2 join on it); permissive in the shape until the recording path settles."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "trajectory of"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#trajectoryOf"
       }
     ]
   },
@@ -9103,19 +8919,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/verifiedBy",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#verifiedBy"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The Verification a step (or a trajectory's terminal claim) produced. Ranges over aegis:Verification, so the falsifier discipline applies unchanged — an unfalsifiable check never makes a trajectory admissible."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "verified by"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#verifiedBy"
       }
     ]
   },
@@ -9147,19 +8958,14 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/verifies",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#verifies"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The claim or change this Verification's check bears on — the 'X is fixed/landed/deployed' whose falsifier it ran. Owed to Q3, which joins a verification's time against the change that followed it. No range constraint: the subject may be a work item, a commit, or a deploy record."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "verifies"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#verifies"
       }
     ]
   },
@@ -9236,88 +9042,53 @@
   },
   {
     "@id": "https://camayoc.local/ontology/planePromotion",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#planePromotion"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "Attaches a promotion record to the fact that was promoted. The record is a blank node carrying the move's own provenance as observed facts — the promotion IS an observed event even though the fact it moved was inferred. No range: the record is structural, not a class anyone types. (Q13)"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "plane promotion"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#planePromotion"
       }
     ]
   },
   {
     "@id": "https://camayoc.local/ontology/promotedFrom",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotedFrom"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The plane graph the fact left. Always crew:inferred today — promotion is out of quarantine — and recorded rather than assumed, so a later reader is not required to know that. (Q13)"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "promoted from"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotedFrom"
       }
     ]
   },
   {
     "@id": "https://camayoc.local/ontology/promotedInto",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotedInto"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "The plane graph the fact entered. (Q13)"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "promoted into"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotedInto"
       }
     ]
   },
   {
     "@id": "https://camayoc.local/ontology/sourceLeftOpen",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#sameAs": [
       {
-        "@value": "Whether the source-plane interval was left open. false: the source episode was closed, a bitemporal interval close and never a delete, so the original stays visible as-of its write time. true: the promoter could not name the source episode, and the record says so out loud rather than implying a close that never happened — the fact is then readable in two planes at different trust, which is recoverable and visible instead of silent. The exact cell Q13 asks for. (Q13)"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "source left open"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen"
       }
     ]
   },
@@ -9716,6 +9487,43 @@
     "http://www.w3.org/ns/shacl#targetClass": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/core/ns#NonFunctionalRequirement"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1161456adb235afb656ae0bd938bf23f8bfd4030fdf575d8a5b2bc5612a82cf7f"
+      },
+      {
+        "@id": "_:cbc7b48bb68ffc64f9a55a830be746a5331ab4621de6cf93f22695b6268e79246b"
+      },
+      {
+        "@id": "_:cbf1be5ca29da454a491459eaa2737f8d296bede9a736e8cc72b19408d56e4b5f3"
+      },
+      {
+        "@id": "_:cbfcde89a372abf396a1d7a8a661eee3318fdb2624388fd265e4a0afc1637cbb71"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#severity": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#Warning"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Observation"
+      }
+    ],
+    "https://w3id.org/intigraph/quipu/ns#onViolation": [
+      {
+        "@value": "emit"
       }
     ]
   },
@@ -10974,6 +10782,47 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#actionKind",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "What kind of action the step is (edit, run, mail, decide, verify, ...). One half of the conformance grammar's v1 step signature."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "action kind"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#actionTarget",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "What the step acted on. The other half of the v1 step signature; an IRI when the target is in the graph, a string when it is not."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "action target"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#actor",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -11216,6 +11065,29 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "applies to"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#artifactDigest",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A deterministic digest of the installed artifact an ExecutionPath actually executes. Owed to Q12, which compares the two sides of a path in the store. Not aegis:contentHash reused: Q12 needs the two sides distinguishable on one node, and contentHash is a single reconciler identity (one value, Metric shape)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "artifact digest"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -11945,6 +11817,55 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#deadEnd",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The entry Step of an abandoned branch the exemplars explored, preserved as a hazard: a follower of this path should know what was tried that did not help. Negative knowledge, kept queryable."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dead end"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#decidedBy",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "decided by"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#decidedIn",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The work item (or session) a decision was made under."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "decided in"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#decisionPolicy",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -11986,6 +11907,29 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A variable the mechanism under test depends on, named by the check that established the dependence. Owed to Q5: a test in an adjacent setting is valid exactly when the mechanism does not depend on what differs — this edge is what lets that be asked instead of assumed, protecting good evidence from being discarded (incident forms A2, A6)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "depends on variable"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#depends_on_transitive",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -12005,6 +11949,42 @@
     "https://w3id.org/intigraph/quipu/ns#id": [
       {
         "@value": "depends_on_transitive"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#derivedConstraint",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The aegis:Policy this GoldenPath backs, closing the audit chain constraint <- path <- exemplars. Far-horizon: gated on verdict signing; until then the ladder honestly stops at blessed."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "derived constraint"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#deviatesAt",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Step at which an evaluated trajectory departed from the path it declared. Deviation is input to the record, not a judgment that the agent was wrong — demotion evidence only exists if deviations are recorded faithfully."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "deviates at"
       }
     ]
   },
@@ -12107,6 +12087,24 @@
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#enacts",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Decision this step enacts, when one was recorded."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "enacts"
       }
     ]
   },
@@ -12596,6 +12594,24 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#followsPath",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A trajectory's (or work item's) declared claim to be an instance of a GoldenPath. A claim, not a verdict — conformance is evaluated at read time and by the guard, never asserted by the follower."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "follows path"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#forDecision",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -12851,6 +12867,24 @@
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#gates",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The alert, release, or decision surface gated by this metric."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "gates"
       }
     ]
   },
@@ -13347,6 +13381,29 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The observed time the execution path was last refreshed. It is evidence for a read-time currency query, never a stored current/correct verdict."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "last refreshed at"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#latencyBudgetMs",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -13550,6 +13607,29 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "measures requirement"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#metricName",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The measurement-system series or expression identity parsed from the source rule."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "metric name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
     ]
   },
@@ -13794,6 +13874,42 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#omissionRuling",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The human Decision behind a human-decision omission, with its rationale."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "omission ruling"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#omitsStep",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A PathOmission node recording one pruning ruling this GoldenPath made."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "omits step"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#omittedStep",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -13999,6 +14115,29 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#over",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The alternatives visible when the decision was made. Absence means none were articulated — which is itself a fact worth knowing."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "over"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#ownedBy",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -14060,6 +14199,24 @@
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#planePromotion",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Attaches a promotion record to the fact that was promoted. The record is a blank node carrying the move's own provenance as observed facts — the promotion IS an observed event even though the fact it moved was inferred. No range: the record is structural, not a class anyone types. (Q13)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "plane promotion"
       }
     ]
   },
@@ -14283,6 +14440,24 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#probeValidatedBy",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A falsifier-gated Verification that demonstrated the probe changes when the requirement is violated."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "probe validated by"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#produces",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -14342,6 +14517,52 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotedFrom",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The plane graph the fact left. Always crew:inferred today — promotion is out of quarantine — and recorded rather than assumed, so a later reader is not required to know that. (Q13)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "promoted from"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotedInto",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The plane graph the fact entered. (Q13)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "promoted into"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotes",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -14356,6 +14577,24 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "promotes"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#promotionEvidence",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "What the promoter looked at: a backtest report, a Verification, an advisory-period conformance record. A promotion citing nothing is answerable to competency Q8 as exactly that."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "promotion evidence"
       }
     ]
   },
@@ -14510,6 +14749,24 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "question"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#rationale",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "rationale"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -15151,6 +15408,29 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceDigest",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A deterministic digest of an ExecutionPath's repository source, computed the same way as artifactDigest so the two compare. Owed to Q12: equal digests are observed agreement, differing digests are observed drift, and absence is UNKNOWN — never a verdict either way."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "source digest"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceKind",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -15176,6 +15456,29 @@
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Whether the source-plane interval was left open. false: the source episode was closed, a bitemporal interval close and never a delete, so the original stays visible as-of its write time. true: the promoter could not name the source episode, and the record says so out loud rather than implying a close that never happened — the fact is then readable in two planes at different trust, which is recoverable and visible instead of silent. The exact cell Q13 asks for. (Q13)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "source left open"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
       }
     ]
   },
@@ -15268,6 +15571,47 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@value": "step of"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#stepOrder",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The step's position in the total order of the thing that declares it — a Trajectory's observed walk (golden-paths Q1) or a WorkflowDefinition's declared steps (workflow-and-archive Q5). Reused across both rather than minted twice, which is what rdfs:range-only and no rdfs:domain is for."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "step order"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#supersededBy",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A later decision that replaces this one. The old decision is never deleted — bitemporality keeps it; this edge says who won."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "superseded by"
       }
     ]
   },
@@ -15504,6 +15848,24 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#trajectoryOf",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The WorkItem this trajectory is the execution record of. Mandatory in spirit (Q1/Q2 join on it); permissive in the shape until the recording path settles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "trajectory of"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#transitionVersion",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -15670,6 +16032,24 @@
     ]
   },
   {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#verifiedBy",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Verification a step (or a trajectory's terminal claim) produced. Ranges over aegis:Verification, so the falsifier discipline applies unchanged — an unfalsifiable check never makes a trajectory admissible."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "verified by"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/intigraph/camayoc/core/ns#verified_by",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       {
@@ -15720,6 +16100,24 @@
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/intigraph/camayoc/core/ns#verifies",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The claim or change this Verification's check bears on — the 'X is fixed/landed/deployed' whose falsifier it ran. Owed to Q3, which joins a verification's time against the change that followed it. No range constraint: the subject may be a work item, a commit, or a deploy record."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "verifies"
       }
     ]
   },

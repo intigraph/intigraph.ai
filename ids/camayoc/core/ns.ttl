@@ -25,14 +25,7 @@
 <http://aegis.gastown.local/ontology/CamayocMetricDerivationShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#CamayocMetricDerivationShape> .
 <http://aegis.gastown.local/ontology/CamayocMetricShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#CamayocMetricShape> .
 <http://aegis.gastown.local/ontology/CamayocNonFunctionalRequirementShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#CamayocNonFunctionalRequirementShape> .
-<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#property> _:cb11b68159b9ec80d2908296e88fc2634d84a188b2312faf89c4cc2fcc4e6e71e8f .
-<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#property> _:cb12688429c73cfac1b18bb788536dd1f374334d2acd81c3e3b064a6bf8f37f240d .
-<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#property> _:cb13fbe0fa6b359683acd91dbb80dad5ffe732daf987ee3c95f7cd58198ba85381b .
-<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#property> _:cbf15e44af91201d7e1c3e52eabc34e138ce0e0ea6865bffc7483f725e1e7b8d07 .
-<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
-<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/intigraph/quipu/ns#Observation> .
-<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <https://w3id.org/intigraph/quipu/ns#onViolation> "emit" .
+<http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> .
 <http://aegis.gastown.local/ontology/CamayocObservationShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationShape> .
 <http://aegis.gastown.local/ontology/CamayocOwnedByIsIriShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#CamayocOwnedByIsIriShape> .
 <http://aegis.gastown.local/ontology/CamayocPathOmissionShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#CamayocPathOmissionShape> .
@@ -165,13 +158,10 @@
 <http://aegis.gastown.local/ontology/access_via> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#access_via> .
 <http://aegis.gastown.local/ontology/action> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#action> .
 <http://aegis.gastown.local/ontology/action> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#action> .
-<http://aegis.gastown.local/ontology/actionKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/actionKind> <http://www.w3.org/2000/01/rdf-schema#comment> "What kind of action the step is (edit, run, mail, decide, verify, ...). One half of the conformance grammar's v1 step signature." .
-<http://aegis.gastown.local/ontology/actionKind> <http://www.w3.org/2000/01/rdf-schema#label> "action kind" .
-<http://aegis.gastown.local/ontology/actionKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://aegis.gastown.local/ontology/actionTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/actionTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "What the step acted on. The other half of the v1 step signature; an IRI when the target is in the graph, a string when it is not." .
-<http://aegis.gastown.local/ontology/actionTarget> <http://www.w3.org/2000/01/rdf-schema#label> "action target" .
+<http://aegis.gastown.local/ontology/actionKind> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#actionKind> .
+<http://aegis.gastown.local/ontology/actionKind> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#actionKind> .
+<http://aegis.gastown.local/ontology/actionTarget> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#actionTarget> .
+<http://aegis.gastown.local/ontology/actionTarget> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#actionTarget> .
 <http://aegis.gastown.local/ontology/actor> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#actor> .
 <http://aegis.gastown.local/ontology/actor> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#actor> .
 <http://aegis.gastown.local/ontology/adversariallyProvenBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#adversariallyProvenBy> .
@@ -192,10 +182,8 @@
 <http://aegis.gastown.local/ontology/amends> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#amends> .
 <http://aegis.gastown.local/ontology/appliesTo> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#appliesTo> .
 <http://aegis.gastown.local/ontology/appliesTo> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#appliesTo> .
-<http://aegis.gastown.local/ontology/artifactDigest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/artifactDigest> <http://www.w3.org/2000/01/rdf-schema#comment> "A deterministic digest of the installed artifact an ExecutionPath actually executes. Owed to Q12, which compares the two sides of a path in the store. Not aegis:contentHash reused: Q12 needs the two sides distinguishable on one node, and contentHash is a single reconciler identity (one value, Metric shape)." .
-<http://aegis.gastown.local/ontology/artifactDigest> <http://www.w3.org/2000/01/rdf-schema#label> "artifact digest" .
-<http://aegis.gastown.local/ontology/artifactDigest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/artifactDigest> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#artifactDigest> .
+<http://aegis.gastown.local/ontology/artifactDigest> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#artifactDigest> .
 <http://aegis.gastown.local/ontology/assignedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://aegis.gastown.local/ontology/assignedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "The principal a work item is assigned to. Agents are aegis:Principal, exactly as the graph already holds them." .
 <http://aegis.gastown.local/ontology/assignedTo> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to" .
@@ -270,32 +258,26 @@
 <http://aegis.gastown.local/ontology/currentRevision> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#currentRevision> .
 <http://aegis.gastown.local/ontology/currentState> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#currentState> .
 <http://aegis.gastown.local/ontology/currentState> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#currentState> .
-<http://aegis.gastown.local/ontology/deadEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/deadEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The entry Step of an abandoned branch the exemplars explored, preserved as a hazard: a follower of this path should know what was tried that did not help. Negative knowledge, kept queryable." .
-<http://aegis.gastown.local/ontology/deadEnd> <http://www.w3.org/2000/01/rdf-schema#label> "dead end" .
-<http://aegis.gastown.local/ontology/decidedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/decidedBy> <http://www.w3.org/2000/01/rdf-schema#label> "decided by" .
-<http://aegis.gastown.local/ontology/decidedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/decidedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The work item (or session) a decision was made under." .
-<http://aegis.gastown.local/ontology/decidedIn> <http://www.w3.org/2000/01/rdf-schema#label> "decided in" .
+<http://aegis.gastown.local/ontology/deadEnd> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#deadEnd> .
+<http://aegis.gastown.local/ontology/deadEnd> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#deadEnd> .
+<http://aegis.gastown.local/ontology/decidedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#decidedBy> .
+<http://aegis.gastown.local/ontology/decidedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#decidedBy> .
+<http://aegis.gastown.local/ontology/decidedIn> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#decidedIn> .
+<http://aegis.gastown.local/ontology/decidedIn> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#decidedIn> .
 <http://aegis.gastown.local/ontology/decisionPolicy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#decisionPolicy> .
 <http://aegis.gastown.local/ontology/decisionPolicy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#decisionPolicy> .
 <http://aegis.gastown.local/ontology/demonstratedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#demonstratedBy> .
 <http://aegis.gastown.local/ontology/demonstratedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#demonstratedBy> .
-<http://aegis.gastown.local/ontology/dependsOnVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/dependsOnVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable the mechanism under test depends on, named by the check that established the dependence. Owed to Q5: a test in an adjacent setting is valid exactly when the mechanism does not depend on what differs — this edge is what lets that be asked instead of assumed, protecting good evidence from being discarded (incident forms A2, A6)." .
-<http://aegis.gastown.local/ontology/dependsOnVariable> <http://www.w3.org/2000/01/rdf-schema#label> "depends on variable" .
-<http://aegis.gastown.local/ontology/dependsOnVariable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/dependsOnVariable> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable> .
+<http://aegis.gastown.local/ontology/dependsOnVariable> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable> .
 <http://aegis.gastown.local/ontology/depends_on> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#depends_on> .
 <http://aegis.gastown.local/ontology/depends_on> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#depends_on> .
 <http://aegis.gastown.local/ontology/deployed_on> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#deployed_on> .
 <http://aegis.gastown.local/ontology/deployed_on> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#deployed_on> .
-<http://aegis.gastown.local/ontology/derivedConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/derivedConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "The aegis:Policy this GoldenPath backs, closing the audit chain constraint <- path <- exemplars. Far-horizon: gated on verdict signing; until then the ladder honestly stops at blessed." .
-<http://aegis.gastown.local/ontology/derivedConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "derived constraint" .
-<http://aegis.gastown.local/ontology/deviatesAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/deviatesAt> <http://www.w3.org/2000/01/rdf-schema#comment> "The Step at which an evaluated trajectory departed from the path it declared. Deviation is input to the record, not a judgment that the agent was wrong — demotion evidence only exists if deviations are recorded faithfully." .
-<http://aegis.gastown.local/ontology/deviatesAt> <http://www.w3.org/2000/01/rdf-schema#label> "deviates at" .
+<http://aegis.gastown.local/ontology/derivedConstraint> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#derivedConstraint> .
+<http://aegis.gastown.local/ontology/derivedConstraint> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#derivedConstraint> .
+<http://aegis.gastown.local/ontology/deviatesAt> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#deviatesAt> .
+<http://aegis.gastown.local/ontology/deviatesAt> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#deviatesAt> .
 <http://aegis.gastown.local/ontology/dispatchedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#dispatchedBy> .
 <http://aegis.gastown.local/ontology/dispatchedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#dispatchedBy> .
 <http://aegis.gastown.local/ontology/domain> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#domain> .
@@ -306,9 +288,8 @@
 <http://aegis.gastown.local/ontology/embeddingModel> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#embeddingModel> .
 <http://aegis.gastown.local/ontology/enabled> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#enabled> .
 <http://aegis.gastown.local/ontology/enabled> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#enabled> .
-<http://aegis.gastown.local/ontology/enacts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/enacts> <http://www.w3.org/2000/01/rdf-schema#comment> "The Decision this step enacts, when one was recorded." .
-<http://aegis.gastown.local/ontology/enacts> <http://www.w3.org/2000/01/rdf-schema#label> "enacts" .
+<http://aegis.gastown.local/ontology/enacts> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#enacts> .
+<http://aegis.gastown.local/ontology/enacts> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#enacts> .
 <http://aegis.gastown.local/ontology/enforcedInsteadAt> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#enforcedInsteadAt> .
 <http://aegis.gastown.local/ontology/enforcedInsteadAt> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#enforcedInsteadAt> .
 <http://aegis.gastown.local/ontology/enrolled> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#enrolled> .
@@ -351,9 +332,8 @@
 <http://aegis.gastown.local/ontology/firedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#firedBy> .
 <http://aegis.gastown.local/ontology/focus> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#focus> .
 <http://aegis.gastown.local/ontology/focus> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#focus> .
-<http://aegis.gastown.local/ontology/followsPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/followsPath> <http://www.w3.org/2000/01/rdf-schema#comment> "A trajectory's (or work item's) declared claim to be an instance of a GoldenPath. A claim, not a verdict — conformance is evaluated at read time and by the guard, never asserted by the follower." .
-<http://aegis.gastown.local/ontology/followsPath> <http://www.w3.org/2000/01/rdf-schema#label> "follows path" .
+<http://aegis.gastown.local/ontology/followsPath> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#followsPath> .
+<http://aegis.gastown.local/ontology/followsPath> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#followsPath> .
 <http://aegis.gastown.local/ontology/forDecision> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#forDecision> .
 <http://aegis.gastown.local/ontology/forDecision> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#forDecision> .
 <http://aegis.gastown.local/ontology/forPolicy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#forPolicy> .
@@ -376,9 +356,8 @@
 <http://aegis.gastown.local/ontology/gatedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#gatedBy> .
 <http://aegis.gastown.local/ontology/gatedTx> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#gatedTx> .
 <http://aegis.gastown.local/ontology/gatedTx> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#gatedTx> .
-<http://aegis.gastown.local/ontology/gates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/gates> <http://www.w3.org/2000/01/rdf-schema#comment> "The alert, release, or decision surface gated by this metric." .
-<http://aegis.gastown.local/ontology/gates> <http://www.w3.org/2000/01/rdf-schema#label> "gates" .
+<http://aegis.gastown.local/ontology/gates> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#gates> .
+<http://aegis.gastown.local/ontology/gates> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#gates> .
 <http://aegis.gastown.local/ontology/governedAt> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#governedAt> .
 <http://aegis.gastown.local/ontology/governedAt> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#governedAt> .
 <http://aegis.gastown.local/ontology/grantsAction> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#grantsAction> .
@@ -421,10 +400,8 @@
 <http://aegis.gastown.local/ontology/kind> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#kind> .
 <http://aegis.gastown.local/ontology/language> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#language> .
 <http://aegis.gastown.local/ontology/language> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#language> .
-<http://aegis.gastown.local/ontology/lastRefreshedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/lastRefreshedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "The observed time the execution path was last refreshed. It is evidence for a read-time currency query, never a stored current/correct verdict." .
-<http://aegis.gastown.local/ontology/lastRefreshedAt> <http://www.w3.org/2000/01/rdf-schema#label> "last refreshed at" .
-<http://aegis.gastown.local/ontology/lastRefreshedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/lastRefreshedAt> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt> .
+<http://aegis.gastown.local/ontology/lastRefreshedAt> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt> .
 <http://aegis.gastown.local/ontology/latencyBudgetMs> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#latencyBudgetMs> .
 <http://aegis.gastown.local/ontology/latencyBudgetMs> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#latencyBudgetMs> .
 <http://aegis.gastown.local/ontology/leadFor> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#leadFor> .
@@ -445,10 +422,8 @@
 <http://aegis.gastown.local/ontology/measurementWindow> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#measurementWindow> .
 <http://aegis.gastown.local/ontology/measuresRequirement> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#measuresRequirement> .
 <http://aegis.gastown.local/ontology/measuresRequirement> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#measuresRequirement> .
-<http://aegis.gastown.local/ontology/metricName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/metricName> <http://www.w3.org/2000/01/rdf-schema#comment> "The measurement-system series or expression identity parsed from the source rule." .
-<http://aegis.gastown.local/ontology/metricName> <http://www.w3.org/2000/01/rdf-schema#label> "metric name" .
-<http://aegis.gastown.local/ontology/metricName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/metricName> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#metricName> .
+<http://aegis.gastown.local/ontology/metricName> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#metricName> .
 <http://aegis.gastown.local/ontology/minVersion> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#minVersion> .
 <http://aegis.gastown.local/ontology/minVersion> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#minVersion> .
 <http://aegis.gastown.local/ontology/monitors> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#monitors> .
@@ -471,12 +446,10 @@
 <http://aegis.gastown.local/ontology/observedValue> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#observedValue> .
 <http://aegis.gastown.local/ontology/omissionAuthority> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#omissionAuthority> .
 <http://aegis.gastown.local/ontology/omissionAuthority> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#omissionAuthority> .
-<http://aegis.gastown.local/ontology/omissionRuling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/omissionRuling> <http://www.w3.org/2000/01/rdf-schema#comment> "The human Decision behind a human-decision omission, with its rationale." .
-<http://aegis.gastown.local/ontology/omissionRuling> <http://www.w3.org/2000/01/rdf-schema#label> "omission ruling" .
-<http://aegis.gastown.local/ontology/omitsStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/omitsStep> <http://www.w3.org/2000/01/rdf-schema#comment> "A PathOmission node recording one pruning ruling this GoldenPath made." .
-<http://aegis.gastown.local/ontology/omitsStep> <http://www.w3.org/2000/01/rdf-schema#label> "omits step" .
+<http://aegis.gastown.local/ontology/omissionRuling> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#omissionRuling> .
+<http://aegis.gastown.local/ontology/omissionRuling> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#omissionRuling> .
+<http://aegis.gastown.local/ontology/omitsStep> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#omitsStep> .
+<http://aegis.gastown.local/ontology/omitsStep> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#omitsStep> .
 <http://aegis.gastown.local/ontology/omittedStep> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#omittedStep> .
 <http://aegis.gastown.local/ontology/omittedStep> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#omittedStep> .
 <http://aegis.gastown.local/ontology/on> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#on> .
@@ -493,10 +466,8 @@
 <http://aegis.gastown.local/ontology/option> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#option> .
 <http://aegis.gastown.local/ontology/outcome> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#outcome> .
 <http://aegis.gastown.local/ontology/outcome> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#outcome> .
-<http://aegis.gastown.local/ontology/over> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/over> <http://www.w3.org/2000/01/rdf-schema#comment> "The alternatives visible at the time. Absence means none were articulated — which is itself a fact worth knowing." .
-<http://aegis.gastown.local/ontology/over> <http://www.w3.org/2000/01/rdf-schema#label> "over" .
-<http://aegis.gastown.local/ontology/over> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/over> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#over> .
+<http://aegis.gastown.local/ontology/over> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#over> .
 <http://aegis.gastown.local/ontology/ownedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#ownedBy> .
 <http://aegis.gastown.local/ontology/ownedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#ownedBy> .
 <http://aegis.gastown.local/ontology/owns> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#owns> .
@@ -529,9 +500,8 @@
 <http://aegis.gastown.local/ontology/principalId> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#principalId> .
 <http://aegis.gastown.local/ontology/probe> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#probe> .
 <http://aegis.gastown.local/ontology/probe> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#probe> .
-<http://aegis.gastown.local/ontology/probeValidatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/probeValidatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A falsifier-gated Verification that demonstrated the probe changes when the requirement is violated." .
-<http://aegis.gastown.local/ontology/probeValidatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "probe validated by" .
+<http://aegis.gastown.local/ontology/probeValidatedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#probeValidatedBy> .
+<http://aegis.gastown.local/ontology/probeValidatedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#probeValidatedBy> .
 <http://aegis.gastown.local/ontology/produces> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#produces> .
 <http://aegis.gastown.local/ontology/produces> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#produces> .
 <http://aegis.gastown.local/ontology/promotedAt> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#promotedAt> .
@@ -540,9 +510,8 @@
 <http://aegis.gastown.local/ontology/promotedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#promotedBy> .
 <http://aegis.gastown.local/ontology/promotes> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#promotes> .
 <http://aegis.gastown.local/ontology/promotes> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#promotes> .
-<http://aegis.gastown.local/ontology/promotionEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/promotionEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "What the promoter looked at: a backtest report, a Verification, an advisory-period conformance record. A promotion citing nothing is answerable to competency Q8 as exactly that." .
-<http://aegis.gastown.local/ontology/promotionEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "promotion evidence" .
+<http://aegis.gastown.local/ontology/promotionEvidence> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#promotionEvidence> .
+<http://aegis.gastown.local/ontology/promotionEvidence> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#promotionEvidence> .
 <http://aegis.gastown.local/ontology/provenanceManifest> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#provenanceManifest> .
 <http://aegis.gastown.local/ontology/provenanceManifest> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#provenanceManifest> .
 <http://aegis.gastown.local/ontology/provider> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#provider> .
@@ -559,9 +528,8 @@
 <http://aegis.gastown.local/ontology/purpose> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#purpose> .
 <http://aegis.gastown.local/ontology/question> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#question> .
 <http://aegis.gastown.local/ontology/question> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#question> .
-<http://aegis.gastown.local/ontology/rationale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/rationale> <http://www.w3.org/2000/01/rdf-schema#label> "rationale" .
-<http://aegis.gastown.local/ontology/rationale> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/rationale> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#rationale> .
+<http://aegis.gastown.local/ontology/rationale> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#rationale> .
 <http://aegis.gastown.local/ontology/reference> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#reference> .
 <http://aegis.gastown.local/ontology/reference> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#reference> .
 <http://aegis.gastown.local/ontology/references> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#references> .
@@ -624,10 +592,8 @@
 <http://aegis.gastown.local/ontology/similarityThreshold> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#similarityThreshold> .
 <http://aegis.gastown.local/ontology/source> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#source> .
 <http://aegis.gastown.local/ontology/source> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#source> .
-<http://aegis.gastown.local/ontology/sourceDigest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/sourceDigest> <http://www.w3.org/2000/01/rdf-schema#comment> "A deterministic digest of an ExecutionPath's repository source, computed the same way as artifactDigest so the two compare. Owed to Q12: equal digests are observed agreement, differing digests are observed drift, and absence is UNKNOWN — never a verdict either way." .
-<http://aegis.gastown.local/ontology/sourceDigest> <http://www.w3.org/2000/01/rdf-schema#label> "source digest" .
-<http://aegis.gastown.local/ontology/sourceDigest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/sourceDigest> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#sourceDigest> .
+<http://aegis.gastown.local/ontology/sourceDigest> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#sourceDigest> .
 <http://aegis.gastown.local/ontology/sourceKind> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> .
 <http://aegis.gastown.local/ontology/sourceKind> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> .
 <http://aegis.gastown.local/ontology/sourceRepo> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#sourceRepo> .
@@ -642,13 +608,10 @@
 <http://aegis.gastown.local/ontology/status> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#status> .
 <http://aegis.gastown.local/ontology/stepOf> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#stepOf> .
 <http://aegis.gastown.local/ontology/stepOf> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#stepOf> .
-<http://aegis.gastown.local/ontology/stepOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/stepOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "The step's position in the total order of the thing that declares it — a Trajectory's observed walk (golden-paths Q1) or a WorkflowDefinition's declared steps (workflow-and-archive Q5). Reused across both rather than minted twice, which is what rdfs:range-only and no rdfs:domain is for." .
-<http://aegis.gastown.local/ontology/stepOrder> <http://www.w3.org/2000/01/rdf-schema#label> "step order" .
-<http://aegis.gastown.local/ontology/stepOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://aegis.gastown.local/ontology/supersededBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/supersededBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A later decision that replaces this one. The old decision is never deleted — bitemporality keeps it; this edge says who won." .
-<http://aegis.gastown.local/ontology/supersededBy> <http://www.w3.org/2000/01/rdf-schema#label> "superseded by" .
+<http://aegis.gastown.local/ontology/stepOrder> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#stepOrder> .
+<http://aegis.gastown.local/ontology/stepOrder> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#stepOrder> .
+<http://aegis.gastown.local/ontology/supersededBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#supersededBy> .
+<http://aegis.gastown.local/ontology/supersededBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#supersededBy> .
 <http://aegis.gastown.local/ontology/targetRef> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#targetRef> .
 <http://aegis.gastown.local/ontology/targetRef> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#targetRef> .
 <http://aegis.gastown.local/ontology/targets> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#targets> .
@@ -677,9 +640,8 @@
 <http://aegis.gastown.local/ontology/touchesRepo> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#touchesRepo> .
 <http://aegis.gastown.local/ontology/touchesService> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#touchesService> .
 <http://aegis.gastown.local/ontology/touchesService> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#touchesService> .
-<http://aegis.gastown.local/ontology/trajectoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/trajectoryOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The WorkItem this trajectory is the execution record of. Mandatory in spirit (Q1/Q2 join on it); permissive in the shape until the recording path settles." .
-<http://aegis.gastown.local/ontology/trajectoryOf> <http://www.w3.org/2000/01/rdf-schema#label> "trajectory of" .
+<http://aegis.gastown.local/ontology/trajectoryOf> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#trajectoryOf> .
+<http://aegis.gastown.local/ontology/trajectoryOf> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#trajectoryOf> .
 <http://aegis.gastown.local/ontology/transitionVersion> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#transitionVersion> .
 <http://aegis.gastown.local/ontology/transitionVersion> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#transitionVersion> .
 <http://aegis.gastown.local/ontology/trigger> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#trigger> .
@@ -700,16 +662,14 @@
 <http://aegis.gastown.local/ontology/url> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#url> .
 <http://aegis.gastown.local/ontology/verificationPoint> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#verificationPoint> .
 <http://aegis.gastown.local/ontology/verificationPoint> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#verificationPoint> .
-<http://aegis.gastown.local/ontology/verifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/verifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The Verification a step (or a trajectory's terminal claim) produced. Ranges over aegis:Verification, so the falsifier discipline applies unchanged — an unfalsifiable check never makes a trajectory admissible." .
-<http://aegis.gastown.local/ontology/verifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "verified by" .
+<http://aegis.gastown.local/ontology/verifiedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#verifiedBy> .
+<http://aegis.gastown.local/ontology/verifiedBy> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#verifiedBy> .
 <http://aegis.gastown.local/ontology/verified_by> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#verified_by> .
 <http://aegis.gastown.local/ontology/verified_by> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#verified_by> .
 <http://aegis.gastown.local/ontology/verifier> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#verifier> .
 <http://aegis.gastown.local/ontology/verifier> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#verifier> .
-<http://aegis.gastown.local/ontology/verifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/verifies> <http://www.w3.org/2000/01/rdf-schema#comment> "The claim or change this Verification's check bears on — the 'X is fixed/landed/deployed' whose falsifier it ran. Owed to Q3, which joins a verification's time against the change that followed it. No range constraint: the subject may be a work item, a commit, or a deploy record." .
-<http://aegis.gastown.local/ontology/verifies> <http://www.w3.org/2000/01/rdf-schema#label> "verifies" .
+<http://aegis.gastown.local/ontology/verifies> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#verifies> .
+<http://aegis.gastown.local/ontology/verifies> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#verifies> .
 <http://aegis.gastown.local/ontology/version> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#version> .
 <http://aegis.gastown.local/ontology/version> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#version> .
 <http://aegis.gastown.local/ontology/workKind> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#workKind> .
@@ -720,21 +680,14 @@
 <http://aegis.gastown.local/rules/depends_on_transitive> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#depends_on_transitive> .
 <http://aegis.gastown.local/rules/git_commit_subsumes_commit> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#git_commit_subsumes_commit> .
 <http://aegis.gastown.local/rules/runs_on_transitive> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#runs_on_transitive> .
-<https://camayoc.local/ontology/planePromotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://camayoc.local/ontology/planePromotion> <http://www.w3.org/2000/01/rdf-schema#comment> "Attaches a promotion record to the fact that was promoted. The record is a blank node carrying the move's own provenance as observed facts — the promotion IS an observed event even though the fact it moved was inferred. No range: the record is structural, not a class anyone types. (Q13)" .
-<https://camayoc.local/ontology/planePromotion> <http://www.w3.org/2000/01/rdf-schema#label> "plane promotion" .
-<https://camayoc.local/ontology/promotedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://camayoc.local/ontology/promotedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "The plane graph the fact left. Always crew:inferred today — promotion is out of quarantine — and recorded rather than assumed, so a later reader is not required to know that. (Q13)" .
-<https://camayoc.local/ontology/promotedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "promoted from" .
-<https://camayoc.local/ontology/promotedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<https://camayoc.local/ontology/promotedInto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://camayoc.local/ontology/promotedInto> <http://www.w3.org/2000/01/rdf-schema#comment> "The plane graph the fact entered. (Q13)" .
-<https://camayoc.local/ontology/promotedInto> <http://www.w3.org/2000/01/rdf-schema#label> "promoted into" .
-<https://camayoc.local/ontology/promotedInto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<https://camayoc.local/ontology/sourceLeftOpen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://camayoc.local/ontology/sourceLeftOpen> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the source-plane interval was left open. false: the source episode was closed, a bitemporal interval close and never a delete, so the original stays visible as-of its write time. true: the promoter could not name the source episode, and the record says so out loud rather than implying a close that never happened — the fact is then readable in two planes at different trust, which is recoverable and visible instead of silent. The exact cell Q13 asks for. (Q13)" .
-<https://camayoc.local/ontology/sourceLeftOpen> <http://www.w3.org/2000/01/rdf-schema#label> "source left open" .
-<https://camayoc.local/ontology/sourceLeftOpen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://camayoc.local/ontology/planePromotion> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#planePromotion> .
+<https://camayoc.local/ontology/planePromotion> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#planePromotion> .
+<https://camayoc.local/ontology/promotedFrom> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#promotedFrom> .
+<https://camayoc.local/ontology/promotedFrom> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#promotedFrom> .
+<https://camayoc.local/ontology/promotedInto> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#promotedInto> .
+<https://camayoc.local/ontology/promotedInto> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#promotedInto> .
+<https://camayoc.local/ontology/sourceLeftOpen> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen> .
+<https://camayoc.local/ontology/sourceLeftOpen> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen> .
 <https://w3id.org/intigraph/camayoc/core/ns#APIEndpointShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
 <https://w3id.org/intigraph/camayoc/core/ns#APIEndpointShape> <http://www.w3.org/ns/shacl#property> _:cb23fafb248943ad5578ab24722232cf41322d137dad36af9e9df72b1ce0f39b9af .
 <https://w3id.org/intigraph/camayoc/core/ns#APIEndpointShape> <http://www.w3.org/ns/shacl#targetClass> <https://schema.org/EntryPoint> .
@@ -818,6 +771,14 @@
 <https://w3id.org/intigraph/camayoc/core/ns#CamayocNonFunctionalRequirementShape> <http://www.w3.org/ns/shacl#property> _:cb2bb56d4e0b095f0acc17fbb11533319d06d1fddbee3ca0f3a008d58f0db14fba8 .
 <https://w3id.org/intigraph/camayoc/core/ns#CamayocNonFunctionalRequirementShape> <http://www.w3.org/ns/shacl#property> _:cbed534c6aef3f69500b080eb367b313d314adcc015114144df171ee433684fc6c .
 <https://w3id.org/intigraph/camayoc/core/ns#CamayocNonFunctionalRequirementShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/intigraph/camayoc/core/ns#NonFunctionalRequirement> .
+<https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#property> _:cb1161456adb235afb656ae0bd938bf23f8bfd4030fdf575d8a5b2bc5612a82cf7f .
+<https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#property> _:cbc7b48bb68ffc64f9a55a830be746a5331ab4621de6cf93f22695b6268e79246b .
+<https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#property> _:cbf1be5ca29da454a491459eaa2737f8d296bede9a736e8cc72b19408d56e4b5f3 .
+<https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#property> _:cbfcde89a372abf396a1d7a8a661eee3318fdb2624388fd265e4a0afc1637cbb71 .
+<https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+<https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/intigraph/quipu/ns#Observation> .
+<https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationProvenanceDebtShape> <https://w3id.org/intigraph/quipu/ns#onViolation> "emit" .
 <https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
 <https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationShape> <http://www.w3.org/ns/shacl#property> _:cb183578774ebd7824d0549df5ff0f03b366c76351745945e0a51d13d5570efee47 .
 <https://w3id.org/intigraph/camayoc/core/ns#CamayocObservationShape> <http://www.w3.org/ns/shacl#property> _:cb18fe53caac2fbdc4578f6b3b76ca8739f70b0f8e8fc34ebee3360cb6f494347ef .
@@ -1049,6 +1010,13 @@
 <https://w3id.org/intigraph/camayoc/core/ns#action> <http://www.w3.org/2000/01/rdf-schema#comment> "An action requested by a reaction: alert, page, bead or webhook. Multiple actions may be requested." .
 <https://w3id.org/intigraph/camayoc/core/ns#action> <http://www.w3.org/2000/01/rdf-schema#label> "action" .
 <https://w3id.org/intigraph/camayoc/core/ns#action> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#actionKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#actionKind> <http://www.w3.org/2000/01/rdf-schema#comment> "What kind of action the step is (edit, run, mail, decide, verify, ...). One half of the conformance grammar's v1 step signature." .
+<https://w3id.org/intigraph/camayoc/core/ns#actionKind> <http://www.w3.org/2000/01/rdf-schema#label> "action kind" .
+<https://w3id.org/intigraph/camayoc/core/ns#actionKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#actionTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#actionTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "What the step acted on. The other half of the v1 step signature; an IRI when the target is in the graph, a string when it is not." .
+<https://w3id.org/intigraph/camayoc/core/ns#actionTarget> <http://www.w3.org/2000/01/rdf-schema#label> "action target" .
 <https://w3id.org/intigraph/camayoc/core/ns#actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#actor> <http://www.w3.org/2000/01/rdf-schema#comment> "The principal that performed this step. Owed to competency golden-paths Q1; reuses whatever principal node the graph already holds." .
@@ -1094,6 +1062,10 @@
 <https://w3id.org/intigraph/camayoc/core/ns#appliesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A repo-relative path glob scoping WHERE an action-boundary policy binds — the half of the seam yupana's projection had asked for since Phase 4 and quipu never declared. Genuinely multi-valued: a policy scoped to three globs carries three values, and the consumer accumulates them. Absent means unscoped. On a policy with no selector and no predicate this is the whole condition — a TRIPWIRE, where touching the path is the crossing. No rdfs:domain on purpose: the term reads the same on a Policy today and on a TextRule or Directive tomorrow, and a materialised wrong type outlives a missing one." .
 <https://w3id.org/intigraph/camayoc/core/ns#appliesTo> <http://www.w3.org/2000/01/rdf-schema#label> "applies to" .
 <https://w3id.org/intigraph/camayoc/core/ns#appliesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#artifactDigest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#artifactDigest> <http://www.w3.org/2000/01/rdf-schema#comment> "A deterministic digest of the installed artifact an ExecutionPath actually executes. Owed to Q12, which compares the two sides of a path in the store. Not aegis:contentHash reused: Q12 needs the two sides distinguishable on one node, and contentHash is a single reconciler identity (one value, Metric shape)." .
+<https://w3id.org/intigraph/camayoc/core/ns#artifactDigest> <http://www.w3.org/2000/01/rdf-schema#label> "artifact digest" .
+<https://w3id.org/intigraph/camayoc/core/ns#artifactDigest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#assignsWorkflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#assignsWorkflow> <http://www.w3.org/2000/01/rdf-schema#comment> "The workflow a \"require-approval\" or \"escalate\" effect routes to. Declaring the route on the constraint is what separates an escalation from a refusal: a policy that escalates without naming where is a denial with extra words." .
 <https://w3id.org/intigraph/camayoc/core/ns#assignsWorkflow> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#Policy> .
@@ -1222,6 +1194,14 @@
 <https://w3id.org/intigraph/camayoc/core/ns#currentState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#WorkflowRun> .
 <https://w3id.org/intigraph/camayoc/core/ns#currentState> <http://www.w3.org/2000/01/rdf-schema#label> "current state" .
 <https://w3id.org/intigraph/camayoc/core/ns#currentState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#deadEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#deadEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "The entry Step of an abandoned branch the exemplars explored, preserved as a hazard: a follower of this path should know what was tried that did not help. Negative knowledge, kept queryable." .
+<https://w3id.org/intigraph/camayoc/core/ns#deadEnd> <http://www.w3.org/2000/01/rdf-schema#label> "dead end" .
+<https://w3id.org/intigraph/camayoc/core/ns#decidedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#decidedBy> <http://www.w3.org/2000/01/rdf-schema#label> "decided by" .
+<https://w3id.org/intigraph/camayoc/core/ns#decidedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#decidedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The work item (or session) a decision was made under." .
+<https://w3id.org/intigraph/camayoc/core/ns#decidedIn> <http://www.w3.org/2000/01/rdf-schema#label> "decided in" .
 <https://w3id.org/intigraph/camayoc/core/ns#decisionPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#decisionPolicy> <http://www.w3.org/2000/01/rdf-schema#comment> "The predicate a verifier must be registered to attest before its signature can seal this decision. Distinct from aegis:forPolicy, whose domain is DecisionRequest." .
 <https://w3id.org/intigraph/camayoc/core/ns#decisionPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "decision policy" .
@@ -1229,10 +1209,20 @@
 <https://w3id.org/intigraph/camayoc/core/ns#demonstratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#demonstratedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The Verification or other observed record that constructed and demonstrated a built blocker." .
 <https://w3id.org/intigraph/camayoc/core/ns#demonstratedBy> <http://www.w3.org/2000/01/rdf-schema#label> "demonstrated by" .
+<https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable the mechanism under test depends on, named by the check that established the dependence. Owed to Q5: a test in an adjacent setting is valid exactly when the mechanism does not depend on what differs — this edge is what lets that be asked instead of assumed, protecting good evidence from being discarded (incident forms A2, A6)." .
+<https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable> <http://www.w3.org/2000/01/rdf-schema#label> "depends on variable" .
+<https://w3id.org/intigraph/camayoc/core/ns#dependsOnVariable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#depends_on_transitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/intigraph/quipu/ns#Rule> .
 <https://w3id.org/intigraph/camayoc/core/ns#depends_on_transitive> <https://w3id.org/intigraph/quipu/ns#body> "depends_on(?a, ?b), depends_on(?b, ?c)" .
 <https://w3id.org/intigraph/camayoc/core/ns#depends_on_transitive> <https://w3id.org/intigraph/quipu/ns#head> "depends_on(?a, ?c)" .
 <https://w3id.org/intigraph/camayoc/core/ns#depends_on_transitive> <https://w3id.org/intigraph/quipu/ns#id> "depends_on_transitive" .
+<https://w3id.org/intigraph/camayoc/core/ns#derivedConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#derivedConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "The aegis:Policy this GoldenPath backs, closing the audit chain constraint <- path <- exemplars. Far-horizon: gated on verdict signing; until then the ladder honestly stops at blessed." .
+<https://w3id.org/intigraph/camayoc/core/ns#derivedConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "derived constraint" .
+<https://w3id.org/intigraph/camayoc/core/ns#deviatesAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#deviatesAt> <http://www.w3.org/2000/01/rdf-schema#comment> "The Step at which an evaluated trajectory departed from the path it declared. Deviation is input to the record, not a judgment that the agent was wrong — demotion evidence only exists if deviations are recorded faithfully." .
+<https://w3id.org/intigraph/camayoc/core/ns#deviatesAt> <http://www.w3.org/2000/01/rdf-schema#label> "deviates at" .
 <https://w3id.org/intigraph/camayoc/core/ns#dispatchedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#dispatchedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "What dispatches this class of action — a harness, a daemon, a CI runner. Two classes with the same name under different dispatchers are different classes, because only one of them may traverse a hook." .
 <https://w3id.org/intigraph/camayoc/core/ns#dispatchedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#ToolClass> .
@@ -1251,6 +1241,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#enabled> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the carrying rule is enabled. Chaski treats omission as enabled; this is a consumer default, not an asserted graph value." .
 <https://w3id.org/intigraph/camayoc/core/ns#enabled> <http://www.w3.org/2000/01/rdf-schema#label> "enabled" .
 <https://w3id.org/intigraph/camayoc/core/ns#enabled> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/intigraph/camayoc/core/ns#enacts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#enacts> <http://www.w3.org/2000/01/rdf-schema#comment> "The Decision this step enacts, when one was recorded." .
+<https://w3id.org/intigraph/camayoc/core/ns#enacts> <http://www.w3.org/2000/01/rdf-schema#label> "enacts" .
 <https://w3id.org/intigraph/camayoc/core/ns#enforcedInsteadAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#enforcedInsteadAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Where enforcement happens for a class that cannot be governed here — a VCS hook, branch protection, destination-side credentials. An acknowledged bypass surface with no stated alternative is a note that something is unhandled; with one, it is a design." .
 <https://w3id.org/intigraph/camayoc/core/ns#enforcedInsteadAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#ToolClass> .
@@ -1336,6 +1329,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#focus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#focus> <http://www.w3.org/2000/01/rdf-schema#comment> "The IRI that a reaction condition or adapter identified as the focus of a firing. No range class: any IRI may be a focus." .
 <https://w3id.org/intigraph/camayoc/core/ns#focus> <http://www.w3.org/2000/01/rdf-schema#label> "focus" .
+<https://w3id.org/intigraph/camayoc/core/ns#followsPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#followsPath> <http://www.w3.org/2000/01/rdf-schema#comment> "A trajectory's (or work item's) declared claim to be an instance of a GoldenPath. A claim, not a verdict — conformance is evaluated at read time and by the guard, never asserted by the follower." .
+<https://w3id.org/intigraph/camayoc/core/ns#followsPath> <http://www.w3.org/2000/01/rdf-schema#label> "follows path" .
 <https://w3id.org/intigraph/camayoc/core/ns#forDecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#forDecision> <http://www.w3.org/2000/01/rdf-schema#comment> "The decision a presentation freezes. Its content is hashed at presentation and re-hashed at every verification, so this link is what an edit to the decision is detected through." .
 <https://w3id.org/intigraph/camayoc/core/ns#forDecision> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#DecisionPresentation> .
@@ -1382,6 +1378,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#gatedTx> <http://www.w3.org/2000/01/rdf-schema#comment> "The committed transaction whose delta a verdict judged, not the transaction persisting that verdict. Optional and positive; refused or rolled-back attempts and historical verdicts omit it. Never predict an attempted id or guess a backfill. IDs are local to the originating store. A producer must bind the link into signed evidence and verdict identity. No domain: another audit record may also name a judged transaction without becoming a Verdict." .
 <https://w3id.org/intigraph/camayoc/core/ns#gatedTx> <http://www.w3.org/2000/01/rdf-schema#label> "gated transaction" .
 <https://w3id.org/intigraph/camayoc/core/ns#gatedTx> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/intigraph/camayoc/core/ns#gates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#gates> <http://www.w3.org/2000/01/rdf-schema#comment> "The alert, release, or decision surface gated by this metric." .
+<https://w3id.org/intigraph/camayoc/core/ns#gates> <http://www.w3.org/2000/01/rdf-schema#label> "gates" .
 <https://w3id.org/intigraph/camayoc/core/ns#git_commit_subsumes_commit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/intigraph/quipu/ns#Rule> .
 <https://w3id.org/intigraph/camayoc/core/ns#git_commit_subsumes_commit> <https://w3id.org/intigraph/quipu/ns#body> "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>(?x, <http://aegis.gastown.local/ontology/Commit>)" .
 <https://w3id.org/intigraph/camayoc/core/ns#git_commit_subsumes_commit> <https://w3id.org/intigraph/quipu/ns#head> "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>(?x, <http://aegis.gastown.local/ontology/GitCommit>)" .
@@ -1471,6 +1470,10 @@
 <https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#Selector> .
 <https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/2000/01/rdf-schema#label> "language" .
 <https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "The observed time the execution path was last refreshed. It is evidence for a read-time currency query, never a stored current/correct verdict." .
+<https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt> <http://www.w3.org/2000/01/rdf-schema#label> "last refreshed at" .
+<https://w3id.org/intigraph/camayoc/core/ns#lastRefreshedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#latencyBudgetMs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#latencyBudgetMs> <http://www.w3.org/2000/01/rdf-schema#comment> "Wall-clock budget for evaluating this constraint at its verification point. Exists to keep constraint evaluation on the order of tool latency and never model latency: a check that needs another model call both doubles per-step latency and inherits the nondeterminism the check was supposed to bound." .
 <https://w3id.org/intigraph/camayoc/core/ns#latencyBudgetMs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#Policy> .
@@ -1507,6 +1510,10 @@
 <https://w3id.org/intigraph/camayoc/core/ns#measuresRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#measuresRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "A Metric's claim that its probe tests a NonFunctionalRequirement. Keeping this as a claim makes invalid and orphan instrumentation queryable." .
 <https://w3id.org/intigraph/camayoc/core/ns#measuresRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "measures requirement" .
+<https://w3id.org/intigraph/camayoc/core/ns#metricName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#metricName> <http://www.w3.org/2000/01/rdf-schema#comment> "The measurement-system series or expression identity parsed from the source rule." .
+<https://w3id.org/intigraph/camayoc/core/ns#metricName> <http://www.w3.org/2000/01/rdf-schema#label> "metric name" .
+<https://w3id.org/intigraph/camayoc/core/ns#metricName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#minVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#minVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "For a release-installed Blocker: resolved when the installed tool reports a version at or above this." .
 <https://w3id.org/intigraph/camayoc/core/ns#minVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/camayoc/core/ns#Blocker> .
@@ -1549,6 +1556,12 @@
 <https://w3id.org/intigraph/camayoc/core/ns#omissionAuthority> <http://www.w3.org/2000/01/rdf-schema#comment> "What authorized the cut: cone-analysis (the step is outside the provenance cone of the verified result — mechanical) or human-decision (a human overruled or supplemented the cone; omissionRuling names the Decision). Mandatory — an omission that cannot say who cut it is a silent edit of history." .
 <https://w3id.org/intigraph/camayoc/core/ns#omissionAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "omission authority" .
 <https://w3id.org/intigraph/camayoc/core/ns#omissionAuthority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#omissionRuling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#omissionRuling> <http://www.w3.org/2000/01/rdf-schema#comment> "The human Decision behind a human-decision omission, with its rationale." .
+<https://w3id.org/intigraph/camayoc/core/ns#omissionRuling> <http://www.w3.org/2000/01/rdf-schema#label> "omission ruling" .
+<https://w3id.org/intigraph/camayoc/core/ns#omitsStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#omitsStep> <http://www.w3.org/2000/01/rdf-schema#comment> "A PathOmission node recording one pruning ruling this GoldenPath made." .
+<https://w3id.org/intigraph/camayoc/core/ns#omitsStep> <http://www.w3.org/2000/01/rdf-schema#label> "omits step" .
 <https://w3id.org/intigraph/camayoc/core/ns#omittedStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#omittedStep> <http://www.w3.org/2000/01/rdf-schema#comment> "The Step a PathOmission excludes." .
 <https://w3id.org/intigraph/camayoc/core/ns#omittedStep> <http://www.w3.org/2000/01/rdf-schema#label> "omitted step" .
@@ -1586,6 +1599,10 @@
 <https://w3id.org/intigraph/camayoc/core/ns#outcome> <http://www.w3.org/2000/01/rdf-schema#comment> "What was concluded. Three-valued on a Verdict — \"satisfied\", \"unsatisfied\", \"unknown\" — where \"unknown\" is NOT a soft \"unsatisfied\": a check that could not run has told you nothing, and collapsing the two is how an unevaluated constraint reads as a passing one. On a Decision the values are \"approve\", \"reject\" and \"changes\". No rdfs:domain, since both classes carry it." .
 <https://w3id.org/intigraph/camayoc/core/ns#outcome> <http://www.w3.org/2000/01/rdf-schema#label> "outcome" .
 <https://w3id.org/intigraph/camayoc/core/ns#outcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#over> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#over> <http://www.w3.org/2000/01/rdf-schema#comment> "The alternatives visible when the decision was made. Absence means none were articulated — which is itself a fact worth knowing." .
+<https://w3id.org/intigraph/camayoc/core/ns#over> <http://www.w3.org/2000/01/rdf-schema#label> "over" .
+<https://w3id.org/intigraph/camayoc/core/ns#over> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#ownedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The principal that owns the path location. A single-principal owner is observable execution-path risk, not a liveness judgment." .
 <https://w3id.org/intigraph/camayoc/core/ns#ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "owned by" .
@@ -1598,6 +1615,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#performedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The principal that performed and signed an event; shared by workflow history and any later attested activity, so it carries no materialising domain." .
 <https://w3id.org/intigraph/camayoc/core/ns#performedBy> <http://www.w3.org/2000/01/rdf-schema#label> "performed by" .
 <https://w3id.org/intigraph/camayoc/core/ns#performedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://w3id.org/intigraph/camayoc/core/ns#planePromotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#planePromotion> <http://www.w3.org/2000/01/rdf-schema#comment> "Attaches a promotion record to the fact that was promoted. The record is a blank node carrying the move's own provenance as observed facts — the promotion IS an observed event even though the fact it moved was inferred. No range: the record is structural, not a class anyone types. (Q13)" .
+<https://w3id.org/intigraph/camayoc/core/ns#planePromotion> <http://www.w3.org/2000/01/rdf-schema#label> "plane promotion" .
 <https://w3id.org/intigraph/camayoc/core/ns#prRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#prRef> <http://www.w3.org/2000/01/rdf-schema#comment> "For a pr-merged Blocker: owner/repo#number. Resolved when that pull request is merged." .
 <https://w3id.org/intigraph/camayoc/core/ns#prRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/camayoc/core/ns#Blocker> .
@@ -1637,6 +1657,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#probe> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual expression evaluated. An alert name is never a substitute for this mechanism." .
 <https://w3id.org/intigraph/camayoc/core/ns#probe> <http://www.w3.org/2000/01/rdf-schema#label> "probe" .
 <https://w3id.org/intigraph/camayoc/core/ns#probe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#probeValidatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#probeValidatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A falsifier-gated Verification that demonstrated the probe changes when the requirement is violated." .
+<https://w3id.org/intigraph/camayoc/core/ns#probeValidatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "probe validated by" .
 <https://w3id.org/intigraph/camayoc/core/ns#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#produces> <http://www.w3.org/2000/01/rdf-schema#comment> "An artifact this step yields. No rdfs:domain: `produces` is a relation many things in an estate can hold." .
 <https://w3id.org/intigraph/camayoc/core/ns#produces> <http://www.w3.org/2000/01/rdf-schema#label> "produces" .
@@ -1647,9 +1670,20 @@
 <https://w3id.org/intigraph/camayoc/core/ns#promotedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#promotedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The principal whose act this promotion is. Mandatory, and a human: nothing above verified happens without a recorded human act." .
 <https://w3id.org/intigraph/camayoc/core/ns#promotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "promoted by" .
+<https://w3id.org/intigraph/camayoc/core/ns#promotedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#promotedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "The plane graph the fact left. Always crew:inferred today — promotion is out of quarantine — and recorded rather than assumed, so a later reader is not required to know that. (Q13)" .
+<https://w3id.org/intigraph/camayoc/core/ns#promotedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "promoted from" .
+<https://w3id.org/intigraph/camayoc/core/ns#promotedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://w3id.org/intigraph/camayoc/core/ns#promotedInto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#promotedInto> <http://www.w3.org/2000/01/rdf-schema#comment> "The plane graph the fact entered. (Q13)" .
+<https://w3id.org/intigraph/camayoc/core/ns#promotedInto> <http://www.w3.org/2000/01/rdf-schema#label> "promoted into" .
+<https://w3id.org/intigraph/camayoc/core/ns#promotedInto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <https://w3id.org/intigraph/camayoc/core/ns#promotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#promotes> <http://www.w3.org/2000/01/rdf-schema#comment> "The GoldenPath this promotion event acts on." .
 <https://w3id.org/intigraph/camayoc/core/ns#promotes> <http://www.w3.org/2000/01/rdf-schema#label> "promotes" .
+<https://w3id.org/intigraph/camayoc/core/ns#promotionEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#promotionEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "What the promoter looked at: a backtest report, a Verification, an advisory-period conformance record. A promotion citing nothing is answerable to competency Q8 as exactly that." .
+<https://w3id.org/intigraph/camayoc/core/ns#promotionEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "promotion evidence" .
 <https://w3id.org/intigraph/camayoc/core/ns#provenanceManifest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#provenanceManifest> <http://www.w3.org/2000/01/rdf-schema#comment> "Manifest IRI describing the sources and production lineage of a certified bundle or seal." .
 <https://w3id.org/intigraph/camayoc/core/ns#provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
@@ -1678,6 +1712,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#question> <http://www.w3.org/2000/01/rdf-schema#comment> "What a human is being asked to decide, in the words they will see. Part of the sealed content: changing it after presentation invalidates the presentation and any verdict over it." .
 <https://w3id.org/intigraph/camayoc/core/ns#question> <http://www.w3.org/2000/01/rdf-schema#label> "question" .
 <https://w3id.org/intigraph/camayoc/core/ns#question> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#rationale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#rationale> <http://www.w3.org/2000/01/rdf-schema#label> "rationale" .
+<https://w3id.org/intigraph/camayoc/core/ns#rationale> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#reference> <http://www.w3.org/2000/01/rdf-schema#comment> "A pointer to where an artifact actually lives — a path, a URL, a commit. Deliberately opaque: the graph records that an artifact is referenced somewhere resolvable without becoming a second copy of it." .
 <https://w3id.org/intigraph/camayoc/core/ns#reference> <http://www.w3.org/2000/01/rdf-schema#label> "reference" .
@@ -1790,12 +1827,20 @@
 <https://w3id.org/intigraph/camayoc/core/ns#similarityThreshold> <http://www.w3.org/2000/01/rdf-schema#comment> "The cut a similarity score was compared against when a verdict was sealed. Recorded ON the verdict even though the declared value lives in the policy's OperatingPoint, because the verdict must stay falsifiable after the policy is re-calibrated: \"0.83 >= 0.75\" is re-checkable forever, \"0.83 >= whatever the threshold was then\" is not. No rdfs:domain — any sealed similarity record may carry it." .
 <https://w3id.org/intigraph/camayoc/core/ns#similarityThreshold> <http://www.w3.org/2000/01/rdf-schema#label> "similarity threshold" .
 <https://w3id.org/intigraph/camayoc/core/ns#similarityThreshold> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/intigraph/camayoc/core/ns#sourceDigest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#sourceDigest> <http://www.w3.org/2000/01/rdf-schema#comment> "A deterministic digest of an ExecutionPath's repository source, computed the same way as artifactDigest so the two compare. Owed to Q12: equal digests are observed agreement, differing digests are observed drift, and absence is UNKNOWN — never a verdict either way." .
+<https://w3id.org/intigraph/camayoc/core/ns#sourceDigest> <http://www.w3.org/2000/01/rdf-schema#label> "source digest" .
+<https://w3id.org/intigraph/camayoc/core/ns#sourceDigest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> <http://www.w3.org/2000/01/rdf-schema#comment> "How a fact entered the graph: observed, declared, or inferred; a trust-plane tag shared across entity classes and therefore domain-free." .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> <http://www.w3.org/2000/01/rdf-schema#comment> "How this fact entered: observed (a record exists and was parsed), declared (a human said so), inferred (a model concluded it). Mandatory; SHACL-refused when absent. Never up-tag." .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> <http://www.w3.org/2000/01/rdf-schema#label> "source kind" .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the source-plane interval was left open. false: the source episode was closed, a bitemporal interval close and never a delete, so the original stays visible as-of its write time. true: the promoter could not name the source episode, and the record says so out loud rather than implying a close that never happened — the fact is then readable in two planes at different trust, which is recoverable and visible instead of silent. The exact cell Q13 asks for. (Q13)" .
+<https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen> <http://www.w3.org/2000/01/rdf-schema#label> "source left open" .
+<https://w3id.org/intigraph/camayoc/core/ns#sourceLeftOpen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceType> <http://www.w3.org/2000/01/rdf-schema#comment> "What KIND of instrument this obligation comes from: \"regulatory\", \"contractual\", \"ethical\" or \"operational\". aegis:authority on the parent Directive says WHO issued it; this says what kind of thing it is, which is what decides precedence when two constraints conflict (regulatory > contractual > operational)." .
 <https://w3id.org/intigraph/camayoc/core/ns#sourceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#Policy> .
@@ -1812,6 +1857,13 @@
 <https://w3id.org/intigraph/camayoc/core/ns#stepOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#stepOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The Trajectory this step belongs to. Mandatory: a step with no trajectory is an anecdote." .
 <https://w3id.org/intigraph/camayoc/core/ns#stepOf> <http://www.w3.org/2000/01/rdf-schema#label> "step of" .
+<https://w3id.org/intigraph/camayoc/core/ns#stepOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#stepOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "The step's position in the total order of the thing that declares it — a Trajectory's observed walk (golden-paths Q1) or a WorkflowDefinition's declared steps (workflow-and-archive Q5). Reused across both rather than minted twice, which is what rdfs:range-only and no rdfs:domain is for." .
+<https://w3id.org/intigraph/camayoc/core/ns#stepOrder> <http://www.w3.org/2000/01/rdf-schema#label> "step order" .
+<https://w3id.org/intigraph/camayoc/core/ns#stepOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/intigraph/camayoc/core/ns#supersededBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#supersededBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A later decision that replaces this one. The old decision is never deleted — bitemporality keeps it; this edge says who won." .
+<https://w3id.org/intigraph/camayoc/core/ns#supersededBy> <http://www.w3.org/2000/01/rdf-schema#label> "superseded by" .
 <https://w3id.org/intigraph/camayoc/core/ns#targetRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#targetRef> <http://www.w3.org/2000/01/rdf-schema#comment> "What the verdict was rendered about — the entity, file or symbol judged. Recorded separately from the evidence hash: the target says WHICH thing, the hash pins WHAT STATE of it was seen." .
 <https://w3id.org/intigraph/camayoc/core/ns#targetRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#Verdict> .
@@ -1855,6 +1907,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#tool> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/camayoc/core/ns#Blocker> .
 <https://w3id.org/intigraph/camayoc/core/ns#tool> <http://www.w3.org/2000/01/rdf-schema#label> "tool" .
 <https://w3id.org/intigraph/camayoc/core/ns#tool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#trajectoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#trajectoryOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The WorkItem this trajectory is the execution record of. Mandatory in spirit (Q1/Q2 join on it); permissive in the shape until the recording path settles." .
+<https://w3id.org/intigraph/camayoc/core/ns#trajectoryOf> <http://www.w3.org/2000/01/rdf-schema#label> "trajectory of" .
 <https://w3id.org/intigraph/camayoc/core/ns#transitionVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#transitionVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Selects the canonical transition signing protocol; omission retains legacy v1, while directly enforced processing requires v2 to bind the expected run revision." .
 <https://w3id.org/intigraph/camayoc/core/ns#transitionVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
@@ -1884,6 +1939,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#verificationPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#Policy> .
 <https://w3id.org/intigraph/camayoc/core/ns#verificationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "verification point" .
 <https://w3id.org/intigraph/camayoc/core/ns#verificationPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#verifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#verifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The Verification a step (or a trajectory's terminal claim) produced. Ranges over aegis:Verification, so the falsifier discipline applies unchanged — an unfalsifiable check never makes a trajectory admissible." .
+<https://w3id.org/intigraph/camayoc/core/ns#verifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "verified by" .
 <https://w3id.org/intigraph/camayoc/core/ns#verified_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#verified_by> <http://www.w3.org/2000/01/rdf-schema#comment> "How bytes read through a mapping are checked: a content hash, cosign signature, or Quipu certification seal identifier." .
 <https://w3id.org/intigraph/camayoc/core/ns#verified_by> <http://www.w3.org/2000/01/rdf-schema#label> "external truth verification method" .
@@ -1894,6 +1952,9 @@
 <https://w3id.org/intigraph/camayoc/core/ns#verifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/scbrown/quipu> .
 <https://w3id.org/intigraph/camayoc/core/ns#verifier> <http://www.w3.org/2000/01/rdf-schema#label> "verifier" .
 <https://w3id.org/intigraph/camayoc/core/ns#verifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/core/ns#verifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/core/ns#verifies> <http://www.w3.org/2000/01/rdf-schema#comment> "The claim or change this Verification's check bears on — the 'X is fixed/landed/deployed' whose falsifier it ran. Owed to Q3, which joins a verification's time against the change that followed it. No range constraint: the subject may be a work item, a commit, or a deploy record." .
+<https://w3id.org/intigraph/camayoc/core/ns#verifies> <http://www.w3.org/2000/01/rdf-schema#label> "verifies" .
 <https://w3id.org/intigraph/camayoc/core/ns#workKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/core/ns#workKind> <http://www.w3.org/2000/01/rdf-schema#comment> "What kind of planned work a tracked WorkItem is: Directive, Design, Plan or DreamCycle. Derived from the tracker record's labels and type; it is why the item carries an aegis:idleLimit. Ordinary work carries none." .
 <https://w3id.org/intigraph/camayoc/core/ns#workKind> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#WorkItem> .
@@ -1974,14 +2035,14 @@ _:cb110d46c90026d965380d753003d38b67fff9f0fa82a4d1344481169fe120468ef <http://ww
 _:cb110d46c90026d965380d753003d38b67fff9f0fa82a4d1344481169fe120468ef <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1be591bcb1122c386b046b0a854091cc3cc17f8b6a5ac1fba263d1fb3d80ddb5f .
 _:cb1131ae76f0ec4c3febb6cb82c0ab6005b3d4015cf1f34719c2c2d3c8c4bfc6ae3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ci-green" .
 _:cb1131ae76f0ec4c3febb6cb82c0ab6005b3d4015cf1f34719c2c2d3c8c4bfc6ae3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1d8ffebeb8461742ef3463fb80465cbd3d1e28ea46546d80512a73142686102f5 .
+_:cb1161456adb235afb656ae0bd938bf23f8bfd4030fdf575d8a5b2bc5612a82cf7f <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb1161456adb235afb656ae0bd938bf23f8bfd4030fdf575d8a5b2bc5612a82cf7f <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#observedValue> .
+_:cb1161456adb235afb656ae0bd938bf23f8bfd4030fdf575d8a5b2bc5612a82cf7f <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
 _:cb1180d8244171046467117029e2da2fde9f712cbeef1be4b8354d4c7df74ba1fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "blessed" .
 _:cb1180d8244171046467117029e2da2fde9f712cbeef1be4b8354d4c7df74ba1fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1656caa617829dea3d09c61ea8f6c6f2e7937ba69f1183a53f47aac0b3e76c740 .
 _:cb1183f3246411184e58db6c89f3d91647e8380650701faf52636f4519ef81d813e <http://www.w3.org/ns/shacl#class> <https://w3id.org/intigraph/camayoc/core/ns#LXCContainer> .
 _:cb11a5385a3c914e9519fde0fcd91fb4ccdacc70eaf1f7af9132000220ed0c979db <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "declared" .
 _:cb11a5385a3c914e9519fde0fcd91fb4ccdacc70eaf1f7af9132000220ed0c979db <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb271b88e5eafe48879985e07a2c9e14c47e59b35dd927895d72da593dee0c9d3a1 .
-_:cb11b68159b9ec80d2908296e88fc2634d84a188b2312faf89c4cc2fcc4e6e71e8f <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb11b68159b9ec80d2908296e88fc2634d84a188b2312faf89c4cc2fcc4e6e71e8f <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#observedAt> .
-_:cb11b68159b9ec80d2908296e88fc2634d84a188b2312faf89c4cc2fcc4e6e71e8f <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
 _:cb11ee740450d727e1a1f50910005b84e8203b015276ef0b4be1e1ab60d279e607e <http://www.w3.org/ns/shacl#hasValue> "pr-merged" .
 _:cb11ee740450d727e1a1f50910005b84e8203b015276ef0b4be1e1ab60d279e607e <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#blockerKind> .
 _:cb122742b59f5e8a1c474d7d20eb7101c1eb91d39ec2f66f0f9929134412f56a2d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb47dbe0849654a0781630c8a74c04439e811b7b56423563e23ec6a01b2ecc007d .
@@ -1989,9 +2050,6 @@ _:cb122742b59f5e8a1c474d7d20eb7101c1eb91d39ec2f66f0f9929134412f56a2d2 <http://ww
 _:cb123997c052a4d439402bcbb66a826ce04e5ae392a5f94c64943ceee28fd3559d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cbc373449354c22f7f656b2f90f66d550132e6494e5ca8376dfe3896e968315311 .
 _:cb123997c052a4d439402bcbb66a826ce04e5ae392a5f94c64943ceee28fd3559d0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb14425ac69f074fd56cdd5096140029247811665b5780634c771a759d8c95bae8b .
 _:cb1263635ec5eb72eeb395f0bcc10fe86942109f969b934ae7fb5ada0c8812421a2 <http://www.w3.org/ns/shacl#and> _:cbde58ab9b0700c35e878dd2524ad71cdf38877cd7a4e338482e3646e0b23a72da .
-_:cb12688429c73cfac1b18bb788536dd1f374334d2acd81c3e3b064a6bf8f37f240d <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb12688429c73cfac1b18bb788536dd1f374334d2acd81c3e3b064a6bf8f37f240d <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> .
-_:cb12688429c73cfac1b18bb788536dd1f374334d2acd81c3e3b064a6bf8f37f240d <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
 _:cb12e0fe853d6c16cb55ee0a561cb872363089ff44aeda45469b670eaf32a5395f0 <http://www.w3.org/ns/shacl#and> _:cb13c8153d341f9efe6742abf802f895c64b641999feae643ab0a96adffa6a83e92 .
 _:cb12e1bc8bc6216c7fce97177e7da76eeaa714cb3db3a0178053b2e1aa4c079bc49 <http://www.w3.org/ns/shacl#class> <https://w3id.org/intigraph/camayoc/core/ns#ProxmoxNode> .
 _:cb1300707e7f5b51186e3f72bbcd8c1c1e3868da88bf4c975bffe5802e1eea1ca17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "declared" .
@@ -2004,9 +2062,6 @@ _:cb13c8153d341f9efe6742abf802f895c64b641999feae643ab0a96adffa6a83e92 <http://ww
 _:cb13c8153d341f9efe6742abf802f895c64b641999feae643ab0a96adffa6a83e92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1cc3758a5313c0745a162ffed46c152201d18c8dadb5907338e1476f0cef0bfdc .
 _:cb13f44be10b405b57dbe140eb22936c7cbb43ef8b4e2ce1b790a6468db554fde87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb17235fce6f8122d1517deb13c52b9d694d15ee1ef9b94c952c706173b89d0705f .
 _:cb13f44be10b405b57dbe140eb22936c7cbb43ef8b4e2ce1b790a6468db554fde87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:cb13fbe0fa6b359683acd91dbb80dad5ffe732daf987ee3c95f7cd58198ba85381b <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb13fbe0fa6b359683acd91dbb80dad5ffe732daf987ee3c95f7cd58198ba85381b <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#observedValue> .
-_:cb13fbe0fa6b359683acd91dbb80dad5ffe732daf987ee3c95f7cd58198ba85381b <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
 _:cb141e04150ff7b11135d093acedfdccbc9c8422164b938b961846a21b46804f313 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb141e04150ff7b11135d093acedfdccbc9c8422164b938b961846a21b46804f313 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#resolutionQuery> .
 _:cb14425ac69f074fd56cdd5096140029247811665b5780634c771a759d8c95bae8b <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb10404d5c34386ed6ed6cb2205c59f9aceaf1bc9263985d3d9628cb017292e47ac .
@@ -2653,6 +2708,9 @@ _:cbc373449354c22f7f656b2f90f66d550132e6494e5ca8376dfe3896e968315311 <http://www
 _:cbc373449354c22f7f656b2f90f66d550132e6494e5ca8376dfe3896e968315311 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#blockerKind> .
 _:cbc46bffdb50ec21349046936563519371319ee2273d4209fbe37d761624a1300f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "declared" .
 _:cbc46bffdb50ec21349046936563519371319ee2273d4209fbe37d761624a1300f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb2bd5d7fed9454df2434f917838cc95681dfbaebe39624dadcd3e5b97b36f85df8 .
+_:cbc7b48bb68ffc64f9a55a830be746a5331ab4621de6cf93f22695b6268e79246b <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cbc7b48bb68ffc64f9a55a830be746a5331ab4621de6cf93f22695b6268e79246b <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#about> .
+_:cbc7b48bb68ffc64f9a55a830be746a5331ab4621de6cf93f22695b6268e79246b <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
 _:cbd0427bbbd529f8d1fecf652cc11bc3ca16ba1a760ad1b7fc4f22900fa06e3a25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cbbabb95f19d26c7f58c8c06320719a9938b54e627e9852db1b901f128920a902e .
 _:cbd0427bbbd529f8d1fecf652cc11bc3ca16ba1a760ad1b7fc4f22900fa06e3a25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1c276b53322b516f6499701b8f70210241980d460d4f8ee8fac7ea9185ed987fa .
 _:cbd5e40d6c1c867238153cffe24f827b571ee572df1bbc3bfd6e74323055d154d1 <http://www.w3.org/ns/shacl#class> <https://w3id.org/intigraph/quipu/ns#WorkItem> .
@@ -2668,12 +2726,15 @@ _:cbe8fb9847dc488a3f1ae80602a60acc0a3239155ba932517fc06369007fa41557 <http://www
 _:cbe8fb9847dc488a3f1ae80602a60acc0a3239155ba932517fc06369007fa41557 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb2483f520ba53a9e5485930a27c2e149df4c5758b0c1c3d87540f635bf9521b7f1 .
 _:cbed534c6aef3f69500b080eb367b313d314adcc015114144df171ee433684fc6c <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cbed534c6aef3f69500b080eb367b313d314adcc015114144df171ee433684fc6c <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#about> .
-_:cbf15e44af91201d7e1c3e52eabc34e138ce0e0ea6865bffc7483f725e1e7b8d07 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cbf15e44af91201d7e1c3e52eabc34e138ce0e0ea6865bffc7483f725e1e7b8d07 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#about> .
-_:cbf15e44af91201d7e1c3e52eabc34e138ce0e0ea6865bffc7483f725e1e7b8d07 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
+_:cbf1be5ca29da454a491459eaa2737f8d296bede9a736e8cc72b19408d56e4b5f3 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cbf1be5ca29da454a491459eaa2737f8d296bede9a736e8cc72b19408d56e4b5f3 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#observedAt> .
+_:cbf1be5ca29da454a491459eaa2737f8d296bede9a736e8cc72b19408d56e4b5f3 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
 _:cbf84f817a5774abf602690578397a10e332e762a33645cf0a0d22c5065b27272d <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cbf84f817a5774abf602690578397a10e332e762a33645cf0a0d22c5065b27272d <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cbf84f817a5774abf602690578397a10e332e762a33645cf0a0d22c5065b27272d <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#minVersion> .
 _:cbf84f817a5774abf602690578397a10e332e762a33645cf0a0d22c5065b27272d <http://www.w3.org/ns/shacl#pattern> "^[0-9]+(\\.[0-9]+)*$" .
+_:cbfcde89a372abf396a1d7a8a661eee3318fdb2624388fd265e4a0afc1637cbb71 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cbfcde89a372abf396a1d7a8a661eee3318fdb2624388fd265e4a0afc1637cbb71 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> .
+_:cbfcde89a372abf396a1d7a8a661eee3318fdb2624388fd265e4a0afc1637cbb71 <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning> .
 _:cbfdada36782ea240e9df465fd9dc7e619dcf7cd65d52c512ce40c24245e164398 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb11ee740450d727e1a1f50910005b84e8203b015276ef0b4be1e1ab60d279e607e .
 _:cbfdada36782ea240e9df465fd9dc7e619dcf7cd65d52c512ce40c24245e164398 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1b3e00385c0b19a14b22a27807e8deedfd197f926c2426d5185cb6e309e8afce2 .

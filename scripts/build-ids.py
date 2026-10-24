@@ -59,19 +59,43 @@ def build(root=ROOT):
     stage_one = json.loads((data/'sources/camayoc/namespaces/intigraph/mapping.json').read_text())
     if stage_one.get('pair_count') != 1254 or len(stage_one['pairs']) != 1254:
         raise ValueError('Invalid stage-one mapping count')
-    if mapping != {r['old']:r['new'] for r in stage_one['pairs']}:
-        raise ValueError('Publication must retain the merged stage-one destinations')
-    roles = {r['old']:set(r['roles']) for r in stage_one['pairs']}
     retained = spec.get('retained_legacy', [])
-    if len(retained) != 47 or len(set(retained)) != 47 or set(retained) & set(mapping):
-        raise ValueError('Invalid explicit legacy inventory')
     shape_ids = {'http://aegis.gastown.local/ontology/'+name for name in (
         'ChangeEventShape', 'DeploymentEventIncludesShape',
         'CamayocObservationProvenanceDebtShape', 'DocumentVocabularyShape',
         'CodeEntityLabelMaxCountDebtShape', 'SectionHeadingMaxCountDebtShape',
         'CommitRequiredMetadataDebtShape', 'CodeModuleFilePathDebtShape')}
-    if set(retained) != set(stage_one['retained_legacy']) | shape_ids:
-        raise ValueError('Legacy inventory differs from stage-one exceptions')
+    legacy = set(stage_one['retained_legacy']) | shape_ids
+    accepted = list(stage_one['pairs'])
+    stage_two_path = data/'sources/camayoc/namespaces/intigraph/stage-two.json'
+    if stage_two_path.exists():
+        if 'camayoc/namespaces/intigraph/stage-two.json' not in {
+                i['repository'].split('/')[-1]+'/'+i['path'] for i in manifest}:
+            raise ValueError('Unpinned stage-two ledger')
+        stage_two = json.loads(stage_two_path.read_text())
+        if (stage_two.get('format') != 'intigraph-namespace-map/stage-two-v1'
+                or stage_two.get('pair_count') != 45 or len(stage_two['pairs']) != 45
+                or stage_two.get('base_mapping_sha256') != digest(
+                    (data/'sources/camayoc/namespaces/intigraph/mapping.json').read_bytes())):
+            raise ValueError('Invalid stage-two ledger')
+        additions = stage_two['pairs']
+        old_ids = {r['old'] for r in additions}
+        new_ids = {r['new'] for r in additions}
+        if (len(old_ids) != 45 or len(new_ids) != 45
+                or old_ids & {r['old'] for r in accepted}
+                or new_ids & {r['new'] for r in accepted}
+                or old_ids | set(stage_two['retained_legacy']) != legacy
+                or set(stage_two['retained_legacy']) != {
+                    'http://aegis.gastown.local/ontology/closedAt',
+                    'http://aegis.gastown.local/ontology/assignedTo'}):
+            raise ValueError('Stage-two identity disposition mismatch')
+        accepted += additions
+        legacy = set(stage_two['retained_legacy'])
+    if mapping != {r['old']:r['new'] for r in accepted}:
+        raise ValueError('Publication differs from the merged source destinations')
+    roles = {r['old']:set(r['roles']) for r in accepted}
+    if len(retained) != len(set(retained)) or set(retained) != legacy or legacy & set(mapping):
+        raise ValueError('Invalid explicit legacy inventory')
     for row in rows:
         if row['owner'] not in spec['entries'] or not row['new'].startswith(BASE+row['owner']+'#') and row['new'] != BASE+row['owner']:
             raise ValueError('Invalid owner or destination')
