@@ -1,101 +1,101 @@
 [
   {
     "path": "camayoc/code-entities/ns",
-    "triples": 259,
+    "triples": 308,
     "terms": 23,
     "sha256": {
-      ".ttl": "225a0aee80ac80a3cb9c11af9a196e7257dfed2404244e35b3b3dc146858ec61",
-      ".jsonld": "3c7605ef597dd816d4ecb28efb8483c3196c8c04c014e0a4b7bae3cb0fb5870f"
+      ".ttl": "6526994b7712d3824dd29ccf6769f9d73937a9acb662493b7c46026b18d34c3a",
+      ".jsonld": "c9dfd306a4f65b4e95909aaae16ec37657e55347895cdfaa80aee0cb229911e1"
     }
   },
   {
     "path": "camayoc/core/ns",
-    "triples": 1972,
+    "triples": 2679,
     "terms": 341,
     "sha256": {
-      ".ttl": "1c7217a62040e331f03c98bc282780b0b9e18cb20ac8925a732b6f92c05f7cb3",
-      ".jsonld": "119e103afee6b112df62bc263f0a22931f9ce281c4c1cf763c802e27fb8deac2"
+      ".ttl": "ec0da0a43d195f6138216e0ec9b4cbdddb35edaef984172a2b19a4fe2909380c",
+      ".jsonld": "861b0f9c123e3cfbe8228c49312bab93c5e6b5627e4f18ed3578ef9601f9de46"
     }
   },
   {
     "path": "camayoc/delivery/ns",
-    "triples": 147,
+    "triples": 279,
     "terms": 11,
     "sha256": {
-      ".ttl": "bfea169f175ca99ff0bfd146b2d363bfbd8606f4128b7b19927a92b4967bf461",
-      ".jsonld": "cba6ce17e74eec638d175b40bae8d2fde4e3d6d483ae4238278133641d62f1bb"
+      ".ttl": "0513746a0d1e2e9631629b4c94940b8fc4457b339a1fce4196fa98c0b2a7d2f7",
+      ".jsonld": "a9478589b871e09e7a2574bbcaa920bc09d30456f5497254b41670d4535331b7"
     }
   },
   {
     "path": "camayoc/homelab-infra/ns",
-    "triples": 509,
+    "triples": 552,
     "terms": 82,
     "sha256": {
-      ".ttl": "4960fddca3976417b9961c27f77e0aa6b2d6760869db2239c6c1f64f27611580",
-      ".jsonld": "64c6ab01f06d7da73e3789b96163380033ca79d2724788445943401b35cb26c2"
+      ".ttl": "0995ec8b82486523801e6dbc67d82133c891d179a020a176f48bb0c180b97951",
+      ".jsonld": "c99c6ad1a3803eba1363df31e8ac877ae5069fdb0e18fddb4a67ac8581e931d9"
     }
   },
   {
     "path": "camayoc/personal-media/ns",
-    "triples": 77,
+    "triples": 86,
     "terms": 15,
     "sha256": {
-      ".ttl": "839a164a7b3d4f66cdd4fb66f15b250c6eaaa426f6209fc1d4516ee06cdffded",
-      ".jsonld": "c10a6d35986f6de30aac94711c40d19f44fdc80dfe55054136bd2954f3b44b2e"
+      ".ttl": "dfb5a4e6e72b05ce5b74e07f09e1c54b043d3f0f5b65cc665e6904f7f3c7c02f",
+      ".jsonld": "7cde5a7e5023e071997d819abb4e07fadbb776aa6cb74aeb92c08e9df196d60a"
     }
   },
   {
     "path": "camayoc/session-transcript/ns",
-    "triples": 54,
+    "triples": 60,
     "terms": 8,
     "sha256": {
-      ".ttl": "7f4b9e79bf4d86e864e90ce15b40d230fafc349ae102ef375165576cc0c32b4d",
-      ".jsonld": "f50ae4ac62c105135967f3e3a761f7023c900cbaa531419628780d35bed2dd72"
+      ".ttl": "40c9df521dac2dcf9a104968fcbb4a9d34f0bb4b6443621224e30f452975f31d",
+      ".jsonld": "3a06d3f1de12ed2b3fd9abb579fb991fc136ac7e512eeacf8d58ca2c0cd0d1fa"
     }
   },
   {
     "path": "camayoc/software-factory/ns",
-    "triples": 662,
+    "triples": 726,
     "terms": 104,
     "sha256": {
-      ".ttl": "5eaff9852996cedf316c178d68147f098e35bc039369f095ca6ef2406286b8b9",
-      ".jsonld": "efe548bf9ec8ad5e1c420272d82b8b85d1c6e7a94a0f9d5660402533d3f7deeb"
+      ".ttl": "f446e5da2b0b589f33ec4bc8e01fc0fbdd2528941c3a05e11a7cff7d3f61c2d8",
+      ".jsonld": "14b1a6e2100d1e2b2eb373133c9279cce2133c867a09428931dc0b945a9c99ab"
     }
   },
   {
     "path": "camayoc/usage-breakdown/ns",
-    "triples": 38,
+    "triples": 45,
     "terms": 8,
     "sha256": {
-      ".ttl": "62b4864663712b7d23dcdc396c08b204da80ffb32261f5358a6ab85f8cde5dba",
-      ".jsonld": "1650eb8747309eae53f6c4d3364aee070ea3c69fd54712aae312d1dd34a608c3"
+      ".ttl": "7a3893b3fb521190c13cb1f3bcb6d5ba1bfe14fc2258e50638322b2d56dccb48",
+      ".jsonld": "69a4cb27af9dc39be1a7763f45e1164cc33a599f992e57d8a7e51afc2795bb33"
     }
   },
   {
     "path": "quechua/ns",
-    "triples": 1869,
+    "triples": 2318,
     "terms": 451,
     "sha256": {
-      ".ttl": "eed23be23fdc2ecd8a7619b34f08cfd793622a4b1abdf8773a905310a5e3e894",
-      ".jsonld": "53b16a7a73a489953035301d4e45a0901026d46e632eaf6064213b5dac417208"
+      ".ttl": "707280075d9a1700406ed702c1ea22a228f3cd2638177c55b59014d9b49fb05b",
+      ".jsonld": "89896adc7576670f940e8458ed22bf91c510b1eb126e1a548922cec771b99c7d"
     }
   },
   {
     "path": "quipu/ns",
-    "triples": 1971,
+    "triples": 2074,
     "terms": 186,
     "sha256": {
-      ".ttl": "dc70a600848317556ae760fe848858dd843d0d0aa0f35023db2b4ea51cd86493",
-      ".jsonld": "8117fec09872e6a847810a59781df13607343f719b5ed22befbe08d541c7bda0"
+      ".ttl": "e2ba7f8982591028e35392edf5eea46a1b80d04cef555663701ff3a534db60fd",
+      ".jsonld": "723f19daaf0598219a8b4b9f6e43006041774c9f49f6031c402be932703ce7c5"
     }
   },
   {
     "path": "seeds/ns",
-    "triples": 429,
+    "triples": 451,
     "terms": 25,
     "sha256": {
-      ".ttl": "6dd0cf1b0d7e63bf88d6d3a4f958fbc4f2e3db45b83d3bd03663023d04ba89c5",
-      ".jsonld": "e756daee0ca0daeca75c88763688e2b274d32e912274054241d773d2a03cfd27"
+      ".ttl": "4065f39955942ed011a270e9d798b00ec3a43973a8cc3a7dab1bc1edcc056afd",
+      ".jsonld": "1bd736c9a68b3f47c512d364cd5d824b3d311273e8c58d61f82a20c4654ed21b"
     }
   }
 ]

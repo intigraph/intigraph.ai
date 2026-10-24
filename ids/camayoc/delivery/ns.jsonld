@@ -8,14 +8,6 @@
     ]
   },
   {
-    "@id": "_:cb10418193d66bd8d8ed3457a1bce2937495447d62a487353a6991d8a188f2b1ba2",
-    "http://www.w3.org/ns/shacl#not": [
-      {
-        "@id": "_:cb7ed402cd7cecdbc5934bd9413ba1cd16aefe6680d36542bea6a6c863c5a01e31"
-      }
-    ]
-  },
-  {
     "@id": "_:cb109d9700fe4ce67400141cb92c45ac4b5654c681e6a0ea8956ac7b04104a85329",
     "http://www.w3.org/ns/shacl#property": [
       {
@@ -24,10 +16,36 @@
     ]
   },
   {
-    "@id": "_:cb11ab85a988a8ea2b29ed44ec0ad337e2f8c5379360438a743418edd68651cb372",
+    "@id": "_:cb110f954ad8e90aeb95be61c661761863af3d1e7efca2d37f25fe29c605d355ce8",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "abandoned"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cbf0f93266d0b41e6dd1a52618fa72b752e49c527278c1dfcd701d5b02dcd5f15c"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1138b6439bfe34e28a30aef621be707c966903f7747e3d2ee8913b8ad52577a14",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cbc3e09e7c7e89d2347867e6e20ab5828670458f56f69de46b8561bb6160d6a32c"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb28bd81bd80de3a5e05a12487cc1b5e9cd4f81a6042febe5ade760a8c04a3016b9"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb120aaf38ab3de77c4e7c45c2094ad998c81758bdd23335cfafe663553b88fe61d",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:cb165e9cff7bf82b305cc96113b338369686d0b2e2154c9b95faa66a5382ad52492"
+        "@id": "_:cb138b55cfa119c8eabfe90a02a1d79381a300fbd9fe1e8b1bfd71ae88762026d48"
       }
     ]
   },
@@ -35,25 +53,52 @@
     "@id": "_:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:cb11ab85a988a8ea2b29ed44ec0ad337e2f8c5379360438a743418edd68651cb372"
+        "@id": "_:cb5e07506ac46b8ac5b6cb6645f1e134d914f0097f06427674de1838134971e58f"
       }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
-        "@id": "_:cb2a2848782eceefce14d3bcba8d99f37857a04b22b3f7813787cbd74f694bd65c6"
+        "@id": "_:cb1c2aaaf9396f3cb650a2fe5abdb12eedda8644d910a1b43b54d0dea807c307e5a"
       }
     ]
   },
   {
-    "@id": "_:cb1419c512ce554acceeb0d51ec275c0280103b85fe4d29f167580b5d252b2e990a",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+    "@id": "_:cb138b55cfa119c8eabfe90a02a1d79381a300fbd9fe1e8b1bfd71ae88762026d48",
+    "http://www.w3.org/ns/shacl#minCount": [
       {
-        "@id": "_:cb10418193d66bd8d8ed3457a1bce2937495447d62a487353a6991d8a188f2b1ba2"
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
       }
     ],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+    "http://www.w3.org/ns/shacl#path": [
       {
-        "@id": "_:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097"
+        "@id": "http://aegis.gastown.local/ontology/commitSha"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb14f496eb5e8504f5e83847f17c4a845ee8796b5c46d735cf533f618f32b356d77",
+    "http://www.w3.org/ns/shacl#not": [
+      {
+        "@id": "_:cb22d00b1045696254a7a0803069d16233710da7e267fb87dd48032ffcca240104"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb152b4a10e867bf7bfff3f9a36f494327cfead2297436e347969e0a04ad538d35e",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://aegis.gastown.local/ontology/includesCommit"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^[0-9a-f]{40}$"
       }
     ]
   },
@@ -68,6 +113,31 @@
     "http://www.w3.org/ns/shacl#path": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1621ffd6c33f13818490a9094f899cf7f88dbf6e0a5706d7428b338812314cfa1",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb1a2013f698f866dd01e4b2775107f09539d61275263ccb5fd26bb632f7b742cec"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://aegis.gastown.local/ontology/changeAction"
       }
     ]
   },
@@ -99,6 +169,32 @@
     ]
   },
   {
+    "@id": "_:cb1a2013f698f866dd01e4b2775107f09539d61275263ccb5fd26bb632f7b742cec",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "created"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb271018c9aaaa1f791f64fe9e5773808c904b0dba0fcabc7afc89f85ee82853845"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1a50f8d7417991d26716da79a17da228b546f058c023faa5202035c0594d7c51c",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "ci-failed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
     "@id": "_:cb1ac750cd60e7a5501eac0008c7194ac9746b932574a75525aef8b7659dd8a98e3",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
@@ -125,6 +221,19 @@
     ]
   },
   {
+    "@id": "_:cb1c2aaaf9396f3cb650a2fe5abdb12eedda8644d910a1b43b54d0dea807c307e5a",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb1028b65c2d64455ae0fac5b4ad95bd90b5db2f907707345c63e8ad8d6c6e23e06"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
     "@id": "_:cb1d17a17b4d6a7639f00573db0fb280de14be353c4ad14c87843523b018af17b71",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
@@ -134,6 +243,19 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
       {
         "@id": "_:cb1ac750cd60e7a5501eac0008c7194ac9746b932574a75525aef8b7659dd8a98e3"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb1d7889f1e1f39d89a5e47d448684f7c050b546de4ac53beb78110dddc6fb95bda",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "merged"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb110f954ad8e90aeb95be61c661761863af3d1e7efca2d37f25fe29c605d355ce8"
       }
     ]
   },
@@ -168,6 +290,55 @@
     ]
   },
   {
+    "@id": "_:cb216a2c48ff3b1c8f2612819f835858ff49bf1a01b367690b4a4711db8a4ce6856",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://aegis.gastown.local/ontology/commitSha"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^[0-9a-f]{40}$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb21955774c8890926e1e70334875aa7f71663b23f063e3e8523f340fe98abc4c8c",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minLength": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://aegis.gastown.local/ontology/reviewState"
+      }
+    ]
+  },
+  {
     "@id": "_:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b",
     "http://www.w3.org/ns/shacl#in": [
       {
@@ -193,6 +364,36 @@
     ]
   },
   {
+    "@id": "_:cb21cb50221698f93810d39ba9b945510037f929011a919cd3950d559a2e9b048ce",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^dev\\.cdevents\\."
+      }
+    ]
+  },
+  {
     "@id": "_:cb222875bb1c740551034a58fa0f1277568bde16a33ca25da2380b4a6cef2ce9634",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
@@ -206,7 +407,97 @@
     ]
   },
   {
+    "@id": "_:cb2270f8e9e695d49b288a289dc1955ffb73e92ca8b0c38f3f06bac6514bfe8313f",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "observed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      }
+    ]
+  },
+  {
     "@id": "_:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minLength": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22d00b1045696254a7a0803069d16233710da7e267fb87dd48032ffcca240104",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb22ed1e2e6f917595235553e2c8f35f1c2e01d8fe4ca557d8b213120542ba70422"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22dcae90cecf5cb7fdd2f6449bed14610431e729654ca9ff6efa0f2ade8cf89a4",
+    "http://www.w3.org/ns/shacl#in": [
+      {
+        "@id": "_:cb2270f8e9e695d49b288a289dc1955ffb73e92ca8b0c38f3f06bac6514bfe8313f"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/core/ns#sourceKind"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb22ed1e2e6f917595235553e2c8f35f1c2e01d8fe4ca557d8b213120542ba70422",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@value": "failed"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2357e229c6af8ae85d658b2aeccda37f60112f1b7bc6fb25d7e5b4f7ec05c0b97",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
@@ -250,15 +541,45 @@
     ]
   },
   {
-    "@id": "_:cb23e2f6f4eb84a2913655d1abf25db3c76007871bdda72677543b5a0674790096c",
-    "http://www.w3.org/ns/shacl#hasValue": [
+    "@id": "_:cb271018c9aaaa1f791f64fe9e5773808c904b0dba0fcabc7afc89f85ee82853845",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@value": "failed"
+        "@value": "reviewed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1d7889f1e1f39d89a5e47d448684f7c050b546de4ac53beb78110dddc6fb95bda"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb282dc49da05bbf86fad74ba8d481b9d0b2e36e6797c558c846f162f78f7242305",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
       }
     ],
     "http://www.w3.org/ns/shacl#path": [
       {
-        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome"
+        "@id": "http://aegis.gastown.local/ontology/changeId"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+#[0-9]+$"
       }
     ]
   },
@@ -288,10 +609,10 @@
     ]
   },
   {
-    "@id": "_:cb2a2848782eceefce14d3bcba8d99f37857a04b22b3f7813787cbd74f694bd65c6",
+    "@id": "_:cb28bd81bd80de3a5e05a12487cc1b5e9cd4f81a6042febe5ade760a8c04a3016b9",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
       {
-        "@id": "_:cb1028b65c2d64455ae0fac5b4ad95bd90b5db2f907707345c63e8ad8d6c6e23e06"
+        "@id": "_:cb120aaf38ab3de77c4e7c45c2094ad998c81758bdd23335cfafe663553b88fe61d"
       }
     ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
@@ -375,6 +696,31 @@
     ]
   },
   {
+    "@id": "_:cb2cfd4ca9f1e229aad134ede294522f8e824310575fe05417fe07b55fc6c5dae14",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
     "@id": "_:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338",
     "http://www.w3.org/ns/shacl#datatype": [
       {
@@ -400,6 +746,36 @@
   },
   {
     "@id": "_:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?(Z|[+-]([01][0-9]|2[0-3]):[0-5][0-9])$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2e70ba7f7d0de3a51b8bef82ffad36b057de84c537315fc70fde202ab1eba1939",
     "http://www.w3.org/ns/shacl#datatype": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#string"
@@ -491,10 +867,105 @@
     ]
   },
   {
-    "@id": "_:cb7ed402cd7cecdbc5934bd9413ba1cd16aefe6680d36542bea6a6c863c5a01e31",
+    "@id": "_:cb2f292fec49927361854725e342c18f55cff0a70e05d47b01b5d0dd3af0365c322",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://aegis.gastown.local/ontology/changeRepository"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#pattern": [
+      {
+        "@value": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb2fb26e0c9dfe5bcd8a2832ff16d66880f76899dec9279fd07be7d209df74e16a0",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#maxCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minLength": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb3c04718f75f5f9743b817a9140867e0c5445ce0c3d64deecbf243e2b54314f28",
     "http://www.w3.org/ns/shacl#property": [
       {
-        "@id": "_:cb23e2f6f4eb84a2913655d1abf25db3c76007871bdda72677543b5a0674790096c"
+        "@id": "_:cb753302ac6279b3b54914d1748073d20242af43a50dfb962be9114a3cec3cd7ae"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb5a9760d373e272e446eeb2ac2248e7fdfd64e84db1c740897357701cd78fb3f7",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@id": "_:cb14f496eb5e8504f5e83847f17c4a845ee8796b5c46d735cf533f618f32b356d77"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb5e07506ac46b8ac5b6cb6645f1e134d914f0097f06427674de1838134971e58f",
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb165e9cff7bf82b305cc96113b338369686d0b2e2154c9b95faa66a5382ad52492"
+      }
+    ]
+  },
+  {
+    "@id": "_:cb753302ac6279b3b54914d1748073d20242af43a50dfb962be9114a3cec3cd7ae",
+    "http://www.w3.org/ns/shacl#hasValue": [
+      {
+        "@value": "merged"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://aegis.gastown.local/ontology/changeAction"
       }
     ]
   },
@@ -503,6 +974,27 @@
     "http://www.w3.org/ns/shacl#property": [
       {
         "@id": "_:cb1a144154d6eef657b2fef6e1518c7a9d79c904eaeaf5901d65a13a094e797416d"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbc3e09e7c7e89d2347867e6e20ab5828670458f56f69de46b8561bb6160d6a32c",
+    "http://www.w3.org/ns/shacl#not": [
+      {
+        "@id": "_:cb3c04718f75f5f9743b817a9140867e0c5445ce0c3d64deecbf243e2b54314f28"
+      }
+    ]
+  },
+  {
+    "@id": "_:cbf0f93266d0b41e6dd1a52618fa72b752e49c527278c1dfcd701d5b02dcd5f15c",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+      {
+        "@value": "ci-passed"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+      {
+        "@id": "_:cb1a50f8d7417991d26716da79a17da228b546f058c023faa5202035c0594d7c51c"
       }
     ]
   },
@@ -534,8 +1026,102 @@
     ]
   },
   {
+    "@id": "http://aegis.gastown.local/ontology/ChangeEvent",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "One lifecycle step of a source change (a pull request), from a CDEvents change event or a CI result for the change's head commit: created, reviewed, merged, abandoned, ci-passed or ci-failed. Distinct from DeploymentEvent (what reached an environment) and from WorkflowRun."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Change event"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/ChangeEventShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#or": [
+      {
+        "@id": "_:cb1138b6439bfe34e28a30aef621be707c966903f7747e3d2ee8913b8ad52577a14"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb1621ffd6c33f13818490a9094f899cf7f88dbf6e0a5706d7428b338812314cfa1"
+      },
+      {
+        "@id": "_:cb216a2c48ff3b1c8f2612819f835858ff49bf1a01b367690b4a4711db8a4ce6856"
+      },
+      {
+        "@id": "_:cb21955774c8890926e1e70334875aa7f71663b23f063e3e8523f340fe98abc4c8c"
+      },
+      {
+        "@id": "_:cb21cb50221698f93810d39ba9b945510037f929011a919cd3950d559a2e9b048ce"
+      },
+      {
+        "@id": "_:cb22dcae90cecf5cb7fdd2f6449bed14610431e729654ca9ff6efa0f2ade8cf89a4"
+      },
+      {
+        "@id": "_:cb2357e229c6af8ae85d658b2aeccda37f60112f1b7bc6fb25d7e5b4f7ec05c0b97"
+      },
+      {
+        "@id": "_:cb282dc49da05bbf86fad74ba8d481b9d0b2e36e6797c558c846f162f78f7242305"
+      },
+      {
+        "@id": "_:cb2cfd4ca9f1e229aad134ede294522f8e824310575fe05417fe07b55fc6c5dae14"
+      },
+      {
+        "@id": "_:cb2e70ba7f7d0de3a51b8bef82ffad36b057de84c537315fc70fde202ab1eba1939"
+      },
+      {
+        "@id": "_:cb2f292fec49927361854725e342c18f55cff0a70e05d47b01b5d0dd3af0365c322"
+      },
+      {
+        "@id": "_:cb2fb26e0c9dfe5bcd8a2832ff16d66880f76899dec9279fd07be7d209df74e16a0"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "http://aegis.gastown.local/ontology/ChangeEvent"
+      }
+    ]
+  },
+  {
     "@id": "http://aegis.gastown.local/ontology/DeploymentEvent",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/DeploymentEventIncludesShape",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/ns/shacl#NodeShape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:cb152b4a10e867bf7bfff3f9a36f494327cfead2297436e347969e0a04ad538d35e"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent"
       }
@@ -551,6 +1137,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/artifactId",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#artifactId"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#artifactId"
@@ -559,6 +1150,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/attemptedArtifactId",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId"
@@ -567,6 +1163,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/cdeventsType",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType"
@@ -574,7 +1175,81 @@
     ]
   },
   {
+    "@id": "http://aegis.gastown.local/ontology/changeAction",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Closed set: created, reviewed, merged, abandoned, ci-passed, ci-failed."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "change action"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/changeId",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Repository-qualified change identity, owner/repo#number. Every step of one change carries the same value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "change id"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/changeRepository",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The repository the change targets, as owner/repo."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "change repository"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
     "@id": "http://aegis.gastown.local/ontology/cloudEventId",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId"
@@ -583,6 +1258,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/cloudEventSource",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource"
@@ -590,7 +1270,35 @@
     ]
   },
   {
+    "@id": "http://aegis.gastown.local/ontology/commitSha",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Full 40-hex commit id the step concerns: the merge commit on merged, the head commit on a CI result or review."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "commit sha"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
     "@id": "http://aegis.gastown.local/ontology/deployedService",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#deployedService"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#deployedService"
@@ -599,6 +1307,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/deploymentOutcome",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome"
@@ -607,6 +1320,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/environment",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#environment"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#environment"
@@ -614,10 +1332,61 @@
     ]
   },
   {
+    "@id": "http://aegis.gastown.local/ontology/includesCommit",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Full 40-hex commit id newly delivered by a deployment: the commits reachable from the deployed artifact and not from the previous succeeded deployment's artifact. Multi-valued."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "includes commit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
     "@id": "http://aegis.gastown.local/ontology/occurredAt",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt"
+      }
+    ]
+  },
+  {
+    "@id": "http://aegis.gastown.local/ontology/reviewState",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The forge's review verdict word on a reviewed step (approved, changes_requested, commented, dismissed)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "review state"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
     ]
   },
@@ -648,7 +1417,7 @@
     ],
     "http://www.w3.org/ns/shacl#or": [
       {
-        "@id": "_:cb1419c512ce554acceeb0d51ec275c0280103b85fe4d29f167580b5d252b2e990a"
+        "@id": "_:cb5a9760d373e272e446eeb2ac2248e7fdfd64e84db1c740897357701cd78fb3f7"
       },
       {
         "@id": "_:cbf9fcc813e98add9378838e28083d7ccca5eaef2e7c62dc444b7f2712a2317435"

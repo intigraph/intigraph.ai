@@ -2487,6 +2487,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/CIWorkflow",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#CIWorkflow"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#CIWorkflow"
@@ -2503,6 +2508,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Capability",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Capability"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Capability"
@@ -2519,6 +2529,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/CiJob",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#CiJob"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#CiJob"
@@ -2551,6 +2566,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Component",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Component"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Component"
@@ -2575,6 +2595,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/CrewRole",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#CrewRole"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#CrewRole"
@@ -2607,6 +2632,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/DesignPrinciple",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#DesignPrinciple"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#DesignPrinciple"
@@ -2623,6 +2653,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/DesiredCrewShape",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#DesiredCrewShape"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#DesiredCrewShape"
@@ -2639,6 +2674,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/DesiredCrewSlot",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#DesiredCrewSlot"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#DesiredCrewSlot"
@@ -2655,6 +2695,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Feature",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Feature"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Feature"
@@ -2679,6 +2724,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Formula",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Formula"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Formula"
@@ -2751,6 +2801,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Limitation",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Limitation"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Limitation"
@@ -2767,6 +2822,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/LocalCommand",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#LocalCommand"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#LocalCommand"
@@ -2799,6 +2859,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Polecat",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Polecat"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Polecat"
@@ -2831,6 +2896,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Rig",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Rig"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Rig"
@@ -2847,6 +2917,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/SecurityFinding",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#SecurityFinding"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#SecurityFinding"
@@ -2863,6 +2938,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Skill",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Skill"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#Skill"
@@ -2879,6 +2959,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/TraitValue",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#TraitValue"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#TraitValue"
@@ -2903,6 +2988,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/applies_to",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#applies_to"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#applies_to"
@@ -2911,6 +3001,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/authored_by",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#authored_by"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#authored_by"
@@ -2919,6 +3014,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/axis",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#axis"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#axis"
@@ -2927,6 +3027,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/briefArtifact",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefArtifact"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefArtifact"
@@ -2935,6 +3040,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/briefCollection",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefCollection"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefCollection"
@@ -2943,6 +3053,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/briefCurator",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefCurator"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefCurator"
@@ -2951,6 +3066,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/briefDocumentId",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefDocumentId"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefDocumentId"
@@ -2959,6 +3079,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/briefPayloadJson",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefPayloadJson"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefPayloadJson"
@@ -2967,6 +3092,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/briefRevision",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefRevision"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefRevision"
@@ -2975,6 +3105,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/briefSourceVersion",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefSourceVersion"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#briefSourceVersion"
@@ -2983,6 +3118,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/commandText",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#commandText"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#commandText"
@@ -2991,6 +3131,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/committed_to",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#committed_to"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#committed_to"
@@ -2999,6 +3144,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/consolidatesInto",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#consolidatesInto"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#consolidatesInto"
@@ -3007,6 +3157,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/crewPlanStatus",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#crewPlanStatus"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#crewPlanStatus"
@@ -3015,6 +3170,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/crewRoleName",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#crewRoleName"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#crewRoleName"
@@ -3023,6 +3183,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/crewStatus",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#crewStatus"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#crewStatus"
@@ -3031,6 +3196,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/derived_from",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#derived_from"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#derived_from"
@@ -3039,6 +3209,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/desiredCount",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#desiredCount"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#desiredCount"
@@ -3047,6 +3222,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/desiredHarness",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#desiredHarness"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#desiredHarness"
@@ -3055,6 +3235,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/elastic",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#elastic"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#elastic"
@@ -3063,6 +3248,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/event",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#event"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#event"
@@ -3071,6 +3261,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/formulaName",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#formulaName"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#formulaName"
@@ -3079,6 +3274,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/gatesPath",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#gatesPath"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#gatesPath"
@@ -3087,6 +3287,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/hasCrewSlot",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#hasCrewSlot"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#hasCrewSlot"
@@ -3095,6 +3300,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/hasRole",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#hasRole"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#hasRole"
@@ -3111,6 +3321,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/localEquivalent",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#localEquivalent"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#localEquivalent"
@@ -3119,6 +3334,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/member_of",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#member_of"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#member_of"
@@ -3127,6 +3347,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/minimumCount",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#minimumCount"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#minimumCount"
@@ -3135,6 +3360,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/modifies",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#modifies"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#modifies"
@@ -3143,6 +3373,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/precedence",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#precedence"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#precedence"
@@ -3151,6 +3386,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/prefix",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#prefix"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#prefix"
@@ -3159,6 +3399,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/reportsToSlot",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#reportsToSlot"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#reportsToSlot"
@@ -3167,6 +3412,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/reports_to",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#reports_to"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#reports_to"
@@ -3175,6 +3425,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/requiresRole",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#requiresRole"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#requiresRole"
@@ -3183,6 +3438,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/rig",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#rig"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#rig"
@@ -3191,6 +3451,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/scopeEntity",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#scopeEntity"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#scopeEntity"
@@ -3199,6 +3464,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/scopeKind",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#scopeKind"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#scopeKind"
@@ -3207,6 +3477,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/skillName",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#skillName"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#skillName"
@@ -3215,6 +3490,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/targetSize",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#targetSize"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#targetSize"
@@ -3223,6 +3503,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/traitAttachment",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitAttachment"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitAttachment"
@@ -3231,6 +3516,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/traitAuthority",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitAuthority"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitAuthority"
@@ -3239,6 +3529,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/traitCoordination",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitCoordination"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitCoordination"
@@ -3247,6 +3542,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/traitLifecycle",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitLifecycle"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitLifecycle"
@@ -3255,6 +3555,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/traitScope",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitScope"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitScope"
@@ -3263,6 +3568,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/traitValue",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitValue"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitValue"
@@ -3271,6 +3581,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/traitWorkIntake",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitWorkIntake"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#traitWorkIntake"
@@ -3279,6 +3594,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/triggered_by",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#triggered_by"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/software-factory/ns#triggered_by"

@@ -1676,6 +1676,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ConfigSetting",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConfigSetting"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ConfigSetting"
@@ -1748,6 +1753,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/DockerImage",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DockerImage"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#DockerImage"
@@ -1788,6 +1798,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/MonitoringProbe",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#MonitoringProbe"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#MonitoringProbe"
@@ -1820,6 +1835,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/NetworkSegment",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#NetworkSegment"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#NetworkSegment"
@@ -1844,6 +1864,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Probe",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#Probe"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#Probe"
@@ -1868,6 +1893,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/PushgatewayJob",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#PushgatewayJob"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#PushgatewayJob"
@@ -1892,6 +1922,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ReverseProxyRoute",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ReverseProxyRoute"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ReverseProxyRoute"
@@ -1940,6 +1975,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/StoragePool",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#StoragePool"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#StoragePool"
@@ -1972,6 +2012,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/TerraformResource",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TerraformResource"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TerraformResource"
@@ -1988,6 +2033,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/TraefikRoute",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TraefikRoute"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#TraefikRoute"
@@ -2004,6 +2054,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ZFSDataset",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ZFSDataset"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ZFSDataset"
@@ -2020,6 +2075,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/alertExpr",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#alertExpr"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#alertExpr"
@@ -2028,6 +2088,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/backend",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backend"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backend"
@@ -2036,6 +2101,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/backs_up",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backs_up"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#backs_up"
@@ -2044,6 +2114,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/commandSignature",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#commandSignature"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#commandSignature"
@@ -2052,6 +2127,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/configPath",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#configPath"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#configPath"
@@ -2060,6 +2140,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ctId",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ctId"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ctId"
@@ -2068,6 +2153,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/dataPath",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#dataPath"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#dataPath"
@@ -2076,6 +2166,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/diskDeltaBytes",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#diskDeltaBytes"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#diskDeltaBytes"
@@ -2084,6 +2179,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/filesystemIdentity",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#filesystemIdentity"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#filesystemIdentity"
@@ -2092,6 +2192,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/gateway",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#gateway"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#gateway"
@@ -2100,6 +2205,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/groupName",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#groupName"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#groupName"
@@ -2108,6 +2218,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/guardsProducer",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#guardsProducer"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#guardsProducer"
@@ -2116,6 +2231,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/healthEndpoint",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#healthEndpoint"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#healthEndpoint"
@@ -2124,6 +2244,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/healthScore",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#healthScore"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#healthScore"
@@ -2132,6 +2257,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/heldOn",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#heldOn"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#heldOn"
@@ -2140,6 +2270,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/hostname",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#hostname"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#hostname"
@@ -2148,6 +2283,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/indexes",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#indexes"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#indexes"
@@ -2156,6 +2296,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ipAddress",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ipAddress"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#ipAddress"
@@ -2164,6 +2309,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/mountpoint",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#mountpoint"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#mountpoint"
@@ -2172,6 +2322,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/nodeId",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#nodeId"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#nodeId"
@@ -2180,6 +2335,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/pool",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#pool"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#pool"
@@ -2188,6 +2348,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/registry",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#registry"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#registry"
@@ -2196,6 +2361,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/resourceName",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#resourceName"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#resourceName"
@@ -2204,6 +2374,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/resourceType",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#resourceType"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#resourceType"
@@ -2212,6 +2387,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/roleName",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#roleName"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#roleName"
@@ -2220,6 +2400,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/script",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#script"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#script"
@@ -2228,6 +2413,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/service",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#service"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#service"
@@ -2236,6 +2426,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/src",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#src"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#src"
@@ -2244,6 +2439,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/storageBackend",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#storageBackend"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#storageBackend"
@@ -2252,6 +2452,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/subnet",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#subnet"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#subnet"
@@ -2260,6 +2465,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/tag",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#tag"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#tag"
@@ -2268,6 +2478,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/target",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#target"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#target"

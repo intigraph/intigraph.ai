@@ -1,0 +1,712 @@
+# camayoc core — the bootstrap vocabulary (slice 1: work + decisions)
+#
+# NAMESPACE NOTE (v1 pragmatism, revisit deliberately): quipu's /episode path
+# emits node types and plain-named properties in the store's configured
+# base_ns (default: the aegis namespace). So these terms are declared in that
+# base namespace so that skill-guided episode writes and these declarations
+# agree OUT OF THE BOX. A deployment that overrides [quipu] base_ns must load
+# a regenerated copy — the namespace is a parameter, and this file's prefix is
+# where it is set. See docs/design/bootstrap-ontology.md §1.
+#
+# Discipline: rdfs:range only, never rdfs:domain (Q-SARC-VOCAB — these
+# predicates may later attach at statement level as well as node level).
+
+@prefix aegis: <http://aegis.gastown.local/ontology/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix camayoc: <https://camayoc.local/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+# ---- Classes -----------------------------------------------------------
+
+aegis:WorkItem a rdfs:Class ;
+    rdfs:label "Work item" ;
+    owl:deprecated true ;
+    dcterms:isReplacedBy schema:Action ;
+    rdfs:comment "Legacy stored work-item type. New work uses schema:Action and the Seeds-owned profile; this replacement declaration is not a data rewrite or owl:sameAs." .
+
+aegis:Bead a rdfs:Class ;
+    rdfs:label "Bead (legacy work item)" ;
+    owl:deprecated true ;
+    rdfs:subClassOf aegis:WorkItem .
+
+aegis:Decision a rdfs:Class ;
+    rdfs:label "Decision" ;
+    rdfs:comment "A choice made in the course of work: what was chosen, over what visible alternatives, why, by whom, under which work item. Recorded at the moment it happens." .
+
+aegis:Verification a rdfs:Class ;
+    rdfs:label "Verification" ;
+    rdfs:comment "A claim that a check established something at a stated time. It is admissible only with the falsifier: the result that would have proved the claim wrong." .
+
+aegis:ExecutionPath a rdfs:Class ;
+    rdfs:label "Execution path" ;
+    rdfs:comment "The concrete path by which a mechanism runs: the installed artifact, its repository source, and the refresh mechanism. It records provenance, not the decaying judgment that the path is live." .
+
+aegis:Blocker a rdfs:Class ;
+    rdfs:label "Blocker" ;
+    rdfs:comment "A reason work cannot proceed. A blocker must say whether it is stated by a reporter or built from a demonstrated failing case; those are different evidence strengths." .
+
+aegis:NonFunctionalRequirement a rdfs:Class ;
+    rdfs:label "Nonfunctional requirement" ;
+    rdfs:comment "A declared, testable service promise. It is separate from the Metric that claims to measure it so validity and coverage remain queryable." .
+
+aegis:Metric a rdfs:Class ;
+    rdfs:label "Metric" ;
+    rdfs:comment "A catalogued measurement identity, its meaning, owner, probe, and executable retrieval method. Samples remain in the measurement system." .
+
+aegis:Observation a rdfs:Class ;
+    rdfs:label "Observation" ;
+    rdfs:comment "An observed violation or decision input. It is deliberately not a time-series sample mirror." .
+
+# ---- Source tier (the mandatory ingress tag) ---------------------------
+
+aegis:sourceKind a rdf:Property ;
+    rdfs:label "source kind" ;
+    rdfs:comment "How this fact entered: observed (a record exists and was parsed), declared (a human said so), inferred (a model concluded it). Mandatory; SHACL-refused when absent. Never up-tag." ;
+    rdfs:range xsd:string .
+
+aegis:falsifier a rdf:Property ;
+    rdfs:label "falsifier" ;
+    rdfs:comment "The observable result that would have disproved a Verification. Mandatory: a check that cannot name its failing result is an assertion, not verification." ;
+    rdfs:range xsd:string .
+
+# ---- Verification integrity (camayoc-89e: single-edge mints) -----------
+# Owed to competency/verification-and-liveness.md Q3, Q4, Q5. Each is one
+# edge on the existing Verification class; the liveness modelling (Q6/Q8/Q9)
+# is deliberately NOT here — Principal/Session-stop/StateTransition is a
+# bigger design and these mints do not pre-empt it.
+
+aegis:verifiedAt a rdf:Property ;
+    rdfs:label "verified at" ;
+    rdfs:comment "The observed time this Verification's check was last run. Owed to Q3: a falsifier run once and never re-run after a change is a stale proof wearing a current one's clothes. A fact of the run, never a stored 'still current' verdict." ;
+    rdfs:range xsd:string .
+
+aegis:verifies a rdf:Property ;
+    rdfs:label "verifies" ;
+    rdfs:comment "The claim or change this Verification's check bears on — the 'X is fixed/landed/deployed' whose falsifier it ran. Owed to Q3, which joins a verification's time against the change that followed it. No range constraint: the subject may be a work item, a commit, or a deploy record." .
+
+aegis:adversariallyProvenBy a rdf:Property ;
+    rdfs:label "adversarially proven by" ;
+    rdfs:comment "The Verification that deliberately sabotaged the mechanism under test and observed this check flip. Owed to Q4: a check proven able to fail is a different evidence class from one asserted to work — the property camayoc-104 established for the gate probes, now recordable about anything else." ;
+    rdfs:range aegis:Verification .
+
+aegis:dependsOnVariable a rdf:Property ;
+    rdfs:label "depends on variable" ;
+    rdfs:comment "A variable the mechanism under test depends on, named by the check that established the dependence. Owed to Q5: a test in an adjacent setting is valid exactly when the mechanism does not depend on what differs — this edge is what lets that be asked instead of assumed, protecting good evidence from being discarded (incident forms A2, A6)." ;
+    rdfs:range xsd:string .
+
+# ---- Execution provenance (M3) ----------------------------------------
+
+aegis:executesArtifact a rdf:Property ;
+    rdfs:label "executes artifact" ;
+    rdfs:comment "The installed artifact that this ExecutionPath actually invokes. This is the execution target, not a claim that it is currently live." .
+
+aegis:repositorySource a rdf:Property ;
+    rdfs:label "repository source" ;
+    rdfs:comment "The source artifact that should correspond to the executed artifact. Comparing these at read time detects armed-not-running drift." .
+
+aegis:refreshedBy a rdf:Property ;
+    rdfs:label "refreshed by" ;
+    rdfs:comment "The mechanism responsible for refreshing the execution artifact from its source." .
+
+aegis:lastRefreshedAt a rdf:Property ;
+    rdfs:label "last refreshed at" ;
+    rdfs:comment "The observed time the execution path was last refreshed. It is evidence for a read-time currency query, never a stored current/correct verdict." ;
+    rdfs:range xsd:string .
+
+aegis:artifactDigest a rdf:Property ;
+    rdfs:label "artifact digest" ;
+    rdfs:comment "A deterministic digest of the installed artifact an ExecutionPath actually executes. Owed to Q12, which compares the two sides of a path in the store. Not aegis:contentHash reused: Q12 needs the two sides distinguishable on one node, and contentHash is a single reconciler identity (one value, Metric shape)." ;
+    rdfs:range xsd:string .
+
+aegis:sourceDigest a rdf:Property ;
+    rdfs:label "source digest" ;
+    rdfs:comment "A deterministic digest of an ExecutionPath's repository source, computed the same way as artifactDigest so the two compare. Owed to Q12: equal digests are observed agreement, differing digests are observed drift, and absence is UNKNOWN — never a verdict either way." ;
+    rdfs:range xsd:string .
+
+aegis:ownedBy a rdf:Property ;
+    rdfs:label "owned by" ;
+    rdfs:comment "The principal that owns the path location. A single-principal owner is observable execution-path risk, not a liveness judgment." .
+
+# ---- Blocker evidence (M4) --------------------------------------------
+
+aegis:blockerEvidence a rdf:Property ;
+    rdfs:label "blocker evidence kind" ;
+    rdfs:comment "Whether a Blocker is stated (a report or ticket claim) or built (a constructed failing case). Readers must not present stated as demonstrated." ;
+    rdfs:range xsd:string .
+
+aegis:demonstratedBy a rdf:Property ;
+    rdfs:label "demonstrated by" ;
+    rdfs:comment "The Verification or other observed record that constructed and demonstrated a built blocker." .
+
+# ---- Metrics and nonfunctional requirements ---------------------------
+
+aegis:threshold a rdf:Property ;
+    rdfs:label "threshold" ;
+    rdfs:comment "The declared comparison and bound that makes a nonfunctional requirement testable." ;
+    rdfs:range xsd:string .
+
+aegis:unit a rdf:Property ;
+    rdfs:label "unit" ;
+    rdfs:range xsd:string .
+
+aegis:measurementWindow a rdf:Property ;
+    rdfs:label "measurement window" ;
+    rdfs:range xsd:string .
+
+aegis:meaning a rdf:Property ;
+    rdfs:label "meaning" ;
+    rdfs:range xsd:string .
+
+aegis:metricName a rdf:Property ;
+    rdfs:label "metric name" ;
+    rdfs:comment "The measurement-system series or expression identity parsed from the source rule." ;
+    rdfs:range xsd:string .
+
+aegis:probe a rdf:Property ;
+    rdfs:label "probe" ;
+    rdfs:comment "The actual expression evaluated. An alert name is never a substitute for this mechanism." ;
+    rdfs:range xsd:string .
+
+aegis:measuresRequirement a rdf:Property ;
+    rdfs:label "measures requirement" ;
+    rdfs:comment "A Metric's claim that its probe tests a NonFunctionalRequirement. Keeping this as a claim makes invalid and orphan instrumentation queryable." .
+
+aegis:gates a rdf:Property ;
+    rdfs:label "gates" ;
+    rdfs:comment "The alert, release, or decision surface gated by this metric." .
+
+aegis:probeValidatedBy a rdf:Property ;
+    rdfs:label "probe validated by" ;
+    rdfs:comment "A falsifier-gated Verification that demonstrated the probe changes when the requirement is violated." .
+
+aegis:observedAt a rdf:Property ;
+    rdfs:label "observed at" ;
+    rdfs:range xsd:string .
+
+aegis:observedValue a rdf:Property ;
+    rdfs:label "observed value" ;
+    rdfs:range xsd:string .
+
+aegis:contentHash a rdf:Property ;
+    rdfs:label "content hash" ;
+    rdfs:comment "A deterministic hash of the source definition used by reconcilers to distinguish unchanged from changed catalogue entries." ;
+    rdfs:range xsd:string .
+
+# ---- Work item properties ---------------------------------------------
+
+aegis:createdAt a rdf:Property ;
+    rdfs:label "created at" ;
+    rdfs:range xsd:string .
+
+aegis:closedAt a rdf:Property ;
+    rdfs:label "closed at" ;
+    rdfs:range xsd:string .
+
+aegis:outcome a rdf:Property ;
+    rdfs:label "outcome" ;
+    rdfs:comment "What actually happened: done, abandoned, superseded, failed. Distinct from the decision that aimed at it. Set at close; absence means open — never store a decaying 'in progress'." ;
+    rdfs:range xsd:string .
+
+aegis:assignedTo a rdf:Property ;
+    rdfs:label "assigned to" ;
+    rdfs:comment "The principal a work item is assigned to. Agents are aegis:Principal, exactly as the graph already holds them." .
+
+aegis:blockedOn a rdf:Property ;
+    rdfs:label "blocked on" ;
+    rdfs:comment "What this work item cannot proceed past: another WorkItem (a tracker dependency), or a Blocker condition with a checkable resolution (aegis-c0awwp). Owed to Q7: with aegis:closedAt already modelled, this one edge makes 'blocked on a dependency that already cleared' a read-time join — the measured 14-day-blocked-on-a-cleared-dependency failure. The edge is the stated dependency; whether it still holds is a query, never a stored judgment." .
+
+# ---- Checkable blocker conditions (aegis-c0awwp) ----------------------
+# A Blocker that work waits on must be CHECKABLE: its kind, plus exactly one
+# resolution a machine can evaluate. Resolution is evaluated at read or tick
+# time as resolved | unresolved | unknown, and never stored as a verdict.
+
+aegis:blockerKind a rdf:Property ;
+    rdfs:label "blocker kind" ;
+    rdfs:comment "What a Blocker condition waits for: release-installed, pr-merged, ci-green, human-action (a Decision Desk card) or date." ;
+    rdfs:domain aegis:Blocker ;
+    rdfs:range xsd:string .
+
+aegis:resolutionQuery a rdf:Property ;
+    rdfs:label "resolution query" ;
+    rdfs:comment "A SPARQL ASK that is true exactly when the Blocker has resolved. An ASK that cannot be answered makes the Blocker's state unknown, never resolved." ;
+    rdfs:domain aegis:Blocker ;
+    rdfs:range xsd:string .
+
+aegis:resolvesOn a rdf:Property ;
+    rdfs:label "resolves on" ;
+    rdfs:comment "For a date Blocker: the date from which it is resolved." ;
+    rdfs:domain aegis:Blocker ;
+    rdfs:range xsd:date .
+
+# ---- Declared review age (aegis-kxjack) ------------------------------
+# Stiwi 2026-09-24: "check on this after this time and quipu will emit an
+# event" ("age not agent"). Any entity may declare WHEN it must be re-checked.
+# Whether it is due is evaluated at read or tick time as due | not_due |
+# unknown, and never stored as a verdict. Routing uses aegis:ownedBy.
+
+aegis:reviewAfter a rdf:Property ;
+    rdfs:label "review after" ;
+    rdfs:comment "An ISO-8601 instant after which this entity is DUE for re-checking: the fact is to be re-verified, not trusted. Applies to any entity; a claim is aged through its own node." ;
+    rdfs:range xsd:string .
+
+aegis:maxAge a rdf:Property ;
+    rdfs:label "max age" ;
+    rdfs:comment "An ISO-8601 duration (PnW, or PnDTnHnM) the entity may go without a fresh check. Anchored on the latest aegis:verifiedAt of a Verification that aegis:verifies it; with no such verification the age is UNKNOWN, never fresh and never due." ;
+    rdfs:range xsd:string .
+
+# Idle expiry for tracked work (aegis-qx96wr / aegis-2idcev; Steve 2026-10-07:
+# "use quipu's idea of expiration as part of our beads shape", event-based).
+# Anchored on tracker ACTIVITY, not on a Verification: a tracker Observation is
+# not a check that established a claim, so it must never pose as aegis:verifies.
+
+aegis:idleLimit a rdf:Property ;
+    rdfs:label "idle limit" ;
+    rdfs:comment "An ISO-8601 duration (PnW, or PnDTnHnM) a tracked WorkItem may go without tracker activity. Anchored on the observedAt of its latest tracker Observation (aegis:observes); a latest observed status of closed or deferred resolves it. No Observation means UNKNOWN, never fresh and never due." ;
+    rdfs:domain aegis:WorkItem ;
+    rdfs:range xsd:string .
+
+aegis:workKind a rdf:Property ;
+    rdfs:label "work kind" ;
+    rdfs:comment "What kind of planned work a tracked WorkItem is: Directive, Design, Plan or DreamCycle. Derived from the tracker record's labels and type; it is why the item carries an aegis:idleLimit. Ordinary work carries none." ;
+    rdfs:domain aegis:WorkItem ;
+    rdfs:range xsd:string .
+
+# Typed probe PARAMETERS (aegis-c0awwp). The graph holds only the parameters;
+# the code that checks them is fixed in camayoc, never a command read from the
+# graph, which would be command injection through the knowledge store.
+
+aegis:prRef a rdf:Property ;
+    rdfs:label "pull request reference" ;
+    rdfs:comment "For a pr-merged Blocker: owner/repo#number. Resolved when that pull request is merged." ;
+    rdfs:domain aegis:Blocker ; rdfs:range xsd:string .
+
+aegis:tool a rdf:Property ;
+    rdfs:label "tool" ;
+    rdfs:comment "For a release-installed Blocker: the executable whose installed version is checked on the evaluating host." ;
+    rdfs:domain aegis:Blocker ; rdfs:range xsd:string .
+
+aegis:minVersion a rdf:Property ;
+    rdfs:label "minimum version" ;
+    rdfs:comment "For a release-installed Blocker: resolved when the installed tool reports a version at or above this." ;
+    rdfs:domain aegis:Blocker ; rdfs:range xsd:string .
+
+aegis:repoRef a rdf:Property ;
+    rdfs:label "repository reference" ;
+    rdfs:comment "For a ci-green Blocker: owner/repo@branch. Resolved when the branch's latest completed CI run succeeded." ;
+    rdfs:domain aegis:Blocker ; rdfs:range xsd:string .
+
+# ---- Tracker status, on the versioned Observation ----------------------
+# NOT on the WorkItem: the tracker projection keeps the WorkItem node
+# byte-identical (a changed body for one node appends duplicate comments), so
+# mutable tracker state lives on the versioned Observation. A WorkItem's
+# current status is its Observation with the latest observedAt.
+
+aegis:observedStatus a rdf:Property ;
+    rdfs:label "observed status" ;
+    rdfs:comment "The tracker's status token for a work item (open, in_progress, blocked, deferred, closed, ...) as of this Observation." ;
+    rdfs:domain aegis:Observation ;
+    rdfs:range xsd:string .
+
+aegis:observedBlockedOn a rdf:Property ;
+    rdfs:label "observed blocked on" ;
+    rdfs:comment "A tracker `blocks` dependency, as of this Observation. Only the work item's LATEST Observation counts, so a dependency removed in the tracker stops blocking without any retraction." ;
+    rdfs:domain aegis:Observation .
+
+aegis:observedClosedAt a rdf:Property ;
+    rdfs:label "observed closed at" ;
+    rdfs:comment "When the tracker recorded the work item closed, as of this Observation. Absent means not closed as of this Observation." ;
+    rdfs:domain aegis:Observation ;
+    rdfs:range xsd:string .
+
+# ---- Decision properties ----------------------------------------------
+
+aegis:decidedIn a rdf:Property ;
+    rdfs:label "decided in" ;
+    rdfs:comment "The work item (or session) a decision was made under." .
+
+aegis:decidedBy a rdf:Property ;
+    rdfs:label "decided by" .
+
+aegis:chose a rdf:Property ;
+    rdfs:label "chose" ;
+    rdfs:comment "What was chosen. The one property a Decision cannot lack." ;
+    rdfs:range xsd:string .
+
+aegis:over a rdf:Property ;
+    rdfs:label "over" ;
+    rdfs:comment "The alternatives visible at the time. Absence means none were articulated — which is itself a fact worth knowing." ;
+    rdfs:range xsd:string .
+
+aegis:rationale a rdf:Property ;
+    rdfs:label "rationale" ;
+    rdfs:range xsd:string .
+
+aegis:about a rdf:Property ;
+    rdfs:label "about" ;
+    rdfs:comment "The entity/topic a decision concerns, when one is nameable — the anchor 'what did we decide about X' resolves against." .
+
+aegis:supersededBy a rdf:Property ;
+    rdfs:label "superseded by" ;
+    rdfs:comment "A later decision that replaces this one. The old decision is never deleted — bitemporality keeps it; this edge says who won." .
+
+# ---- Golden paths (slice: trajectories, blessing, conformance) ----------
+#
+# Owed to competency/golden-paths.md; design in docs/design/golden-paths.md.
+# Slice decisions made at minting time (the design's section 3 listed
+# candidates and left the reified nodes open):
+#   * omissions are reified as PathOmission nodes so each omission can carry
+#     its authority — the statement-level attachment the vocabulary
+#     discipline anticipates, without waiting for it;
+#   * promotions are reified as PathPromotion events so blessingLevel is a
+#     fact of the event, never a decaying judgment on the path;
+#   * prunedFrom (an in-graph exemplar Trajectory) is the required provenance
+#     of a GoldenPath; aegis:exemplar stays available, and optional, for
+#     exemplars living outside this graph, matching quipu's governance use.
+
+aegis:Trajectory a rdfs:Class ;
+    rdfs:label "Trajectory" ;
+    rdfs:comment "The observed, immutable record of the steps a work item actually took. Never edited after the fact; pruning authors a new GoldenPath, it never touches this." .
+
+aegis:Step a rdfs:Class ;
+    rdfs:label "Step" ;
+    rdfs:comment "One action in a trajectory: actor, action, target, the Decision it enacts, the Verification it produced (if any), and its order. A step outside a trajectory is meaningless — stepOf is mandatory." .
+
+aegis:GoldenPath a rdfs:Class ;
+    rdfs:label "Golden path" ;
+    rdfs:comment "A pruned, promoted trajectory class: completed work with verified results, distilled into the blessed way similar work goes. Cites the concrete Trajectories it was distilled from; carries its promotion history as PathPromotion events." .
+
+aegis:PathOmission a rdfs:Class ;
+    rdfs:label "Path omission" ;
+    rdfs:comment "One pruning ruling: a step a GoldenPath deliberately excludes, carrying the authority for the cut — the deterministic cone analysis, or a human Decision. Pruning is curation, never erasure." .
+
+aegis:PathPromotion a rdfs:Class ;
+    rdfs:label "Path promotion" ;
+    rdfs:comment "A promotion event on the blessing ladder: who promoted the path, when, to which level, citing which evidence. The level is a fact of this event at write time; a path's current fitness is a read-time judgment, never stored." .
+
+# ---- Trajectory properties ----------------------------------------------
+
+aegis:trajectoryOf a rdf:Property ;
+    rdfs:label "trajectory of" ;
+    rdfs:comment "The WorkItem this trajectory is the execution record of. Mandatory in spirit (Q1/Q2 join on it); permissive in the shape until the recording path settles." .
+
+aegis:stepOf a rdf:Property ;
+    rdfs:label "step of" ;
+    rdfs:comment "The Trajectory this step belongs to. Mandatory: a step with no trajectory is an anecdote." .
+
+aegis:stepOrder a rdf:Property ;
+    rdfs:label "step order" ;
+    rdfs:comment "The step's position in the total order of the thing that declares it — a Trajectory's observed walk (golden-paths Q1) or a WorkflowDefinition's declared steps (workflow-and-archive Q5). Reused across both rather than minted twice, which is what rdfs:range-only and no rdfs:domain is for." ;
+    rdfs:range xsd:integer .
+
+aegis:actor a rdf:Property ;
+    rdfs:label "actor" ;
+    rdfs:comment "The principal that performed this step. Owed to competency golden-paths Q1; reuses whatever principal node the graph already holds." .
+
+aegis:actionKind a rdf:Property ;
+    rdfs:label "action kind" ;
+    rdfs:comment "What kind of action the step is (edit, run, mail, decide, verify, ...). One half of the conformance grammar's v1 step signature." ;
+    rdfs:range xsd:string .
+
+aegis:actionTarget a rdf:Property ;
+    rdfs:label "action target" ;
+    rdfs:comment "What the step acted on. The other half of the v1 step signature; an IRI when the target is in the graph, a string when it is not." .
+
+aegis:enacts a rdf:Property ;
+    rdfs:label "enacts" ;
+    rdfs:comment "The Decision this step enacts, when one was recorded." .
+
+aegis:verifiedBy a rdf:Property ;
+    rdfs:label "verified by" ;
+    rdfs:comment "The Verification a step (or a trajectory's terminal claim) produced. Ranges over aegis:Verification, so the falsifier discipline applies unchanged — an unfalsifiable check never makes a trajectory admissible." .
+
+# ---- Golden-path provenance and pruning ---------------------------------
+
+aegis:prunedFrom a rdf:Property ;
+    rdfs:label "pruned from" ;
+    rdfs:comment "The exemplar Trajectory this GoldenPath was distilled from. Mandatory: a path that cannot cite the concrete success that justifies it is an opinion." .
+
+aegis:omitsStep a rdf:Property ;
+    rdfs:label "omits step" ;
+    rdfs:comment "A PathOmission node recording one pruning ruling this GoldenPath made." .
+
+aegis:omittedStep a rdf:Property ;
+    rdfs:label "omitted step" ;
+    rdfs:comment "The Step a PathOmission excludes." .
+
+aegis:omissionAuthority a rdf:Property ;
+    rdfs:label "omission authority" ;
+    rdfs:comment "What authorized the cut: cone-analysis (the step is outside the provenance cone of the verified result — mechanical) or human-decision (a human overruled or supplemented the cone; omissionRuling names the Decision). Mandatory — an omission that cannot say who cut it is a silent edit of history." ;
+    rdfs:range xsd:string .
+
+aegis:omissionRuling a rdf:Property ;
+    rdfs:label "omission ruling" ;
+    rdfs:comment "The human Decision behind a human-decision omission, with its rationale." .
+
+aegis:deadEnd a rdf:Property ;
+    rdfs:label "dead end" ;
+    rdfs:comment "The entry Step of an abandoned branch the exemplars explored, preserved as a hazard: a follower of this path should know what was tried that did not help. Negative knowledge, kept queryable." .
+
+# ---- Blessing (promotion events) ----------------------------------------
+
+aegis:promotes a rdf:Property ;
+    rdfs:label "promotes" ;
+    rdfs:comment "The GoldenPath this promotion event acts on." .
+
+aegis:blessingLevel a rdf:Property ;
+    rdfs:label "blessing level" ;
+    rdfs:comment "The level this event promoted the path to: candidate, advisory, blessed, or constraint-backing. Recorded levels below candidate do not exist — recorded and verified are mechanical states derived at read time, not promotions." ;
+    rdfs:range xsd:string .
+
+aegis:promotedBy a rdf:Property ;
+    rdfs:label "promoted by" ;
+    rdfs:comment "The principal whose act this promotion is. Mandatory, and a human: nothing above verified happens without a recorded human act." .
+
+aegis:promotedAt a rdf:Property ;
+    rdfs:label "promoted at" ;
+    rdfs:range xsd:string .
+
+aegis:promotionEvidence a rdf:Property ;
+    rdfs:label "promotion evidence" ;
+    rdfs:comment "What the promoter looked at: a backtest report, a Verification, an advisory-period conformance record. A promotion citing nothing is answerable to competency Q8 as exactly that." .
+
+# ---- Conformance ----------------------------------------------------------
+
+aegis:followsPath a rdf:Property ;
+    rdfs:label "follows path" ;
+    rdfs:comment "A trajectory's (or work item's) declared claim to be an instance of a GoldenPath. A claim, not a verdict — conformance is evaluated at read time and by the guard, never asserted by the follower." .
+
+aegis:deviatesAt a rdf:Property ;
+    rdfs:label "deviates at" ;
+    rdfs:comment "The Step at which an evaluated trajectory departed from the path it declared. Deviation is input to the record, not a judgment that the agent was wrong — demotion evidence only exists if deviations are recorded faithfully." .
+
+aegis:derivedConstraint a rdf:Property ;
+    rdfs:label "derived constraint" ;
+    rdfs:comment "The aegis:Policy this GoldenPath backs, closing the audit chain constraint <- path <- exemplars. Far-horizon: gated on verdict signing; until then the ladder honestly stops at blessed." .
+
+# ---- Cost and effort accounting (slice: verification-and-liveness §D) ----
+#
+# Owed to competency/verification-and-liveness.md Q16-Q21 (camayoc-e29).
+# These are deterministic-parser facts — both harnesses write per-session
+# token accounting to local disk, so ingress rule 3 applies: a parser
+# produces them, they enter as `observed`, no model in the loop.
+#
+# Minting decisions, stated because reuse-before-minting is the rule:
+#   * the record timestamp REUSES aegis:observedAt — a usage record is an
+#     observed record, and its time is when the consumption it parses
+#     happened, which is exactly what observedAt already means;
+#   * the session's principal REUSES aegis:actor — "the principal that
+#     performed this", ranging over whatever principal node the graph
+#     already holds, unchanged from the golden-paths use;
+#   * tokensConsumed is ONE quantity, not the per-harness breakdown
+#     (input/cached/output/...). No §D question needs the breakdown, and
+#     competency-before-classes says the finer terms wait for a question
+#     that does. Consumption is ours; the ceiling is the provider's, and
+#     no quota term exists here on purpose (Q20's point).
+
+aegis:Session a rdfs:Class ;
+    rdfs:label "Session" ;
+    rdfs:comment "One harness session of a principal, parsed from the harness's own on-disk record. It is the denominator Q19 needs: a session with no usage record must read UNKNOWN, never zero — which requires the session to be stored independently of its records." .
+
+aegis:UsageRecord a rdfs:Class ;
+    rdfs:label "Usage record" ;
+    rdfs:comment "Parsed token consumption: what a session actually consumed from a provider over a stated moment. A fact true at write time — aggregation into windows, rates, and per-work costs is a read-time judgment over these records." .
+
+aegis:provider a rdf:Property ;
+    rdfs:label "provider" ;
+    rdfs:comment "The provider whose tokens a UsageRecord counts. On the record, not the session: one session may consume from more than one provider, and Q17/Q20 group by exactly this." ;
+    rdfs:range xsd:string .
+
+aegis:tokensConsumed a rdf:Property ;
+    rdfs:label "tokens consumed" ;
+    rdfs:comment "The total tokens this record accounts for, as parsed from the harness's own accounting. One quantity by design: consumption, never remaining quota — the two come from different sources and conflating them cost a closed investigation." ;
+    rdfs:range xsd:integer .
+
+aegis:inSession a rdf:Property ;
+    rdfs:label "in session" ;
+    rdfs:comment "The Session a UsageRecord was parsed from. Mandatory in the shape: an unattached record can join against nothing, and Q19's absence test needs every present record anchored." ;
+    rdfs:range aegis:Session .
+
+aegis:attributedTo a rdf:Property ;
+    rdfs:label "attributed to" ;
+    rdfs:comment "The WorkItem this consumption was spent on. Optional and honest: unattributable consumption stays a session fact rather than being forced onto the nearest item. This edge is what turns cost into a property of WORK (Q16, Q18, Q21) instead of a property of a time-window." ;
+    rdfs:range aegis:WorkItem .
+
+# ---- Workflow slice (competency/workflow-and-archive.md) ----------------
+#
+# The export target for shuttle, the workflow engine
+# (github.com/scbrown/shuttle). State is APPEND-ONLY TransitionEvents —
+# the measured rule that triple-level retract deletes nothing, applied at
+# the producer; aegis:currentState is re-asserted per transition and read
+# by latest valid_from, never mutated in place. Signatures ride as ordinary
+# facts on the event so they survive a deep freeze; the keys that verify
+# them live in a dataKind=identity graph that is never frozen.
+
+aegis:WorkflowDefinition a rdfs:Class ;
+    rdfs:label "Workflow definition" ;
+    rdfs:comment "A named workflow: the steps and transitions runs of it may take. The definition is durable knowledge; its runs are operational, window-graphed data. (Q1, Q5)" .
+
+aegis:WorkflowStep a rdfs:Class ;
+    rdfs:label "Workflow step" ;
+    rdfs:comment "One declared step of a WorkflowDefinition. Distinct from the golden-path trajectory step (aegis:stepOf): this is prescriptive structure, that is an observed walk. (Q5)" .
+
+aegis:WorkflowRun a rdfs:Class ;
+    rdfs:label "Workflow run" ;
+    rdfs:comment "One execution of a WorkflowDefinition. Lives in the time-windowed operational graph of the month it started; freezing the window archives the run without unbinding its IRI. (Q1-Q4, Q8)" .
+
+aegis:TransitionEvent a rdfs:Class ;
+    rdfs:label "Transition event" ;
+    rdfs:comment "One append-only state transition of a run: which step, from what state to what state, when, performed and signed by which agent. The truth of run state; currentState is derived convenience. (Q3, Q6, Q7)" .
+
+aegis:hasStep a rdf:Property ;
+    rdfs:label "has step" ;
+    rdfs:comment "A WorkflowDefinition's declared step. (Q5)" ;
+    rdfs:range aegis:WorkflowStep .
+
+aegis:runOf a rdf:Property ;
+    rdfs:label "run of" ;
+    rdfs:comment "The WorkflowDefinition a run executes. (Q1)" ;
+    rdfs:range aegis:WorkflowDefinition .
+
+aegis:currentState a rdf:Property ;
+    rdfs:label "current state" ;
+    rdfs:comment "A run's state, re-asserted per transition and read by latest valid_from. Derived from TransitionEvents, which remain the truth; never updated in place (append-only rule). (Q1, Q2, Q4)" ;
+    rdfs:range xsd:string .
+
+aegis:inRun a rdf:Property ;
+    rdfs:label "in run" ;
+    rdfs:comment "The WorkflowRun a TransitionEvent belongs to. (Q3)" ;
+    rdfs:range aegis:WorkflowRun .
+
+aegis:inWorkflowRun a rdf:Property ;
+    rdfs:label "in workflow run" ;
+    rdfs:comment "The WorkflowRun a WorkItem was created to carry out: shuttle creates a work item for a step of its run and advances the run when the item closes. The sibling of aegis:inRun (TransitionEvent -> run); reconcile reads the item's aegis:outcome, never its prose (aegis-1i5h1j C2, aegis-w3k75d.4)." ;
+    rdfs:range aegis:WorkflowRun .
+
+aegis:fromState a rdf:Property ;
+    rdfs:label "from state" ;
+    rdfs:comment "The state a transition left. Carried on the event so history needs no reconstruction. (Q3)" ;
+    rdfs:range xsd:string .
+
+aegis:toState a rdf:Property ;
+    rdfs:label "to state" ;
+    rdfs:comment "The state a transition entered. (Q3)" ;
+    rdfs:range xsd:string .
+
+aegis:atStep a rdf:Property ;
+    rdfs:label "at step" ;
+    rdfs:comment "The WorkflowStep a transition happened at. (Q3)" ;
+    rdfs:range aegis:WorkflowStep .
+
+aegis:performedBy a rdf:Property ;
+    rdfs:label "performed by" ;
+    rdfs:comment "The agent (an aegis:Principal or crew-member IRI) that performed and signed a transition. Paired with aegis:signature — the hex ed25519 signature over the canonical shuttle-transition-v1 message — verifiable against the agent's aegis:VerifierRegistration in the identity graph. signature/publicKey/verifier/VerifierRegistration are quipu-owned aegis terms, reused not re-minted. (Q6, Q7, Q8)" ;
+    rdfs:range rdfs:Resource .
+
+# ---- Reused, NOT minted: quipu-owned aegis terms -----------------------
+# These four are quipu's, and camayoc reuses them rather than declaring
+# rivals in the same namespace (the reuse-before-minting rule, and the note
+# on aegis:performedBy above). What is recorded here is exactly that — where
+# each term is defined and which question needs it. There is no
+# `a rdf:Property` and no `a rdfs:Class` in this block, deliberately: a
+# minting declaration would claim ownership camayoc does not have, and would
+# let camayoc's copy drift from quipu's.
+#
+# Recording the reuse is not bookkeeping. scripts/query_coverage.py's
+# grounding self-check reads this file to decide whether a stored query names
+# predicates that exist, and before this block a query that CORRECTLY reused
+# a quipu term was reported UNGROUNDED — the tool penalised the rule the repo
+# runs on. `rdfs:isDefinedBy` is how a reader, and that check, tell a reused
+# term from an undefined one.
+
+aegis:signature
+    rdfs:isDefinedBy <https://github.com/scbrown/quipu> ;
+    rdfs:label "signature" ;
+    rdfs:comment "quipu-owned. The hex ed25519 signature over the canonical shuttle-transition-v1 message, carried on a TransitionEvent as an ordinary fact so it survives a deep freeze. Reused by workflow-and-archive Q6 and Q7." .
+
+aegis:VerifierRegistration
+    rdfs:isDefinedBy <https://github.com/scbrown/quipu> ;
+    rdfs:label "Verifier registration" ;
+    rdfs:comment "quipu-owned. The record binding an agent to the public key that verifies its signatures. Lives in a dataKind=identity graph that is never frozen — which is what keeps archived transitions checkable. Reused by workflow-and-archive Q6 and Q7." .
+
+aegis:verifier
+    rdfs:isDefinedBy <https://github.com/scbrown/quipu> ;
+    rdfs:label "verifier" ;
+    rdfs:comment "quipu-owned. The agent a VerifierRegistration registers a key for. Reused by workflow-and-archive Q6 and Q7 — the join from a transition's performer to its key." .
+
+aegis:publicKey
+    rdfs:isDefinedBy <https://github.com/scbrown/quipu> ;
+    rdfs:label "public key" ;
+    rdfs:comment "quipu-owned. The key a VerifierRegistration registers. Reused by workflow-and-archive Q6, which is a GAP for a reason this term cannot fix: SPARQL can retrieve the key and cannot evaluate the signature against it." .
+
+# ---- The plane-move record (camayoc's own namespace) -------------------
+# Owed to competency/workflow-and-archive.md Q13: "when fact <fact> was
+# promoted out of crew:inferred, was its source-plane interval closed?"
+# `scripts/promote_plane.py` has written these since camayoc-mip; they are
+# declared here now because Q13's stored query reads them, and a stored query
+# over undeclared vocabulary is the "returns zero rows forever and reads as
+# nothing to report" failure in a namespace nobody was checking.
+#
+# ONLY the four the question needs. promote_plane.py also writes
+# camayoc:promotedBy, camayoc:authoredBy, camayoc:promotedAt and
+# camayoc:reason; no competency question asks who, when or why a promotion
+# happened, so those stay undeclared until one does. The rule does not bend
+# because the terms are already on disk.
+
+camayoc:planePromotion a rdf:Property ;
+    rdfs:label "plane promotion" ;
+    rdfs:comment "Attaches a promotion record to the fact that was promoted. The record is a blank node carrying the move's own provenance as observed facts — the promotion IS an observed event even though the fact it moved was inferred. No range: the record is structural, not a class anyone types. (Q13)" .
+
+camayoc:promotedFrom a rdf:Property ;
+    rdfs:label "promoted from" ;
+    rdfs:comment "The plane graph the fact left. Always crew:inferred today — promotion is out of quarantine — and recorded rather than assumed, so a later reader is not required to know that. (Q13)" ;
+    rdfs:range rdfs:Resource .
+
+camayoc:promotedInto a rdf:Property ;
+    rdfs:label "promoted into" ;
+    rdfs:comment "The plane graph the fact entered. (Q13)" ;
+    rdfs:range rdfs:Resource .
+
+camayoc:sourceLeftOpen a rdf:Property ;
+    rdfs:label "source left open" ;
+    rdfs:comment "Whether the source-plane interval was left open. false: the source episode was closed, a bitemporal interval close and never a delete, so the original stays visible as-of its write time. true: the promoter could not name the source episode, and the record says so out loud rather than implying a close that never happened — the fact is then readable in two planes at different trust, which is recoverable and visible instead of silent. The exact cell Q13 asks for. (Q13)" ;
+    rdfs:range xsd:boolean .
+
+# Q16 per-request breakdown; no second consumption total.
+aegis:inputTokensUncached a rdf:Property ;
+    rdfs:label "inputTokensUncached" ;
+    rdfs:comment "Input tokens excluding cache reads and cache writes." ;
+    rdfs:range xsd:integer .
+
+aegis:cacheReadInputTokens a rdf:Property ;
+    rdfs:label "cacheReadInputTokens" ;
+    rdfs:comment "Input tokens served from cache." ;
+    rdfs:range xsd:integer .
+
+aegis:cacheWriteInputTokens a rdf:Property ;
+    rdfs:label "cacheWriteInputTokens" ;
+    rdfs:comment "Input tokens written to cache." ;
+    rdfs:range xsd:integer .
+
+aegis:outputTokens a rdf:Property ;
+    rdfs:label "outputTokens" ;
+    rdfs:comment "Output tokens including any reasoning subset." ;
+    rdfs:range xsd:integer .
+
+aegis:usageModel a rdf:Property ;
+    rdfs:label "usageModel" ;
+    rdfs:comment "Per-request model identifier recorded by the harness." ;
+    rdfs:range xsd:string .
+
+aegis:usageHarness a rdf:Property ;
+    rdfs:label "usageHarness" ;
+    rdfs:comment "Harness that wrote the request record." ;
+    rdfs:range xsd:string .
+
+aegis:usageModelSource a rdf:Property ;
+    rdfs:label "usageModelSource" ;
+    rdfs:comment "Field provenance distinguishing declared model from billed model." ;
+    rdfs:range xsd:string .

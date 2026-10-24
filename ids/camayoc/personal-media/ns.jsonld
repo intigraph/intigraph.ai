@@ -232,6 +232,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Attraction",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#Attraction"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#Attraction"
@@ -248,6 +253,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/GoogleAccount",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#GoogleAccount"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#GoogleAccount"
@@ -272,6 +282,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ThemePark",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemePark"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemePark"
@@ -288,6 +303,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ThemeParkVisit",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemeParkVisit"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#ThemeParkVisit"
@@ -304,6 +324,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Watchlist",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#Watchlist"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#Watchlist"
@@ -320,6 +345,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/email",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#email"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#email"
@@ -328,6 +358,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/park",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#park"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#park"
@@ -336,6 +371,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/platform",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#platform"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#platform"
@@ -344,6 +384,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/visitDate",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#visitDate"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/personal-media/ns#visitDate"

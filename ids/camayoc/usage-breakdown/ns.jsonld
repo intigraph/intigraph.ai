@@ -142,6 +142,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/cacheReadInputTokens",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#cacheReadInputTokens"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#cacheReadInputTokens"
@@ -150,6 +155,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/cacheWriteInputTokens",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#cacheWriteInputTokens"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#cacheWriteInputTokens"
@@ -158,6 +168,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/inputTokensUncached",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#inputTokensUncached"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#inputTokensUncached"
@@ -166,6 +181,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/outputTokens",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#outputTokens"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#outputTokens"
@@ -174,6 +194,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/usageHarness",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#usageHarness"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#usageHarness"
@@ -182,6 +207,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/usageModel",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#usageModel"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#usageModel"
@@ -190,6 +220,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/usageModelSource",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#usageModelSource"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/usage-breakdown/ns#usageModelSource"

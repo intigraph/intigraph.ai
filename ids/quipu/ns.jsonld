@@ -8242,6 +8242,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Artifact",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Artifact"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Artifact"
@@ -8258,6 +8263,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/CertifiedShareBundle",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#CertifiedShareBundle"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#CertifiedShareBundle"
@@ -8274,6 +8284,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/CodeSymbol",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#CodeSymbol"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#CodeSymbol"
@@ -8290,6 +8305,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Decision",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Decision"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Decision"
@@ -8298,6 +8318,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/DecisionPresentation",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#DecisionPresentation"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#DecisionPresentation"
@@ -8314,6 +8339,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/DecisionRequest",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#DecisionRequest"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#DecisionRequest"
@@ -8338,6 +8368,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/DecisionVerdict",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#DecisionVerdict"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#DecisionVerdict"
@@ -8402,6 +8437,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/GitCommit",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#GitCommit"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#GitCommit"
@@ -8418,6 +8458,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Incident",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Incident"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Incident"
@@ -8450,6 +8495,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/KnowledgeCertificationSeal",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#KnowledgeCertificationSeal"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#KnowledgeCertificationSeal"
@@ -8466,6 +8516,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Metric",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Metric"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Metric"
@@ -8482,6 +8537,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Observation",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Observation"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Observation"
@@ -8490,6 +8550,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/OperatingPoint",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#OperatingPoint"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#OperatingPoint"
@@ -8506,6 +8571,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/OperationalFact",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#OperationalFact"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#OperationalFact"
@@ -8530,6 +8600,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/OperatorGroup",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#OperatorGroup"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#OperatorGroup"
@@ -8546,6 +8621,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Overseer",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Overseer"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Overseer"
@@ -8562,6 +8642,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/PlanStep",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#PlanStep"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#PlanStep"
@@ -8578,6 +8663,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Policy",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Policy"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Policy"
@@ -8594,6 +8684,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/PrecedentLink",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#PrecedentLink"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#PrecedentLink"
@@ -8610,6 +8705,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Predicate",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Predicate"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Predicate"
@@ -8626,6 +8726,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Principal",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Principal"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Principal"
@@ -8642,6 +8747,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/PublisherAttestation",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#PublisherAttestation"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#PublisherAttestation"
@@ -8658,6 +8768,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Reaction",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Reaction"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Reaction"
@@ -8666,6 +8781,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ReactionFiring",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#ReactionFiring"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#ReactionFiring"
@@ -8690,6 +8810,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/RegistryAmendment",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#RegistryAmendment"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#RegistryAmendment"
@@ -8706,6 +8831,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Requirement",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Requirement"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Requirement"
@@ -8722,6 +8852,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Selector",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Selector"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Selector"
@@ -8738,6 +8873,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Step",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Step"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Step"
@@ -8754,6 +8894,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/TextRule",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#TextRule"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#TextRule"
@@ -8770,6 +8915,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/ToolClass",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#ToolClass"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#ToolClass"
@@ -8786,6 +8936,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Transition",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Transition"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Transition"
@@ -8794,6 +8949,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/TransitionEvent",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#TransitionEvent"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#TransitionEvent"
@@ -8826,6 +8986,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/TrustRootBootstrap",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#TrustRootBootstrap"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#TrustRootBootstrap"
@@ -8842,6 +9007,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Verdict",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Verdict"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Verdict"
@@ -8858,6 +9028,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Verification",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Verification"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Verification"
@@ -8874,6 +9049,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/VerifierRegistration",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#VerifierRegistration"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#VerifierRegistration"
@@ -8890,6 +9070,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/WorkItem",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#WorkItem"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#WorkItem"
@@ -8898,6 +9083,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/Workflow",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#Workflow"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#Workflow"
@@ -8906,6 +9096,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/WorkflowDefinition",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#WorkflowDefinition"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#WorkflowDefinition"
@@ -8922,6 +9117,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/WorkflowRun",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#WorkflowRun"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#WorkflowRun"
@@ -8946,6 +9146,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/WorkflowStep",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#WorkflowStep"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#WorkflowStep"
@@ -8962,6 +9167,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/author",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#author"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#author"
@@ -8970,6 +9180,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/authority",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#authority"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#authority"
@@ -8978,6 +9193,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/contains",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#contains"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#contains"
@@ -8986,6 +9206,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/date",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#date"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#date"
@@ -8994,6 +9219,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/enforcementTier",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#enforcementTier"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#enforcementTier"
@@ -9002,6 +9232,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/governedBy",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#governedBy"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#governedBy"
@@ -9010,6 +9245,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/hash",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#hash"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#hash"
@@ -9018,6 +9258,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/issuedBy",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#issuedBy"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#issuedBy"
@@ -9026,6 +9271,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/mustMatch",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#mustMatch"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#mustMatch"
@@ -9034,6 +9284,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/mustNotMatch",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#mustNotMatch"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#mustNotMatch"
@@ -9042,6 +9297,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/owner",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#owner"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#owner"
@@ -9050,6 +9310,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/pronouns",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#pronouns"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#pronouns"
@@ -9058,6 +9323,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/regex",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#regex"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#regex"
@@ -9066,6 +9336,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/repo",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#repo"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#repo"
@@ -9074,6 +9349,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/result",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#result"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#result"
@@ -9082,6 +9362,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/schedule",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#schedule"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#schedule"
@@ -9090,6 +9375,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/severity",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#severity"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#severity"
@@ -9098,6 +9388,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/trackedBy",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#trackedBy"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#trackedBy"
@@ -9106,6 +9401,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/verifiedAt",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#verifiedAt"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#verifiedAt"
@@ -9114,6 +9414,11 @@
   },
   {
     "@id": "http://quipu.dev/ontology/derivationParams",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivationParams--source-b130078bd90d"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivationParams--source-b130078bd90d"
@@ -9122,6 +9427,11 @@
   },
   {
     "@id": "http://quipu.dev/ontology/derivationQuery",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivationQuery--source-6458037ec2d1"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivationQuery--source-6458037ec2d1"
@@ -9130,6 +9440,11 @@
   },
   {
     "@id": "http://quipu.dev/ontology/derivationSystem",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivationSystem--source-538d14ed8a2d"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivationSystem--source-538d14ed8a2d"
@@ -9138,6 +9453,11 @@
   },
   {
     "@id": "http://quipu.dev/ontology/derivedBy",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivedBy--source-1fde0fad1aed"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivedBy--source-1fde0fad1aed"
@@ -9146,6 +9466,11 @@
   },
   {
     "@id": "http://quipu.dev/ontology/onViolation",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#onViolation"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#onViolation"
@@ -9154,6 +9479,11 @@
   },
   {
     "@id": "http://quipu.local/graph#DemotedDerivation",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#DemotedDerivation"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#DemotedDerivation"
@@ -9170,6 +9500,11 @@
   },
   {
     "@id": "http://quipu.local/graph#derivationState",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivationState"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivationState"
@@ -9178,6 +9513,11 @@
   },
   {
     "@id": "http://quipu.local/graph#deriverSource",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#deriverSource"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#deriverSource"
@@ -9186,6 +9526,11 @@
   },
   {
     "@id": "http://quipu.local/graph#invalidationTx",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#invalidationTx"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#invalidationTx"
@@ -9194,6 +9539,11 @@
   },
   {
     "@id": "http://quipu.local/graph#premiseGraph",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#premiseGraph"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#premiseGraph"
@@ -9202,6 +9552,11 @@
   },
   {
     "@id": "http://quipu.local/graph#promotionTx",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#promotionTx"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#promotionTx"
@@ -9290,6 +9645,11 @@
   },
   {
     "@id": "http://quipu.local/rule#RuleEdition",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#RuleEdition"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#RuleEdition"
@@ -9306,6 +9666,11 @@
   },
   {
     "@id": "http://quipu.local/rule#RuleSet",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#RuleSet"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#RuleSet"
@@ -9314,6 +9679,11 @@
   },
   {
     "@id": "http://quipu.local/rule#body",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#body"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#body"
@@ -9322,6 +9692,11 @@
   },
   {
     "@id": "http://quipu.local/rule#defaultPrefix",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#defaultPrefix"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#defaultPrefix"
@@ -9330,6 +9705,11 @@
   },
   {
     "@id": "http://quipu.local/rule#head",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#head"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#head"
@@ -9338,6 +9718,11 @@
   },
   {
     "@id": "http://quipu.local/rule#id",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#id"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#id"
@@ -9346,6 +9731,11 @@
   },
   {
     "@id": "http://quipu.local/rule#judgmentClaim",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#judgmentClaim"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#judgmentClaim"
@@ -9466,6 +9856,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/QueryParameter",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#QueryParameter"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#QueryParameter"
@@ -9498,6 +9893,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/StoredQuery",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#StoredQuery"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#StoredQuery"
@@ -9530,6 +9930,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/defaultDataset",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#defaultDataset"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#defaultDataset"
@@ -9538,6 +9943,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/defaultValue",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#defaultValue"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#defaultValue"
@@ -9546,6 +9956,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/derivationParams",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivationParams--source-5c64975a2f3c"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivationParams--source-5c64975a2f3c"
@@ -9554,6 +9969,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/derivationQuery",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivationQuery--source-19be3936f1b9"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivationQuery--source-19be3936f1b9"
@@ -9562,6 +9982,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/derivationSystem",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivationSystem--source-36415cda4276"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivationSystem--source-36415cda4276"
@@ -9570,6 +9995,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/derivedBy",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#derivedBy--source-807e7426c82f"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#derivedBy--source-807e7426c82f"
@@ -9578,6 +10008,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/durability",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#durability"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#durability"
@@ -9586,6 +10021,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/freshness",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#freshness"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#freshness"
@@ -9594,6 +10034,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/inChain",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#inChain"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#inChain"
@@ -9602,6 +10047,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/parameter",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#parameter"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#parameter"
@@ -9610,6 +10060,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/parameterIndex",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#parameterIndex"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#parameterIndex"
@@ -9618,6 +10073,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/parameterKind",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#parameterKind"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#parameterKind"
@@ -9626,6 +10086,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/parameterName",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#parameterName"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#parameterName"
@@ -9634,6 +10099,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/policyClass",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#policyClass"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#policyClass"
@@ -9642,6 +10112,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/queryForm",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#queryForm"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#queryForm"
@@ -9650,6 +10125,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/queryName",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#queryName"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#queryName"
@@ -9658,6 +10138,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/recommendsFreshness",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#recommendsFreshness"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#recommendsFreshness"
@@ -9666,6 +10151,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/recommendsTrust",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#recommendsTrust"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#recommendsTrust"
@@ -9674,6 +10164,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/required",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#required"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#required"
@@ -9682,6 +10177,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/sparqlTemplate",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#sparqlTemplate"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#sparqlTemplate"
@@ -9690,6 +10190,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/targetsClass",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#targetsClass"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#targetsClass"
@@ -9698,6 +10203,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/trust",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#trust"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#trust"
@@ -9706,6 +10216,11 @@
   },
   {
     "@id": "https://quipu.dev/ontology/trustRank",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/quipu/ns#trustRank"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/quipu/ns#trustRank"
