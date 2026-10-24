@@ -226,6 +226,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/contentBytes",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#contentBytes"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#contentBytes"
@@ -234,6 +239,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/declaredWorkItem",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#declaredWorkItem"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#declaredWorkItem"
@@ -242,6 +252,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/lastActivityAt",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#lastActivityAt"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#lastActivityAt"
@@ -250,6 +265,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/sessionHarness",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#sessionHarness"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#sessionHarness"
@@ -258,6 +278,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/transcript",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#transcript"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#transcript"
@@ -266,6 +291,11 @@
   },
   {
     "@id": "http://aegis.gastown.local/ontology/transcriptOf",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#transcriptOf"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/camayoc/session-transcript/ns#transcriptOf"

@@ -2129,6 +2129,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/issueType",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#issueType"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#issueType"
@@ -2137,6 +2142,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/priority",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#priority"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#priority"
@@ -2145,6 +2155,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/rank",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#rank"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#rank"
@@ -2153,6 +2168,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specAckActor",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckActor"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specAckActor"
@@ -2161,6 +2181,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specAckAt",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckAt"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specAckAt"
@@ -2169,6 +2194,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specAckSession",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckSession"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specAckSession"
@@ -2177,6 +2207,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specAckVersion",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specAckVersion"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specAckVersion"
@@ -2185,6 +2220,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specChangedAt",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedAt"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specChangedAt"
@@ -2193,6 +2233,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specChangedBy",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedBy"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specChangedBy"
@@ -2201,6 +2246,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specChangedSession",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specChangedSession"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specChangedSession"
@@ -2209,6 +2259,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specNotificationReceipt",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specNotificationReceipt"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specNotificationReceipt"
@@ -2217,6 +2272,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specPreviousVersion",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specPreviousVersion"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specPreviousVersion"
@@ -2225,6 +2285,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specRequester",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specRequester"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specRequester"
@@ -2233,6 +2298,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specStartActor",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartActor"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specStartActor"
@@ -2241,6 +2311,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specStartAt",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartAt"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specStartAt"
@@ -2249,6 +2324,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specStartSession",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartSession"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specStartSession"
@@ -2257,6 +2337,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specStartVersion",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specStartVersion"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specStartVersion"
@@ -2265,6 +2350,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specSummary",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specSummary"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specSummary"
@@ -2273,6 +2363,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specUrgent",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specUrgent"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specUrgent"
@@ -2281,6 +2376,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/specVersion",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#specVersion"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#specVersion"
@@ -2289,6 +2389,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/status",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#status"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#status"
@@ -2297,6 +2402,11 @@
   },
   {
     "@id": "https://seeds.local/ontology/workflowRun",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "https://w3id.org/intigraph/seeds/ns#workflowRun"
+      }
+    ],
     "http://www.w3.org/2002/07/owl#sameAs": [
       {
         "@id": "https://w3id.org/intigraph/seeds/ns#workflowRun"

@@ -6,7 +6,7 @@ from pathlib import Path
 import shutil
 import tempfile
 import unittest
-from rdflib import Graph
+from rdflib import Graph, URIRef
 from rdflib.compare import isomorphic
 
 spec = importlib.util.spec_from_file_location('ids',Path(__file__).with_name('build-ids.py'))
@@ -85,6 +85,35 @@ class PublicationTests(unittest.TestCase):
 
     def test_missing_namespace(self):
         self.ledger_change(lambda v:v['entries'].pop('seeds/ns'))
+
+    def test_stage_one_destinations_and_property_bridges(self):
+        ledger = json.loads((builder.ROOT/'data/ids/sources/camayoc/namespaces/intigraph/mapping.json').read_text())
+        spec = json.loads((builder.ROOT/'data/ids/ownership.json').read_text())
+        self.assertEqual(len(spec['terms']),1254)
+        outputs = builder.build()
+        all_graphs = Graph()
+        for name, raw in outputs.items():
+            if name.endswith('.ttl'):all_graphs += Graph().parse(data=raw,format='turtle')
+        for row in ledger['pairs']:
+            old, new = URIRef(row['old']), URIRef(row['new'])
+            self.assertIn((old,builder.OWL_SAME,new),all_graphs)
+            if 'property' in row['roles']:self.assertIn((old,builder.OWL_PROPERTY,new),all_graphs)
+            if 'class' in row['roles']:self.assertIn((old,builder.OWL_CLASS,new),all_graphs)
+        delivery = {'ChangeEvent','changeAction','changeId','changeRepository','commitSha',
+                    'includesCommit','reviewState','ChangeEventShape','DeploymentEventIncludesShape'}
+        code = {'DocumentVocabularyShape','CodeEntityLabelMaxCountDebtShape',
+                'SectionHeadingMaxCountDebtShape','CommitRequiredMetadataDebtShape','CodeModuleFilePathDebtShape'}
+        new_nodes = {str(node) for triple in all_graphs for node in triple if isinstance(node,URIRef)}
+        for old in spec['retained_legacy']:
+            local = old.rsplit('/',1)[1]
+            if local in ('closedAt','assignedTo'):continue
+            owner = 'delivery' if local in delivery else 'code-entities' if local in code else 'core'
+            self.assertNotIn(builder.BASE+'camayoc/'+owner+'/ns#'+local,new_nodes)
+
+    def test_retained_identity_cannot_be_silently_published_or_dropped(self):
+        self.ledger_change(lambda v:v['retained_legacy'].pop())
+        self.ledger_change(lambda v:v['retained_legacy'].__setitem__(0,'https://example.org/unknown'))
+        self.ledger_change(lambda v:v['terms'][0].update(new=builder.BASE+'camayoc/core/ns#unapproved'))
 
     def test_distinct_source_schemes(self):
         ledger = json.loads((builder.ROOT/'data/ids/ownership.json').read_text())['terms']

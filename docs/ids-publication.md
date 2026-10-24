@@ -23,6 +23,20 @@ Internal item references in literal text are replaced by neutral source-referenc
 This publication is not a runnable replacement for the original SHACL packs.
 No loaded shapes, graph data, rule execution or consumer defaults change.
 
+The stage-one refresh pins Camayoc sources and its mapping ledger to merged
+`6cff93433e8d5a895a17cef678aa9ead108f291d`. All 1,254 existing destinations stay
+fixed. Property aliases also carry `owl:equivalentProperty`, and class aliases
+carry `owl:equivalentClass` where the source ledger declares that role.
+Core ontology and observation-debt source facts are included for documentation;
+this does not combine their separate runtime loading policies.
+
+The 39 unresolved vocabulary identities and eight additional shape identities
+remain explicit legacy exceptions. Their proposed new destinations are not
+published by this refresh. A later accepted source revision must version the
+mapping and its publication together before pins or releases reference new terms.
+The generator resolves RDF identifiers, not source prefix spellings, and refuses
+an unexplained identity or changed stage-one destination.
+
 The fixed entity redirect accepts known `/ids/<namespace>/id/<identifier>`
 paths and opens the existing Quipu explorer with the full w3id IRI in `entity`.
 Encoded path separators, traversal, unknown namespaces and entity `.ttl` or

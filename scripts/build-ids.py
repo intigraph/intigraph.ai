@@ -25,6 +25,8 @@ def public_literal(node):
     return Literal(ITEM_REFERENCE.sub('internal source reference',str(node)),lang=node.language,datatype=node.datatype,normalize=False)
 
 OWL_SAME = URIRef('http://www.w3.org/2002/07/owl#sameAs')
+OWL_PROPERTY = URIRef('http://www.w3.org/2002/07/owl#equivalentProperty')
+OWL_CLASS = URIRef('http://www.w3.org/2002/07/owl#equivalentClass')
 
 
 def digest(data):
@@ -54,6 +56,22 @@ def build(root=ROOT):
     mapping = {r['old']:r['new'] for r in rows}
     if len(mapping) != len(rows) or len(set(mapping.values())) != len(rows):
         raise ValueError('Non-bijective ownership ledger')
+    stage_one = json.loads((data/'sources/camayoc/namespaces/intigraph/mapping.json').read_text())
+    if stage_one.get('pair_count') != 1254 or len(stage_one['pairs']) != 1254:
+        raise ValueError('Invalid stage-one mapping count')
+    if mapping != {r['old']:r['new'] for r in stage_one['pairs']}:
+        raise ValueError('Publication must retain the merged stage-one destinations')
+    roles = {r['old']:set(r['roles']) for r in stage_one['pairs']}
+    retained = spec.get('retained_legacy', [])
+    if len(retained) != 47 or len(set(retained)) != 47 or set(retained) & set(mapping):
+        raise ValueError('Invalid explicit legacy inventory')
+    shape_ids = {'http://aegis.gastown.local/ontology/'+name for name in (
+        'ChangeEventShape', 'DeploymentEventIncludesShape',
+        'CamayocObservationProvenanceDebtShape', 'DocumentVocabularyShape',
+        'CodeEntityLabelMaxCountDebtShape', 'SectionHeadingMaxCountDebtShape',
+        'CommitRequiredMetadataDebtShape', 'CodeModuleFilePathDebtShape')}
+    if set(retained) != set(stage_one['retained_legacy']) | shape_ids:
+        raise ValueError('Legacy inventory differs from stage-one exceptions')
     for row in rows:
         if row['owner'] not in spec['entries'] or not row['new'].startswith(BASE+row['owner']+'#') and row['new'] != BASE+row['owner']:
             raise ValueError('Invalid owner or destination')
@@ -69,7 +87,7 @@ def build(root=ROOT):
             for triple in Graph().parse(data/'sources'/source,format='turtle'):
                 for node in triple:
                     if isinstance(node,URIRef) and (str(node).startswith(prefixes) or str(node) == 'https://scbrown.github.io/quechua/ns'):seen.add(str(node))
-    if seen != set(mapping):raise ValueError('Identity ledger coverage mismatch')
+    if seen != set(mapping) | set(retained):raise ValueError('Identity ledger coverage mismatch')
     outputs = {}
     catalog = []
     for name, sources in sorted(spec['entries'].items()):
@@ -82,6 +100,10 @@ def build(root=ROOT):
         own = [r for r in rows if r['owner'] == name]
         for row in own:
             renamed.add((URIRef(row['old']),OWL_SAME,URIRef(row['new'])))
+            if 'property' in roles[row['old']]:
+                renamed.add((URIRef(row['old']),OWL_PROPERTY,URIRef(row['new'])))
+            if 'class' in roles[row['old']]:
+                renamed.add((URIRef(row['old']),OWL_CLASS,URIRef(row['new'])))
         canonical = to_canonical_graph(renamed)
         # N-Triples is a Turtle subset. Canonical labels make committed bytes reproducible.
         ttl = ('\n'.join(sorted(' '.join(n.n3() for n in triple)+' .' for triple in canonical))+'\n').encode()

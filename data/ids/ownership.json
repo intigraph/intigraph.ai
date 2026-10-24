@@ -22,7 +22,9 @@
       "camayoc/shapes/aegis/shared-vocabulary.ttl",
       "camayoc/shapes/aegis/aegis-properties.ttl",
       "camayoc/shapes/aegis/aegis-rules.ttl",
-      "camayoc/shapes/aegis/aegis-class-subsumption.rules.ttl"
+      "camayoc/shapes/aegis/aegis-class-subsumption.rules.ttl",
+      "camayoc/ontology/core.ttl",
+      "camayoc/shapes/observation-debt.shapes.ttl"
     ],
     "camayoc/delivery/ns": [
       "camayoc/shapes/delivery.shapes.ttl"
@@ -13397,5 +13399,54 @@
         "quipu/ns"
       ]
     }
+  ],
+  "retained_legacy": [
+    "http://aegis.gastown.local/ontology/CamayocObservationProvenanceDebtShape",
+    "http://aegis.gastown.local/ontology/ChangeEvent",
+    "http://aegis.gastown.local/ontology/ChangeEventShape",
+    "http://aegis.gastown.local/ontology/CodeEntityLabelMaxCountDebtShape",
+    "http://aegis.gastown.local/ontology/CodeModuleFilePathDebtShape",
+    "http://aegis.gastown.local/ontology/CommitRequiredMetadataDebtShape",
+    "http://aegis.gastown.local/ontology/DeploymentEventIncludesShape",
+    "http://aegis.gastown.local/ontology/DocumentVocabularyShape",
+    "http://aegis.gastown.local/ontology/SectionHeadingMaxCountDebtShape",
+    "http://aegis.gastown.local/ontology/actionKind",
+    "http://aegis.gastown.local/ontology/actionTarget",
+    "http://aegis.gastown.local/ontology/artifactDigest",
+    "http://aegis.gastown.local/ontology/assignedTo",
+    "http://aegis.gastown.local/ontology/changeAction",
+    "http://aegis.gastown.local/ontology/changeId",
+    "http://aegis.gastown.local/ontology/changeRepository",
+    "http://aegis.gastown.local/ontology/closedAt",
+    "http://aegis.gastown.local/ontology/commitSha",
+    "http://aegis.gastown.local/ontology/deadEnd",
+    "http://aegis.gastown.local/ontology/decidedBy",
+    "http://aegis.gastown.local/ontology/decidedIn",
+    "http://aegis.gastown.local/ontology/dependsOnVariable",
+    "http://aegis.gastown.local/ontology/derivedConstraint",
+    "http://aegis.gastown.local/ontology/deviatesAt",
+    "http://aegis.gastown.local/ontology/enacts",
+    "http://aegis.gastown.local/ontology/followsPath",
+    "http://aegis.gastown.local/ontology/gates",
+    "http://aegis.gastown.local/ontology/includesCommit",
+    "http://aegis.gastown.local/ontology/lastRefreshedAt",
+    "http://aegis.gastown.local/ontology/metricName",
+    "http://aegis.gastown.local/ontology/omissionRuling",
+    "http://aegis.gastown.local/ontology/omitsStep",
+    "http://aegis.gastown.local/ontology/over",
+    "http://aegis.gastown.local/ontology/probeValidatedBy",
+    "http://aegis.gastown.local/ontology/promotionEvidence",
+    "http://aegis.gastown.local/ontology/rationale",
+    "http://aegis.gastown.local/ontology/reviewState",
+    "http://aegis.gastown.local/ontology/sourceDigest",
+    "http://aegis.gastown.local/ontology/stepOrder",
+    "http://aegis.gastown.local/ontology/supersededBy",
+    "http://aegis.gastown.local/ontology/trajectoryOf",
+    "http://aegis.gastown.local/ontology/verifiedBy",
+    "http://aegis.gastown.local/ontology/verifies",
+    "https://camayoc.local/ontology/planePromotion",
+    "https://camayoc.local/ontology/promotedFrom",
+    "https://camayoc.local/ontology/promotedInto",
+    "https://camayoc.local/ontology/sourceLeftOpen"
   ]
 }
