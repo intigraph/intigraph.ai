@@ -1,29 +1,29 @@
 [
   {
     "path": "camayoc/code-entities/ns",
-    "triples": 308,
-    "terms": 23,
+    "triples": 313,
+    "terms": 28,
     "sha256": {
-      ".ttl": "6526994b7712d3824dd29ccf6769f9d73937a9acb662493b7c46026b18d34c3a",
-      ".jsonld": "c9dfd306a4f65b4e95909aaae16ec37657e55347895cdfaa80aee0cb229911e1"
+      ".ttl": "f0a1d85e0d5bdf513e5ada10df478d96aa3dc973591b9c741b26a13ddb973e28",
+      ".jsonld": "c3b688d120b56f6aab01c0462be736b7a37c33a0d5486e87b64b88200e40edc6"
     }
   },
   {
     "path": "camayoc/core/ns",
-    "triples": 2679,
-    "terms": 341,
+    "triples": 2740,
+    "terms": 372,
     "sha256": {
-      ".ttl": "ec0da0a43d195f6138216e0ec9b4cbdddb35edaef984172a2b19a4fe2909380c",
-      ".jsonld": "861b0f9c123e3cfbe8228c49312bab93c5e6b5627e4f18ed3578ef9601f9de46"
+      ".ttl": "946676bf3aac8b255346a91bbd43653351ed8aeb138c303dac48898818b69360",
+      ".jsonld": "6a1737ff6b325f8e2bbd0297996bd77d2ba77024776aea4d328ca01186c9fec9"
     }
   },
   {
     "path": "camayoc/delivery/ns",
-    "triples": 279,
-    "terms": 11,
+    "triples": 295,
+    "terms": 20,
     "sha256": {
-      ".ttl": "0513746a0d1e2e9631629b4c94940b8fc4457b339a1fce4196fa98c0b2a7d2f7",
-      ".jsonld": "a9478589b871e09e7a2574bbcaa920bc09d30456f5497254b41670d4535331b7"
+      ".ttl": "d50ce2872f8bd5a9ea1bd558498d8b22a63f5c431593d57151c1797c08c82a68",
+      ".jsonld": "ac997db04c4ee56d639805f49a032819cdcdddbc34203e1717f6e27806ac0ade"
     }
   },
   {
