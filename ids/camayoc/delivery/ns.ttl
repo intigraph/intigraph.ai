@@ -1,25 +1,9 @@
-<http://aegis.gastown.local/ontology/ChangeEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://aegis.gastown.local/ontology/ChangeEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "One lifecycle step of a source change (a pull request), from a CDEvents change event or a CI result for the change's head commit: created, reviewed, merged, abandoned, ci-passed or ci-failed. Distinct from DeploymentEvent (what reached an environment) and from WorkflowRun." .
-<http://aegis.gastown.local/ontology/ChangeEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Change event" .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#or> _:cb1138b6439bfe34e28a30aef621be707c966903f7747e3d2ee8913b8ad52577a14 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb1621ffd6c33f13818490a9094f899cf7f88dbf6e0a5706d7428b338812314cfa1 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb216a2c48ff3b1c8f2612819f835858ff49bf1a01b367690b4a4711db8a4ce6856 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb21955774c8890926e1e70334875aa7f71663b23f063e3e8523f340fe98abc4c8c .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb21cb50221698f93810d39ba9b945510037f929011a919cd3950d559a2e9b048ce .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb22dcae90cecf5cb7fdd2f6449bed14610431e729654ca9ff6efa0f2ade8cf89a4 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb2357e229c6af8ae85d658b2aeccda37f60112f1b7bc6fb25d7e5b4f7ec05c0b97 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb282dc49da05bbf86fad74ba8d481b9d0b2e36e6797c558c846f162f78f7242305 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb2cfd4ca9f1e229aad134ede294522f8e824310575fe05417fe07b55fc6c5dae14 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb2e70ba7f7d0de3a51b8bef82ffad36b057de84c537315fc70fde202ab1eba1939 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb2f292fec49927361854725e342c18f55cff0a70e05d47b01b5d0dd3af0365c322 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb2fb26e0c9dfe5bcd8a2832ff16d66880f76899dec9279fd07be7d209df74e16a0 .
-<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/ns/shacl#targetClass> <http://aegis.gastown.local/ontology/ChangeEvent> .
+<http://aegis.gastown.local/ontology/ChangeEvent> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEvent> .
+<http://aegis.gastown.local/ontology/ChangeEvent> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEvent> .
+<http://aegis.gastown.local/ontology/ChangeEventShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> .
 <http://aegis.gastown.local/ontology/DeploymentEvent> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> .
 <http://aegis.gastown.local/ontology/DeploymentEvent> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> .
-<http://aegis.gastown.local/ontology/DeploymentEventIncludesShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<http://aegis.gastown.local/ontology/DeploymentEventIncludesShape> <http://www.w3.org/ns/shacl#property> _:cb152b4a10e867bf7bfff3f9a36f494327cfead2297436e347969e0a04ad538d35e .
-<http://aegis.gastown.local/ontology/DeploymentEventIncludesShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> .
+<http://aegis.gastown.local/ontology/DeploymentEventIncludesShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventIncludesShape> .
 <http://aegis.gastown.local/ontology/DeploymentEventShape> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> .
 <http://aegis.gastown.local/ontology/artifactId> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> .
 <http://aegis.gastown.local/ontology/artifactId> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> .
@@ -27,45 +11,53 @@
 <http://aegis.gastown.local/ontology/attemptedArtifactId> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> .
 <http://aegis.gastown.local/ontology/cdeventsType> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> .
 <http://aegis.gastown.local/ontology/cdeventsType> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> .
-<http://aegis.gastown.local/ontology/changeAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/changeAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Closed set: created, reviewed, merged, abandoned, ci-passed, ci-failed." .
-<http://aegis.gastown.local/ontology/changeAction> <http://www.w3.org/2000/01/rdf-schema#label> "change action" .
-<http://aegis.gastown.local/ontology/changeAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://aegis.gastown.local/ontology/changeId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/changeId> <http://www.w3.org/2000/01/rdf-schema#comment> "Repository-qualified change identity, owner/repo#number. Every step of one change carries the same value." .
-<http://aegis.gastown.local/ontology/changeId> <http://www.w3.org/2000/01/rdf-schema#label> "change id" .
-<http://aegis.gastown.local/ontology/changeId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://aegis.gastown.local/ontology/changeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/changeRepository> <http://www.w3.org/2000/01/rdf-schema#comment> "The repository the change targets, as owner/repo." .
-<http://aegis.gastown.local/ontology/changeRepository> <http://www.w3.org/2000/01/rdf-schema#label> "change repository" .
-<http://aegis.gastown.local/ontology/changeRepository> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/changeAction> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#changeAction> .
+<http://aegis.gastown.local/ontology/changeAction> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#changeAction> .
+<http://aegis.gastown.local/ontology/changeId> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#changeId> .
+<http://aegis.gastown.local/ontology/changeId> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#changeId> .
+<http://aegis.gastown.local/ontology/changeRepository> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#changeRepository> .
+<http://aegis.gastown.local/ontology/changeRepository> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#changeRepository> .
 <http://aegis.gastown.local/ontology/cloudEventId> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> .
 <http://aegis.gastown.local/ontology/cloudEventId> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> .
 <http://aegis.gastown.local/ontology/cloudEventSource> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> .
 <http://aegis.gastown.local/ontology/cloudEventSource> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> .
-<http://aegis.gastown.local/ontology/commitSha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/commitSha> <http://www.w3.org/2000/01/rdf-schema#comment> "Full 40-hex commit id the step concerns: the merge commit on merged, the head commit on a CI result or review." .
-<http://aegis.gastown.local/ontology/commitSha> <http://www.w3.org/2000/01/rdf-schema#label> "commit sha" .
-<http://aegis.gastown.local/ontology/commitSha> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/commitSha> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#commitSha> .
+<http://aegis.gastown.local/ontology/commitSha> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#commitSha> .
 <http://aegis.gastown.local/ontology/deployedService> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> .
 <http://aegis.gastown.local/ontology/deployedService> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> .
 <http://aegis.gastown.local/ontology/deploymentOutcome> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
 <http://aegis.gastown.local/ontology/deploymentOutcome> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
 <http://aegis.gastown.local/ontology/environment> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#environment> .
 <http://aegis.gastown.local/ontology/environment> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#environment> .
-<http://aegis.gastown.local/ontology/includesCommit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/includesCommit> <http://www.w3.org/2000/01/rdf-schema#comment> "Full 40-hex commit id newly delivered by a deployment: the commits reachable from the deployed artifact and not from the previous succeeded deployment's artifact. Multi-valued." .
-<http://aegis.gastown.local/ontology/includesCommit> <http://www.w3.org/2000/01/rdf-schema#label> "includes commit" .
-<http://aegis.gastown.local/ontology/includesCommit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/includesCommit> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#includesCommit> .
+<http://aegis.gastown.local/ontology/includesCommit> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#includesCommit> .
 <http://aegis.gastown.local/ontology/occurredAt> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> .
 <http://aegis.gastown.local/ontology/occurredAt> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> .
-<http://aegis.gastown.local/ontology/reviewState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://aegis.gastown.local/ontology/reviewState> <http://www.w3.org/2000/01/rdf-schema#comment> "The forge's review verdict word on a reviewed step (approved, changes_requested, commented, dismissed)." .
-<http://aegis.gastown.local/ontology/reviewState> <http://www.w3.org/2000/01/rdf-schema#label> "review state" .
-<http://aegis.gastown.local/ontology/reviewState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://aegis.gastown.local/ontology/reviewState> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/intigraph/camayoc/delivery/ns#reviewState> .
+<http://aegis.gastown.local/ontology/reviewState> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/intigraph/camayoc/delivery/ns#reviewState> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "One lifecycle step of a source change (a pull request), from a CDEvents change event or a CI result for the change's head commit: created, reviewed, merged, abandoned, ci-passed or ci-failed. Distinct from DeploymentEvent (what reached an environment) and from WorkflowRun." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Change event" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#or> _:cbb3a840bec4d9bf4cb6636b9338f4823db4e3d823b199bebdb53901644d44a3b9 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb23aa6bbea3221f314ae18827170876ef08caf62a96581fce22fa6feda87852aac .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb28dfe0b037893ba826341c9bd4f065264169245ab6d629d00f0607381c9100435 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb29a670198c177919f0176bb1e661923cbcf3ea198f6451c141caa022cf16007f1 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb2b3302213c2e0aca3ca95b3319e9e4bbe50bf033f099b01384a2ff808c80bcaba .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb2ce3b383fa664c6d370d7a1c87f1ca2248aad5296eb9283a5fc980ccb6e608ad0 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb2df3a31d1ba941531d4b2928cb4b9b6b6224ed44c144a3753cf4f896466ff0f40 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb314436dad2e781a79bdef4a3ddd470496f62aaa6c91cc8cadb41d623099c25768 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb325bc4d2341088923964ed91bb6b27efbb7e66a668c76a9712fefa6bf03e34b92 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb34d86ca16760a98cb078bdeac16e70cb073dd16fd4b30905aac4ffe86740d6d37 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb364bda76f28c6386facfbf8b2cc977ecdcd945ddac0414b4bc9b6ab352669d85c .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#property> _:cb378d8e04137cdbaf696c030743f2a9bd7c635af73dfa54be28a51c927fefdd5c3 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEventShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/intigraph/camayoc/delivery/ns#ChangeEvent> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "One deployment outcome of a service on an environment, from a CDEvents service event. succeeded, rolledback or failed; never coerced from service.removed. On rollback, artifactId is what serves AFTER the rollback and attemptedArtifactId is what did not stick." .
 <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Deployment event" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventIncludesShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventIncludesShape> <http://www.w3.org/ns/shacl#property> _:cb24e1bf7037c86ada469be94e8c6bb91ee38810baa286fba959282ee5a1d2b3451 .
+<https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventIncludesShape> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEvent> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#or> _:cb5a9760d373e272e446eeb2ac2248e7fdfd64e84db1c740897357701cd78fb3f7 .
 <https://w3id.org/intigraph/camayoc/delivery/ns#DeploymentEventShape> <http://www.w3.org/ns/shacl#or> _:cbf9fcc813e98add9378838e28083d7ccca5eaef2e7c62dc444b7f2712a2317435 .
@@ -93,6 +85,18 @@
 <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> <http://www.w3.org/2000/01/rdf-schema#comment> "The versioned CDEvents type the record was mapped from." .
 <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> <http://www.w3.org/2000/01/rdf-schema#label> "CDEvents type" .
 <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Closed set: created, reviewed, merged, abandoned, ci-passed, ci-failed." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeAction> <http://www.w3.org/2000/01/rdf-schema#label> "change action" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeId> <http://www.w3.org/2000/01/rdf-schema#comment> "Repository-qualified change identity, owner/repo#number. Every step of one change carries the same value." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeId> <http://www.w3.org/2000/01/rdf-schema#label> "change id" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeRepository> <http://www.w3.org/2000/01/rdf-schema#comment> "The repository the change targets, as owner/repo." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeRepository> <http://www.w3.org/2000/01/rdf-schema#label> "change repository" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#changeRepository> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> <http://www.w3.org/2000/01/rdf-schema#comment> "CloudEvents id attribute; unique within its source." .
 <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> <http://www.w3.org/2000/01/rdf-schema#label> "CloudEvent id" .
@@ -101,6 +105,10 @@
 <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> <http://www.w3.org/2000/01/rdf-schema#comment> "CloudEvents source attribute; with cloudEventId, the event's identity." .
 <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> <http://www.w3.org/2000/01/rdf-schema#label> "CloudEvent source" .
 <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#commitSha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#commitSha> <http://www.w3.org/2000/01/rdf-schema#comment> "Full 40-hex commit id the step concerns: the merge commit on merged, the head commit on a CI result or review." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#commitSha> <http://www.w3.org/2000/01/rdf-schema#label> "commit sha" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#commitSha> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> <http://www.w3.org/2000/01/rdf-schema#comment> "The service entity the deployment changed." .
 <https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> <http://www.w3.org/2000/01/rdf-schema#label> "deployed service" .
@@ -112,37 +120,36 @@
 <https://w3id.org/intigraph/camayoc/delivery/ns#environment> <http://www.w3.org/2000/01/rdf-schema#comment> "The environment the deployment targeted, as the producer names it." .
 <https://w3id.org/intigraph/camayoc/delivery/ns#environment> <http://www.w3.org/2000/01/rdf-schema#label> "environment" .
 <https://w3id.org/intigraph/camayoc/delivery/ns#environment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#includesCommit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#includesCommit> <http://www.w3.org/2000/01/rdf-schema#comment> "Full 40-hex commit id newly delivered by a deployment: the commits reachable from the deployed artifact and not from the previous succeeded deployment's artifact. Multi-valued." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#includesCommit> <http://www.w3.org/2000/01/rdf-schema#label> "includes commit" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#includesCommit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> <http://www.w3.org/2000/01/rdf-schema#comment> "RFC 3339 instant the outcome happened (the CloudEvent time), kept in the producer's exact lexical form. Calendar validity is enforced at ingest; the shape checks lexical form and field ranges." .
 <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> <http://www.w3.org/2000/01/rdf-schema#label> "occurred at" .
 <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#reviewState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/intigraph/camayoc/delivery/ns#reviewState> <http://www.w3.org/2000/01/rdf-schema#comment> "The forge's review verdict word on a reviewed step (approved, changes_requested, commented, dismissed)." .
+<https://w3id.org/intigraph/camayoc/delivery/ns#reviewState> <http://www.w3.org/2000/01/rdf-schema#label> "review state" .
+<https://w3id.org/intigraph/camayoc/delivery/ns#reviewState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 _:cb1028b65c2d64455ae0fac5b4ad95bd90b5db2f907707345c63e8ad8d6c6e23e06 <http://www.w3.org/ns/shacl#property> _:cb156da871570a9f556b9e279c1a0e6589eb449773de7cbf151bfa96962d7a76738 .
 _:cb109d9700fe4ce67400141cb92c45ac4b5654c681e6a0ea8956ac7b04104a85329 <http://www.w3.org/ns/shacl#property> _:cbfc66ed7c713dffe1bc6dfab6d18941a219d9348902e8c4fdcaaf710124ef25ec .
 _:cb110f954ad8e90aeb95be61c661761863af3d1e7efca2d37f25fe29c605d355ce8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "abandoned" .
 _:cb110f954ad8e90aeb95be61c661761863af3d1e7efca2d37f25fe29c605d355ce8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cbf0f93266d0b41e6dd1a52618fa72b752e49c527278c1dfcd701d5b02dcd5f15c .
-_:cb1138b6439bfe34e28a30aef621be707c966903f7747e3d2ee8913b8ad52577a14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cbc3e09e7c7e89d2347867e6e20ab5828670458f56f69de46b8561bb6160d6a32c .
-_:cb1138b6439bfe34e28a30aef621be707c966903f7747e3d2ee8913b8ad52577a14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb28bd81bd80de3a5e05a12487cc1b5e9cd4f81a6042febe5ade760a8c04a3016b9 .
-_:cb120aaf38ab3de77c4e7c45c2094ad998c81758bdd23335cfafe663553b88fe61d <http://www.w3.org/ns/shacl#property> _:cb138b55cfa119c8eabfe90a02a1d79381a300fbd9fe1e8b1bfd71ae88762026d48 .
 _:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb5e07506ac46b8ac5b6cb6645f1e134d914f0097f06427674de1838134971e58f .
 _:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1c2aaaf9396f3cb650a2fe5abdb12eedda8644d910a1b43b54d0dea807c307e5a .
-_:cb138b55cfa119c8eabfe90a02a1d79381a300fbd9fe1e8b1bfd71ae88762026d48 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb138b55cfa119c8eabfe90a02a1d79381a300fbd9fe1e8b1bfd71ae88762026d48 <http://www.w3.org/ns/shacl#path> <http://aegis.gastown.local/ontology/commitSha> .
+_:cb1454f23e97dc75ba9a2b9e1af0f3be134bcf47d6163bf5fbceab178b072d7562e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "merged" .
+_:cb1454f23e97dc75ba9a2b9e1af0f3be134bcf47d6163bf5fbceab178b072d7562e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb110f954ad8e90aeb95be61c661761863af3d1e7efca2d37f25fe29c605d355ce8 .
 _:cb14f496eb5e8504f5e83847f17c4a845ee8796b5c46d735cf533f618f32b356d77 <http://www.w3.org/ns/shacl#not> _:cb22d00b1045696254a7a0803069d16233710da7e267fb87dd48032ffcca240104 .
-_:cb152b4a10e867bf7bfff3f9a36f494327cfead2297436e347969e0a04ad538d35e <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb152b4a10e867bf7bfff3f9a36f494327cfead2297436e347969e0a04ad538d35e <http://www.w3.org/ns/shacl#path> <http://aegis.gastown.local/ontology/includesCommit> .
-_:cb152b4a10e867bf7bfff3f9a36f494327cfead2297436e347969e0a04ad538d35e <http://www.w3.org/ns/shacl#pattern> "^[0-9a-f]{40}$" .
 _:cb156da871570a9f556b9e279c1a0e6589eb449773de7cbf151bfa96962d7a76738 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb156da871570a9f556b9e279c1a0e6589eb449773de7cbf151bfa96962d7a76738 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> .
-_:cb1621ffd6c33f13818490a9094f899cf7f88dbf6e0a5706d7428b338812314cfa1 <http://www.w3.org/ns/shacl#in> _:cb1a2013f698f866dd01e4b2775107f09539d61275263ccb5fd26bb632f7b742cec .
-_:cb1621ffd6c33f13818490a9094f899cf7f88dbf6e0a5706d7428b338812314cfa1 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb1621ffd6c33f13818490a9094f899cf7f88dbf6e0a5706d7428b338812314cfa1 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb1621ffd6c33f13818490a9094f899cf7f88dbf6e0a5706d7428b338812314cfa1 <http://www.w3.org/ns/shacl#path> <http://aegis.gastown.local/ontology/changeAction> .
 _:cb165e9cff7bf82b305cc96113b338369686d0b2e2154c9b95faa66a5382ad52492 <http://www.w3.org/ns/shacl#minCount> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb165e9cff7bf82b305cc96113b338369686d0b2e2154c9b95faa66a5382ad52492 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
+_:cb16c8ff4c707d05be83fff73067b0188340cf01a304776953415cdf29adaf8dbb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb16fe697a23bb6b02c57501968976fe3f209adb92a1f68e864dc8e03c8cb726895 .
+_:cb16c8ff4c707d05be83fff73067b0188340cf01a304776953415cdf29adaf8dbb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:cb16fe697a23bb6b02c57501968976fe3f209adb92a1f68e864dc8e03c8cb726895 <http://www.w3.org/ns/shacl#property> _:cbc4375e0fefbee7a913a58bb255e596dd77a540b8b7e8322a11dea80a06179e07 .
 _:cb1a144154d6eef657b2fef6e1518c7a9d79c904eaeaf5901d65a13a094e797416d <http://www.w3.org/ns/shacl#hasValue> "failed" .
 _:cb1a144154d6eef657b2fef6e1518c7a9d79c904eaeaf5901d65a13a094e797416d <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
-_:cb1a2013f698f866dd01e4b2775107f09539d61275263ccb5fd26bb632f7b742cec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "created" .
-_:cb1a2013f698f866dd01e4b2775107f09539d61275263ccb5fd26bb632f7b742cec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb271018c9aaaa1f791f64fe9e5773808c904b0dba0fcabc7afc89f85ee82853845 .
 _:cb1a50f8d7417991d26716da79a17da228b546f058c023faa5202035c0594d7c51c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ci-failed" .
 _:cb1a50f8d7417991d26716da79a17da228b546f058c023faa5202035c0594d7c51c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:cb1ac750cd60e7a5501eac0008c7194ac9746b932574a75525aef8b7659dd8a98e3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "rolledback" .
@@ -151,68 +158,60 @@ _:cb1b8d1103eea4da1bb20242505f2b77ceeb55348cc0172190249886c405aabb773 <http://ww
 _:cb1b8d1103eea4da1bb20242505f2b77ceeb55348cc0172190249886c405aabb773 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:cb1c2aaaf9396f3cb650a2fe5abdb12eedda8644d910a1b43b54d0dea807c307e5a <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb1028b65c2d64455ae0fac5b4ad95bd90b5db2f907707345c63e8ad8d6c6e23e06 .
 _:cb1c2aaaf9396f3cb650a2fe5abdb12eedda8644d910a1b43b54d0dea807c307e5a <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:cb1cda41204517a9d97bff185f50eee60f98ccb1dbd31912a1d90401368a3f4ef05 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "created" .
+_:cb1cda41204517a9d97bff185f50eee60f98ccb1dbd31912a1d90401368a3f4ef05 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb25b81f533c6b590231b29833ea180970b5d65c937ec3beeecf826fdab1dcb04f9 .
 _:cb1d17a17b4d6a7639f00573db0fb280de14be353c4ad14c87843523b018af17b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "failed" .
 _:cb1d17a17b4d6a7639f00573db0fb280de14be353c4ad14c87843523b018af17b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1ac750cd60e7a5501eac0008c7194ac9746b932574a75525aef8b7659dd8a98e3 .
-_:cb1d7889f1e1f39d89a5e47d448684f7c050b546de4ac53beb78110dddc6fb95bda <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "merged" .
-_:cb1d7889f1e1f39d89a5e47d448684f7c050b546de4ac53beb78110dddc6fb95bda <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb110f954ad8e90aeb95be61c661761863af3d1e7efca2d37f25fe29c605d355ce8 .
+_:cb1d4f9b6627883ec440593f3b47ccf3110031b6ae7d81d168aaa88d1bea39c8754 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "observed" .
+_:cb1d4f9b6627883ec440593f3b47ccf3110031b6ae7d81d168aaa88d1bea39c8754 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> .
 _:cb213ce00c6b259f928d8847be4b64c36fc16afb36f39f70de4c375e01428a39e45 <http://www.w3.org/ns/shacl#pattern> "^dev\\.cdevents\\." .
-_:cb216a2c48ff3b1c8f2612819f835858ff49bf1a01b367690b4a4711db8a4ce6856 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb216a2c48ff3b1c8f2612819f835858ff49bf1a01b367690b4a4711db8a4ce6856 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb216a2c48ff3b1c8f2612819f835858ff49bf1a01b367690b4a4711db8a4ce6856 <http://www.w3.org/ns/shacl#path> <http://aegis.gastown.local/ontology/commitSha> .
-_:cb216a2c48ff3b1c8f2612819f835858ff49bf1a01b367690b4a4711db8a4ce6856 <http://www.w3.org/ns/shacl#pattern> "^[0-9a-f]{40}$" .
-_:cb21955774c8890926e1e70334875aa7f71663b23f063e3e8523f340fe98abc4c8c <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb21955774c8890926e1e70334875aa7f71663b23f063e3e8523f340fe98abc4c8c <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb21955774c8890926e1e70334875aa7f71663b23f063e3e8523f340fe98abc4c8c <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb21955774c8890926e1e70334875aa7f71663b23f063e3e8523f340fe98abc4c8c <http://www.w3.org/ns/shacl#path> <http://aegis.gastown.local/ontology/reviewState> .
 _:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b <http://www.w3.org/ns/shacl#in> _:cb1b8d1103eea4da1bb20242505f2b77ceeb55348cc0172190249886c405aabb773 .
 _:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb21aac792de0959d64fb434eaaa8d5c64cdb889d1e2d27d1d9df69baaae415b27b <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> .
-_:cb21cb50221698f93810d39ba9b945510037f929011a919cd3950d559a2e9b048ce <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb21cb50221698f93810d39ba9b945510037f929011a919cd3950d559a2e9b048ce <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb21cb50221698f93810d39ba9b945510037f929011a919cd3950d559a2e9b048ce <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb21cb50221698f93810d39ba9b945510037f929011a919cd3950d559a2e9b048ce <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> .
-_:cb21cb50221698f93810d39ba9b945510037f929011a919cd3950d559a2e9b048ce <http://www.w3.org/ns/shacl#pattern> "^dev\\.cdevents\\." .
 _:cb222875bb1c740551034a58fa0f1277568bde16a33ca25da2380b4a6cef2ce9634 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "succeeded" .
 _:cb222875bb1c740551034a58fa0f1277568bde16a33ca25da2380b4a6cef2ce9634 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1d17a17b4d6a7639f00573db0fb280de14be353c4ad14c87843523b018af17b71 .
-_:cb2270f8e9e695d49b288a289dc1955ffb73e92ca8b0c38f3f06bac6514bfe8313f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "observed" .
-_:cb2270f8e9e695d49b288a289dc1955ffb73e92ca8b0c38f3f06bac6514bfe8313f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb22c972141b3c3142da1a373f7eed15eee983015154d4cf308f0fbd5efff4f610e <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> .
 _:cb22d00b1045696254a7a0803069d16233710da7e267fb87dd48032ffcca240104 <http://www.w3.org/ns/shacl#property> _:cb22ed1e2e6f917595235553e2c8f35f1c2e01d8fe4ca557d8b213120542ba70422 .
-_:cb22dcae90cecf5cb7fdd2f6449bed14610431e729654ca9ff6efa0f2ade8cf89a4 <http://www.w3.org/ns/shacl#in> _:cb2270f8e9e695d49b288a289dc1955ffb73e92ca8b0c38f3f06bac6514bfe8313f .
-_:cb22dcae90cecf5cb7fdd2f6449bed14610431e729654ca9ff6efa0f2ade8cf89a4 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb22dcae90cecf5cb7fdd2f6449bed14610431e729654ca9ff6efa0f2ade8cf89a4 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb22dcae90cecf5cb7fdd2f6449bed14610431e729654ca9ff6efa0f2ade8cf89a4 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> .
 _:cb22ed1e2e6f917595235553e2c8f35f1c2e01d8fe4ca557d8b213120542ba70422 <http://www.w3.org/ns/shacl#hasValue> "failed" .
 _:cb22ed1e2e6f917595235553e2c8f35f1c2e01d8fe4ca557d8b213120542ba70422 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
-_:cb2357e229c6af8ae85d658b2aeccda37f60112f1b7bc6fb25d7e5b4f7ec05c0b97 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb2357e229c6af8ae85d658b2aeccda37f60112f1b7bc6fb25d7e5b4f7ec05c0b97 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2357e229c6af8ae85d658b2aeccda37f60112f1b7bc6fb25d7e5b4f7ec05c0b97 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2357e229c6af8ae85d658b2aeccda37f60112f1b7bc6fb25d7e5b4f7ec05c0b97 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2357e229c6af8ae85d658b2aeccda37f60112f1b7bc6fb25d7e5b4f7ec05c0b97 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> .
+_:cb23aa6bbea3221f314ae18827170876ef08caf62a96581fce22fa6feda87852aac <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb23aa6bbea3221f314ae18827170876ef08caf62a96581fce22fa6feda87852aac <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb23aa6bbea3221f314ae18827170876ef08caf62a96581fce22fa6feda87852aac <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#commitSha> .
+_:cb23aa6bbea3221f314ae18827170876ef08caf62a96581fce22fa6feda87852aac <http://www.w3.org/ns/shacl#pattern> "^[0-9a-f]{40}$" .
 _:cb23da7ed45642ce41a2a10cb145e010e4e84fffee9a934fb90e7a10e88c19494e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb109d9700fe4ce67400141cb92c45ac4b5654c681e6a0ea8956ac7b04104a85329 .
 _:cb23da7ed45642ce41a2a10cb145e010e4e84fffee9a934fb90e7a10e88c19494e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:cb271018c9aaaa1f791f64fe9e5773808c904b0dba0fcabc7afc89f85ee82853845 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "reviewed" .
-_:cb271018c9aaaa1f791f64fe9e5773808c904b0dba0fcabc7afc89f85ee82853845 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1d7889f1e1f39d89a5e47d448684f7c050b546de4ac53beb78110dddc6fb95bda .
-_:cb282dc49da05bbf86fad74ba8d481b9d0b2e36e6797c558c846f162f78f7242305 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb282dc49da05bbf86fad74ba8d481b9d0b2e36e6797c558c846f162f78f7242305 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb282dc49da05bbf86fad74ba8d481b9d0b2e36e6797c558c846f162f78f7242305 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb282dc49da05bbf86fad74ba8d481b9d0b2e36e6797c558c846f162f78f7242305 <http://www.w3.org/ns/shacl#path> <http://aegis.gastown.local/ontology/changeId> .
-_:cb282dc49da05bbf86fad74ba8d481b9d0b2e36e6797c558c846f162f78f7242305 <http://www.w3.org/ns/shacl#pattern> "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+#[0-9]+$" .
+_:cb24e1bf7037c86ada469be94e8c6bb91ee38810baa286fba959282ee5a1d2b3451 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb24e1bf7037c86ada469be94e8c6bb91ee38810baa286fba959282ee5a1d2b3451 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#includesCommit> .
+_:cb24e1bf7037c86ada469be94e8c6bb91ee38810baa286fba959282ee5a1d2b3451 <http://www.w3.org/ns/shacl#pattern> "^[0-9a-f]{40}$" .
+_:cb25b81f533c6b590231b29833ea180970b5d65c937ec3beeecf826fdab1dcb04f9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "reviewed" .
+_:cb25b81f533c6b590231b29833ea180970b5d65c937ec3beeecf826fdab1dcb04f9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1454f23e97dc75ba9a2b9e1af0f3be134bcf47d6163bf5fbceab178b072d7562e .
 _:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
 _:cb28b560c8d7ca3eeba83bbc36ba82d6191d6610c205c92a9adac3f002d777b50de <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deployedService> .
-_:cb28bd81bd80de3a5e05a12487cc1b5e9cd4f81a6042febe5ade760a8c04a3016b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb120aaf38ab3de77c4e7c45c2094ad998c81758bdd23335cfafe663553b88fe61d .
-_:cb28bd81bd80de3a5e05a12487cc1b5e9cd4f81a6042febe5ade760a8c04a3016b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:cb28dfe0b037893ba826341c9bd4f065264169245ab6d629d00f0607381c9100435 <http://www.w3.org/ns/shacl#in> _:cb1d4f9b6627883ec440593f3b47ccf3110031b6ae7d81d168aaa88d1bea39c8754 .
+_:cb28dfe0b037893ba826341c9bd4f065264169245ab6d629d00f0607381c9100435 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb28dfe0b037893ba826341c9bd4f065264169245ab6d629d00f0607381c9100435 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb28dfe0b037893ba826341c9bd4f065264169245ab6d629d00f0607381c9100435 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/core/ns#sourceKind> .
+_:cb29a670198c177919f0176bb1e661923cbcf3ea198f6451c141caa022cf16007f1 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb29a670198c177919f0176bb1e661923cbcf3ea198f6451c141caa022cf16007f1 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb29a670198c177919f0176bb1e661923cbcf3ea198f6451c141caa022cf16007f1 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb29a670198c177919f0176bb1e661923cbcf3ea198f6451c141caa022cf16007f1 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cdeventsType> .
+_:cb29a670198c177919f0176bb1e661923cbcf3ea198f6451c141caa022cf16007f1 <http://www.w3.org/ns/shacl#pattern> "^dev\\.cdevents\\." .
+_:cb2b3302213c2e0aca3ca95b3319e9e4bbe50bf033f099b01384a2ff808c80bcaba <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb2b3302213c2e0aca3ca95b3319e9e4bbe50bf033f099b01384a2ff808c80bcaba <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2b3302213c2e0aca3ca95b3319e9e4bbe50bf033f099b01384a2ff808c80bcaba <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2b3302213c2e0aca3ca95b3319e9e4bbe50bf033f099b01384a2ff808c80bcaba <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2b3302213c2e0aca3ca95b3319e9e4bbe50bf033f099b01384a2ff808c80bcaba <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventId> .
 _:cb2c3d2d2f205fe61838f1fa62d6bf9ae07cb5915c102dc1eee4ce5ab7d6a7de501 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:cb2c3d2d2f205fe61838f1fa62d6bf9ae07cb5915c102dc1eee4ce5ab7d6a7de501 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2c3d2d2f205fe61838f1fa62d6bf9ae07cb5915c102dc1eee4ce5ab7d6a7de501 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#attemptedArtifactId> .
@@ -221,14 +220,14 @@ _:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b <http://ww
 _:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2c6edc94466ed0054de999f72671a1fe0bb4e28d38ee2822b531bdc6dab51038b <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:cb2ce3b383fa664c6d370d7a1c87f1ca2248aad5296eb9283a5fc980ccb6e608ad0 <http://www.w3.org/ns/shacl#in> _:cb1cda41204517a9d97bff185f50eee60f98ccb1dbd31912a1d90401368a3f4ef05 .
+_:cb2ce3b383fa664c6d370d7a1c87f1ca2248aad5296eb9283a5fc980ccb6e608ad0 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2ce3b383fa664c6d370d7a1c87f1ca2248aad5296eb9283a5fc980ccb6e608ad0 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2ce3b383fa664c6d370d7a1c87f1ca2248aad5296eb9283a5fc980ccb6e608ad0 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#changeAction> .
 _:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 <http://www.w3.org/ns/shacl#in> _:cb222875bb1c740551034a58fa0f1277568bde16a33ca25da2380b4a6cef2ce9634 .
 _:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2cfbf005553af56a04712e29fa9432ee80e972bbe4168e67ff7ebec8c9caa20d8 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#deploymentOutcome> .
-_:cb2cfd4ca9f1e229aad134ede294522f8e824310575fe05417fe07b55fc6c5dae14 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb2cfd4ca9f1e229aad134ede294522f8e824310575fe05417fe07b55fc6c5dae14 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2cfd4ca9f1e229aad134ede294522f8e824310575fe05417fe07b55fc6c5dae14 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2cfd4ca9f1e229aad134ede294522f8e824310575fe05417fe07b55fc6c5dae14 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
 _:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2da42d83bab1e8914aff41b95e450b9788ccd70183fef06bf2c131942f1502338 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#artifactId> .
@@ -238,11 +237,10 @@ _:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://ww
 _:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> .
 _:cb2de24a69d19a89ff98409b9791cca91fe15056fb103f33d1c7082891c5dad6eb0 <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?(Z|[+-]([01][0-9]|2[0-3]):[0-5][0-9])$" .
-_:cb2e70ba7f7d0de3a51b8bef82ffad36b057de84c537315fc70fde202ab1eba1939 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb2e70ba7f7d0de3a51b8bef82ffad36b057de84c537315fc70fde202ab1eba1939 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2e70ba7f7d0de3a51b8bef82ffad36b057de84c537315fc70fde202ab1eba1939 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2e70ba7f7d0de3a51b8bef82ffad36b057de84c537315fc70fde202ab1eba1939 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> .
-_:cb2e70ba7f7d0de3a51b8bef82ffad36b057de84c537315fc70fde202ab1eba1939 <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?(Z|[+-]([01][0-9]|2[0-3]):[0-5][0-9])$" .
+_:cb2df3a31d1ba941531d4b2928cb4b9b6b6224ed44c144a3753cf4f896466ff0f40 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb2df3a31d1ba941531d4b2928cb4b9b6b6224ed44c144a3753cf4f896466ff0f40 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2df3a31d1ba941531d4b2928cb4b9b6b6224ed44c144a3753cf4f896466ff0f40 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb2df3a31d1ba941531d4b2928cb4b9b6b6224ed44c144a3753cf4f896466ff0f40 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#reviewState> .
 _:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2ee199c4b9e581004febe51dba600b2c1a5ea5cc3187bcf021e99e214e438d8f1 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -253,24 +251,42 @@ _:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://ww
 _:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 _:cb2f23fdf6f28b022806dcdf13a8f5daf080da6c14a23573db3311da70f36416c17 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> .
-_:cb2f292fec49927361854725e342c18f55cff0a70e05d47b01b5d0dd3af0365c322 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb2f292fec49927361854725e342c18f55cff0a70e05d47b01b5d0dd3af0365c322 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2f292fec49927361854725e342c18f55cff0a70e05d47b01b5d0dd3af0365c322 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2f292fec49927361854725e342c18f55cff0a70e05d47b01b5d0dd3af0365c322 <http://www.w3.org/ns/shacl#path> <http://aegis.gastown.local/ontology/changeRepository> .
-_:cb2f292fec49927361854725e342c18f55cff0a70e05d47b01b5d0dd3af0365c322 <http://www.w3.org/ns/shacl#pattern> "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" .
-_:cb2fb26e0c9dfe5bcd8a2832ff16d66880f76899dec9279fd07be7d209df74e16a0 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
-_:cb2fb26e0c9dfe5bcd8a2832ff16d66880f76899dec9279fd07be7d209df74e16a0 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2fb26e0c9dfe5bcd8a2832ff16d66880f76899dec9279fd07be7d209df74e16a0 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2fb26e0c9dfe5bcd8a2832ff16d66880f76899dec9279fd07be7d209df74e16a0 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:cb2fb26e0c9dfe5bcd8a2832ff16d66880f76899dec9279fd07be7d209df74e16a0 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> .
-_:cb3c04718f75f5f9743b817a9140867e0c5445ce0c3d64deecbf243e2b54314f28 <http://www.w3.org/ns/shacl#property> _:cb753302ac6279b3b54914d1748073d20242af43a50dfb962be9114a3cec3cd7ae .
+_:cb314436dad2e781a79bdef4a3ddd470496f62aaa6c91cc8cadb41d623099c25768 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb314436dad2e781a79bdef4a3ddd470496f62aaa6c91cc8cadb41d623099c25768 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb314436dad2e781a79bdef4a3ddd470496f62aaa6c91cc8cadb41d623099c25768 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb314436dad2e781a79bdef4a3ddd470496f62aaa6c91cc8cadb41d623099c25768 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#changeRepository> .
+_:cb314436dad2e781a79bdef4a3ddd470496f62aaa6c91cc8cadb41d623099c25768 <http://www.w3.org/ns/shacl#pattern> "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" .
+_:cb325bc4d2341088923964ed91bb6b27efbb7e66a668c76a9712fefa6bf03e34b92 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb325bc4d2341088923964ed91bb6b27efbb7e66a668c76a9712fefa6bf03e34b92 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb325bc4d2341088923964ed91bb6b27efbb7e66a668c76a9712fefa6bf03e34b92 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb325bc4d2341088923964ed91bb6b27efbb7e66a668c76a9712fefa6bf03e34b92 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#changeId> .
+_:cb325bc4d2341088923964ed91bb6b27efbb7e66a668c76a9712fefa6bf03e34b92 <http://www.w3.org/ns/shacl#pattern> "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+#[0-9]+$" .
+_:cb34d86ca16760a98cb078bdeac16e70cb073dd16fd4b30905aac4ffe86740d6d37 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb34d86ca16760a98cb078bdeac16e70cb073dd16fd4b30905aac4ffe86740d6d37 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb34d86ca16760a98cb078bdeac16e70cb073dd16fd4b30905aac4ffe86740d6d37 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb34d86ca16760a98cb078bdeac16e70cb073dd16fd4b30905aac4ffe86740d6d37 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:cb364bda76f28c6386facfbf8b2cc977ecdcd945ddac0414b4bc9b6ab352669d85c <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb364bda76f28c6386facfbf8b2cc977ecdcd945ddac0414b4bc9b6ab352669d85c <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb364bda76f28c6386facfbf8b2cc977ecdcd945ddac0414b4bc9b6ab352669d85c <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb364bda76f28c6386facfbf8b2cc977ecdcd945ddac0414b4bc9b6ab352669d85c <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#occurredAt> .
+_:cb364bda76f28c6386facfbf8b2cc977ecdcd945ddac0414b4bc9b6ab352669d85c <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?(Z|[+-]([01][0-9]|2[0-3]):[0-5][0-9])$" .
+_:cb378d8e04137cdbaf696c030743f2a9bd7c635af73dfa54be28a51c927fefdd5c3 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:cb378d8e04137cdbaf696c030743f2a9bd7c635af73dfa54be28a51c927fefdd5c3 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb378d8e04137cdbaf696c030743f2a9bd7c635af73dfa54be28a51c927fefdd5c3 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb378d8e04137cdbaf696c030743f2a9bd7c635af73dfa54be28a51c927fefdd5c3 <http://www.w3.org/ns/shacl#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cb378d8e04137cdbaf696c030743f2a9bd7c635af73dfa54be28a51c927fefdd5c3 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#cloudEventSource> .
 _:cb5a9760d373e272e446eeb2ac2248e7fdfd64e84db1c740897357701cd78fb3f7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cb14f496eb5e8504f5e83847f17c4a845ee8796b5c46d735cf533f618f32b356d77 .
 _:cb5a9760d373e272e446eeb2ac2248e7fdfd64e84db1c740897357701cd78fb3f7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1317bed9b85d77dfed8d7f656d75f57def1bfd3717c42ca5b8efcd8ef9a91a097 .
 _:cb5e07506ac46b8ac5b6cb6645f1e134d914f0097f06427674de1838134971e58f <http://www.w3.org/ns/shacl#property> _:cb165e9cff7bf82b305cc96113b338369686d0b2e2154c9b95faa66a5382ad52492 .
-_:cb753302ac6279b3b54914d1748073d20242af43a50dfb962be9114a3cec3cd7ae <http://www.w3.org/ns/shacl#hasValue> "merged" .
-_:cb753302ac6279b3b54914d1748073d20242af43a50dfb962be9114a3cec3cd7ae <http://www.w3.org/ns/shacl#path> <http://aegis.gastown.local/ontology/changeAction> .
+_:cb87806fde5f343774abd4639be42fa69d69afe08e47c60aabda86a16db2cc8647 <http://www.w3.org/ns/shacl#property> _:cbc8e6ac4138a0eb7b6fe7b05071da75cdb89c000f4c08194b91abb3e4842902d1 .
+_:cbb3a840bec4d9bf4cb6636b9338f4823db4e3d823b199bebdb53901644d44a3b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cbc3a61229a78bb5492b279efc083e7c7a178e37e171c3961272a187d07b26dc87 .
+_:cbb3a840bec4d9bf4cb6636b9338f4823db4e3d823b199bebdb53901644d44a3b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb16c8ff4c707d05be83fff73067b0188340cf01a304776953415cdf29adaf8dbb8 .
 _:cbbf715db9a7cd3a185f0f12fb4527b681d0ae8e8f809d266946e101fbe3daad66 <http://www.w3.org/ns/shacl#property> _:cb1a144154d6eef657b2fef6e1518c7a9d79c904eaeaf5901d65a13a094e797416d .
-_:cbc3e09e7c7e89d2347867e6e20ab5828670458f56f69de46b8561bb6160d6a32c <http://www.w3.org/ns/shacl#not> _:cb3c04718f75f5f9743b817a9140867e0c5445ce0c3d64deecbf243e2b54314f28 .
+_:cbc3a61229a78bb5492b279efc083e7c7a178e37e171c3961272a187d07b26dc87 <http://www.w3.org/ns/shacl#not> _:cb87806fde5f343774abd4639be42fa69d69afe08e47c60aabda86a16db2cc8647 .
+_:cbc4375e0fefbee7a913a58bb255e596dd77a540b8b7e8322a11dea80a06179e07 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:cbc4375e0fefbee7a913a58bb255e596dd77a540b8b7e8322a11dea80a06179e07 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#commitSha> .
+_:cbc8e6ac4138a0eb7b6fe7b05071da75cdb89c000f4c08194b91abb3e4842902d1 <http://www.w3.org/ns/shacl#hasValue> "merged" .
+_:cbc8e6ac4138a0eb7b6fe7b05071da75cdb89c000f4c08194b91abb3e4842902d1 <http://www.w3.org/ns/shacl#path> <https://w3id.org/intigraph/camayoc/delivery/ns#changeAction> .
 _:cbf0f93266d0b41e6dd1a52618fa72b752e49c527278c1dfcd701d5b02dcd5f15c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ci-passed" .
 _:cbf0f93266d0b41e6dd1a52618fa72b752e49c527278c1dfcd701d5b02dcd5f15c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:cb1a50f8d7417991d26716da79a17da228b546f058c023faa5202035c0594d7c51c .
 _:cbf9fcc813e98add9378838e28083d7ccca5eaef2e7c62dc444b7f2712a2317435 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:cbbf715db9a7cd3a185f0f12fb4527b681d0ae8e8f809d266946e101fbe3daad66 .
