@@ -25,6 +25,7 @@ def components(text):
         if not match:
             raise ValueError('unrecognized canonical row')
         name, url, description = match.groups()
+        url = url.replace('https://github.com/scbrown/', 'https://github.com/intigraph/')
         if name in {r[0] for r in rows} or url in {r[1] for r in rows}:
             raise ValueError('duplicate canonical component')
         if any(c in description for c in '<>'):

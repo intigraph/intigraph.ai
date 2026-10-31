@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Check public links, images and embeds
+        run: python3 scripts/check-links.py
       - run: npm install --no-save --package-lock=false playwright@1.61.0
       - run: npx playwright install --with-deps chromium
       - run: xvfb-run -a node scripts/test-playground.cjs
