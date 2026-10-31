@@ -1,0 +1,30 @@
+[
+  {
+    "type": "quipu:state",
+    "state": "loading",
+    "pendant": "repository",
+    "stage": "engine",
+    "at": 350
+  },
+  {
+    "type": "quipu:state",
+    "state": "loading",
+    "pendant": "repository",
+    "stage": "pendant",
+    "at": 410
+  },
+  {
+    "type": "quipu:state",
+    "state": "loading",
+    "pendant": "repository",
+    "stage": "indexing",
+    "at": 450.69999998807907
+  },
+  {
+    "type": "quipu:state",
+    "state": "ready",
+    "pendant": "repository",
+    "stage": "ready",
+    "at": 59350.59999999404
+  }
+]

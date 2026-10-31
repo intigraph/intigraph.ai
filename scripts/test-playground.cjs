@@ -98,6 +98,33 @@ const server = http.createServer((req, res) => {
       console.log('graceful removal:', mode);
       await failure.close();
     }
+    for (const readyEventually of [true, false]) {
+      const slow = await browser.newContext();
+      await slow.route('https://**/*', route => route.fulfill({ contentType: 'text/html',
+        headers: { 'access-control-allow-origin': '*' }, body: fixture }));
+      const target = await slow.newPage();
+      await target.clock.install();
+      await target.goto(`http://127.0.0.1:${server.address().port}/`);
+      const frame = await (await target.locator('iframe').elementHandle()).contentFrame();
+      await frame.waitForSelector('#control', { state: 'attached' });
+      await frame.evaluate(() => window.emit({type:'quipu:state',state:'loading',stage:'engine'}));
+      await target.locator('#try').waitFor({state:'visible'});
+      await target.clock.runFor(9000);
+      assert(await target.locator('#try').isVisible(), 'alive loader survives original eight-second cutoff');
+      // Later progress must not keep an indefinitely stuck import alive.
+      await frame.evaluate(() => window.emit({type:'quipu:state',state:'loading',stage:'indexing'}));
+      if (readyEventually) {
+        await frame.evaluate(() => window.emit({type:'quipu:state',state:'ready',stage:'ready'}));
+        await target.clock.runFor(61000);
+        assert(await target.locator('#try').isVisible(), 'slow ready graph remains visible');
+      } else {
+        await target.clock.runFor(51001);
+        assert.equal(await target.locator('#try').count(), 0, 'first alive signal starts finite sixty-second budget');
+        assert.equal(await target.locator('a[href="#try"]').count(), 0);
+      }
+      console.log('alive loading grace:', readyEventually ? 'slow ready survives' : 'sixty-second timeout removes');
+      await slow.close();
+    }
     const noJS = await browser.newContext({javaScriptEnabled:false});
     const fallback = await noJS.newPage();
     await fallback.goto(`http://127.0.0.1:${server.address().port}/`);

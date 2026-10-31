@@ -13,11 +13,13 @@ No deployment is claimed. Download the WebMs to replay if the repository viewer
 does not play them inline.
 
 The host keeps its section and links hidden without JavaScript. With JavaScript,
-HTTP failure, network failure, an explorer error, or no actual ready signal within
-eight seconds removes the entire section and both links. A later explorer error
+HTTP failure, network failure, an explorer error, or no loading/ready signal within
+eight seconds removes the entire section and both links. The first loading message
+reveals the explorer loader and starts a separate sixty-second ready deadline.
+Repeated loading messages do not extend that deadline. A later explorer error
 also removes a previously revealed section. Forged origin/source messages cannot
-reveal it. A cold engine import that exceeds eight seconds is intentionally hidden;
-a fast iframe load or saved preview is not a successful engine import.
+reveal it. An alive, slow engine remains visible while it works; a fast iframe load or saved
+preview alone is not a loading signal or a successful engine import.
 
 The producer is Quipu PR951, head
 `c6b9a0a9f8a14ffc15bf8833595a72ee698aca40`: `quipu:state` reports
@@ -30,3 +32,14 @@ after installing the workflow's pinned Playwright version and Chromium.
 Run `python3 scripts/check-links.py` for local target existence and live HTTPS
 status checks. Both checks run in normal site CI. Live acceptance still requires
 the reviewed producer to be deployed before the site consumer can receive readiness.
+
+
+[Actual slow engine recording](actual-engine.webm) uses the released Quipu 0.16.6
+engine and repository pendant with the corrected host and PR951 producer. Two
+local HTTP origins serve the real source assets; only the iframe URL's transport
+location is changed in the host fixture. No engine result or state is fabricated.
+The first loading signal arrived at 0.35s and ready at 59.35s; a real positive query
+then returned one row. The loader stayed visible across the original eight-second
+cutoff. [Loading](actual-loading.png), [ready](actual-ready.png), and
+[received state timings](actual-states.json) preserve this source witness. Timing
+is one environment's observation, not a guaranteed load time or deployed-site proof.
