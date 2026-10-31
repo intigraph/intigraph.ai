@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+[hidden]{display:none!important}
 :root{
   --bg:#12121f; --bg2:#1a1a2e; --card:#20203a; --line:#2e2e4d;
   --fg:#ecebf5; --muted:#a7a6c2; --gold:#ffc24d; --coral:#ff5a4e; --pink:#ff4fa0;
@@ -90,7 +91,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);f
 <div class="wrap">
   <nav>
     <a class="brand" href="#"><img src="icon.svg" alt="">Intigraph</a>
-    <div class="navlinks"><a href="#how">How it works</a><a href="#any">Services</a><a href="#try">Try it</a><a href="#work">Work with us</a><a href="#about">About</a><a href="https://github.com/intigraph">GitHub</a></div>
+    <div class="navlinks"><a href="#how">How it works</a><a href="#any">Services</a><a href="#try" hidden data-playground-link>Try it</a><a href="#work">Work with us</a><a href="#about">About</a><a href="https://github.com/intigraph">GitHub</a></div>
   </nav>
 
   <header class="hero">
@@ -100,7 +101,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);f
       <div class="cta">
         <a class="btn primary" href="#work">Work with us</a>
         <a class="btn" href="https://arxiv.org/abs/2608.16813">Read the paper</a>
-        <a class="btn" href="https://github.com/scbrown/quipu">Get the code</a>
+        <a class="btn" href="https://github.com/intigraph/quipu">Get the code</a>
       </div>
     </div>
     <img class="logo" src="logo.svg" alt="Intigraph logo: a quipu turned into a sun, its knotted cords radiating as rays that end in linked graph nodes.">
@@ -155,17 +156,17 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
   <p class="lead">Explore the core stack with your own team. Get the Intigraph agent platform with a centralized knowledge graph running on your own machine. In a measured Linux test, installation and verification took under 5 minutes.</p>
   <p>Tambo installs the default platform into a local, single-user store. After installing Tambo, run <code>tambo quickstart</code> to install and verify the stack, then <code>tambo verify</code> to check it again. No server or issued token is required.</p>
   <div class="cta">
-    <a class="btn primary" href="https://github.com/scbrown/tambo#install">Install with Tambo</a>
-    <a class="btn" href="#try">Try the playground</a>
+    <a class="btn primary" href="https://github.com/intigraph/tambo#install">Install with Tambo</a>
+    <a class="btn" href="#try" hidden data-playground-link>Try the playground</a>
   </div>
   <p class="install-note">One historical Ubuntu 24.04 Linux test: 4 minutes 56 seconds to install and verify Quipu, Camayoc and Bobbin. Machine preparation, credential setup and the separate MCP check were outside that timing. Remote, shared-server access is an advanced option.</p>
 </div></section>
 
-<section id="try"><div class="wrap">
+<section id="try" hidden><div class="wrap">
   <h2>Try it in your browser</h2>
   <p class="lead">A real Quipu store, compiled to WebAssembly and loaded with Quipu's own repository: code, docs and decisions. Ask it questions, walk the graph, and try a write that breaks a rule. Nothing leaves your tab.</p>
   <div class="play" id="play">
-    <iframe src="https://scbrown.github.io/quipu/explore/?embed=1&amp;theme=intigraph" title="Intigraph agent platform playground" loading="eager" allow="clipboard-write"></iframe>
+    <iframe data-src="https://intigraph.github.io/quipu/explore/?embed=1&amp;theme=intigraph" title="Intigraph agent platform playground" loading="eager" allow="clipboard-write"></iframe>
   </div>
 </div></section>
 
@@ -174,18 +175,18 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
   <p class="lead">Everything a team needs to run it is open source under Apache-2.0, and it already runs a crew of coding agents in production every day.</p>
   <div class="stack">
     <!-- stack-cards:start -->
-    <div data-stack-component="tambo"><b><a href="https://github.com/scbrown/tambo">tambo</a></b><span>🧰 Agent Platform Toolkit - installs and configures the quipu stack</span></div>
-    <div data-stack-component="quipu"><b><a href="https://github.com/scbrown/quipu">quipu</a></b><span>stores shared facts with provenance and history; can check writes against your rules</span></div>
-    <div data-stack-component="camayoc"><b><a href="https://github.com/scbrown/camayoc">camayoc</a></b><span>prepares knowledge and vocabulary for Quipu, with checks before it is admitted</span></div>
-    <div data-stack-component="quechua"><b><a href="https://github.com/scbrown/quechua">quechua</a></b><span>shared vocabulary and shapes for interoperable knowledge</span></div>
-    <div data-stack-component="chaski"><b><a href="https://github.com/scbrown/chaski">chaski</a></b><span>reacts to graph changes and delivers governed notifications</span></div>
-    <div data-stack-component="bobbin"><b><a href="https://github.com/scbrown/bobbin">bobbin</a></b><span>searches your code and can include related knowledge from Quipu</span></div>
-    <div data-stack-component="yupana"><b><a href="https://github.com/scbrown/yupana">yupana</a></b><span>shows code impact and can read policies from Quipu to check changes</span></div>
-    <div data-stack-component="desire-path"><b><a href="https://github.com/scbrown/desire-path">desire-path</a></b><span>turns agent mistakes into feature requests; works on its own without Quipu</span></div>
-    <div data-stack-component="seeds"><b><a href="https://github.com/scbrown/seeds">seeds</a></b><span>a work item tracker backed by the Quipu knowledge base</span></div>
-    <div data-stack-component="shantytown"><b><a href="https://github.com/scbrown/shantytown">shantytown</a></b><span>runs crews of AI agents on work items, triggered by hand, on a schedule or by events; can share work and memory through Quipu</span></div>
-    <div data-stack-component="rikuy"><b><a href="https://github.com/scbrown/rikuy">rikuy</a></b><span>live brief: status, graphs, watches and signed decisions over Quipu</span></div>
-    <div data-stack-component="shuttle"><b><a href="https://github.com/scbrown/shuttle">shuttle</a></b><span>runs signed agent workflows and keeps their records in Quipu</span></div>
+    <div data-stack-component="tambo"><b><a href="https://github.com/intigraph/tambo">tambo</a></b><span>🧰 Agent Platform Toolkit - installs and configures the quipu stack</span></div>
+    <div data-stack-component="quipu"><b><a href="https://github.com/intigraph/quipu">quipu</a></b><span>stores shared facts with provenance and history; can check writes against your rules</span></div>
+    <div data-stack-component="camayoc"><b><a href="https://github.com/intigraph/camayoc">camayoc</a></b><span>prepares knowledge and vocabulary for Quipu, with checks before it is admitted</span></div>
+    <div data-stack-component="quechua"><b><a href="https://github.com/intigraph/quechua">quechua</a></b><span>shared vocabulary and shapes for interoperable knowledge</span></div>
+    <div data-stack-component="chaski"><b><a href="https://github.com/intigraph/chaski">chaski</a></b><span>reacts to graph changes and delivers governed notifications</span></div>
+    <div data-stack-component="bobbin"><b><a href="https://github.com/intigraph/bobbin">bobbin</a></b><span>searches your code and can include related knowledge from Quipu</span></div>
+    <div data-stack-component="yupana"><b><a href="https://github.com/intigraph/yupana">yupana</a></b><span>shows code impact and can read policies from Quipu to check changes</span></div>
+    <div data-stack-component="desire-path"><b><a href="https://github.com/intigraph/desire-path">desire-path</a></b><span>turns agent mistakes into feature requests; works on its own without Quipu</span></div>
+    <div data-stack-component="seeds"><b><a href="https://github.com/intigraph/seeds">seeds</a></b><span>a work item tracker backed by the Quipu knowledge base</span></div>
+    <div data-stack-component="shantytown"><b><a href="https://github.com/intigraph/shantytown">shantytown</a></b><span>runs crews of AI agents on work items, triggered by hand, on a schedule or by events; can share work and memory through Quipu</span></div>
+    <div data-stack-component="rikuy"><b><a href="https://github.com/intigraph/rikuy">rikuy</a></b><span>live brief: status, graphs, watches and signed decisions over Quipu</span></div>
+    <div data-stack-component="shuttle"><b><a href="https://github.com/intigraph/shuttle">shuttle</a></b><span>runs signed agent workflows and keeps their records in Quipu</span></div>
     <!-- stack-cards:end -->
   </div>
 </div></section>
@@ -228,7 +229,7 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
     <p class="lead">Intigraph is Steve Brown. He helps engineering teams build toward agentic software factories.</p>
     <p>Steve has 20+ years in production systems, including 15 at Amazon and AWS, where he drove generative AI adoption in Amazon Security and AWS Applied AI Solutions. At Sema4.ai he was the AI Staff Engineer for the agent platform.</p>
     <p>He wrote the Quipu paper on governed knowledge for AI agents, and he runs his own crew of coding agents on the stack every day. His work connects production engineering, governed knowledge and practical agent workflows.</p>
-    <p class="links"><a href="https://www.linkedin.com/in/scbrown3">LinkedIn</a> · <a href="https://github.com/scbrown">GitHub</a> · <a href="https://orcid.org/0009-0009-1720-1785">ORCID</a> · <a href="mailto:steve@intigraph.ai">steve@intigraph.ai</a></p>
+    <p class="links"><a href="https://www.linkedin.com/in/scbrown3">LinkedIn</a> · <a href="https://github.com/intigraph">GitHub</a> · <a href="https://orcid.org/0009-0009-1720-1785">ORCID</a> · <a href="mailto:steve@intigraph.ai">steve@intigraph.ai</a></p>
   </div>
 </div></section>
 
@@ -238,19 +239,6 @@ quipu read <span class="s">"..."</span> <span class="kw">--tx</span> 153665</pre
     <span><a href="/ids/">Vocabulary identifiers</a> · <a href="https://github.com/intigraph">github.com/intigraph</a></span>
   </footer>
 </div>
-<script>
-(function () {
-  var f = document.querySelector('#play iframe');
-  window.addEventListener('message', function (event) {
-    if (event.origin !== 'https://scbrown.github.io'
-        || event.source !== f.contentWindow
-        || event.data?.type !== 'quipu:resize') return;
-    var height = event.data.height;
-    if (Number.isInteger(height) && height > 0 && height < 20000) {
-      f.style.height = height + 'px';
-    }
-  });
-})();
-</script>
+<script src="playground.js"></script>
 </body>
 </html>
