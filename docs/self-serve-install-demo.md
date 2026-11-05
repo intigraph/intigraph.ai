@@ -2,7 +2,7 @@
 
 Previously, the page offered a browser playground but no installation CTA or
 measured self-serve result. The new section invites teams to try the core stack,
-links to [Tambo's current install steps](https://github.com/scbrown/tambo#install),
+links to [Tambo's current install steps](https://github.com/intigraph/tambo#install),
 and qualifies its timing as one historical Linux clean-room test.
 
 ## What the number measures
@@ -11,7 +11,9 @@ On October 7, 2026, an automated agent installed the retrieval profile from the
 public README in a fresh Ubuntu 24.04 container. Its complete installation
 session took 295.771 seconds (4.93 minutes), including indexing, registration
 and final verification. The installed tools were Quipu, Camayoc and Bobbin,
-using Caboodle v0.2.11. The session completed without errors or guesses.
+using Caboodle v0.2.11 (the installer's former name; it is now Tambo). The
+session completed without errors or guesses. This is a historical version and
+timing record, not a measurement of the current Tambo release.
 
 A separate fresh agent session made a successful Bobbin MCP call in 12.289
 seconds. That check is outside the under-five-minute claim. Machine preparation
