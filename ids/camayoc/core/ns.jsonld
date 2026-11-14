@@ -12810,7 +12810,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "A secondary condition narrowing when the check applies. NB this property is used in TWO senses in this vocabulary — a Predicate's applicability gate, and the gate that produced an aegis:Decision — which is why it carries no rdfs:domain. Two meanings under one name is a defect worth recording rather than hiding; splitting them is a vocabulary change with a migration behind it."
+        "@value": "A secondary condition narrowing when the check applies. NB this property is used in TWO senses in this vocabulary — a Predicate's applicability gate, and the gate that produced an aegis:GateApproval (a governance aegis:Decision before the GateApproval split) — which is why it carries no rdfs:domain. Two meanings under one name is a defect worth recording rather than hiding; splitting them is a vocabulary change with a migration behind it."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -13361,7 +13361,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The programming language whose grammar this selector's query is written against. A selector without one cannot be matched to a file, and hank skips it rather than guessing from an extension."
+        "@value": "The programming language whose grammar this selector's query is written against. A selector without one cannot be matched to a file, and yupana skips it rather than guessing from an extension."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [

@@ -1179,7 +1179,8 @@
       ],
       "referenced_in": [
         "quipu/ns"
-      ]
+      ],
+      "disposition": "Deprecated: retained published identity after the released governance split; no replacement identity asserted."
     },
     {
       "old": "http://aegis.gastown.local/ontology/DecisionVerdict",
@@ -1644,6 +1645,28 @@
       ]
     },
     {
+      "old": "http://aegis.gastown.local/ontology/GateApproval",
+      "new": "https://w3id.org/intigraph/quipu/ns#GateApproval",
+      "owner": "quipu/ns",
+      "declared_in": [
+        "quipu/ns"
+      ],
+      "referenced_in": [
+        "quipu/ns"
+      ]
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/GateApprovalShape",
+      "new": "https://w3id.org/intigraph/quipu/ns#GateApprovalShape",
+      "owner": "quipu/ns",
+      "declared_in": [
+        "quipu/ns"
+      ],
+      "referenced_in": [
+        "quipu/ns"
+      ]
+    },
+    {
       "old": "http://aegis.gastown.local/ontology/GitCommit",
       "new": "https://w3id.org/intigraph/quipu/ns#GitCommit",
       "owner": "quipu/ns",
@@ -1927,6 +1950,17 @@
       ],
       "referenced_in": [
         "camayoc/core/ns"
+      ]
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/LegacyGateDecisionShape",
+      "new": "https://w3id.org/intigraph/quipu/ns#LegacyGateDecisionShape",
+      "owner": "quipu/ns",
+      "declared_in": [
+        "quipu/ns"
+      ],
+      "referenced_in": [
+        "quipu/ns"
       ]
     },
     {
@@ -2637,6 +2671,28 @@
       ],
       "referenced_in": [
         "quipu/ns"
+      ]
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/ReleaseEvent",
+      "new": "https://w3id.org/intigraph/camayoc/delivery/ns#ReleaseEvent",
+      "owner": "camayoc/delivery/ns",
+      "declared_in": [
+        "camayoc/delivery/ns"
+      ],
+      "referenced_in": [
+        "camayoc/delivery/ns"
+      ]
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/ReleaseEventShape",
+      "new": "https://w3id.org/intigraph/camayoc/delivery/ns#ReleaseEventShape",
+      "owner": "camayoc/delivery/ns",
+      "declared_in": [
+        "camayoc/delivery/ns"
+      ],
+      "referenced_in": [
+        "camayoc/delivery/ns"
       ]
     },
     {
@@ -3715,6 +3771,17 @@
       ]
     },
     {
+      "old": "http://aegis.gastown.local/ontology/aggregateState",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#aggregateState",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
+      ]
+    },
+    {
       "old": "http://aegis.gastown.local/ontology/alertExpr",
       "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#alertExpr",
       "owner": "camayoc/homelab-infra/ns",
@@ -4314,6 +4381,17 @@
       ]
     },
     {
+      "old": "http://aegis.gastown.local/ontology/commandClass",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#commandClass",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
+      ]
+    },
+    {
       "old": "http://aegis.gastown.local/ontology/commandSignature",
       "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#commandSignature",
       "owner": "camayoc/homelab-infra/ns",
@@ -4886,6 +4964,17 @@
       "declared_in": [],
       "referenced_in": [
         "camayoc/software-factory/ns"
+      ]
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/eventActor",
+      "new": "https://w3id.org/intigraph/camayoc/delivery/ns#eventActor",
+      "owner": "camayoc/delivery/ns",
+      "declared_in": [
+        "camayoc/delivery/ns"
+      ],
+      "referenced_in": [
+        "camayoc/delivery/ns"
       ]
     },
     {
@@ -5823,6 +5912,17 @@
       ]
     },
     {
+      "old": "http://aegis.gastown.local/ontology/maximumDeltaBytes",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#maximumDeltaBytes",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
+      ]
+    },
+    {
       "old": "http://aegis.gastown.local/ontology/meanServiceSeconds",
       "new": "https://w3id.org/intigraph/camayoc/core/ns#meanServiceSeconds",
       "owner": "camayoc/core/ns",
@@ -6228,6 +6328,17 @@
       "referenced_in": [
         "camayoc/homelab-infra/ns",
         "camayoc/software-factory/ns"
+      ]
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/p95DeltaBytes",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#p95DeltaBytes",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
       ]
     },
     {
@@ -6673,6 +6784,17 @@
       ]
     },
     {
+      "old": "http://aegis.gastown.local/ontology/releaseTag",
+      "new": "https://w3id.org/intigraph/camayoc/delivery/ns#releaseTag",
+      "owner": "camayoc/delivery/ns",
+      "declared_in": [
+        "camayoc/delivery/ns"
+      ],
+      "referenced_in": [
+        "camayoc/delivery/ns"
+      ]
+    },
+    {
       "old": "http://aegis.gastown.local/ontology/repo",
       "new": "https://w3id.org/intigraph/quipu/ns#repo",
       "owner": "quipu/ns",
@@ -6876,6 +6998,17 @@
       "referenced_in": [
         "camayoc/homelab-infra/ns",
         "camayoc/software-factory/ns"
+      ]
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/runCount",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#runCount",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
       ]
     },
     {

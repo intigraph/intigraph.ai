@@ -59,3 +59,15 @@ The upstream w3id proposal remains a separate authorized publication step.
 Pinned upstream LICENSE/NOTICE files accompany the copied sources. The pinned
 Quechua root has no LICENSE/NOTICE file; no substitute license is invented.
 Publication is under the repository owner’s explicit vocabulary-publication direction.
+
+The released-source refresh pins Quipu 0.18.0 and Camayoc 0.1.7. The separate
+publication-additions ledger records twelve additive identities with defining
+source paths and existing namespace owners. All 1,299 previous destinations
+remain fixed; the publication now has 1,311 mapped identities. The generator
+checks each added role against its pinned released source.
+
+DecisionShape retains its existing public IRI, alias and page, marked deprecated.
+The governance release splits approval validation from legacy compatibility;
+it does not establish a simple rename to LegacyGateDecisionShape, so this
+publication asserts no replacement link. Only this explicitly recorded missing
+source identity may remain as a deprecated publication; other omissions refuse.

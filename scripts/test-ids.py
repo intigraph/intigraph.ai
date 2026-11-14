@@ -90,7 +90,7 @@ class PublicationTests(unittest.TestCase):
         ledger = json.loads((builder.ROOT/'data/ids/sources/camayoc/namespaces/intigraph/mapping.json').read_text())
         stage_two = json.loads((builder.ROOT/'data/ids/sources/camayoc/namespaces/intigraph/stage-two.json').read_text())
         spec = json.loads((builder.ROOT/'data/ids/ownership.json').read_text())
-        self.assertEqual(len(spec['terms']),1299)
+        self.assertEqual(len(spec['terms']),1311)
         outputs = builder.build()
         all_graphs = Graph()
         for name, raw in outputs.items():
@@ -130,5 +130,37 @@ class PublicationTests(unittest.TestCase):
         pairs = {r['old']:r['new'] for r in ledger}
         for term in ('derivedBy','derivationParams','derivationQuery','derivationSystem'):
             self.assertNotEqual(pairs['http://quipu.dev/ontology/'+term],pairs['https://quipu.dev/ontology/'+term])
+
+
+    def test_additive_owner_and_role_evidence_cannot_be_changed(self):
+        def mutate(d):
+            p=d/'publication-additions.json'
+            value=json.loads(p.read_text())
+            value['additions'][0]['owner']='camayoc/core/ns'
+            p.write_text(json.dumps(value))
+        self.changed(mutate)
+
+    def test_omitted_addition_and_invented_replacement_refuse(self):
+        def mutate(d):
+            p=d/'publication-additions.json'
+            value=json.loads(p.read_text());value['additions'].pop()
+            p.write_text(json.dumps(value))
+        self.changed(mutate)
+        def replacement(d):
+            p=d/'publication-additions.json'
+            value=json.loads(p.read_text())
+            value['deprecated'][0]['replacement']='https://example.org/unproven'
+            p.write_text(json.dumps(value))
+        self.changed(replacement)
+
+    def test_decision_identity_is_retained_and_deprecated(self):
+        outputs=builder.build()
+        graph=Graph().parse(data=outputs['quipu/ns.ttl'],format='turtle')
+        node=URIRef(builder.BASE+'quipu/ns#DecisionShape')
+        self.assertIn((node,URIRef('http://www.w3.org/2002/07/owl#deprecated'),
+                       builder.Literal(True)),graph)
+        self.assertIn((URIRef('http://aegis.gastown.local/ontology/DecisionShape'),
+                       builder.OWL_SAME,node),graph)
+        self.assertIn(b'Deprecated:',outputs['quipu/ns/index.html'])
 
 if __name__ == '__main__':unittest.main()
