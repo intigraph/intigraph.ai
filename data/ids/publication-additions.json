@@ -1,0 +1,186 @@
+{
+  "format": "released-publication-additions/v1",
+  "additions": [
+    {
+      "old": "http://aegis.gastown.local/ontology/GateApproval",
+      "new": "https://w3id.org/intigraph/quipu/ns#GateApproval",
+      "owner": "quipu/ns",
+      "declared_in": [
+        "quipu/ns"
+      ],
+      "referenced_in": [
+        "quipu/ns"
+      ],
+      "roles": [
+        "class"
+      ],
+      "source": "quipu/shapes/governance.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/GateApprovalShape",
+      "new": "https://w3id.org/intigraph/quipu/ns#GateApprovalShape",
+      "owner": "quipu/ns",
+      "declared_in": [
+        "quipu/ns"
+      ],
+      "referenced_in": [
+        "quipu/ns"
+      ],
+      "roles": [],
+      "source": "quipu/shapes/governance.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/LegacyGateDecisionShape",
+      "new": "https://w3id.org/intigraph/quipu/ns#LegacyGateDecisionShape",
+      "owner": "quipu/ns",
+      "declared_in": [
+        "quipu/ns"
+      ],
+      "referenced_in": [
+        "quipu/ns"
+      ],
+      "roles": [],
+      "source": "quipu/shapes/governance.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/ReleaseEvent",
+      "new": "https://w3id.org/intigraph/camayoc/delivery/ns#ReleaseEvent",
+      "owner": "camayoc/delivery/ns",
+      "declared_in": [
+        "camayoc/delivery/ns"
+      ],
+      "referenced_in": [
+        "camayoc/delivery/ns"
+      ],
+      "roles": [
+        "class"
+      ],
+      "source": "camayoc/shapes/delivery.shapes.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/ReleaseEventShape",
+      "new": "https://w3id.org/intigraph/camayoc/delivery/ns#ReleaseEventShape",
+      "owner": "camayoc/delivery/ns",
+      "declared_in": [
+        "camayoc/delivery/ns"
+      ],
+      "referenced_in": [
+        "camayoc/delivery/ns"
+      ],
+      "roles": [],
+      "source": "camayoc/shapes/delivery.shapes.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/eventActor",
+      "new": "https://w3id.org/intigraph/camayoc/delivery/ns#eventActor",
+      "owner": "camayoc/delivery/ns",
+      "declared_in": [
+        "camayoc/delivery/ns"
+      ],
+      "referenced_in": [
+        "camayoc/delivery/ns"
+      ],
+      "roles": [
+        "property"
+      ],
+      "source": "camayoc/shapes/delivery.shapes.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/releaseTag",
+      "new": "https://w3id.org/intigraph/camayoc/delivery/ns#releaseTag",
+      "owner": "camayoc/delivery/ns",
+      "declared_in": [
+        "camayoc/delivery/ns"
+      ],
+      "referenced_in": [
+        "camayoc/delivery/ns"
+      ],
+      "roles": [
+        "property"
+      ],
+      "source": "camayoc/shapes/delivery.shapes.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/aggregateState",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#aggregateState",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "roles": [
+        "property"
+      ],
+      "source": "camayoc/shapes/aegis/homelab-infra.shapes.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/commandClass",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#commandClass",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "roles": [
+        "property"
+      ],
+      "source": "camayoc/shapes/aegis/homelab-infra.shapes.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/maximumDeltaBytes",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#maximumDeltaBytes",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "roles": [
+        "property"
+      ],
+      "source": "camayoc/shapes/aegis/homelab-infra.shapes.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/p95DeltaBytes",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#p95DeltaBytes",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "roles": [
+        "property"
+      ],
+      "source": "camayoc/shapes/aegis/homelab-infra.shapes.ttl"
+    },
+    {
+      "old": "http://aegis.gastown.local/ontology/runCount",
+      "new": "https://w3id.org/intigraph/camayoc/homelab-infra/ns#runCount",
+      "owner": "camayoc/homelab-infra/ns",
+      "declared_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "referenced_in": [
+        "camayoc/homelab-infra/ns"
+      ],
+      "roles": [
+        "property"
+      ],
+      "source": "camayoc/shapes/aegis/homelab-infra.shapes.ttl"
+    }
+  ],
+  "deprecated": [
+    {
+      "old": "http://aegis.gastown.local/ontology/DecisionShape",
+      "owner": "quipu/ns",
+      "reason": "The released governance diff splits the approval class and legacy compatibility shape; it does not establish a simple rename. No replacement asserted."
+    }
+  ]
+}

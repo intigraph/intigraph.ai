@@ -13,26 +13,26 @@
     "triples": 2740,
     "terms": 372,
     "sha256": {
-      ".ttl": "946676bf3aac8b255346a91bbd43653351ed8aeb138c303dac48898818b69360",
-      ".jsonld": "6a1737ff6b325f8e2bbd0297996bd77d2ba77024776aea4d328ca01186c9fec9"
+      ".ttl": "59d669bcbc774537e9749bd922d1168690d68e172ac5cb17387b819383be96a9",
+      ".jsonld": "bb6bb1f74ac1af012a781471a7e65670fb27f7175a6e60b98abae53b560c8c62"
     }
   },
   {
     "path": "camayoc/delivery/ns",
-    "triples": 295,
-    "terms": 20,
+    "triples": 385,
+    "terms": 24,
     "sha256": {
-      ".ttl": "d50ce2872f8bd5a9ea1bd558498d8b22a63f5c431593d57151c1797c08c82a68",
-      ".jsonld": "ac997db04c4ee56d639805f49a032819cdcdddbc34203e1717f6e27806ac0ade"
+      ".ttl": "4449f2f8fffc6c6742f615111337e352090ca5436ece5a0ce46258e5892e035e",
+      ".jsonld": "82f523a27af720689d5b3450a5542c410cc70d8fbafc7c2f465da20661040789"
     }
   },
   {
     "path": "camayoc/homelab-infra/ns",
-    "triples": 552,
-    "terms": 82,
+    "triples": 585,
+    "terms": 87,
     "sha256": {
-      ".ttl": "0995ec8b82486523801e6dbc67d82133c891d179a020a176f48bb0c180b97951",
-      ".jsonld": "c99c6ad1a3803eba1363df31e8ac877ae5069fdb0e18fddb4a67ac8581e931d9"
+      ".ttl": "05956c1ab60c53738ff5f0f86ebc8563a4b2c3eadb0b9fb6caf5af742e6ada71",
+      ".jsonld": "b63dd2b36182dc132f69347c21de71c3406a819d48bef9508aa5ec38f7138e34"
     }
   },
   {
@@ -55,11 +55,11 @@
   },
   {
     "path": "camayoc/software-factory/ns",
-    "triples": 726,
+    "triples": 978,
     "terms": 104,
     "sha256": {
-      ".ttl": "f446e5da2b0b589f33ec4bc8e01fc0fbdd2528941c3a05e11a7cff7d3f61c2d8",
-      ".jsonld": "14b1a6e2100d1e2b2eb373133c9279cce2133c867a09428931dc0b945a9c99ab"
+      ".ttl": "bd90cf2460fa3ffadd5fea6fe4f0d181711bb685ffca423e09f1d3c599f8c452",
+      ".jsonld": "f3684d80a4b00e859146823b50b9573acd9776991434043d496d6f5806ae8231"
     }
   },
   {
@@ -82,11 +82,11 @@
   },
   {
     "path": "quipu/ns",
-    "triples": 2074,
-    "terms": 186,
+    "triples": 1860,
+    "terms": 189,
     "sha256": {
-      ".ttl": "e2ba7f8982591028e35392edf5eea46a1b80d04cef555663701ff3a534db60fd",
-      ".jsonld": "723f19daaf0598219a8b4b9f6e43006041774c9f49f6031c402be932703ce7c5"
+      ".ttl": "ae1808eb0d9c6b95116ea9ce59fb118c83b421a8d8b575393bf4324f94da621b",
+      ".jsonld": "d772043f2438eafc22f3d9cbb728893251d5df98e99837432514958fc6a5d351"
     }
   },
   {

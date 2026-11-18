@@ -15,6 +15,11 @@ import rdflib
 from rdflib import Graph, URIRef, BNode, Literal
 rdflib.NORMALIZE_LITERALS = False
 from rdflib.compare import to_canonical_graph
+import importlib.util
+_addition_spec = importlib.util.spec_from_file_location(
+    "publication_additions", Path(__file__).with_name("publication-additions.py"))
+_additions = importlib.util.module_from_spec(_addition_spec)
+_addition_spec.loader.exec_module(_additions)
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://w3id.org/intigraph/'
@@ -91,6 +96,7 @@ def build(root=ROOT):
             raise ValueError('Stage-two identity disposition mismatch')
         accepted += additions
         legacy = set(stage_two['retained_legacy'])
+    accepted, deprecated = _additions.extend(data, spec, accepted, manifest)
     if mapping != {r['old']:r['new'] for r in accepted}:
         raise ValueError('Publication differs from the merged source destinations')
     roles = {r['old']:set(r['roles']) for r in accepted}
@@ -111,7 +117,7 @@ def build(root=ROOT):
             for triple in Graph().parse(data/'sources'/source,format='turtle'):
                 for node in triple:
                     if isinstance(node,URIRef) and (str(node).startswith(prefixes) or str(node) == 'https://scbrown.github.io/quechua/ns'):seen.add(str(node))
-    if seen != set(mapping) | set(retained):raise ValueError('Identity ledger coverage mismatch')
+    if seen != (set(mapping) - deprecated) | set(retained):raise ValueError('Identity ledger coverage mismatch')
     outputs = {}
     catalog = []
     for name, sources in sorted(spec['entries'].items()):
@@ -128,6 +134,9 @@ def build(root=ROOT):
                 renamed.add((URIRef(row['old']),OWL_PROPERTY,URIRef(row['new'])))
             if 'class' in roles[row['old']]:
                 renamed.add((URIRef(row['old']),OWL_CLASS,URIRef(row['new'])))
+        for row in own:
+            if row['old'] in deprecated:
+                renamed.add((URIRef(row['new']), URIRef('http://www.w3.org/2002/07/owl#deprecated'), Literal(True)))
         canonical = to_canonical_graph(renamed)
         # N-Triples is a Turtle subset. Canonical labels make committed bytes reproducible.
         ttl = ('\n'.join(sorted(' '.join(n.n3() for n in triple)+' .' for triple in canonical))+'\n').encode()
@@ -156,7 +165,7 @@ def build(root=ROOT):
         catalog.append(dict(path=name,triples=len(renamed),terms=len(own),sha256={'.ttl':digest(ttl),'.jsonld':digest(jsonld)}))
     outputs['index.html'] = page('Identifiers','<p>Stable vocabulary documents and source-preserving aliases. Content negotiation is provided by the upstream w3id redirect rules; these static targets expose explicit formats.</p><ul>'+''.join('<li><a href="/ids/'+c['path']+'/">'+c['path']+'</a></li>' for c in catalog)+'</ul>')
     outputs['catalog.json'] = (json.dumps(catalog,indent=2)+'\n').encode()
-    for name in ('ownership.json','sources.json'):outputs[name] = (data/name).read_bytes()
+    for name in ('ownership.json','sources.json','publication-additions.json'):outputs[name] = (data/name).read_bytes()
     return outputs
 
 

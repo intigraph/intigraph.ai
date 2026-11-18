@@ -1367,7 +1367,7 @@
 <https://w3id.org/intigraph/camayoc/core/ns#frozenWindow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/intigraph/camayoc/core/ns#frozenWindow> <http://www.w3.org/2000/01/rdf-schema#comment> "Source shuttle window for a certified bundle cut from frozen operational data; omitted by static packs." .
 <https://w3id.org/intigraph/camayoc/core/ns#gate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/intigraph/camayoc/core/ns#gate> <http://www.w3.org/2000/01/rdf-schema#comment> "A secondary condition narrowing when the check applies. NB this property is used in TWO senses in this vocabulary — a Predicate's applicability gate, and the gate that produced an aegis:Decision — which is why it carries no rdfs:domain. Two meanings under one name is a defect worth recording rather than hiding; splitting them is a vocabulary change with a migration behind it." .
+<https://w3id.org/intigraph/camayoc/core/ns#gate> <http://www.w3.org/2000/01/rdf-schema#comment> "A secondary condition narrowing when the check applies. NB this property is used in TWO senses in this vocabulary — a Predicate's applicability gate, and the gate that produced an aegis:GateApproval (a governance aegis:Decision before the GateApproval split) — which is why it carries no rdfs:domain. Two meanings under one name is a defect worth recording rather than hiding; splitting them is a vocabulary change with a migration behind it." .
 <https://w3id.org/intigraph/camayoc/core/ns#gate> <http://www.w3.org/2000/01/rdf-schema#label> "gate" .
 <https://w3id.org/intigraph/camayoc/core/ns#gate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#gatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1466,7 +1466,7 @@
 <https://w3id.org/intigraph/camayoc/core/ns#kind> <http://www.w3.org/2000/01/rdf-schema#label> "operating point kind" .
 <https://w3id.org/intigraph/camayoc/core/ns#kind> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/2000/01/rdf-schema#comment> "The programming language whose grammar this selector's query is written against. A selector without one cannot be matched to a file, and hank skips it rather than guessing from an extension." .
+<https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/2000/01/rdf-schema#comment> "The programming language whose grammar this selector's query is written against. A selector without one cannot be matched to a file, and yupana skips it rather than guessing from an extension." .
 <https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/intigraph/quipu/ns#Selector> .
 <https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/2000/01/rdf-schema#label> "language" .
 <https://w3id.org/intigraph/camayoc/core/ns#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .

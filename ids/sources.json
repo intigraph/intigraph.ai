@@ -21,50 +21,50 @@
     "bytes": 10604
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "shapes/governance.ttl",
-    "sha256": "a4003d5125c9ca35e55b8e989e57c22c0d91d56f11dfd00b0bc37c7f231e661b",
-    "bytes": 62582
+    "sha256": "0d351060eba15d554acf6f72f3ba4e4a0dc9424ea555946bddd0aee5c5678088",
+    "bytes": 64789
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "shapes/provenance.ttl",
-    "sha256": "7bc887ff9ec2fe2e0aeb68985f45a0d0050f5e735595413a675fed9677e29151",
-    "bytes": 3095
+    "sha256": "7cf250c2aa47a9cde83d65272f6c0e70a164bb14d3dd6ffa9929f90d2f72d2ff",
+    "bytes": 3101
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "shapes/graph-labels.ttl",
-    "sha256": "db171f7f8f9f8eb196b4206866098d55f9340744902e0641b29f3fa871253fb5",
-    "bytes": 13318
+    "sha256": "9ad4171de9e64b1736cad706a8d3157cb17d0e93d6285c54992cdec630060a06",
+    "bytes": 13320
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "shapes/stored-queries.ttl",
-    "sha256": "41c622f30d6c5f60ab5e378ad8b3708d73ca2811d47380a99ac198f319b4842e",
-    "bytes": 3331
+    "sha256": "d46aa6db76dccb8bf1acacc6b67f1315f3dbfb131dfeaaa4516f7cbd8d0922c3",
+    "bytes": 3333
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "shapes/rule-answers.ttl",
-    "sha256": "7cef525f0ebbd6f34a1c56361de106a9490b52e16a51288cdcd53036e4aa146a",
-    "bytes": 1230
+    "sha256": "7bf5c8c94ab92a267c419663371fd10e7e48fa3108a007d2480c99aa60e890a0",
+    "bytes": 1367
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "shapes/rule-editions.ttl",
     "sha256": "3b99d15e6759a3c70f9b28fd93cd127ec9774773a36e93079a2e029eaf1c5a58",
     "bytes": 3798
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "shapes/demoted-derivation.ttl",
     "sha256": "8186b3b37d2b64c5139e7d533f1893aac539af8a8754bd52277dc73ace08b0bb",
     "bytes": 2120
@@ -78,133 +78,133 @@
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/core.shapes.ttl",
-    "sha256": "40e18191382e86edc697f2e677b70857efba00b49993861411cfae79df6f7c65",
-    "bytes": 23516
+    "sha256": "8dfc9371c40253fdd6c67873973b2cbbb5d6ea69bdcf565cc6decedf23029b5a",
+    "bytes": 23518
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/delivery.shapes.ttl",
-    "sha256": "d019ca482e8ac683af758a91f3a680888994ce8c4bf8c4fd7f36d9381bd55250",
-    "bytes": 10613
+    "sha256": "d24d6ceeed947f6c5ec120f95416478a9674abf15a4bdb577ed13d4ac428e825",
+    "bytes": 13023
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/code-entities.ttl",
     "sha256": "73d10d355840b7342283031614b20c5da68fce83b6f8b33db0a6cacd39a76f4e",
     "bytes": 26051
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/session-transcript.shapes.ttl",
     "sha256": "fea0579c33714a75c3f0423940ac6ae27239d41cc8b3e0b6a9a5ecfd82b4b7d2",
     "bytes": 1530
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/usage-breakdown.shapes.ttl",
     "sha256": "47953d51fefc8eb33fdca2999031131d857049525855630b7ef57f9b852e869b",
     "bytes": 849
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/homelab-infra.shapes.ttl",
-    "sha256": "100a92bb1d90d00cbb001ebc320e9152b7f2a2588e805b65f8d5870d80f07e6d",
-    "bytes": 12327
+    "sha256": "475352e7df9b42ea4a81bbe3d71e65af98c61d445dd6461022eba1c04b4cdab8",
+    "bytes": 12964
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/personal-media.shapes.ttl",
     "sha256": "4bda212335be7734535bc80f6a34c860e6ae26eefa580354d5ec88f8d7a46093",
     "bytes": 1964
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/software-factory.shapes.ttl",
-    "sha256": "43a3d7ca3925076f59d5d60ab3e9be13a7387d4fa55058c790831c65c7258033",
-    "bytes": 13876
+    "sha256": "00111e6a031e8d700c0417af0b3eff2d9c26eda75b50fa55f60060198f75d09b",
+    "bytes": 19993
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/public-term-profiles.shapes.ttl",
     "sha256": "2e759f53db4dc6d5983e75a3d413dc5ec1b3e1eecfaf903fdc300adc46eaa307",
     "bytes": 7331
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/shared-vocabulary.ttl",
     "sha256": "9b041d64b1e43c49cf25a747605632442494366176bb7e3d1c1567b8fc34784a",
     "bytes": 5121
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/aegis-properties.ttl",
-    "sha256": "17e1350e6d521fd8ee0d1ef66adcd40aa55a244944c0d560777d56dc249c9beb",
-    "bytes": 65174
+    "sha256": "2cb9a68bafec8673499856ed4fed1705d3bf3e700455d8e3373ee1e595c41d7c",
+    "bytes": 65242
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/aegis-rules.ttl",
     "sha256": "997d639e69ddaa229b2b56d545bd05ddcc6153a68c69bd1a0657ef08ad0d575c",
     "bytes": 2220
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/aegis-class-subsumption.rules.ttl",
     "sha256": "783e854a21170f133ba43260d4f8a7b860d8d1118369623cc8096608d47c1935",
     "bytes": 3202
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/aegis/placement.json",
-    "sha256": "1e460e1569bf0767a2f2c4c431532346e50c85cefc912f9bb4bba4e50b12a644",
-    "bytes": 56660
+    "sha256": "a36cccb814ef17ee105aa021a89a71fc60cad391de2625ec5f529a7c4fc7b39d",
+    "bytes": 56600
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "tests/fixtures/aegis-upstream/kept-governance-compatibility.shapes.ttl",
-    "sha256": "8c2b36da7366e3a15143b215f8429404d4e65136753c9494665e81b911870596",
-    "bytes": 6828
+    "sha256": "95850cb93d97a9d0fd71a380123e95c65054c3e8556f019d036b05d1560cb9ac",
+    "bytes": 805
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "LICENSE",
     "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "bytes": 11358
   },
   {
-    "repository": "scbrown/quipu",
-    "commit": "9e24565f426a7ec902c11a897b2dbe55b1d43f6a",
+    "repository": "intigraph/quipu",
+    "commit": "d39f6312294db3705c41b4357198bd51c14943ca",
     "path": "NOTICE",
     "sha256": "5a032046ca96a9c2522c55bec4ff41b48b9800c47ddc3f9a5ccf0e6b63ce1efc",
     "bytes": 211
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "LICENSE",
     "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "bytes": 11358
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "NOTICE",
     "sha256": "d1a1c2053ca2ba890c32a8ca8ba294ae362bfee692c23a567850beba79317571",
     "bytes": 203
@@ -218,28 +218,28 @@
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "ontology/core.ttl",
     "sha256": "f63ee77456f7ccd0821b4986038a54357313d48dc82c5698dfef94abd01cbc8f",
     "bytes": 39281
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "shapes/observation-debt.shapes.ttl",
     "sha256": "8ec311f344ab84330e30e7c2b273eb0818d353d2e0092e963bc15afc3a3c122e",
     "bytes": 1411
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "namespaces/intigraph/mapping.json",
     "sha256": "b8223fa1af79495547e5032c1e58edd3c46665dd920401cb81384f41597dc924",
     "bytes": 238191
   },
   {
     "repository": "intigraph/camayoc",
-    "commit": "3e553637271a61ee01bd7e6428dfc63cb595cd01",
+    "commit": "0204212749b3a3730c18a304338e029ebd4c96cd",
     "path": "namespaces/intigraph/stage-two.json",
     "sha256": "5a3007a3b28300d85decec78b8e3629c1f33d1b9ea07d97521bf48b3016a0d71",
     "bytes": 9155
